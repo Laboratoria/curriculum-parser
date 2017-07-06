@@ -1,0 +1,14 @@
+{
+  "name": "d2c",
+  "version": "1.0.0",
+  "bin": {
+    "d2c": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "async": "^2.5.0",
+    "marked": "^0.3.6"
+  }
+}
