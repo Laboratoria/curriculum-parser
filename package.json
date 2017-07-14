@@ -9,10 +9,10 @@
   },
   "dependencies": {
     "async": "^2.5.0",
+    "cheerio": "^1.0.0-rc.2",
     "marked": "^0.3.6"
   },
   "devDependencies": {
-    "cheerio": "^1.0.0-rc.2",
     "mocha": "^3.4.2"
   }
 }
