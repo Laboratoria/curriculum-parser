@@ -10,5 +10,8 @@
   "dependencies": {
     "async": "^2.5.0",
     "marked": "^0.3.6"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2"
   }
 }

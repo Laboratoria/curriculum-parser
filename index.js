@@ -31,7 +31,7 @@ module.exports = (cwd, cb) => {
 
 
 if (require.main === module) {
-  module.exports(process.cwd(), (err, course) => {
+  module.exports(Path.resolve(process.cwd(), process.argv[2] || ''), (err, course) => {
 
     if (err) {
       throw err;
