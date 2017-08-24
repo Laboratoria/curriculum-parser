@@ -2,13 +2,13 @@
 
 
 const Path = require('path');
-const SyllabusItem = require('../lib/syllabus-item');
+const Unit = require('../lib/unit');
 
 
 describe('d2c', () => {
 
   it('should...', (done) => {
-    SyllabusItem(
+    Unit(
       Path.join(__dirname, 'fixtures'),
       { href: '00-welcome-and-orientation.md' },
       (err, json) => {

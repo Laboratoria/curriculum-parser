@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Course should read main and secondary tags 1`] = `
+Object {
+  "primary": Array [
+    "foo",
+    "bar",
+    "baz",
+  ],
+  "secondary": Array [
+    "one",
+    "two",
+    "three",
+  ],
+}
+`;

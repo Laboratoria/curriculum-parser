@@ -1,18 +1,19 @@
 {
-  "name": "d2c",
+  "name": "course-parser",
   "version": "1.0.0",
   "bin": {
-    "d2c": "./index.js"
+    "course-parser": "./index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest test/*.spec.js"
   },
   "dependencies": {
     "async": "^2.5.0",
     "cheerio": "^1.0.0-rc.2",
-    "marked": "^0.3.6"
+    "marked": "^0.3.6",
+    "minimist": "^1.2.0"
   },
   "devDependencies": {
-    "mocha": "^3.4.2"
+    "jest": "^20.0.4"
   }
 }
