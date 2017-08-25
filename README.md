@@ -1,11 +1,14 @@
-# d2c
+# course-parser
 
-...
+Parser de cursos para [curricula-js](https://github.com/Laboratoria/curricula-js).
 
 ```sh
 # crea representación de curso a partir de directorio
-d2c 01-intro/README.md
+course-parser 01-intro/README.md
 
 # valida estructura y formato del curso
-d2c 01-intro/README.md --validate
+course-parser 01-intro/README.md --validate
+
+# valida todos los cursos de una malla currícular (cada curso en una carpeta)
+course-parser */README.md --validate
 ```

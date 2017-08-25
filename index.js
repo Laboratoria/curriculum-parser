@@ -69,7 +69,7 @@ if (require.main === module) {
       if (err) {
         throw err;
       }
-      console.log(JSON.stringify(courses.map(course => course.parsed), null, 2));
+      console.log(JSON.stringify(courses, null, 2));
     }
   );
 }
