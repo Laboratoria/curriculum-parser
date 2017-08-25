@@ -28,9 +28,9 @@ internals.parseArgs = args => Object.keys(args).reduce((memo, key) => {
 // Dado un curso creado con `Course`, aplica `Unit` a cada elemento de su
 // syllabus.
 //
-internals.processSyllabus = (path, course, cb) => Async.map(
-  course.syllabus,
-  Async.apply(Unit, Path.dirname(path)),
+internals.processSyllabus = (course, cb) => Async.map(
+  course.parsed.syllabus,
+  Async.apply(Unit, Path.dirname(course.path)),
   (err, items) =>
     (err && cb(err)) || cb(null, Object.assign({}, course, { syllabus: items }))
 );
@@ -39,7 +39,7 @@ internals.processSyllabus = (path, course, cb) => Async.map(
 internals.processCourse = opts => (path, cb) => Course(
   path,
   opts,
-  (err, course) => (err && cb(err)) || internals.processSyllabus(path, course, cb)
+  (err, course) => (err && cb(err)) || internals.processSyllabus(course, cb)
 );
 
 
@@ -69,7 +69,7 @@ if (require.main === module) {
       if (err) {
         throw err;
       }
-      console.log(JSON.stringify(courses, null, 2));
+      //console.log(JSON.stringify(courses, null, 2));
     }
   );
 }
