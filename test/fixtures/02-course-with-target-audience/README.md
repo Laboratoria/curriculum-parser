@@ -8,3 +8,10 @@ fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 culpa qui officia deserunt mollit anim id est laborum.
 
 Tags: `foo`, `bar`, `baz`
+
+## Público objetivo
+
+Este curso está dirigido a desarrolladoras tanto _front-end_ como _back-end_.
+JavaScript es un lenguaje de naturaleza funcional. En este curso aprenderás
+sobre los principios de la programación funcional y cómo se reflejan en
+JavaScript moderno.

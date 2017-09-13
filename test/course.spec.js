@@ -69,13 +69,22 @@ describe('Course(path, cb)', () => {
     }
   ));
 
-  it.skip('should...', done => Course(
-    Helpers.resolveFixtureDirReadmePath('02-course'),
-    (err, course) => {
+  it('should parse with target audience', done => Course(
+    Helpers.resolveFixtureDirReadmePath('02-course-with-target-audience'),
+    (err, data) => {
       expect(err).toBe(null);
-      expect(course.order).toBe(2);
-      expect(course.parsed.tags).toEqual({ primary: ['foo', 'bar', 'baz'], secondary: [] });
-      console.log(course.parsed.tags);
+      expect(data.result.order).toBe(2);
+      expect(data.result.tags).toEqual({ primary: ['foo', 'bar', 'baz'], secondary: [] });
+      expect(data.result.targetAudience).toMatchSnapshot();
+      done();
+    }
+  ));
+
+  it('should parse grades (evaluación) section', done => Course(
+    Helpers.resolveFixtureDirReadmePath('03-course-with-grades'),
+    (err, data) => {
+      expect(err).toBe(null);
+      expect(data).toMatchSnapshot();
       done();
     }
   ));

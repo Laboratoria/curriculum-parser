@@ -104,7 +104,7 @@ describe('Common', () => {
       expect(Common.parseReadme('# foo')).toEqual({ title: 'foo', body: '' });
     });
 
-    it('should...', () => {
+    it('should parse ok when all meta data is present', () => {
       const data = Helpers.readFixtureFile('README-body-starts-with-h3.md');
       expect(Common.parseReadme(data, {
         tipo: 'type',
@@ -114,6 +114,19 @@ describe('Common', () => {
         duración: 'duration',
         duration: 'duration',
       })).toMatchSnapshot();
+    });
+
+    it('should warn when missing meta data', () => {
+      const data = Helpers.readFixtureFile('README-missing-meta-key.md');
+      const parsed = Common.parseReadme(data, {
+        tipo: 'type',
+        type: 'type',
+        formato: 'format',
+        format: 'format',
+        duración: 'duration',
+        duration: 'duration',
+      });
+      expect(parsed).toMatchSnapshot();
     });
 
   });
