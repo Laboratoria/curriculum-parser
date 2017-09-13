@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Unit(path) Unit(path)(unitDir, cb) should parse a unit dir containing a part dir with a README.md 1`] = `
+Array [
+  Object {
+    "files": Array [
+      "README.md",
+    ],
+    "log": Array [],
+    "result": Object {
+      "body": "<h2 id=\\"acompa-amiento-y-puntos-de-apoyo\\">Acompa&#xF1;amiento y puntos de apoyo</h2>
+<p>No te asustes, porque no est&#xE1;s sola, nosotros queremos acompa&#xF1;arte en este proceso y por ello te brindamos tres (3) opciones a trav&#xE9;s de las cuales podremos apoyarte durante el curso:</p>
+<h3 id=\\"1-grupo-de-facebook\\">1. Grupo de Facebook</h3>
+<p>En Laboratoria creemos mucho en la investigaci&#xF3;n individual y tambi&#xE9;n en el apoyo en grupo. Lo importante es que individualmente entiendas lo que vas haciendo, as&#xED; te apoyes en tus compa&#xF1;eras o amigas. Adem&#xE1;s, recuerda que la mejor manera de aprender es ense&#xF1;ar! No dejes de compartir tus conocimientos con tus compa&#xF1;eras.</p>
+<ul>
+<li>Lima: <a href=\\"https://facebook.com/groups/LaboratoriaLima20172/?ref=group_cover\\" target=\\"_blank\\">https://facebook.com/groups/LaboratoriaLima20172/?ref=group_cover</a></li>
+<li>Ciudad de M&#xE9;xico: <a href=\\"https://facebook.com/groups/LaboratoriaMX20172/?ref=group_cover\\" target=\\"_blank\\">https://facebook.com/groups/LaboratoriaMX20172/?ref=group_cover</a></li>
+<li>Santiago de Chile: <a href=\\"https://facebook.com/groups/LaboratoriaCHILE20172/?ref=group_cover\\" target=\\"_blank\\">https://facebook.com/groups/LaboratoriaCHILE20172/?ref=group_cover</a></li>
+</ul>
+<h3 id=\\"2-horas-de-consulta\\">2. Horas de consulta</h3>
+<p>Queremos que sepas que puedes contar con nosotros, pues nuestro principal objetivo es que aprendas. Te invitamos a las horas de consulta presenciales en Laboratoria, donde podr&#xE1;s recibir la ayuda de nuestro staff de profesores. Si no puedes asistir, no te preocupes, pues transmitiremos estas sesiones por Facebook live y luego subiremos los videos a los grupos.</p>
+<p>Las horas de consulta por sede son las siguientes:</p>
+<ul>
+<li>Lima:<ul>
+<li>Viernes 14 de julio de 6pm a 8pm</li>
+<li>Viernes 21 de julio de 6pm a 8pm</li>
+<li>Mi&#xE9;rcoles 26 de julio de 6pm a 8pm</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>M&#xE9;xico:<ul>
+<li>Viernes 14 de julio de 5pm a 7pm</li>
+<li>Mi&#xE9;rcoles 19 de julio de 5pm a 7pm</li>
+<li>Mi&#xE9;rcoles 26 de julio de 5pm a 7pm</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Santiago de Chile:<ul>
+<li>Jueves 13 de julio de 6pm a 8pm</li>
+<li>Jueves 20 de julio de 6pm a 8pm</li>
+<li>Jueves 27 de julio de 6pm a 8pm</li>
+</ul>
+</li>
+</ul>
+<h3 id=\\"3-punto-principal-de-contacto\\">3. Punto principal de contacto</h3>
+<p>Creemos que con el grupo de facebook y las horas de consulta, estar&#xE1;s muy bien acompa&#xF1;ada por nuestros profesores y por todas las postulantes, y que por ambos canales lograr&#xE1;s resolver todas tus dudas.</p>
+<p>De todas maneras, te brindamos puntos principales de contacto por sede, para que puedas realizar consultas excepcionales e importantes que no puedas solucionar por los otros medios.</p>
+<ul>
+<li>Lima:<ul>
+<li>Michelle Seguil, michelle@laboratoria.la</li>
+</ul>
+</li>
+<li>M&#xE9;xico:<ul>
+<li>Jonathan Parra, jonathan@laboratoria.la</li>
+<li>Adoraci&#xF3;n Cid, adoracion@laboratoria.la</li>
+<li>Grissel Rocha, grissel@laboratoria.la</li>
+</ul>
+</li>
+<li>Santiago de Chile:<ul>
+<li>Allison Guzm&#xE1;n: allison@laboratoria.la</li>
+<li>Bel&#xE9;n Recabal: belen@laboratoria.la</li>
+<li>Alexandra Neira; alexandra@laboratoria.la</li>
+<li>Nadia Tapia: nadia@laboratoria.la</li>
+<li>Marcia Millanao: marcia@laboratoria.la</li>
+</ul>
+</li>
+</ul>
+",
+      "partDir": "00-part-bar",
+      "title": "Bienvenida y orientación",
+      "unitDir": "00-unit-foo",
+    },
+  },
+]
+`;

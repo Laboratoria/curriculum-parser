@@ -82,14 +82,21 @@ internals.printLog = log => {
 module.exports = (paths, opts, cb) => Async.map(
   paths.map(path => Path.resolve(process.cwd(), path)),
   internals.processPath,
-  (err, results) =>
-    (err && cb(err)) ||
-      cb(null, results.reduce((memo, item) => {
-        const { slug, ...rest } = item.result;
-        memo.courses[slug] = rest;
-        memo.log = memo.log.concat(item.log);
+  (err, results) => {
+    if (err) {
+      return cb(err);
+    }
+
+    cb(null, results.reduce((memo, item) => {
+      if (!item) {
         return memo;
-      }, { courses: {}, log: [] }))
+      }
+      const { slug, ...rest } = item.result;
+      memo.courses[slug] = rest;
+      memo.log = memo.log.concat(item.log);
+      return memo;
+    }, { courses: {}, log: [] }))
+  }
 );
 
 

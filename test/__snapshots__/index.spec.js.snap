@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CourseParser(paths, opts, cb) should yield error when path doesnt exist 1`] = `[Error: ENOENT: no such file or directory, open '/Users/lupo/work/laboratoria/course-parser/foo']`;

@@ -7,7 +7,7 @@
     "course-parser": "./index.js"
   },
   "scripts": {
-    "test": "jest test/*.spec.js"
+    "test": "jest test/*.spec.js --verbose"
   },
   "dependencies": {
     "async": "^2.5.0",
@@ -16,6 +16,7 @@
     "minimist": "^1.2.0"
   },
   "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "jest": "^20.0.4"
   }
 }

@@ -1,6 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Course should read main and secondary tags 1`] = `
+exports[`Course(path, cb) should log error when README.md doesnt start with h1 1`] = `
+Array [
+  Array [
+    "/Users/lupo/work/laboratoria/course-parser/test/fixtures/01-course-no-title/README.md",
+    "error",
+    "README.md del curso course-no-title debe empezar con un h1 con el título del curso!",
+  ],
+]
+`;
+
+exports[`Course(path, cb) should log error when README.md is empty 1`] = `
+Array [
+  Array [
+    "/Users/lupo/work/laboratoria/course-parser/test/fixtures/00-course-empty/README.md",
+    "error",
+    "README.md del curso course-empty está vacío!",
+  ],
+]
+`;
+
+exports[`Course(path, cb) should read main and secondary tags 1`] = `
 Object {
   "primary": Array [
     "foo",

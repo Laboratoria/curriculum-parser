@@ -1,22 +1,23 @@
 'use strict';
 
 
-const Path = require('path');
 const CourseParser = require('../');
 
 
-describe('CourseParser', () => {
+describe('CourseParser(paths, opts, cb)', () => {
 
-  it('should...', (done) => {
-    CourseParser([], {}, (err, courses) => {
-      console.log(err, courses);
+  it('should yield { courses: {}, log: [] } for empty paths', (done) => {
+    CourseParser([], {}, (err, data) => {
+      expect(err).toBe(null);
+      expect(data).toEqual({ courses: {}, log: [] });
       done();
     });
   });
 
-  it('should...', (done) => {
-    CourseParser(['foo'], {}, (err, courses) => {
-      console.log(err, courses);
+  it('should yield error when path doesnt exist', (done) => {
+    CourseParser(['foo'], {}, (err, data) => {
+      expect(err).toMatchSnapshot();
+      expect(data).toBe(undefined);
       done();
     });
   });
