@@ -13,7 +13,12 @@ describe('Course(path, cb)', () => {
       expect(err).toBe(null);
       expect(data.result.slug).toBe('course-empty');
       expect(data.result.order).toBe(0);
-      expect(data.log).toMatchSnapshot();
+      expect(data.log.length).toBe(1);
+      expect(data.log[0]).toEqual([
+        Helpers.resolveFixtureDirReadmePath('00-course-empty'),
+        'error',
+        'README.md del curso course-empty está vacío!'
+      ]);
       done();
     }
   ));
@@ -24,7 +29,12 @@ describe('Course(path, cb)', () => {
       expect(err).toBe(null);
       expect(data.result.slug).toBe('course-no-title');
       expect(data.result.order).toBe(1);
-      expect(data.log).toMatchSnapshot();
+      expect(data.log.length).toBe(1);
+      expect(data.log[0]).toEqual([
+        Helpers.resolveFixtureDirReadmePath('01-course-no-title'),
+        'error',
+        'README.md del curso course-no-title debe empezar con un h1 con el título del curso!'
+      ]);
       done();
     }
   ));

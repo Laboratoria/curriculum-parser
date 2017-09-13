@@ -16,7 +16,8 @@ describe('CourseParser(paths, opts, cb)', () => {
 
   it('should yield error when path doesnt exist', (done) => {
     CourseParser(['foo'], {}, (err, data) => {
-      expect(err).toMatchSnapshot();
+      expect(err.message).toMatch(/no such file or directory/);
+      expect(err.code).toBe('ENOENT');
       expect(data).toBe(undefined);
       done();
     });
