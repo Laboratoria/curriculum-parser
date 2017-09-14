@@ -248,7 +248,7 @@ nombrar y manejar los argumentos de la funci&#xF3;n.</p>
 <li><a href=\\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind\\" target=\\"_blank\\">Function.prototype.bind()</a></li>
 <li><a href=\\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length\\" target=\\"_blank\\">Function.length</a></li>
 <li><a href=\\"http://www.cs.nott.ac.uk/~pszgmh/faq.html#currying\\" target=\\"_blank\\">Frequently Asked Questions for comp.lang.functional</a></li>
-<li><div class=\\"video-container\\"><iframe id=\\"ytplayer\\" type=\\"text/html\\" width=\\"640\\" height=\\"360\\" frameborder=\\"0\\" src=\\"http://www.youtube.com/embed/iZLP4qOwY8I?autoplay=0\\"></iframe></div>
+<li><div class=\\"video-container\\"><iframe id=\\"ytplayer\\" type=\\"text/html\\" width=\\"640\\" height=\\"360\\" frameborder=\\"0\\" src=\\"https://www.youtube.com/embed/iZLP4qOwY8I?autoplay=0\\"></iframe></div>
 por Mattias P Johansson</li>
 </ul>
 ",
@@ -256,4 +256,10 @@ por Mattias P Johansson</li>
   "title": "Aplicando _curry_ en JavaScript funcional",
   "type": "lectura",
 }
+`;
+
+exports[`Common Common.tokensToHTML(tokens, links) should trim dangling <hr> 1`] = `
+"<p>Blah blah Blah</p>
+<p>Foo bar baz</p>
+"
 `;

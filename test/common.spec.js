@@ -1,6 +1,7 @@
 'use strict';
 
 
+const Marked = require('marked');
 const Helpers = require('./helpers');
 const Common = require('../lib/common');
 
@@ -83,8 +84,9 @@ describe('Common', () => {
 
   describe('Common.tokensToHTML(tokens, links)', () => {
 
-    it.skip('should...', () => {
-      console.log(Common.tokensToHTML);
+    it('should trim dangling <hr>', () => {
+      const tokens = Marked.lexer(`Blah blah Blah\n\nFoo bar baz\n\n***\n`);
+      expect(Common.tokensToHTML(tokens, tokens.links)).toMatchSnapshot();
     });
 
   });

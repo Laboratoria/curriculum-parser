@@ -89,4 +89,14 @@ describe('Course(path, cb)', () => {
     }
   ));
 
+  it('should trim <hr> from html fragments', done => Course(
+    Helpers.resolveFixtureDirReadmePath('03-course-with-grades'),
+    (err, data) => {
+      expect(err).toBe(null);
+      expect(data.result.syllabus.pop().description).toMatchSnapshot();
+      expect(data.result.product).toMatchSnapshot();
+      done();
+    }
+  ));
+
 });

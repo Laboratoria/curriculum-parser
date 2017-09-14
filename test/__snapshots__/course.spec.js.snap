@@ -89,7 +89,6 @@ funcional, ES6 y añadiendo un conjunto de pruebas.</li>
 <li>El &quot;proyecto&quot; está basado en iterar una aplicación existente y llevar a cabo
 su siguiente release usando metodología ágil.</li>
 </ul>
-<hr>
 ",
     "references": "<p>Capítulos de libros:</p>
 <ul>
@@ -472,7 +471,6 @@ asincronía, que es una característica fundamental de JavaScript.</p>
         "bonus": false,
         "description": "<p>Cada equipo (dos alumnas) tendrá 5 minutos para presentar su demo. La duración
 estimada de esta unidad es de <em>2h</em>.</p>
-<hr>
 ",
         "href": "07-demos",
         "parts": Array [],
@@ -517,4 +515,20 @@ Object {
     "three",
   ],
 }
+`;
+
+exports[`Course(path, cb) should trim <hr> from html fragments 1`] = `
+"<p>Cada equipo (dos alumnas) tendrá 5 minutos para presentar su demo. La duración
+estimada de esta unidad es de <em>2h</em>.</p>
+"
+`;
+
+exports[`Course(path, cb) should trim <hr> from html fragments 2`] = `
+"<ul>
+<li>Refactorizar juego usado en lección 9 usando principios de programación
+funcional, ES6 y añadiendo un conjunto de pruebas.</li>
+<li>El &quot;proyecto&quot; está basado en iterar una aplicación existente y llevar a cabo
+su siguiente release usando metodología ágil.</li>
+</ul>
+"
 `;
