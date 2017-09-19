@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "async": "^2.5.0",
+    "chalk": "^2.1.0",
     "cheerio": "^1.0.0-rc.2",
     "marked": "^0.3.6",
     "minimist": "^1.2.0"
