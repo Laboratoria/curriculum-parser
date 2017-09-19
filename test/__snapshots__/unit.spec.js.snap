@@ -6,7 +6,12 @@ Array [
     "files": Array [
       "README.md",
     ],
-    "log": Array [],
+    "log": Array [
+      Array [
+        "error",
+        "Could not parse part duration",
+      ],
+    ],
     "result": Object {
       "body": "<h2 id=\\"acompa-amiento-y-puntos-de-apoyo\\">Acompa&#xF1;amiento y puntos de apoyo</h2>
 <p>No te asustes, porque no est&#xE1;s sola, nosotros queremos acompa&#xF1;arte en este proceso y por ello te brindamos tres (3) opciones a trav&#xE9;s de las cuales podremos apoyarte durante el curso:</p>
@@ -68,6 +73,7 @@ Array [
 </li>
 </ul>
 ",
+      "duration": null,
       "partDir": "00-part-bar",
       "title": "Bienvenida y orientación",
       "unitDir": "00-unit-foo",

@@ -75,8 +75,18 @@ describe('Common', () => {
 
   describe('Common.parseDuration(str)', () => {
 
-    it.skip('should...', () => {
-      console.log(Common.parseDuration);
+    [
+      ['10min', 10],
+      ['10', 10],
+      ['10m', 10],
+      ['60min', 60],
+      ['120m', 120],
+      ['1h', 60],
+      ['2.5h', 150],
+    ].forEach(pair => {
+      it(`should return ${pair[1]} for ${pair[0]}`, () => {
+        expect(Common.parseDuration(pair[0])).toBe(pair[1]);
+      });
     });
 
   });
