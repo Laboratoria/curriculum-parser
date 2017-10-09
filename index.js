@@ -113,6 +113,7 @@ if (require.main === module) {
       if (err) {
         throw err;
       }
+
       if (opts.validate) {
         return internals.printLog(result.log);
       }
