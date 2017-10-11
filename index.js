@@ -9,6 +9,7 @@ const Minimist = require('minimist');
 const Chalk = require('chalk');
 const Course = require('./lib/course');
 const Syllabus = require('./lib/syllabus');
+const Stats = require('./lib/stats');
 
 
 const internals = {};
@@ -42,6 +43,18 @@ internals.merge = results => {
 };
 
 
+// reduce arreglo de resultados con todos los cursos (último paso)
+internals.reduce = results => results.reduce((memo, item) => {
+  if (!item) {
+    return memo;
+  }
+  const { slug, ...rest } = item.result;
+  memo.courses[slug] = rest;
+  memo.log = memo.log.concat(item.log);
+  return memo;
+}, { courses: {}, log: [] });
+
+
 internals.processPath = (path, cb) => Async.auto({
   // procesa README.md principal del curso
   course: Async.apply(Course, path),
@@ -65,11 +78,41 @@ internals.severityKeyToColor = {
 internals.severityString = str => Chalk[internals.severityKeyToColor[str]](str);
 
 
-internals.printLog = log => {
+internals.printLog = ({ courses, log }) => {
   log.forEach(item => console.log(
     `${internals.severityString(item[0])}: ${Chalk.grey(item[1])}`
   ));
+  internals.printStats(courses);
   process.exit(log.filter(log => log[0] === 'error').length ? 1 : 0);
+};
+
+
+internals.printStats = courses => {
+  Object.keys(courses).forEach(courseKey => {
+    const course = courses[courseKey];
+    const unitKeys = Object.keys(course.syllabus);
+    console.log(`---\n\n# ${course.title} (${courseKey})\n`);
+    console.log(`Duration: ${course.stats.durationString}`);
+    console.log(`Units: ${course.stats.unitCount}`);
+    console.log(`Parts: ${course.stats.partCount}`);
+    console.log(`Exercises: ${course.stats.exerciseCount}\n`);
+    unitKeys.forEach((unitKey, unitIdx) => {
+      const unit = course.syllabus[unitKey];
+      const partKeys = Object.keys(unit.parts);
+      console.log(`\n## Unit ${unitIdx + 1}: ${unit.title} (${unitKey})\n`);
+      console.log(`Duration: ${unit.stats.durationString}`);
+      console.log(`Parts: ${unit.stats.partCount}`);
+      console.log(`Exercises: ${unit.stats.exerciseCount}\n`);
+      partKeys.forEach(partKey => {
+        const part = unit.parts[partKey];
+        const extercises = (part.exerciseCount) ? `[ ${Object.keys(part.exerciseCount).length} ejercicio(s) ]` : '';
+        if (part.type === 'practice') {
+          // console.log(part);
+        }
+        console.log(`| ${partKey} | ${part.type} | ${part.format} | ${part.durationString} | ${part.title} ${extercises}`);
+      });
+    });
+  });
 };
 
 
@@ -86,16 +129,7 @@ module.exports = (paths, opts, cb) => Async.map(
     if (err) {
       return cb(err);
     }
-
-    cb(null, results.reduce((memo, item) => {
-      if (!item) {
-        return memo;
-      }
-      const { slug, ...rest } = item.result;
-      memo.courses[slug] = rest;
-      memo.log = memo.log.concat(item.log);
-      return memo;
-    }, { courses: {}, log: [] }))
+    cb(null, Stats(internals.reduce(results)));
   }
 );
 
@@ -115,7 +149,7 @@ if (require.main === module) {
       }
 
       if (opts.validate) {
-        return internals.printLog(result.log);
+        return internals.printLog(result);
       }
       console.log(JSON.stringify(result.courses, null, 2));
     }
