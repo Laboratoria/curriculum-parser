@@ -9,7 +9,7 @@ Array [
     "log": Array [
       Array [
         "error",
-        "Could not parse part duration",
+        "00-unit-foo/00-part-bar => Could not parse part duration",
       ],
     ],
     "result": Object {
