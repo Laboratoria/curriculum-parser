@@ -98,7 +98,7 @@ internals.printStats = courses => {
     console.log(`Exercises: ${course.stats.exerciseCount}\n`);
     unitKeys.forEach((unitKey, unitIdx) => {
       const unit = course.syllabus[unitKey];
-      const partKeys = Object.keys(unit.parts);
+      const partKeys = Object.keys(unit.parts || {});
       console.log(`\n## Unit ${unitIdx + 1}: ${unit.title} (${unitKey})\n`);
       console.log(`Duration: ${unit.stats.durationString}`);
       console.log(`Parts: ${unit.stats.partCount}`);
