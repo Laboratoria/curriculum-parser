@@ -43,6 +43,14 @@ internals.merge = results => {
 };
 
 
+internals.computeUnitsOrder = (merged) => {
+  Object.keys(merged.result.syllabus).sort().forEach((unitKey, idx) => {
+    merged.result.syllabus[unitKey].order = idx + 1;
+  });
+  return merged;
+};
+
+
 // reduce arreglo de resultados con todos los cursos (último paso)
 internals.reduce = results => results.reduce((memo, item) => {
   if (!item) {
@@ -64,7 +72,7 @@ internals.processPath = (path, cb) => Async.auto({
   if (err) {
     return cb(err);
   }
-  cb(null, internals.merge(results));
+  cb(null, internals.computeUnitsOrder(internals.merge(results)));
 });
 
 
