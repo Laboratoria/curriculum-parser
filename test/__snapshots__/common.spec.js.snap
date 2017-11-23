@@ -44,6 +44,39 @@ Este cuestionario no es calificado.</p>
 }
 `;
 
+exports[`Common Common.parseReadme(data, metaKeys) should parse youtube short url as embed 1`] = `
+Object {
+  "frameborder": "0",
+  "height": "360",
+  "id": "ytplayer",
+  "src": "https://www.youtube.com/embed/ge4h5uJN6KI?autoplay=0",
+  "type": "text/html",
+  "width": "640",
+}
+`;
+
+exports[`Common Common.parseReadme(data, metaKeys) should pass through query string params when embedding youtube videos (long url) 1`] = `
+Object {
+  "frameborder": "0",
+  "height": "360",
+  "id": "ytplayer",
+  "src": "https://www.youtube.com/embed/ft5TzxG-LAc?cc_lang_pref=es&cc_load_policy=1&autoplay=0",
+  "type": "text/html",
+  "width": "640",
+}
+`;
+
+exports[`Common Common.parseReadme(data, metaKeys) should pass through query string params when embedding youtube videos (short url) 1`] = `
+Object {
+  "frameborder": "0",
+  "height": "360",
+  "id": "ytplayer",
+  "src": "https://www.youtube.com/embed/ge4h5uJN6KI?cc_lang_pref=es&cc_load_policy=1&autoplay=0",
+  "type": "text/html",
+  "width": "640",
+}
+`;
+
 exports[`Common Common.parseReadme(data, metaKeys) should warn when missing meta data 1`] = `
 Object {
   "body": "<p>La t&#xE9;cnica de definir funciones atadas a m&#xFA;ltiples par&#xE1;metros como una serie de
