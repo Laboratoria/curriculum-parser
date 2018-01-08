@@ -58,7 +58,7 @@ describe('Common', () => {
   describe('Common.parseDirname(path)', () => {
 
     it('should throw when no path passed', () => {
-      expect(() => Common.parseDirname()).toThrow(/Path must be a string/);
+      expect(() => Common.parseDirname()).toThrow(/path.*must be.*string/);
     });
 
     [
@@ -69,7 +69,7 @@ describe('Common', () => {
       it(`should return ${JSON.stringify(pair[1])} for ${pair[0]}`, () => {
         expect(Common.parseDirname(pair[0])).toEqual(pair[1]);
       });
-    })
+    });
 
   });
 
@@ -176,6 +176,44 @@ describe('Common', () => {
     it('should pass through query string params when embedding youtube videos (short url)', () => {
       const data = Helpers.readFixtureFile('README-with-youtube-short-link-with-params.md');
       const parsed = Common.parseReadme(data, {});
+      const $ = Cheerio.load(parsed.body);
+      const $videoContainer = $('.video-container');
+      expect($videoContainer.length).toBe(1);
+      const $iframe = $videoContainer.children()[0];
+      expect($iframe.type).toBe('tag');
+      expect($iframe.name).toBe('iframe');
+      expect($iframe.attribs).toMatchSnapshot();
+    });
+
+    it('should parse vimeo url as embed', () => {
+      const data = Helpers.readFixtureFile('README-with-vimeo-link.md');
+      const parsed = Common.parseReadme(data, {
+        tipo: 'type',
+        type: 'type',
+        formato: 'format',
+        format: 'format',
+        duración: 'duration',
+        duration: 'duration',
+      });
+      const $ = Cheerio.load(parsed.body);
+      const $videoContainer = $('.video-container');
+      expect($videoContainer.length).toBe(1);
+      const $iframe = $videoContainer.children()[0];
+      expect($iframe.type).toBe('tag');
+      expect($iframe.name).toBe('iframe');
+      expect($iframe.attribs).toMatchSnapshot();
+    });
+
+    it('should parse loom url as embed', () => {
+      const data = Helpers.readFixtureFile('README-with-loom-link.md');
+      const parsed = Common.parseReadme(data, {
+        tipo: 'type',
+        type: 'type',
+        formato: 'format',
+        format: 'format',
+        duración: 'duration',
+        duration: 'duration',
+      });
       const $ = Cheerio.load(parsed.body);
       const $videoContainer = $('.video-container');
       expect($videoContainer.length).toBe(1);
