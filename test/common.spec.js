@@ -58,7 +58,7 @@ describe('Common', () => {
   describe('Common.parseDirname(path)', () => {
 
     it('should throw when no path passed', () => {
-      expect(() => Common.parseDirname()).toThrow(/path.*must be.*string/);
+      expect(() => Common.parseDirname()).toThrow(/path.*must be.*string/i);
     });
 
     [
