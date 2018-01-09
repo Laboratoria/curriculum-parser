@@ -1,5 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Common Common.parseReadme(data, metaKeys) should parse loom url as embed 1`] = `
+Object {
+  "allowfullscreen": "true",
+  "frameborder": "0",
+  "height": "360",
+  "mozallowfullscreen": "true",
+  "src": "https://www.useloom.com/embed/90102cf63263435faa7f867c1e9c2d33",
+  "webkitallowfullscreen": "true",
+  "width": "640",
+}
+`;
+
 exports[`Common Common.parseReadme(data, metaKeys) should parse ok when all meta data is present 1`] = `
 Object {
   "body": "<h3 id=\\"resumen\\">Resumen</h3>
@@ -41,6 +53,19 @@ Este cuestionario no es calificado.</p>
   "format": "guiado",
   "title": "Cierre",
   "type": "seminario",
+}
+`;
+
+exports[`Common Common.parseReadme(data, metaKeys) should parse vimeo url as embed 1`] = `
+Object {
+  "allowfullscreen": "true",
+  "frameborder": "0",
+  "height": "360",
+  "mozallowfullscreen": "true",
+  "scrolling": "no",
+  "src": "https://player.vimeo.com/video/94950270?title=0&byline=0&portrait=0",
+  "webkitallowfullscreen": "true",
+  "width": "640",
 }
 `;
 
