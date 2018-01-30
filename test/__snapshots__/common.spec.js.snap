@@ -56,6 +56,19 @@ Este cuestionario no es calificado.</p>
 }
 `;
 
+exports[`Common Common.parseReadme(data, metaKeys) should parse typeform url as embed 1`] = `
+Object {
+  "allowfullscreen": "true",
+  "frameborder": "0",
+  "height": "100%",
+  "mozallowfullscreen": "true",
+  "src": "https://laboratoria.typeform.com/to/J8fzhH",
+  "style": "height: 100vh;",
+  "webkitallowfullscreen": "true",
+  "width": "100%",
+}
+`;
+
 exports[`Common Common.parseReadme(data, metaKeys) should parse vimeo url as embed 1`] = `
 Object {
   "allowfullscreen": "true",
