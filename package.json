@@ -18,6 +18,6 @@
   },
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "jest": "^22.0.4"
+    "jest": "^22.1.4"
   }
 }
