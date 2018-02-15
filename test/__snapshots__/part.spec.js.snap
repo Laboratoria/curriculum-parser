@@ -8,10 +8,10 @@ Object {
   "log": Array [],
   "result": Object {
     "duration": 30,
-    "format": "guiado",
+    "format": "guided",
     "partDir": "00-part",
     "title": "El título de la parte",
-    "type": "seminario",
+    "type": "seminar",
     "unitDir": "",
   },
 }

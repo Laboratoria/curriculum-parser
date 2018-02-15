@@ -323,6 +323,13 @@ nombrar y manejar los argumentos de la funci&#xF3;n.</p>
 por Mattias P Johansson</li>
 </ul>
 ",
+  "embeds": Array [
+    Object {
+      "href": "https://www.youtube.com/watch?v=iZLP4qOwY8I",
+      "provider": "youtube",
+      "type": "video",
+    },
+  ],
   "format": "self-paced",
   "title": "Aplicando _curry_ en JavaScript funcional",
   "type": "lectura",

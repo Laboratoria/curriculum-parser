@@ -11,6 +11,14 @@ Array [
         "error",
         "00-unit-foo/00-part-bar => Could not parse part duration",
       ],
+      Array [
+        "error",
+        "00-unit-foo/00-part-bar => Unkown part format \\"undefined\\". Valid formats: \\"guided\\", \\"self-paced\\"",
+      ],
+      Array [
+        "error",
+        "00-unit-foo/00-part-bar => Unkown part type \\"undefined\\". Valid types: \\"read\\", \\"seminar\\", \\"workshop\\", \\"quiz\\", \\"practice\\", \\"other\\"",
+      ],
     ],
     "result": Object {
       "body": "<h2 id=\\"acompa-amiento-y-puntos-de-apoyo\\">Acompa&#xF1;amiento y puntos de apoyo</h2>
