@@ -100,6 +100,8 @@ internals.printStats = courses => {
     const course = courses[courseKey];
     const unitKeys = Object.keys(course.syllabus);
     console.log(`---\n\n# ${course.title} (${courseKey})\n`);
+    console.log(`Track: ${course.track}`);
+    console.log(`Locale: ${course.locale}`);
     console.log(`Duration: ${course.stats.durationString}`);
     console.log(`Units: ${course.stats.unitCount}`);
     console.log(`Parts: ${course.stats.partCount}`);
@@ -124,6 +126,26 @@ internals.printStats = courses => {
 };
 
 
+internals.applyGlobalOptions = (results, opts) =>
+  results.map((result) => {
+    if (!['js', 'ux', 'mobile', 'business'].includes(opts.track)) {
+      result.log.push(['error', `${result.result.slug} => Unkown track: ${opts.track}`]);
+    }
+    if (!['es-ES', 'pt-BR', 'en-US'].includes(opts.locale)) {
+      result.log.push(['error', `${result.result.slug} => Unkown locale: ${opts.locale}`]);
+    }
+    return {
+      ...result,
+      result: {
+        ...result.result,
+        slug: `${result.result.slug}${opts.suffix ? `-${opts.suffix}` : ''}`,
+        track: opts.track,
+        locale: opts.locale,
+      },
+    };
+  });
+
+
 //
 // Public API
 //
@@ -137,7 +159,7 @@ module.exports = (paths, opts, cb) => Async.map(
     if (err) {
       return cb(err);
     }
-    cb(null, Stats(internals.reduce(results)));
+    cb(null, Stats(internals.reduce(internals.applyGlobalOptions(results, opts))));
   }
 );
 
