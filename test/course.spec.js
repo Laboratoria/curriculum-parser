@@ -44,7 +44,7 @@ describe('Course(path, cb)', () => {
     (err, data) => {
       expect(err).toBe(null);
       expect(data.result.order).toBe(2);
-      expect(data.result.tags).toEqual({ primary: [], secondary: [] });
+      expect(data.result.tags).toMatchSnapshot();
       done();
     }
   ));
@@ -54,7 +54,7 @@ describe('Course(path, cb)', () => {
     (err, data) => {
       expect(err).toBe(null);
       expect(data.result.order).toBe(2);
-      expect(data.result.tags).toEqual({ primary: ['foo', 'bar', 'baz'], secondary: [] });
+      expect(data.result.tags).toMatchSnapshot();
       done();
     }
   ));
@@ -74,7 +74,7 @@ describe('Course(path, cb)', () => {
     (err, data) => {
       expect(err).toBe(null);
       expect(data.result.order).toBe(2);
-      expect(data.result.tags).toEqual({ primary: ['foo', 'bar', 'baz'], secondary: [] });
+      expect(data.result.tags).toMatchSnapshot();
       expect(data.result.targetAudience).toMatchSnapshot();
       done();
     }

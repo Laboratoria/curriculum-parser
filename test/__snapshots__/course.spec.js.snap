@@ -1,5 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Course(path, cb) should have empty tags if not found 1`] = `
+Object {
+  "primary": Object {},
+  "secondary": Object {},
+}
+`;
+
 exports[`Course(path, cb) should parse grades (evaluación) section 1`] = `
 Object {
   "log": Array [],
@@ -478,11 +485,11 @@ estimada de esta unidad es de <em>2h</em>.</p>
       },
     ],
     "tags": Object {
-      "primary": Array [
-        "functional",
-        "es6",
-      ],
-      "secondary": Array [],
+      "primary": Object {
+        "es6": true,
+        "functional": true,
+      },
+      "secondary": Object {},
     },
     "targetAudience": "<p>Este curso está dirigido a desarrolladoras tanto <em>front-end</em> como <em>back-end</em>.
 JavaScript es un lenguaje de naturaleza funcional. En este curso aprenderás
@@ -495,6 +502,17 @@ JavaScript moderno.</p>
 `;
 
 exports[`Course(path, cb) should parse with target audience 1`] = `
+Object {
+  "primary": Object {
+    "bar": true,
+    "baz": true,
+    "foo": true,
+  },
+  "secondary": Object {},
+}
+`;
+
+exports[`Course(path, cb) should parse with target audience 2`] = `
 "<p>Este curso está dirigido a desarrolladoras tanto <em>front-end</em> como <em>back-end</em>.
 JavaScript es un lenguaje de naturaleza funcional. En este curso aprenderás
 sobre los principios de la programación funcional y cómo se reflejan en
@@ -504,16 +522,27 @@ JavaScript moderno.</p>
 
 exports[`Course(path, cb) should read main and secondary tags 1`] = `
 Object {
-  "primary": Array [
-    "foo",
-    "bar",
-    "baz",
-  ],
-  "secondary": Array [
-    "one",
-    "two",
-    "three",
-  ],
+  "primary": Object {
+    "bar": true,
+    "baz": true,
+    "foo": true,
+  },
+  "secondary": Object {
+    "one": true,
+    "three": true,
+    "two": true,
+  },
+}
+`;
+
+exports[`Course(path, cb) should read primary (default) tags 1`] = `
+Object {
+  "primary": Object {
+    "bar": true,
+    "baz": true,
+    "foo": true,
+  },
+  "secondary": Object {},
 }
 `;
 
