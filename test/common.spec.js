@@ -240,6 +240,44 @@ describe('Common', () => {
       expect($iframe.attribs).toMatchSnapshot();
     });
 
+    it('should parse soundcloud url as embed', () => {
+      const data = Helpers.readFixtureFile('README-with-podcast.md');
+      const parsed = Common.parseReadme(data, {
+        tipo: 'type',
+        type: 'type',
+        formato: 'format',
+        format: 'format',
+        duración: 'duration',
+        duration: 'duration',
+      });
+      const $ = Cheerio.load(parsed.body);
+      const $audioContainer = $('.audio-container');
+      expect($audioContainer.length).toBe(1);
+      const $iframe = $audioContainer.children()[0];
+      expect($iframe.type).toBe('tag');
+      expect($iframe.name).toBe('iframe');
+      expect($iframe.attribs).toMatchSnapshot();
+    });
+
+    it('should parse slide url as embed', () => {
+      const data = Helpers.readFixtureFile('README-with-docs-google.md');
+      const parsed = Common.parseReadme(data, {
+        tipo: 'type',
+        type: 'type',
+        formato: 'format',
+        format: 'format',
+        duración: 'duration',
+        duration: 'duration',
+      });
+      const $ = Cheerio.load(parsed.body);
+      const $videoContainer = $('.video-container');
+      expect($videoContainer.length).toBe(1);
+      const $iframe = $videoContainer.children()[0];
+      expect($iframe.type).toBe('tag');
+      expect($iframe.name).toBe('iframe');
+      expect($iframe.attribs).toMatchSnapshot();
+    });
+
   });
 
 });
