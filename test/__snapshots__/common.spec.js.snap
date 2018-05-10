@@ -56,6 +56,29 @@ Este cuestionario no es calificado.</p>
 }
 `;
 
+exports[`Common Common.parseReadme(data, metaKeys) should parse slide url as embed 1`] = `
+Object {
+  "allowfullscreen": "true",
+  "frameborder": "0",
+  "height": "360",
+  "mozallowfullscreen": "true",
+  "src": "https://docs.google.com/presentation/d/e/2PACX-1vQNfujXzw2FrZGyQGp2T86t9EqZAF1-w1jTsyNvhAjj_eyqOPSHKjplVqJBYT1YgCy0SB80vcm1xl59",
+  "webkitallowfullscreen": "true",
+  "width": "640",
+}
+`;
+
+exports[`Common Common.parseReadme(data, metaKeys) should parse soundcloud url as embed 1`] = `
+Object {
+  "allow": "autoplay",
+  "frameborder": "0",
+  "height": "180",
+  "scrolling": "no",
+  "src": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/332779915",
+  "width": "640",
+}
+`;
+
 exports[`Common Common.parseReadme(data, metaKeys) should parse typeform url as embed 1`] = `
 Object {
   "allowfullscreen": "true",

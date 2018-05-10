@@ -12,4 +12,4 @@ revisará en clase.
 
 ## Masters of scale: Netflix's Reed Hastings in Culture Shock
 
-[Prueba de podcast](https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/332779915)
+[Prueba de podcast](https://api.soundcloud.com/tracks/332779915)

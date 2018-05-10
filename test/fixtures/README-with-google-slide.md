@@ -1,15 +1,21 @@
-# Podcasts recomendados
+# Espacios de mercado y creencias dañinas
 
-* Tipo: `video`
+* Tipo: `lectura`
 * Formato: `self-paced`
-* Duración: `90min`
+* Duración: `20min`
 
 ***
 
-Compartimos Podcasts con historias relevantes que deberías escuchar. Estos son
-opcionales; sin embargo, te ayudarán a entender mejor todo el material que se
-revisará en clase.
+En esta sesión hablaremos de la importancia de saber cuál es nuestro espacio de
+mercado y las creencias dañinas que debemos dejar de lado:
 
-## Facebook's Mark Zuckerberg in Imperfect is Perfect
+[Presentación](https://docs.google.com/presentation/d/e/2PACX-1vS_df7E0e1gALi_nUVpLN9D1eL2shAta_f8E7oI1N0nSv1u77EnIh9ZBAhaGOIN7saMcr6il3c7VjVv/embed?start=false&loop=false&delayms=3000)
 
-[Slide de Prueba](https://docs.google.com/presentation/d/e/2PACX-1vQNfujXzw2FrZGyQGp2T86t9EqZAF1-w1jTsyNvhAjj_eyqOPSHKjplVqJBYT1YgCy0SB80vcm1xl59)
+Las cosas que se rescatan de este tema son:
+
+* Value input VS value output
+* ¿Qué es lo que realmente desea el cliente?
+* Hacer un "user activity cycle", en lugar de solo enfocarse en el "customer
+  journey"
+* Crear una experiencia integrada, en lugar de enfocarnos en la industria de
+  silo

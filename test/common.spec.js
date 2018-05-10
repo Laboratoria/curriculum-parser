@@ -241,7 +241,7 @@ describe('Common', () => {
     });
 
     it('should parse soundcloud url as embed', () => {
-      const data = Helpers.readFixtureFile('README-with-podcast.md');
+      const data = Helpers.readFixtureFile('README-with-soundcloud-podcast.md');
       const parsed = Common.parseReadme(data, {
         tipo: 'type',
         type: 'type',
@@ -272,9 +272,9 @@ describe('Common', () => {
         duração: 'duration',
       });
       const $ = Cheerio.load(parsed.body);
-      const $videoContainer = $('.video-container');
-      expect($videoContainer.length).toBe(1);
-      const $iframe = $videoContainer.children()[0];
+      const $slidesContainer = $('.slide-container');
+      expect($slidesContainer.length).toBe(1);
+      const $iframe = $slidesContainer.children()[0];
       expect($iframe.type).toBe('tag');
       expect($iframe.name).toBe('iframe');
       expect($iframe.attribs).toMatchSnapshot();
