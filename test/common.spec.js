@@ -249,6 +249,7 @@ describe('Common', () => {
         format: 'format',
         duración: 'duration',
         duration: 'duration',
+        duração: 'duration',
       });
       const $ = Cheerio.load(parsed.body);
       const $audioContainer = $('.audio-container');
@@ -260,7 +261,7 @@ describe('Common', () => {
     });
 
     it('should parse slide url as embed', () => {
-      const data = Helpers.readFixtureFile('README-with-docs-google.md');
+      const data = Helpers.readFixtureFile('README-with-google-slide.md');
       const parsed = Common.parseReadme(data, {
         tipo: 'type',
         type: 'type',
@@ -268,6 +269,7 @@ describe('Common', () => {
         format: 'format',
         duración: 'duration',
         duration: 'duration',
+        duração: 'duration',
       });
       const $ = Cheerio.load(parsed.body);
       const $videoContainer = $('.video-container');
