@@ -153,9 +153,9 @@ describe('Common', () => {
         duration: 'duration',
       });
       const $ = Cheerio.load(parsed.body);
-      const $videoContainer = $('.video-container');
-      expect($videoContainer.length).toBe(1);
-      const $iframe = $videoContainer.children()[0];
+      const $iframeContainer = $('.iframe-container');
+      expect($iframeContainer.length).toBe(1);
+      const $iframe = $iframeContainer.children()[0];
       expect($iframe.type).toBe('tag');
       expect($iframe.name).toBe('iframe');
       expect($iframe.attribs).toMatchSnapshot();
@@ -165,9 +165,9 @@ describe('Common', () => {
       const data = Helpers.readFixtureFile('README-with-youtube-with-params.md');
       const parsed = Common.parseReadme(data, {});
       const $ = Cheerio.load(parsed.body);
-      const $videoContainer = $('.video-container');
-      expect($videoContainer.length).toBe(1);
-      const $iframe = $videoContainer.children()[0];
+      const $iframeContainer = $('.iframe-container');
+      expect($iframeContainer.length).toBe(1);
+      const $iframe = $iframeContainer.children()[0];
       expect($iframe.type).toBe('tag');
       expect($iframe.name).toBe('iframe');
       expect($iframe.attribs).toMatchSnapshot();
@@ -177,9 +177,9 @@ describe('Common', () => {
       const data = Helpers.readFixtureFile('README-with-youtube-short-link-with-params.md');
       const parsed = Common.parseReadme(data, {});
       const $ = Cheerio.load(parsed.body);
-      const $videoContainer = $('.video-container');
-      expect($videoContainer.length).toBe(1);
-      const $iframe = $videoContainer.children()[0];
+      const $iframeContainer = $('.iframe-container');
+      expect($iframeContainer.length).toBe(1);
+      const $iframe = $iframeContainer.children()[0];
       expect($iframe.type).toBe('tag');
       expect($iframe.name).toBe('iframe');
       expect($iframe.attribs).toMatchSnapshot();
@@ -196,9 +196,9 @@ describe('Common', () => {
         duration: 'duration',
       });
       const $ = Cheerio.load(parsed.body);
-      const $videoContainer = $('.video-container');
-      expect($videoContainer.length).toBe(1);
-      const $iframe = $videoContainer.children()[0];
+      const $iframeContainer = $('.iframe-container');
+      expect($iframeContainer.length).toBe(1);
+      const $iframe = $iframeContainer.children()[0];
       expect($iframe.type).toBe('tag');
       expect($iframe.name).toBe('iframe');
       expect($iframe.attribs).toMatchSnapshot();
@@ -215,9 +215,9 @@ describe('Common', () => {
         duration: 'duration',
       });
       const $ = Cheerio.load(parsed.body);
-      const $videoContainer = $('.video-container');
-      expect($videoContainer.length).toBe(1);
-      const $iframe = $videoContainer.children()[0];
+      const $iframeContainer = $('.iframe-container');
+      expect($iframeContainer.length).toBe(1);
+      const $iframe = $iframeContainer.children()[0];
       expect($iframe.type).toBe('tag');
       expect($iframe.name).toBe('iframe');
       expect($iframe.attribs).toMatchSnapshot();
@@ -235,6 +235,46 @@ describe('Common', () => {
       });
       const $ = Cheerio.load(parsed.body);
       const $iframe = $('iframe')[0];
+      expect($iframe.type).toBe('tag');
+      expect($iframe.name).toBe('iframe');
+      expect($iframe.attribs).toMatchSnapshot();
+    });
+
+    it('should parse soundcloud url as embed', () => {
+      const data = Helpers.readFixtureFile('README-with-soundcloud-podcast.md');
+      const parsed = Common.parseReadme(data, {
+        tipo: 'type',
+        type: 'type',
+        formato: 'format',
+        format: 'format',
+        duración: 'duration',
+        duration: 'duration',
+        duração: 'duration',
+      });
+      const $ = Cheerio.load(parsed.body);
+      const $iframeContainer = $('.iframe-container');
+      expect($iframeContainer.length).toBe(1);
+      const $iframe = $iframeContainer.children()[0];
+      expect($iframe.type).toBe('tag');
+      expect($iframe.name).toBe('iframe');
+      expect($iframe.attribs).toMatchSnapshot();
+    });
+
+    it('should parse slide url as embed', () => {
+      const data = Helpers.readFixtureFile('README-with-google-slide.md');
+      const parsed = Common.parseReadme(data, {
+        tipo: 'type',
+        type: 'type',
+        formato: 'format',
+        format: 'format',
+        duración: 'duration',
+        duration: 'duration',
+        duração: 'duration',
+      });
+      const $ = Cheerio.load(parsed.body);
+      const $iframeContainer = $('.iframe-container');
+      expect($iframeContainer.length).toBe(1);
+      const $iframe = $iframeContainer.children()[0];
       expect($iframe.type).toBe('tag');
       expect($iframe.name).toBe('iframe');
       expect($iframe.attribs).toMatchSnapshot();

@@ -56,6 +56,29 @@ Este cuestionario no es calificado.</p>
 }
 `;
 
+exports[`Common Common.parseReadme(data, metaKeys) should parse slide url as embed 1`] = `
+Object {
+  "allowfullscreen": "true",
+  "frameborder": "0",
+  "height": "360",
+  "mozallowfullscreen": "true",
+  "src": "https://docs.google.com/presentation/d/e/2PACX-1vS_df7E0e1gALi_nUVpLN9D1eL2shAta_f8E7oI1N0nSv1u77EnIh9ZBAhaGOIN7saMcr6il3c7VjVv",
+  "webkitallowfullscreen": "true",
+  "width": "640",
+}
+`;
+
+exports[`Common Common.parseReadme(data, metaKeys) should parse soundcloud url as embed 1`] = `
+Object {
+  "allow": "autoplay",
+  "frameborder": "0",
+  "height": "180",
+  "scrolling": "no",
+  "src": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/332779915",
+  "width": "640",
+}
+`;
+
 exports[`Common Common.parseReadme(data, metaKeys) should parse typeform url as embed 1`] = `
 Object {
   "allowfullscreen": "true",
@@ -305,7 +328,7 @@ nombrar y manejar los argumentos de la funci&#xF3;n.</p>
 <li><a href=\\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind\\" target=\\"_blank\\">Function.prototype.bind()</a></li>
 <li><a href=\\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/length\\" target=\\"_blank\\">Function.length</a></li>
 <li><a href=\\"http://www.cs.nott.ac.uk/~pszgmh/faq.html#currying\\" target=\\"_blank\\">Frequently Asked Questions for comp.lang.functional</a></li>
-<li><div class=\\"video-container\\"><iframe id=\\"ytplayer\\" type=\\"text/html\\" width=\\"640\\" height=\\"360\\" frameborder=\\"0\\" src=\\"https://www.youtube.com/embed/iZLP4qOwY8I?autoplay=0\\"></iframe></div>
+<li><div class=\\"iframe-container\\"><iframe id=\\"ytplayer\\" type=\\"text/html\\" width=\\"640\\" height=\\"360\\" frameborder=\\"0\\" src=\\"https://www.youtube.com/embed/iZLP4qOwY8I?autoplay=0\\"></iframe></div>
 por Mattias P Johansson</li>
 </ul>
 ",
