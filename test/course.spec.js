@@ -80,7 +80,7 @@ describe('Course(path, cb)', () => {
     }
   ));
 
-  it('should parse grades (evaluación) section', done => Course(
+  it.only('should parse grades (evaluación) section', done => Course(
     Helpers.resolveFixtureDirReadmePath('03-course-with-grades'),
     (err, data) => {
       expect(err).toBe(null);
