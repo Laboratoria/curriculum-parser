@@ -1,6 +1,6 @@
 # course-parser
 
-[![Build Status](https://travis-ci.com/Laboratoria/course-parser.svg?token=4uyuoxi9qhvAfjzUTB6y&branch=master)](https://travis-ci.com/Laboratoria/course-parser)
+[![Build Status](https://travis-ci.com/Laboratoria/course-parser.svg?branch=master)](https://travis-ci.com/Laboratoria/course-parser)
 
 
 Parser de cursos para [curricula-js](https://github.com/Laboratoria/curricula-js).
