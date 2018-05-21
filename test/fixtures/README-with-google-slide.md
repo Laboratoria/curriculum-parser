@@ -9,7 +9,7 @@
 En esta sesión hablaremos de la importancia de saber cuál es nuestro espacio de
 mercado y las creencias dañinas que debemos dejar de lado:
 
-[Presentación](https://docs.google.com/presentation/d/e/2PACX-1vS_df7E0e1gALi_nUVpLN9D1eL2shAta_f8E7oI1N0nSv1u77EnIh9ZBAhaGOIN7saMcr6il3c7VjVv/embed?start=false&loop=false&delayms=3000)
+[Presentación](https://docs.google.com/presentation/d/e/2PACX-1vS_df7E0e1gALi_nUVpLN9D1eL2shAta_f8E7oI1N0nSv1u77EnIh9ZBAhaGOIN7saMcr6il3c7VjVv)
 
 Las cosas que se rescatan de este tema son:
 
