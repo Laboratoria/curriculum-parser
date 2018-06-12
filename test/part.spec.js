@@ -15,4 +15,12 @@ describe('Part', () => {
     });
   });
 
+  it('should parse quiz', (done) => {
+    Part(Helpers.fixturesBasePath, '')('00-quiz', (err, data) => {
+      expect(err).toBe(null);
+      expect(data).toMatchSnapshot();
+      done();
+    });
+  });
+
 });
