@@ -1,8 +1,7 @@
 {
   "name": "course-parser",
   "version": "1.1.1",
-  "license": "UNLICENSED",
-  "private": true,
+  "license": "MIT",
   "bin": {
     "course-parser": "./index.js"
   },
