@@ -32,7 +32,7 @@ yarn install
 npm link
 ```
 
-If the last command files try using `sudo`:
+If the above command fails, try using `sudo`:
 
 ```sh
 sudo npm link
