@@ -77,7 +77,7 @@ Options:
   --locale    The locale/language the content is in (`es-ES` or `pt-BR`).
 ```
 
-Ejemplos:
+## Examples
 
 ```sh
 # create JSON representation of course
