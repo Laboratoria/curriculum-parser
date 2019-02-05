@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Common Common.parseReadme(data, metaKeys) should parse loom url as embed 1`] = `
+exports[`common common.parseReadme(data, metaKeys) should parse loom url as embed 1`] = `
 Object {
   "allowfullscreen": "true",
   "frameborder": "0",
@@ -12,7 +12,7 @@ Object {
 }
 `;
 
-exports[`Common Common.parseReadme(data, metaKeys) should parse ok when all meta data is present 1`] = `
+exports[`common common.parseReadme(data, metaKeys) should parse ok when all meta data is present 1`] = `
 Object {
   "body": "<h3 id=\\"resumen\\">Resumen</h3>
 <p>Llegamos al final de la unidad ;-)</p>
@@ -45,7 +45,7 @@ valores existentes?</li>
 propiedades y as&#xED; <em>clonar</em> objetos?</li>
 <li>C&#xF3;mo usar el <em>spread operator</em> (<code>...</code>) para copiar objetos y arreglos?</li>
 </ul>
-<h3 id=\\"auto-evaluaci-n\\">Auto-evaluaci&#xF3;n</h3>
+<h3 id=\\"auto-evaluaci&#xF3;n\\">Auto-evaluaci&#xF3;n</h3>
 <p>Tus instructorxs te compartir&#xE1;n un link al cuestionario de <em>auto evaliaci&#xF3;n</em>.
 Este cuestionario no es calificado.</p>
 ",
@@ -56,7 +56,7 @@ Este cuestionario no es calificado.</p>
 }
 `;
 
-exports[`Common Common.parseReadme(data, metaKeys) should parse slide url as embed 1`] = `
+exports[`common common.parseReadme(data, metaKeys) should parse slide url as embed 1`] = `
 Object {
   "allowfullscreen": "true",
   "frameborder": "0",
@@ -68,7 +68,7 @@ Object {
 }
 `;
 
-exports[`Common Common.parseReadme(data, metaKeys) should parse soundcloud url as embed 1`] = `
+exports[`common common.parseReadme(data, metaKeys) should parse soundcloud url as embed 1`] = `
 Object {
   "allow": "autoplay",
   "frameborder": "0",
@@ -79,7 +79,7 @@ Object {
 }
 `;
 
-exports[`Common Common.parseReadme(data, metaKeys) should parse typeform url as embed 1`] = `
+exports[`common common.parseReadme(data, metaKeys) should parse typeform url as embed 1`] = `
 Object {
   "allowfullscreen": "true",
   "frameborder": "0",
@@ -92,7 +92,7 @@ Object {
 }
 `;
 
-exports[`Common Common.parseReadme(data, metaKeys) should parse vimeo url as embed 1`] = `
+exports[`common common.parseReadme(data, metaKeys) should parse vimeo url as embed 1`] = `
 Object {
   "allowfullscreen": "true",
   "frameborder": "0",
@@ -105,7 +105,7 @@ Object {
 }
 `;
 
-exports[`Common Common.parseReadme(data, metaKeys) should parse youtube short url as embed 1`] = `
+exports[`common common.parseReadme(data, metaKeys) should parse youtube short url as embed 1`] = `
 Object {
   "frameborder": "0",
   "height": "360",
@@ -116,7 +116,7 @@ Object {
 }
 `;
 
-exports[`Common Common.parseReadme(data, metaKeys) should pass through query string params when embedding youtube videos (long url) 1`] = `
+exports[`common common.parseReadme(data, metaKeys) should pass through query string params when embedding youtube videos (long url) 1`] = `
 Object {
   "frameborder": "0",
   "height": "360",
@@ -127,7 +127,7 @@ Object {
 }
 `;
 
-exports[`Common Common.parseReadme(data, metaKeys) should pass through query string params when embedding youtube videos (short url) 1`] = `
+exports[`common common.parseReadme(data, metaKeys) should pass through query string params when embedding youtube videos (short url) 1`] = `
 Object {
   "frameborder": "0",
   "height": "360",
@@ -138,14 +138,14 @@ Object {
 }
 `;
 
-exports[`Common Common.parseReadme(data, metaKeys) should warn when missing meta data 1`] = `
+exports[`common common.parseReadme(data, metaKeys) should warn when missing meta data 1`] = `
 Object {
   "body": "<p>La t&#xE9;cnica de definir funciones atadas a m&#xFA;ltiples par&#xE1;metros como una serie de
 funciones anidadas que solo esperan un par&#xE1;metro fue popularizada por el
 matem&#xE1;tico <a href=\\"https://en.wikipedia.org/wiki/Haskell_Curry\\" target=\\"_blank\\">Haskell Curry</a>, aunque inicialmente observada por <a href=\\"https://en.wikipedia.org/wiki/Gottlob_Frege\\" target=\\"_blank\\">Frege</a> en
 1893, a dicha cadena de funciones anidadas se les llama funciones curry o
 <em>curried functions</em>.</p>
-<h2 id=\\"-qu-es-currying-\\">&#xBF;Qu&#xE9; es <em>currying</em>?</h2>
+<h2 id=\\"&#xBF;qu&#xE9;-es-currying\\">&#xBF;Qu&#xE9; es <em>currying</em>?</h2>
 <p>En pocas palabras, <em>currying</em> es una t&#xE9;cnica que traduce la evaluaci&#xF3;n de una
 funci&#xF3;n que toma m&#xFA;ltiples argumentos en una evaluaci&#xF3;n de una secuencia de
 funciones, cada una de funciones de la secuencia espera un &#xFA;nico argumento.
@@ -314,7 +314,7 @@ original.</p>
 dise&#xF1;ar un algoritmo para ser implementado con <em>curry</em>  y aplicarlo a tu
 trabajo. Tener en cuenta el orden de tus argumentos en t&#xE9;rminos de menor a mayor
 probabilidades de cambiar es un buen h&#xE1;bito al momento de dise&#xF1;ar funciones.</p>
-<h2 id=\\"conclusi-n\\">Conclusi&#xF3;n</h2>
+<h2 id=\\"conclusi&#xF3;n\\">Conclusi&#xF3;n</h2>
 <p><em>Curry</em> es una t&#xE9;cnica incre&#xED;blemente &#xFA;til en JavaScript funcional. Te permitir&#xE1;
 generar una biblioteca de funciones peque&#xF1;as y f&#xE1;cilmente configuradas que se
 comportan consistentemente, son r&#xE1;pidas de usar y que se pueden entender al leer
@@ -346,7 +346,7 @@ por Mattias P Johansson</li>
 }
 `;
 
-exports[`Common Common.tokensToHTML(tokens, links) should trim dangling <hr> 1`] = `
+exports[`common common.tokensToHTML(tokens, links) should trim dangling <hr> 1`] = `
 "<p>Blah blah Blah</p>
 <p>Foo bar baz</p>
 "

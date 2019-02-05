@@ -1,22 +1,27 @@
 {
-  "name": "course-parser",
-  "version": "1.1.1",
+  "name": "curriculum-parser",
+  "version": "1.2.0",
   "license": "MIT",
   "bin": {
-    "course-parser": "./index.js"
+    "curriculum-parser": "./index.js"
   },
   "scripts": {
-    "test": "jest test/*.spec.js --verbose"
+    "pretest": "eslint .",
+    "test": "jest test/*.spec.js --verbose --coverage"
   },
   "dependencies": {
-    "async": "^2.6.1",
-    "chalk": "^2.4.1",
+    "chalk": "^2.4.2",
     "cheerio": "^1.0.0-rc.2",
-    "marked": "^0.4.0",
-    "minimist": "^1.2.0"
+    "marked": "^0.6.0",
+    "minimist": "^1.2.0",
+    "models": "Laboratoria/models",
+    "rubric": "Laboratoria/rubric#v2.0.0"
   },
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "jest": "^23.1.0"
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "jest": "^24.1.0"
   }
 }

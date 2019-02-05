@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`exercise should parse exercise 1`] = `
+Object {
+  "body": "<p>La programaci&#xF3;n imperativa tiene un nivel de abstracci&#xF3;n bajo, lo que quiere
+decir que se enfoca en describir, desde el punto de vista de la computadora,
+c&#xF3;mo hacer lo que queremos. Nuestro c&#xF3;digo expresa de forma expl&#xED;cita el control
+de flujo, usando bucles, declara variables para llevar la cuenta, ...</p>
+<p>En el mundo real, en un lenguaje como JavaScript, vamos a encontrar
+caracter&#xED;sticas de este paradigma, pero siempre en el contexto de otro paradigma
+con un nivel de abtracci&#xF3;n m&#xE1;s alto y un mecanismo de reuso de c&#xF3;digo (c&#xF3;mo la
+programaci&#xF3;n orientada a objetos o la prgramaci&#xF3;n funcional).</p>
+<h2 id=\\"tarea\\">Tarea</h2>
+<p>El <em>boilerplate</em> (la plantilla sobre la que hacer el ejercicio) contiene un
+programa sin terminar. Este programa debe <strong>imprimir en la consola todos los
+n&#xFA;meros primos menores que <code>20</code></strong>.</p>
+<p>El <em>boilerplate</em> impementa s&#xF3;lo parte de la l&#xF3;gica. Por el momento imprime todos
+los n&#xFA;meros enteros del <code>2</code> al <code>19</code>. Ahora tienes que a&#xF1;adir la l&#xF3;gica para
+comprobar si un n&#xFA;mero es primo o no, y as&#xED; s&#xF3;lo imprimir los primos.</p>
+<h2 id=\\"requisitos\\">Requisitos</h2>
+<ul>
+<li>Debes implementar un bucle <code>for</code> anidado dentro del <code>for</code> ya existente.</li>
+</ul>
+<h2 id=\\"pistas\\">Pistas</h2>
+<ul>
+<li>Si un n&#xFA;mero es divisible por cualquier entero mayor que <code>1</code> que no sea el
+n&#xFA;mero mismo, sabemos que NO es primo.</li>
+<li>Dentro del bucle <code>for</code> principal, para ver si un n&#xFA;mero es primo, vamos a
+tratar de demostrar que NO es primo, y si no podemos probar que no es primo,
+entonces podemos asumir que s&#xED; es primo.</li>
+<li>El operador <code>%</code> nos da el residuo de una divisi&#xF3;n.</li>
+<li>Una vez que hemos probado que un n&#xFA;mero no es primo ya no necesitamos
+continuar dividi&#xE9;ndolo.</li>
+</ul>
+<h2 id=\\"recursos\\">Recursos</h2>
+<ul>
+<li><a href=\\"https://goo.gl/zn7cTu\\" target=\\"_blank\\">Arithmetic Operators: Remainder - MDN</a></li>
+<li><a href=\\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for\\" target=\\"_blank\\">Statements: for - MDN</a></li>
+</ul>
+",
+  "env": "js",
+  "files": Object {
+    "Ym9pbGVycGxhdGU=": Object {
+      "cHJpbnRQcmltZXMuanM=": "function printPrimes() {
+  // Iteramos desde 2 (el primer número primo) hasta 19 (menor que 20)
+  for (var i = 2; i < 20; i++) {
+    var isPrime = true;
+
+    // Ahora debemos iterar desde \`2\` hasta \`i / 2\` usando una variable \`j\` como
+    // contador.
+    //
+    // Para cada \`j\` comprueba si la división \`i / j\` deja un residuo.
+    //
+    // NOTA: No necesitamos probar números más allá de \`i / 2\` porque el
+    // resultado de la división \`i / j\` siempre sería una fracción entre 2 y 1,
+    // siempre dejando residuo.
+
+    // TU CÓDIGO AQUÍ
+
+    if (isPrime) {
+      console.log(i);
+    }
+  }
+}
+
+module.exports = printPrimes;
+",
+    },
+    "c29sdXRpb24=": Object {
+      "cHJpbnRQcmltZXMuanM=": "function printPrimes() {
+  for (var i = 2; i < 20; i++) {
+    var isPrime = true;
+    for (var j = 2; j <= (i / 2); j++) {
+      if (i % j === 0) {
+        isPrime = false;
+        break;
+      }
+    }
+    if (isPrime) {
+      console.log(i);
+    }
+  }
+}
+
+module.exports = printPrimes;
+",
+    },
+    "dGVzdA==": Object {
+      "cHJpbnRQcmltZXMuc3BlYy5qcw==": "'use strict';
+
+
+const Assert = require('chai').assert;
+const Sinon = require('sinon');
+const Submission = require('../solution/printPrimes');
+
+
+describe('printPrimes()', () => {
+
+  const stub = Sinon.stub(console, 'log');
+  Submission();
+  stub.restore();
+
+  it('debería exportar una función', () => {
+    Assert.equal(typeof Submission, 'function');
+  });
+
+  it('debería invocar console.log 8 veces', () => {
+    Assert.equal(stub.callCount, 8);
+  });
+
+  [[2], [3], [5], [7], [11], [13], [17], [19]].forEach((args, idx) => {
+    it(\`invocación \${idx + 1} a console.log debería recibir \\"\${args[0]}\\" como único argumento\`, () => {
+      Assert.deepEqual(args, stub.getCall(idx).args);
+    });
+  });
+
+});
+",
+    },
+  },
+  "slug": "01-print-primes",
+  "title": "Imprime los número enteros menores que 20",
+}
+`;

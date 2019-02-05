@@ -1,26 +1,30 @@
-'use strict';
+const path = require('path');
+const helpers = require('./helpers');
+const part = require('../lib/part');
 
 
-const Helpers = require('./helpers');
-const Part = require('../lib/part');
+describe('part', () => {
+  it('should parse empty part with meta data', () => (
+    part(path.join(helpers.fixturesBasePath, '00-part'))
+      .then(data => expect(data).toMatchSnapshot())
+  ));
 
+  it('should parse quiz', () => (
+    part(path.join(helpers.fixturesBasePath, '00-quiz'))
+      .then(data => expect(data).toMatchSnapshot())
+  ));
 
-describe('Part', () => {
+  it('should parse empty part with meta data [pt_BR]', () => (
+    part(path.join(helpers.fixturesBasePath, '00-part-pt'))
+      .then(data => expect(data).toMatchSnapshot())
+  ));
 
-  it('should parse empty part with meta data', (done) => {
-    Part(Helpers.fixturesBasePath, '')('00-part', (err, data) => {
-      expect(err).toBe(null);
-      expect(data).toMatchSnapshot();
-      done();
-    });
-  });
-
-  it('should parse quiz', (done) => {
-    Part(Helpers.fixturesBasePath, '')('00-quiz', (err, data) => {
-      expect(err).toBe(null);
-      expect(data).toMatchSnapshot();
-      done();
-    });
-  });
-
+  it('should parse part with exercises', () => (
+    part(path.join(
+      helpers.resolveFixturePath('paradigms'),
+      '01-paradigms',
+      '04-imperative-exercise',
+    ))
+      .then(result => expect(result).toMatchSnapshot())
+  ));
 });

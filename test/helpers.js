@@ -1,14 +1,17 @@
-'use strict';
+const fs = require('fs');
+const path = require('path');
 
+exports.fixturesBasePath = path.join(__dirname, 'fixtures');
 
-const Fs = require('fs');
-const Path = require('path');
+exports.resolveFixturePath = name => path.join(exports.fixturesBasePath, name);
 
-exports.fixturesBasePath = Path.join(__dirname, 'fixtures');
+exports.resolveFixtureDirReadmePath = name => path.join(
+  exports.fixturesBasePath,
+  name,
+  'README.md',
+);
 
-exports.resolveFixturePath = name => Path.join(exports.fixturesBasePath, name);
-
-exports.resolveFixtureDirReadmePath = name => Path.join(__dirname, 'fixtures', name, 'README.md');
-
-exports.readFixtureFile = name =>
-  Fs.readFileSync(exports.resolveFixturePath(name), 'utf8');
+exports.readFixtureFile = name => fs.readFileSync(
+  exports.resolveFixturePath(name),
+  'utf8',
+);

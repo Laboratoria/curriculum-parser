@@ -1,0 +1,337 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`quiz should parse quiz from html created from README.md 1`] = `
+Array [
+  Object {
+    "answers": Array [
+      "const last_name = &apos;Martinez&apos;;",
+      "const score = 1;",
+      "const cosita = &quot;El retorno del Jedi&quot;;",
+      "const undefined = true;",
+      "const likesCoffee = false;",
+      "const 2ndChild = &apos;Diana&apos;;",
+    ],
+    "description": "",
+    "solution": Array [
+      1,
+      4,
+    ],
+    "title": "1) ¿Cuál de las siguientes opciones reflejan \\"buenos\\" nombres de variables (es decir, cumplen con las reglas y las sugerencias de buenas prácticas)?",
+  },
+  Object {
+    "answers": Array [
+      "Afectan el flujo del programa y se utilizan para hacer m&#xE1;s entendible tu c&#xF3;digo",
+      "No afectan el flujo del programa y se utilizan para hacer que el c&#xF3;digo corra
+m&#xE1;s r&#xE1;pido",
+      "No afectan el flujo del programa y se utilizan para hacer m&#xE1;s entendible tu
+c&#xF3;digo",
+      "Afectan el flujo del programa y se utilizan para hacer que el c&#xF3;digo corra
+m&#xE1;s r&#xE1;pido",
+    ],
+    "description": "<p>Esta es una descripci&#xF3;n...</p><p>Blah blah blah</p><pre><code class=\\"language-js\\">const foo = &apos;bar&apos;;</code></pre>",
+    "solution": Array [
+      2,
+    ],
+    "title": "2) Los comentarios en la programación",
+  },
+  Object {
+    "answers": Array [
+      "3 &gt; 3",
+      "&apos;hola&apos; + &apos; mundo&apos;",
+      "true &amp;&amp; false",
+      "&quot;10&quot; + 1",
+    ],
+    "description": "",
+    "solution": Array [
+      3,
+    ],
+    "title": "3) Un ejemplo de conversión automática es",
+  },
+  Object {
+    "answers": Array [
+      "No existe, son lo mismo",
+      "No importa",
+      "<code>undefined</code> no tiene valor y <code>null</code> es un string vacio",
+      "<code>undefined</code> significa que no se ha <em>asignado</em> un valor, mientras que <code>null</code>
+significa que hemos <em>asignado</em> el valor <code>null</code>",
+    ],
+    "description": "",
+    "solution": Array [
+      3,
+    ],
+    "title": "4) La diferencia entre undefined y null",
+  },
+  Object {
+    "answers": Array [
+      "Documentaci&#xF3;n de la Red de Desarrolladores de Mozilla (MDN)",
+      "<a href=\\"http://www.w3schools.com\\" target=\\"_blank\\">www.w3schools.com</a>",
+      "lineadecodigo.com",
+      "stackoverflow.com",
+    ],
+    "description": "",
+    "solution": Array [
+      0,
+      3,
+    ],
+    "title": "5) De la lista a continuación, elige las dos (2) fuentes más confiable para aprender por tu cuenta",
+  },
+  Object {
+    "answers": Array [
+      "&quot;Hola Mundo&quot;",
+      "&quot;Hola mundo&quot;",
+      "&quot;Holamundo&quot;",
+      "&apos;HolaMundo&apos;",
+    ],
+    "description": "",
+    "solution": Array [
+      2,
+    ],
+    "title": "6) El resultado de 'Hola' + 'mundo' es",
+  },
+  Object {
+    "answers": Array [
+      "number",
+      "string",
+      "boolean",
+      "undefined",
+    ],
+    "description": "",
+    "solution": Array [
+      1,
+    ],
+    "title": "7) ¿Qué tipo de dato es '123'?",
+  },
+  Object {
+    "answers": Array [
+      "number",
+      "string",
+      "boolean",
+      "undefined",
+    ],
+    "description": "",
+    "solution": Array [
+      0,
+    ],
+    "title": "8) ¿Qué tipo de dato es Infinity?",
+  },
+  Object {
+    "answers": Array [
+      "true",
+      "false",
+    ],
+    "description": "",
+    "solution": Array [
+      1,
+    ],
+    "title": "9) El resultado de 10 == 'diez' es",
+  },
+  Object {
+    "answers": Array [
+      "1",
+      "0",
+      "3.33",
+      "10",
+    ],
+    "description": "",
+    "solution": Array [
+      0,
+    ],
+    "title": "10)  El resultado de 10 % 3 es",
+  },
+  Object {
+    "answers": Array [
+      "&quot;Me &quot;encanta&quot; JavaScript&quot;",
+      "&quot;Me \\\\encanta\\\\ JavaScript&quot;",
+      "&quot;Me encanta JavaScript&quot;",
+      "&quot;Me &quot;encanta&quot; JavaScript&quot;",
+    ],
+    "description": "",
+    "solution": Array [
+      3,
+    ],
+    "title": "11) El resultado de 'Me \\"encanta\\" JavaScript' es",
+  },
+  Object {
+    "answers": Array [
+      "&quot;boolean&quot;",
+      "&quot;undefined&quot;",
+      "&quot;number&quot;",
+      "&quot;string&quot;",
+    ],
+    "description": "",
+    "solution": Array [
+      2,
+    ],
+    "title": "12)  El resultado de typeof NaN es",
+  },
+  Object {
+    "answers": Array [
+      "4",
+      "false",
+      "15",
+      "%",
+    ],
+    "description": "",
+    "solution": Array [
+      0,
+    ],
+    "title": "13)  El resultado de 4 % 15 es",
+  },
+  Object {
+    "answers": Array [
+      "NaN",
+      "40",
+      "diez4",
+      "undefined",
+    ],
+    "description": "",
+    "solution": Array [
+      0,
+    ],
+    "title": "14) El resultado de 'diez' * 4 es",
+  },
+  Object {
+    "answers": Array [
+      "&quot;501&quot;",
+      "51",
+      "&quot;50+1&quot;",
+      "50",
+    ],
+    "description": "",
+    "solution": Array [
+      0,
+    ],
+    "title": "15) El resultado de '50' + 1 es",
+  },
+  Object {
+    "answers": Array [
+      "true",
+      "false",
+      "undefined",
+      "Null",
+    ],
+    "description": "",
+    "solution": Array [
+      0,
+    ],
+    "title": "16) El resultado de false == '' es",
+  },
+  Object {
+    "answers": Array [
+      "true",
+      "false",
+      "undefined",
+      "Null",
+    ],
+    "description": "",
+    "solution": Array [
+      1,
+    ],
+    "title": "17) El resultado de '' === NaN es",
+  },
+  Object {
+    "answers": Array [
+      "&quot; str&quot;",
+      "&quot; string&quot;",
+      "&quot;stri&quot;",
+      "&quot; strin&quot;",
+    ],
+    "description": "",
+    "solution": Array [
+      0,
+    ],
+    "title": "18) El resultado de 'a string'.slice(1, 5) es",
+  },
+  Object {
+    "answers": Array [
+      "&quot;ng string is long&quot;",
+      "&quot;long string is long&quot;",
+      "&quot;&quot;",
+      "&quot;My long string is long&quot;",
+    ],
+    "description": "",
+    "solution": Array [
+      0,
+    ],
+    "title": "19) El resultado de 'My long string is long'.slice(5) es",
+  },
+  Object {
+    "answers": Array [
+      "&quot;Quiero seguir aprendiendo!!!&quot;",
+      "&quot;Quiero seguir aprendiendo!!&quot;",
+      "&quot;Quiero seguir aprendiendo!&quot;",
+      "&quot;iero seguir aprendiendo!!!&quot;",
+    ],
+    "description": "",
+    "solution": Array [
+      2,
+    ],
+    "title": "20) El resultado de 'Quiero seguir aprendiendo!!!'.slice(0, -2) es",
+  },
+  Object {
+    "answers": Array [
+      "null",
+      "undefined",
+      "&quot;&quot;",
+      "g",
+    ],
+    "description": "",
+    "solution": Array [
+      2,
+    ],
+    "title": "21) El resultado de 'cualquier string'.charAt(100) es",
+  },
+  Object {
+    "answers": Array [
+      "null",
+      "3",
+      "4",
+      "5",
+    ],
+    "description": "",
+    "solution": Array [
+      2,
+    ],
+    "title": "22) El resultado de 'Hola Mundo'.indexOf(' ') es",
+  },
+  Object {
+    "answers": Array [
+      "null",
+      "undefined",
+      "0",
+      "-1",
+    ],
+    "description": "",
+    "solution": Array [
+      3,
+    ],
+    "title": "23) El resultado de 'Hola Mundo'.indexOf('s') es",
+  },
+  Object {
+    "answers": Array [
+      "&quot;AlphaBet&quot;",
+      "&quot;ALPHABET&quot;",
+      "&quot;alphabet&quot;",
+      "&quot;Alphabet&quot;",
+    ],
+    "description": "",
+    "solution": Array [
+      1,
+    ],
+    "title": "24) El resultado de 'alphabet'.toUpperCase() es",
+  },
+  Object {
+    "answers": Array [
+      "543",
+      "&quot;543&quot;",
+      "&quot;Boolean&quot;",
+      "&quot;number&quot;",
+    ],
+    "description": "",
+    "solution": Array [
+      3,
+    ],
+    "title": "25) El resultado de typeof parseInt('543') es",
+  },
+]
+`;
