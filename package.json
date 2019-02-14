@@ -1,6 +1,6 @@
 {
   "name": "curriculum-parser",
-  "version": "1.2.0",
+  "version": "2.0.0-alpha.1",
   "license": "MIT",
   "bin": {
     "curriculum-parser": "./index.js"
@@ -14,7 +14,7 @@
     "cheerio": "^1.0.0-rc.2",
     "marked": "^0.6.0",
     "minimist": "^1.2.0",
-    "models": "Laboratoria/models",
+    "models": "Laboratoria/models#v1.0.0-alpha.1",
     "rubric": "Laboratoria/rubric#v2.0.0"
   },
   "devDependencies": {
