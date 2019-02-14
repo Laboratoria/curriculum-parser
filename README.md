@@ -67,14 +67,20 @@ After installing _globally_ you should have the `curriculum-parser` command
 available in your `PATH`.
 
 ```text
-curriculum-parser <type> <path-to-readme> [options]
 
-Options:
+Usage: curriculum-parser [command] [options]
 
-  --validate  When this option is present the output will show validation and
-              debugging info instead of JSON.
-  --track     The track the course belongs to (`js`, `ux`, `mobile`, ...)
-  --locale    The locale/language the content is in (`es-ES` or `pt-BR`).
+Commands:
+
+  help
+  topic <dir> --repo --version --locale --track [--suffix]
+  project <dir> --repo --version --locale --track --rubric
+
+Global options:
+
+  -h, --help        Show help
+  -V                Show version
+
 ```
 
 ## Examples
@@ -84,35 +90,41 @@ Options:
 ```sh
 curriculum-parser topic topics/babel \
   --repo Laboratoria/curricula-js \
-  --version v2.2.0 \
-  --track js \
+  --version 2.2.0 \
   --locale es-ES \
+  --track js \
   > "build/topics/${topic}.json"
 ```
-
-### Validate???
 
 ### Parse a project within the curricula-js repo
 
 ```sh
 curriculum-parser project projects/01-cipher \
   --repo Laboratoria/curricula-js \
-  --version v2.2.0 \
-  --rubric 2 \
-  --track js \
+  --version 2.2.0 \
   --locale es-ES \
+  --track js \
+  --rubric 2 \
   > "build/projects/01-cipher.json"
 ```
 
 ### Parse a topic (course) in the curricula-ux repo
 
 ```sh
-# ...
+curriculum-parser topic 00-topics/00-intro-ux \
+  --repo Laboratoria/curricula-ux \
+  --version 1.0.0 \
+  --track ux \
+  --locale es-ES
 ```
 
 ### Parse a topic (course) in some arbitrary directory
 
-***
-
-NOTE: It should be usable from `curricula-js`, `curricula-ux`, y repos de
-corporate training...
+```sh
+curriculum-parser topic . \
+  --repo some-github-user/some-github-repo \
+  --path . \
+  --version 1.0.0 \
+  --track business \
+  --locale es-ES
+```
