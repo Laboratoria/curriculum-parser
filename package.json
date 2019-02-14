@@ -5,6 +5,9 @@
   "bin": {
     "curriculum-parser": "./index.js"
   },
+  "engines": {
+    "node": ">=8.3.0"
+  },
   "scripts": {
     "pretest": "eslint .",
     "test": "jest test/*.spec.js --verbose --coverage"
