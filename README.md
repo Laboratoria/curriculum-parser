@@ -8,7 +8,7 @@ Command line tool used to parse content written in markdown for our LMS at
 
 ## Installation
 
-You can install `curriculum-parser` using `npm` like this:
+You can install `curriculum-parser` _globally_ using `npm` like this:
 
 ```sh
 npm i -g Laboratoria/curriculum-parser
@@ -40,7 +40,7 @@ sudo npm link
 
 ## Upgrade
 
-If you installed using `npm` you can simply re-install like so:
+If you installed _globally_ using `npm` you can simply re-install like so:
 
 ```sh
 npm i -g Laboratoria/curriculum-parser
@@ -63,8 +63,8 @@ git push origin master
 
 ## Usage
 
-After installing _globally_ you should have the `curriculum-parser` command
-available in your `PATH`.
+After installing _globally_ (or _linking_ with `npm link`) you should have the
+`curriculum-parser` command available in your `PATH`.
 
 ```text
 
