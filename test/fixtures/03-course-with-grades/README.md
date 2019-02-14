@@ -61,102 +61,11 @@ siguientes conocimientos previos:
 
 ## Syllabus
 
-### Unidad 01: [Evitando el estado compartido y cambiante](01-state)
+### Unidad 01: [Foo](01-foo)
 
 En esta unidad veremos dos de los principios fundamentales de la programación
 funcional: cómo evitar el estado compartido usando **funciones puras** y el
 concepto de **inmutabilidad**. La duración estimada de esta unidad es de _3h_.
-
-|  # |  Tipo     | Formato    | Duración | Descripción
-|----|-----------|------------|----------|------------
-| 00 | seminario | guiado     | 15min    | Apertura
-| 01 | lectura   | self-paced | 30min    | Funciones puras
-| 02 | practice  | self-paced | 10min    | Ejercicios de funciones puras
-| 03 | lectura   | self-paced | 30min    | Inmutabilidad
-| 04 | practice  | self-paced | 10min    | Ejercicios de inmutabilidad
-| 05 | quiz      | self-paced | 10min    | Cuestionario
-| 06 | seminario | guiado     | 45min    | Solucionarios y ejercicios guiados
-| 07 | quiz      | self-paced | 10min    | Cuestionario
-| 08 | seminario | guiado     | 15min    | Cierre
-
-### Unidad 02: [Hacking: refactoring](02-workshop)
-
-Esta unidad es básicamente una sesión de programación por pares. La tarea a
-realizar será refactorizar varias funciones de un videojuego existente haciendo
-uso de **funciones puras** y **estructuras inmutables**. La duración estimada de
-esta unidad es de _2h_.
-
-|  # |  Tipo     | Formato    | Duración | Descripción
-|----|-----------|------------|----------|------------
-| 00 | seminario | guiado     | 15min    | Apertura
-| 01 | taller    | self-paced | 90min    | Implementación por pares
-| 02 | seminario | guiado     | 15min    | Cierre
-
-### Unidad 03: [Higher Order Functions](03-hof)
-
-Las **funciones de orden superior** (_Higher Order Functions_ en inglés), no son
-más que funciones que reciben otras funciones como argumentos o que retornan una
-función. En esta unidad veremos este tipo de funciones en acción, incluyendo
-usos más avanzados como **aplicación parcial** y **currying**.
-
-|  # |  Tipo     | Formato    | Duración | Descripción
-|----|-----------|------------|----------|------------
-| 00 | seminario | guiado     | 15min    | Apertura
-| 01 | lectura   | self-paced | 30min    | Higher Order Functions
-| 02 | practice  | self-paced | 10min    | Ejercicios de HOF
-| 03 | lectura   | self-paced | 10min    | Aplicación parcial
-| 04 | practice  | self-paced | 10min    | Ejercicios de aplicación parcial
-| 05 | lectura   | self-paced | 30min    | Currying
-| 06 | practice  | self-paced | 10min    | Ejercicios de currying
-| 07 | quiz      | self-paced | 10min    | Cuestionario
-| 08 | seminario | guiado     | 45min    | Solucionarios y ejercicios guiados
-| 09 | quiz      | self-paced | 10min    | Cuestionario
-| 10 | seminario | guiado     | 15min    | Cierre
-
-### Unidad 04: [Hacking: refactoring](04-workshop)
-
-La duración estimada de esta unidad es de _2h_.
-
-|  # |  Tipo     | Formato    | Duración | Descripción
-|----|-----------|------------|----------|------------
-| 00 | seminario | guiado     | 15min    | Apertura
-| 01 | taller    | self-paced | 90min    | Implementación por pares
-| 02 | seminario | guiado     | 15min    | Cierre
-
-### Unidad 05: [Control de flujo](05-flow-control)
-
-Como paradigma declarativo, la programación funcional se caracteriza, entre
-otras cosas, por expresar "repetición" usando recursión en vez de iteración. En
-esta unidad veremos cómo reemplazar iteración con recursión o higher order
-functions, así como las ventajas que ofrece el enfoque funcional para manejar
-asincronía, que es una característica fundamental de JavaScript.
-
-|  # |  Tipo     | Formato    | Duración | Descripción
-|----|-----------|------------|----------|------------
-| 00 | seminario | guiado     | 15min    | Apertura
-| 01 | lectura   | self-paced | 50min    | Recursión
-| 02 | practice  | self-paced | 10min    | Ejercicios de recursión
-| 03 | lectura   | self-paced | 30min    | Asincronía
-| 04 | practice  | self-paced | 10min    | Ejercicios de asincronía
-| 05 | quiz      | self-paced | 10min    | Cuestionario
-| 06 | seminario | guiado     | 45min    | Solucionarios y ejercicios guiados
-| 07 | quiz      | self-paced | 10min    | Cuestionario
-| 08 | seminario | guiado     | 15min    | Cierre
-
-### Unidad 06: [Hacking: reemplazando iteración con recursión](06-workshop)
-
-La duración estimada de esta unidad es de _2h_.
-
-|  # |  Tipo     | Formato    | Duración | Descripción
-|----|-----------|------------|----------|------------
-| 00 | seminario | guiado     | 15min    | Apertura
-| 01 | taller    | self-paced | 90min    | Implementación por pares
-| 02 | seminario | guiado     | 15min    | Cierre
-
-### Unidad 07: [Code review + Demos de proyectos](07-demos)
-
-Cada equipo (dos alumnas) tendrá 5 minutos para presentar su demo. La duración
-estimada de esta unidad es de _2h_.
 
 ***
 

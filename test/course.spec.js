@@ -34,22 +34,42 @@ describe('course', () => {
   ));
 
   it('should have empty tags if not found', () => (
-    course(helpers.resolveFixturePath('02-course-no-tags'))
+    course(helpers.resolveFixturePath('02-course-no-tags'), {
+      repo: 'Laboratoria/curricula-js',
+      version: '2.0.0',
+      track: 'js',
+      locale: 'es-ES',
+    })
       .then(data => expect(data.tags).toMatchSnapshot())
   ));
 
   it('should read primary (default) tags', () => (
-    course(helpers.resolveFixturePath('02-course-tags'))
+    course(helpers.resolveFixturePath('02-course-tags'), {
+      repo: 'Laboratoria/curricula-js',
+      version: '2.0.0',
+      track: 'js',
+      locale: 'es-ES',
+    })
       .then(data => expect(data.tags).toMatchSnapshot())
   ));
 
   it('should read main and secondary tags', () => (
-    course(helpers.resolveFixturePath('02-course-secondary-tags'))
+    course(helpers.resolveFixturePath('02-course-secondary-tags'), {
+      repo: 'Laboratoria/curricula-js',
+      version: '2.0.0',
+      track: 'js',
+      locale: 'es-ES',
+    })
       .then(data => expect(data.tags).toMatchSnapshot())
   ));
 
   it('should parse with target audience', () => (
-    course(helpers.resolveFixturePath('02-course-with-target-audience'))
+    course(helpers.resolveFixturePath('02-course-with-target-audience'), {
+      repo: 'Laboratoria/curricula-js',
+      version: '2.0.0',
+      track: 'js',
+      locale: 'es-ES',
+    })
       .then((data) => {
         expect(data.tags).toMatchSnapshot();
         expect(data.targetAudience).toMatchSnapshot();
@@ -57,15 +77,22 @@ describe('course', () => {
   ));
 
   it('should parse grades (evaluación) section', () => (
-    course(helpers.resolveFixturePath('03-course-with-grades'))
-      .then((data) => {
-        const { createdAt, ...obj } = data;
-        expect(obj).toMatchSnapshot();
-      })
+    course(helpers.resolveFixturePath('03-course-with-grades'), {
+      repo: 'Laboratoria/curricula-js',
+      version: '2.0.0',
+      track: 'js',
+      locale: 'es-ES',
+    })
+      .then(data => expect(data.grades).toMatchSnapshot())
   ));
 
   it('should trim <hr> from html fragments', () => (
-    course(helpers.resolveFixturePath('03-course-with-grades'))
+    course(helpers.resolveFixturePath('03-course-with-grades'), {
+      repo: 'Laboratoria/curricula-js',
+      version: '2.0.0',
+      track: 'js',
+      locale: 'es-ES',
+    })
       .then(data => expect(data.product).toMatchSnapshot())
   ));
 });
