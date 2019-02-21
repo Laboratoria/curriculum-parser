@@ -17,8 +17,9 @@
     "cheerio": "^1.0.0-rc.2",
     "marked": "^0.6.0",
     "minimist": "^1.2.0",
-    "models": "Laboratoria/models#v1.0.0-alpha.1",
-    "rubric": "Laboratoria/rubric#v2.0.0"
+    "mongoose": "^5.4.14",
+    "rubric": "Laboratoria/rubric#v2.0.0",
+    "schemas": "Laboratoria/schemas#v1.0.0-alpha.3"
   },
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
