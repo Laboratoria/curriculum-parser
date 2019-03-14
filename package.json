@@ -18,7 +18,7 @@
     "marked": "^0.6.0",
     "minimist": "^1.2.0",
     "mongoose": "^5.4.17",
-    "rubric": "Laboratoria/rubric#v2.1.0",
+    "rubric": "Laboratoria/rubric#v2.2.0",
     "schemas": "Laboratoria/schemas#v1.0.0-alpha.4"
   },
   "devDependencies": {
