@@ -14,18 +14,18 @@
   },
   "dependencies": {
     "chalk": "^2.4.2",
-    "cheerio": "^1.0.0-rc.2",
-    "marked": "^0.6.0",
+    "cheerio": "^1.0.0-rc.3",
+    "marked": "^0.6.2",
     "minimist": "^1.2.0",
-    "mongoose": "^5.4.17",
+    "mongoose": "^5.5.13",
     "rubric": "Laboratoria/rubric#v2.2.0",
-    "schemas": "Laboratoria/schemas#v1.0.0-alpha.4"
+    "schemas": "Laboratoria/schemas#v1.0.0-alpha.9"
   },
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "eslint": "^5.15.1",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "jest": "^24.1.0"
+    "eslint-plugin-import": "^2.17.3",
+    "jest": "^24.8.0"
   }
 }
