@@ -20,8 +20,8 @@
     "marked": "^0.6.2",
     "minimist": "^1.2.0",
     "mongoose": "^5.5.13",
-    "rubric": "Laboratoria/rubric#v2.2.0",
-    "models": "Laboratoria/models#v1.0.0-alpha.7",
+    "rubric": "Laboratoria/rubric#v2.3.0",
+    "models": "Laboratoria/models#v1.0.0-alpha.8",
     "semver": "^6.1.1"
   },
   "devDependencies": {
