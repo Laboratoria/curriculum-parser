@@ -4,6 +4,7 @@ const project = require('../lib/project');
 
 module.exports = app => project(
   path.resolve(app.args.shift()),
+  app.models,
   app.opts,
 );
 

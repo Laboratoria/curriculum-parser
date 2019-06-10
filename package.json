@@ -10,7 +10,9 @@
   },
   "scripts": {
     "pretest": "eslint .",
-    "test": "jest test/*.spec.js --verbose --coverage"
+    "test": "jest test/*.spec.js --verbose --coverage",
+    "link-models": "rm -rf node_modules/models && ln -s ../../models ./node_modules/models",
+    "changelog": "git log $(git describe --tags --abbrev=0)..HEAD --oneline --format=\"* %h %s (%an <%ae>)\""
   },
   "dependencies": {
     "chalk": "^2.4.2",
@@ -19,7 +21,8 @@
     "minimist": "^1.2.0",
     "mongoose": "^5.5.13",
     "rubric": "Laboratoria/rubric#v2.2.0",
-    "schemas": "Laboratoria/schemas#v1.0.0-alpha.9"
+    "models": "Laboratoria/models#v1.0.0-alpha.7",
+    "semver": "^6.1.1"
   },
   "devDependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",

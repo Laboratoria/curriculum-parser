@@ -4,6 +4,7 @@ const course = require('../lib/course');
 
 module.exports = app => course(
   path.resolve(app.args.shift()),
+  app.models,
   app.opts,
 );
 

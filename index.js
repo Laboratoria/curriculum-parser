@@ -2,6 +2,8 @@
 
 const minimist = require('minimist');
 const chalk = require('chalk');
+const mongoose = require('mongoose');
+const models = require('models')(mongoose);
 const { hasOwnProperty } = require('./lib/common');
 const pkg = require('./package.json');
 
@@ -25,7 +27,12 @@ const success = (value) => {
 
 
 const error = (err) => {
-  console.error(chalk.red(err.message));
+  if (err.path) {
+    console.error(err.path);
+    console.error(`└── ${chalk.red(err.message)}`);
+  } else {
+    console.error(chalk.red(err.message));
+  }
 
   if (err.name === 'ValidationError') {
     console.error('');
@@ -68,6 +75,7 @@ module.exports = (args, opts) => {
     commands,
     args,
     opts,
+    models,
   })
     .then(success)
     .catch(error);
