@@ -1,6 +1,7 @@
 const path = require('path');
 const mongoose = require('mongoose');
 const models = require('models')(mongoose);
+const rubric = require('rubric');
 const helpers = require('./helpers');
 const project = require('../lib/project');
 
@@ -38,7 +39,8 @@ describe('project', () => {
       rubric: '99',
     })
       .catch((err) => {
-        expect(err.message).toBe('Parser rubric 2.2.0 does not satisfy range >=99.0.0 <100.0.0');
+        expect(err.message)
+          .toBe(`Parser rubric ${rubric.version} does not satisfy range >=99.0.0 <100.0.0`);
       });
   });
 
@@ -52,7 +54,7 @@ describe('project', () => {
       rubric: '2',
     })
       .catch((err) => {
-        expect(err.message).toBe('Rubric 2.2.0 does not support language pt');
+        expect(err.message).toBe(`Rubric ${rubric.version} does not support language pt`);
       });
   });
 
