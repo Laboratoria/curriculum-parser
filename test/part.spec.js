@@ -1,6 +1,7 @@
 const path = require('path');
 const helpers = require('./helpers');
 const part = require('../lib/part');
+const { hasOwnProperty } = require('../lib/common');
 
 
 describe('part', () => {
@@ -26,5 +27,10 @@ describe('part', () => {
       '04-imperative-exercise',
     ))
       .then(result => expect(result).toMatchSnapshot())
+  ));
+
+  it('should not include exercises prop for practice without exercises', () => (
+    part(helpers.resolveFixturePath('practice-part-without-exercises'))
+      .then(result => expect(hasOwnProperty(result, 'exercises')).toBe(false))
   ));
 });
