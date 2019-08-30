@@ -104,7 +104,7 @@ curriculum-parser project projects/01-cipher \
   --version 2.2.0 \
   --locale es-ES \
   --track js \
-  --rubric 2 \
+  --rubric 2.x \
   > "build/projects/01-cipher.json"
 ```
 
