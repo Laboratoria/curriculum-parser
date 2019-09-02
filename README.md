@@ -5,6 +5,7 @@ Command line tool used to parse content written in markdown for our LMS at
 [curricula-ux](https://github.com/Laboratoria/curricula-ux), ...).
 
 [![Build Status](https://travis-ci.com/Laboratoria/curriculum-parser.svg?branch=master)](https://travis-ci.com/Laboratoria/curriculum-parser)
+[![Coverage Status](https://coveralls.io/repos/github/Laboratoria/curriculum-parser/badge.svg?branch=master)](https://coveralls.io/github/Laboratoria/curriculum-parser?branch=master)
 
 ## Installation
 
