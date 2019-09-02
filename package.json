@@ -19,9 +19,9 @@
     "cheerio": "^1.0.0-rc.3",
     "marked": "^0.7.0",
     "minimist": "^1.2.0",
-    "mongoose": "^5.6.9",
-    "rubric": "Laboratoria/rubric#v2.3.1",
     "models": "Laboratoria/models#v1.0.0-alpha.10",
+    "mongoose": "^5.6.11",
+    "rubric": "Laboratoria/rubric#v2.3.1",
     "semver": "^6.3.0"
   },
   "devDependencies": {
