@@ -1,18 +1,33 @@
-# curriculum-parser
+# @laboratoria/curriculum-parser
 
 Command line tool used to parse content written in markdown for our LMS at
-@Laboratoria ([curricula-js](https://github.com/Laboratoria/curricula-js),
-[curricula-ux](https://github.com/Laboratoria/curricula-ux), ...).
+@Laboratoria (See [Laboratoria/bootcamp](https://github.com/Laboratoria/bootcamp)).
 
 [![Build Status](https://travis-ci.com/Laboratoria/curriculum-parser.svg?branch=master)](https://travis-ci.com/Laboratoria/curriculum-parser)
 [![Coverage Status](https://coveralls.io/repos/github/Laboratoria/curriculum-parser/badge.svg?branch=master)](https://coveralls.io/github/Laboratoria/curriculum-parser?branch=master)
 
 ## Installation
 
-You can install `curriculum-parser` _globally_ using `npm` like this:
+Install as a development dependency in your project:
 
 ```sh
-npm i -g Laboratoria/curriculum-parser
+npm i --save-dev @laboratoria/curriculum-parser
+```
+
+You should now be able to run it with `npx`:
+
+```sh
+npx curriculum-parser # when already installed in project
+
+# or alternatively using full package name (with org)
+# this works even if nor previously installed.
+npx @laboratoria/curriculum-parser
+```
+
+You can also install `curriculum-parser` _globally_ using `npm` like this:
+
+```sh
+npm i -g @laboratoria/curriculum-parser
 ```
 
 If you get a permission error please try using `sudo` (you may need admin
@@ -20,7 +35,7 @@ permissions depending on your node installation).
 
 ```sh
 # using `sudo` (only if previous step failed)
-sudo npm i -g Laboratoria/curriculum-parser
+sudo npm i -g @laboratoria/curriculum-parser
 ```
 
 Alternatively you can install using a local clone.
@@ -44,7 +59,7 @@ sudo npm link
 If you installed _globally_ using `npm` you can simply re-install like so:
 
 ```sh
-npm i -g Laboratoria/curriculum-parser
+npm i -g @laboratoria/curriculum-parser
 ```
 
 If you chose to install using a local clone, you can update your clone to
