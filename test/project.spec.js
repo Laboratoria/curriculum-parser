@@ -1,7 +1,7 @@
 const path = require('path');
 const mongoose = require('mongoose');
 const models = require('models')(mongoose);
-const rubric = require('rubric');
+const rubric = require('@laboratoria/rubric');
 const helpers = require('./helpers');
 const project = require('../lib/project');
 
@@ -50,16 +50,16 @@ describe('project', () => {
       track: 'js',
       repo: 'Laboratoria/curricula-js',
       version: '1.0.0',
-      locale: 'pt-BR',
-      rubric: '2',
+      locale: 'en-GB',
+      rubric: '3',
     })
       .catch((err) => {
-        expect(err.message).toBe(`Rubric ${rubric.version} does not support language pt`);
+        expect(err.message).toBe(`Rubric ${rubric.version} does not support language en`);
       });
   });
 
   it('should reject when dir doesnt exist', () => (
-    project('01-foo', models, { rubric: '2', locale: 'es-ES' })
+    project('01-foo', models, { rubric: '3', locale: 'es-ES' })
       .catch((err) => {
         expect(err.message).toMatch(/no such file or directory/);
         expect(err.code).toBe('ENOENT');
@@ -68,7 +68,7 @@ describe('project', () => {
 
   it('should reject when README.md is empty', () => {
     const p = helpers.resolveFixturePath('00-course-empty');
-    return project(p, models, { rubric: '2', locale: 'es-ES' })
+    return project(p, models, { rubric: '3', locale: 'es-ES' })
       .catch((err) => {
         expect(err.message).toBe('Project README.md is empty');
         expect(err.path).toBe(path.join(p, 'README.md'));
@@ -77,7 +77,7 @@ describe('project', () => {
 
   it('should reject when README.md doesnt start with h1', () => {
     const p = helpers.resolveFixturePath('01-a-project-without-a-title');
-    return project(p, models, { rubric: '2', locale: 'es-ES' })
+    return project(p, models, { rubric: '3', locale: 'es-ES' })
       .catch((err) => {
         expect(err.message).toBe('Expected README.md to start with h1 and instead saw heading (depth: 2)');
         expect(err.path).toBe(path.join(p, 'README.md'));
@@ -91,7 +91,7 @@ describe('project', () => {
       repo: 'Laboratoria/curricula-js',
       version: '1.0.0',
       locale: 'es-ES',
-      rubric: '2',
+      rubric: '3',
     })
       .catch((err) => {
         expect(err.message).toBe('No assessment section found');
@@ -106,7 +106,7 @@ describe('project', () => {
       repo: 'Laboratoria/curricula-js',
       version: '1.0.0',
       locale: 'es-ES',
-      rubric: '2',
+      rubric: '3',
     })
       .catch((err) => {
         expect(err.message).toBe('No skills found');
@@ -121,7 +121,7 @@ describe('project', () => {
       repo: 'Laboratoria/curricula-js',
       version: '1.0.0',
       locale: 'es-ES',
-      rubric: '~2',
+      rubric: '~3',
     })
       .catch((err) => {
         expect(err.message).toBe('Unknown skills category: Foo');
@@ -136,7 +136,7 @@ describe('project', () => {
       repo: 'Laboratoria/curricula-js',
       version: '1.0.0',
       locale: 'es-ES',
-      rubric: '2',
+      rubric: '3',
     })
       .catch((err) => {
         expect(err.message).toBe('Unknown skill: JavaScript');
@@ -151,7 +151,7 @@ describe('project', () => {
       repo: 'Laboratoria/curricula-js',
       version: '1.0.0',
       locale: 'es-ES',
-      rubric: '2',
+      rubric: '3',
     })
       .catch((err) => {
         expect(err.message).toBe('Unknown skill: Lógicaaa');

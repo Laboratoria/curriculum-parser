@@ -16,13 +16,13 @@
     "changelog": "git log $(git describe --tags --abbrev=0)..HEAD --oneline --format=\"* %h %s (%an <%ae>)\""
   },
   "dependencies": {
+    "@laboratoria/rubric": "^3.0.2",
     "chalk": "^2.4.2",
     "cheerio": "^1.0.0-rc.3",
     "marked": "^0.7.0",
     "minimist": "^1.2.0",
     "models": "Laboratoria/models#v1.0.0-alpha.10",
     "mongoose": "^5.6.11",
-    "rubric": "Laboratoria/rubric#v2.3.1",
     "semver": "^6.3.0"
   },
   "devDependencies": {
