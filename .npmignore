@@ -1,4 +1,8 @@
 coverage/
 test/
+.babelrc
+.editorconfig
+.eslintignore
+.eslintrc
 .travis.yml
-
+jest.config.js
