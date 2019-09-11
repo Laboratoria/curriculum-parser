@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`project should parse portuguese project 1`] = `
+Object {
+  "adaptability": 2,
+  "architecture": 1,
+  "communication": 2,
+  "cssDry": 2,
+  "cssResponsive": 2,
+  "feedback": 2,
+  "git": 1,
+  "github": 2,
+  "htmlSemantics": 2,
+  "htmlStyle": 3,
+  "htmlValidation": 2,
+  "jsSemantics": 2,
+  "jsStyle": 2,
+  "jsTesting": 2,
+  "logic": 1,
+  "modularity": 1,
+  "presentations": 2,
+  "problemSolving": 2,
+  "responsibility": 2,
+  "selfLearning": 2,
+  "softPlanning": 2,
+  "userCentricity": 2,
+}
+`;

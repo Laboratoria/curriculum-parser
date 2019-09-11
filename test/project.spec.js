@@ -77,10 +77,23 @@ describe('project', () => {
 
   it('should reject when README.md doesnt start with h1', () => {
     const p = helpers.resolveFixturePath('01-a-project-without-a-title');
+    const p2 = helpers.resolveFixturePath('01-a-project-without-a-bad-title');
     return project(p, models, { rubric: '3', locale: 'es-ES' })
+      .then(() => {
+        throw new Error('This should never happen');
+      })
       .catch((err) => {
         expect(err.message).toBe('Expected README.md to start with h1 and instead saw heading (depth: 2)');
         expect(err.path).toBe(path.join(p, 'README.md'));
+
+        return project(p2, models, { rubric: '3', locale: 'es-ES' });
+      })
+      .then(() => {
+        throw new Error('This should never happen');
+      })
+      .catch((err) => {
+        expect(err.message).toBe('Expected README.md to start with h1 and instead saw paragraph');
+        expect(err.path).toBe(path.join(p2, 'README.md'));
       });
   });
 
@@ -156,6 +169,21 @@ describe('project', () => {
       .catch((err) => {
         expect(err.message).toBe('Unknown skill: Lógicaaa');
         expect(err.path).toBe(path.join(p, 'README.md'));
+      });
+  });
+
+  it('should parse portuguese project', () => {
+    const p = helpers.resolveFixturePath('01-a-project-with-pt-translation');
+    return project(p, models, {
+      track: 'js',
+      repo: 'Laboratoria/bootcamp',
+      version: '1.0.0',
+      locale: 'pt-BR',
+      rubric: '3',
+    })
+      .then((parsed) => {
+        expect(parsed.locale).toBe('pt-BR');
+        expect(parsed.skills).toMatchSnapshot();
       });
   });
 });
