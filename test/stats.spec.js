@@ -9,13 +9,13 @@ describe('stats.computeCourseStats', () => {
       syllabus: {
         foo: {
           parts: {
-            '01-intro': { duration: 10 },
+            '01-intro': { duration: 60 },
           },
         },
         bar: {
           parts: {
-            '00-opening': { duration: 5 },
-            '00-closing': { duration: 5 },
+            '00-opening': { duration: 20 },
+            '00-closing': { duration: 30 },
           },
         },
       },

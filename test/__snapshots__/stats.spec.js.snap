@@ -2,8 +2,8 @@
 
 exports[`stats.computeCourseStats should compute course duration based on parts duration 1`] = `
 Object {
-  "duration": 20,
-  "durationString": "20min",
+  "duration": 110,
+  "durationString": "1.8h",
   "exerciseCount": 0,
   "partCount": 3,
   "unitCount": 2,
