@@ -37,7 +37,7 @@ describe('course', () => {
 
   it('should have empty tags if not found', () => (
     course(helpers.resolveFixturePath('02-course-no-tags'), models, {
-      repo: 'Laboratoria/curricula-js',
+      repo: 'Laboratoria/bootcamp',
       version: '2.0.0',
       track: 'js',
       locale: 'es-ES',
@@ -47,7 +47,7 @@ describe('course', () => {
 
   it('should read primary (default) tags', () => (
     course(helpers.resolveFixturePath('02-course-tags'), models, {
-      repo: 'Laboratoria/curricula-js',
+      repo: 'Laboratoria/bootcamp',
       version: '2.0.0',
       track: 'js',
       locale: 'es-ES',
@@ -57,7 +57,7 @@ describe('course', () => {
 
   it('should read main and secondary tags', () => (
     course(helpers.resolveFixturePath('02-course-secondary-tags'), models, {
-      repo: 'Laboratoria/curricula-js',
+      repo: 'Laboratoria/bootcamp',
       version: '2.0.0',
       track: 'js',
       locale: 'es-ES',
@@ -67,7 +67,7 @@ describe('course', () => {
 
   it('should parse with target audience', () => (
     course(helpers.resolveFixturePath('02-course-with-target-audience'), models, {
-      repo: 'Laboratoria/curricula-js',
+      repo: 'Laboratoria/bootcamp',
       version: '2.0.0',
       track: 'js',
       locale: 'es-ES',
@@ -80,7 +80,7 @@ describe('course', () => {
 
   it('should parse grades (evaluación) section', () => (
     course(helpers.resolveFixturePath('03-course-with-grades'), models, {
-      repo: 'Laboratoria/curricula-js',
+      repo: 'Laboratoria/bootcamp',
       version: '2.0.0',
       track: 'js',
       locale: 'es-ES',
@@ -90,7 +90,7 @@ describe('course', () => {
 
   it('should trim <hr> from html fragments', () => (
     course(helpers.resolveFixturePath('03-course-with-grades'), models, {
-      repo: 'Laboratoria/curricula-js',
+      repo: 'Laboratoria/bootcamp',
       version: '2.0.0',
       track: 'js',
       locale: 'es-ES',
@@ -100,7 +100,7 @@ describe('course', () => {
 
   it('should validate units and parts', () => (
     course(helpers.resolveFixturePath('course-with-invalid-unit'), models, {
-      repo: 'Laboratoria/curricula-js',
+      repo: 'Laboratoria/bootcamp',
       version: '2.0.0',
       track: 'js',
       locale: 'es-ES',

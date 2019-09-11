@@ -20,7 +20,7 @@ describe('project', () => {
     const p = helpers.resolveFixturePath('01-foo');
     return project(p, models, {
       track: 'js',
-      repo: 'Laboratoria/curricula-js',
+      repo: 'Laboratoria/bootcamp',
       version: '1.0.0',
       locale: 'es-ES',
     })
@@ -33,7 +33,7 @@ describe('project', () => {
     const p = helpers.resolveFixturePath('01-foo');
     return project(p, models, {
       track: 'js',
-      repo: 'Laboratoria/curricula-js',
+      repo: 'Laboratoria/bootcamp',
       version: '1.0.0',
       locale: 'es-ES',
       rubric: '99',
@@ -48,7 +48,7 @@ describe('project', () => {
     const p = helpers.resolveFixturePath('01-foo');
     return project(p, models, {
       track: 'js',
-      repo: 'Laboratoria/curricula-js',
+      repo: 'Laboratoria/bootcamp',
       version: '1.0.0',
       locale: 'en-GB',
       rubric: '3',
@@ -88,7 +88,7 @@ describe('project', () => {
     const p = helpers.resolveFixturePath('01-a-project');
     return project(p, models, {
       track: 'js',
-      repo: 'Laboratoria/curricula-js',
+      repo: 'Laboratoria/bootcamp',
       version: '1.0.0',
       locale: 'es-ES',
       rubric: '3',
@@ -103,7 +103,7 @@ describe('project', () => {
     const p = helpers.resolveFixturePath('01-a-project-with-no-skills');
     return project(p, models, {
       track: 'js',
-      repo: 'Laboratoria/curricula-js',
+      repo: 'Laboratoria/bootcamp',
       version: '1.0.0',
       locale: 'es-ES',
       rubric: '3',
@@ -118,7 +118,7 @@ describe('project', () => {
     const p = helpers.resolveFixturePath('01-a-project-with-unknown-root-skills-cats');
     return project(p, models, {
       track: 'js',
-      repo: 'Laboratoria/curricula-js',
+      repo: 'Laboratoria/bootcamp',
       version: '1.0.0',
       locale: 'es-ES',
       rubric: '~3',
@@ -133,7 +133,7 @@ describe('project', () => {
     const p = helpers.resolveFixturePath('01-a-project-with-unknown-skills-cats');
     return project(p, models, {
       track: 'js',
-      repo: 'Laboratoria/curricula-js',
+      repo: 'Laboratoria/bootcamp',
       version: '1.0.0',
       locale: 'es-ES',
       rubric: '3',
@@ -148,7 +148,7 @@ describe('project', () => {
     const p = helpers.resolveFixturePath('01-a-project-with-unknown-skill');
     return project(p, models, {
       track: 'js',
-      repo: 'Laboratoria/curricula-js',
+      repo: 'Laboratoria/bootcamp',
       version: '1.0.0',
       locale: 'es-ES',
       rubric: '3',

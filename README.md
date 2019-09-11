@@ -101,22 +101,22 @@ Global options:
 
 ## Examples
 
-### Parse a topic (course) within the curricula-js repo
+### Parse a topic (course) within the `Laboratoria/bootcamp` repo
 
 ```sh
 curriculum-parser topic topics/babel \
-  --repo Laboratoria/curricula-js \
+  --repo Laboratoria/bootcamp \
   --version 2.2.0 \
   --locale es-ES \
   --track js \
   > "build/topics/${topic}.json"
 ```
 
-### Parse a project within the curricula-js repo
+### Parse a project within the `Laboratoria/bootcamp` repo
 
 ```sh
 curriculum-parser project projects/01-cipher \
-  --repo Laboratoria/curricula-js \
+  --repo Laboratoria/bootcamp \
   --version 2.2.0 \
   --locale es-ES \
   --track js \
