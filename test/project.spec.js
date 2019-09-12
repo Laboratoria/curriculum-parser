@@ -180,8 +180,10 @@ describe('project', () => {
       version: '1.0.0',
       locale: 'pt-BR',
       rubric: '3',
+      suffix: 'pt',
     })
       .then((parsed) => {
+        expect(parsed.slug).toBe('a-project-with-pt-translation-pt');
         expect(parsed.locale).toBe('pt-BR');
         expect(parsed.skills).toMatchSnapshot();
       });

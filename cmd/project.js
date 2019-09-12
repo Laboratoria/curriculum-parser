@@ -19,4 +19,5 @@ module.exports.options = [
   { name: 'locale', required: true },
   { name: 'track', required: true },
   { name: 'rubric', required: true },
+  { name: 'suffix', required: false },
 ];
