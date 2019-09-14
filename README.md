@@ -90,7 +90,7 @@ Commands:
 
   help
   topic <dir> --repo --version --locale --track [--suffix]
-  project <dir> --repo --version --locale --track --rubric
+  project <dir> --repo --version --locale --track --rubric [--suffix]
 
 Global options:
 
@@ -104,12 +104,24 @@ Global options:
 ### Parse a topic (course) within the `Laboratoria/bootcamp` repo
 
 ```sh
-curriculum-parser topic topics/babel \
+curriculum-parser topic topics/javascript \
   --repo Laboratoria/bootcamp \
-  --version 2.2.0 \
+  --version 2.5.0 \
   --locale es-ES \
   --track js \
-  > "build/topics/${topic}.json"
+  > "build/topics/javascript.json"
+```
+
+### Parse a portuguese topic (course) within the `Laboratoria/bootcamp` repo
+
+```sh
+curriculum-parser topic topics/javascript \
+  --repo Laboratoria/bootcamp \
+  --version 2.5.0 \
+  --locale pt-BR \
+  --track js \
+  --suffix pt \
+  > "build/topics/javascript-pt.json"
 ```
 
 ### Parse a project within the `Laboratoria/bootcamp` repo
@@ -117,11 +129,24 @@ curriculum-parser topic topics/babel \
 ```sh
 curriculum-parser project projects/01-cipher \
   --repo Laboratoria/bootcamp \
-  --version 2.2.0 \
+  --version 2.5.0 \
   --locale es-ES \
   --track js \
   --rubric 2.x \
   > "build/projects/01-cipher.json"
+```
+
+### Parse a portuguese project within the `Laboratoria/bootcamp` repo
+
+```sh
+curriculum-parser project projects/01-cipher \
+  --repo Laboratoria/bootcamp \
+  --version 2.5.0 \
+  --locale pt-BR \
+  --track js \
+  --rubric 2.x \
+  --suffix pt \
+  > "build/projects/01-cipher-pt.json"
 ```
 
 ### Parse a topic (course) in the curricula-ux repo
