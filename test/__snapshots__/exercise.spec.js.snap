@@ -2,35 +2,35 @@
 
 exports[`exercise should parse exercise 1`] = `
 Object {
-  "body": "<p>La programaci&#xF3;n imperativa tiene un nivel de abstracci&#xF3;n bajo, lo que quiere
+  "body": "<p>La programación imperativa tiene un nivel de abstracción bajo, lo que quiere
 decir que se enfoca en describir, desde el punto de vista de la computadora,
-c&#xF3;mo hacer lo que queremos. Nuestro c&#xF3;digo expresa de forma expl&#xED;cita el control
+cómo hacer lo que queremos. Nuestro código expresa de forma explícita el control
 de flujo, usando bucles, declara variables para llevar la cuenta, ...</p>
 <p>En el mundo real, en un lenguaje como JavaScript, vamos a encontrar
-caracter&#xED;sticas de este paradigma, pero siempre en el contexto de otro paradigma
-con un nivel de abtracci&#xF3;n m&#xE1;s alto y un mecanismo de reuso de c&#xF3;digo (c&#xF3;mo la
-programaci&#xF3;n orientada a objetos o la prgramaci&#xF3;n funcional).</p>
+características de este paradigma, pero siempre en el contexto de otro paradigma
+con un nivel de abtracción más alto y un mecanismo de reuso de código (cómo la
+programación orientada a objetos o la prgramación funcional).</p>
 <h2 id=\\"tarea\\">Tarea</h2>
 <p>El <em>boilerplate</em> (la plantilla sobre la que hacer el ejercicio) contiene un
 programa sin terminar. Este programa debe <strong>imprimir en la consola todos los
-n&#xFA;meros primos menores que <code>20</code></strong>.</p>
-<p>El <em>boilerplate</em> impementa s&#xF3;lo parte de la l&#xF3;gica. Por el momento imprime todos
-los n&#xFA;meros enteros del <code>2</code> al <code>19</code>. Ahora tienes que a&#xF1;adir la l&#xF3;gica para
-comprobar si un n&#xFA;mero es primo o no, y as&#xED; s&#xF3;lo imprimir los primos.</p>
+números primos menores que <code>20</code></strong>.</p>
+<p>El <em>boilerplate</em> impementa sólo parte de la lógica. Por el momento imprime todos
+los números enteros del <code>2</code> al <code>19</code>. Ahora tienes que añadir la lógica para
+comprobar si un número es primo o no, y así sólo imprimir los primos.</p>
 <h2 id=\\"requisitos\\">Requisitos</h2>
 <ul>
 <li>Debes implementar un bucle <code>for</code> anidado dentro del <code>for</code> ya existente.</li>
 </ul>
 <h2 id=\\"pistas\\">Pistas</h2>
 <ul>
-<li>Si un n&#xFA;mero es divisible por cualquier entero mayor que <code>1</code> que no sea el
-n&#xFA;mero mismo, sabemos que NO es primo.</li>
-<li>Dentro del bucle <code>for</code> principal, para ver si un n&#xFA;mero es primo, vamos a
+<li>Si un número es divisible por cualquier entero mayor que <code>1</code> que no sea el
+número mismo, sabemos que NO es primo.</li>
+<li>Dentro del bucle <code>for</code> principal, para ver si un número es primo, vamos a
 tratar de demostrar que NO es primo, y si no podemos probar que no es primo,
-entonces podemos asumir que s&#xED; es primo.</li>
-<li>El operador <code>%</code> nos da el residuo de una divisi&#xF3;n.</li>
-<li>Una vez que hemos probado que un n&#xFA;mero no es primo ya no necesitamos
-continuar dividi&#xE9;ndolo.</li>
+entonces podemos asumir que sí es primo.</li>
+<li>El operador <code>%</code> nos da el residuo de una división.</li>
+<li>Una vez que hemos probado que un número no es primo ya no necesitamos
+continuar dividiéndolo.</li>
 </ul>
 <h2 id=\\"recursos\\">Recursos</h2>
 <ul>
