@@ -3,42 +3,42 @@
 exports[`unit should parse a unit dir containing a part dir with a README.md 1`] = `
 Object {
   "00-opening": Object {
-    "body": "<h2 id=\\"&#xBF;por-qu&#xE9;-aprender-esto\\">&#xBF;Por qu&#xE9; aprender esto?</h2>
-<p>Como indica el nombre del curso, vamos a hablar de <em>Paradigmas de programaci&#xF3;n</em>,
-que son formas diferentes de pensar en c&#xF3;mo se organiza un programa.</p>
+    "body": "<h2 id=\\"¿por-qué-aprender-esto\\">¿Por qué aprender esto?</h2>
+<p>Como indica el nombre del curso, vamos a hablar de <em>Paradigmas de programación</em>,
+que son formas diferentes de pensar en cómo se organiza un programa.</p>
 <p>Como desarrollador <strong>Full Stack JS</strong> es esencial entender los distintos
-paradigmas de programaci&#xF3;n y c&#xF3;mo se traducen al mundo real en proyectos de
+paradigmas de programación y cómo se traducen al mundo real en proyectos de
 JavaScript.</p>
-<p>Hist&#xF3;ricamente, el paradigma orientado a objetos (OOP) ha sido el predominante,
+<p>Históricamente, el paradigma orientado a objetos (OOP) ha sido el predominante,
 pero recientemente, y en particular en la comunidad de JavaScript, hay un
 resurgir del paradigma funcional y sus bondades. <strong>JavaScript es un lenguaje de
-coraz&#xF3;n funcional</strong>, as&#xED; que conocer el paradigma, y c&#xF3;mo se compara a la
-programaci&#xF3;n orientada a objetos, no s&#xF3;lo te har&#xE1; una mejor coder, si no que
-podr&#xE1;s entender c&#xF3;mo se pueden enfrentar los mismos problemas con enfoques
-distintos, e identificar y adaptarse a bases de c&#xF3;digo existentes.</p>
-<p>En este curso nos concentraremos en los paradigmas m&#xE1;s relevantes para
-JavaScript y c&#xF3;mo se materializan en este contexto.</p>
-<h2 id=\\"gu&#xED;a-de-preguntas-y-conceptos-clave\\">Gu&#xED;a de preguntas y conceptos clave</h2>
-<p>Cuando empezamos a estudiar un tema nuevo, es &#xFA;til tener una idea de los
-conceptos m&#xE1;s importantes de lo que vamos a aprender y de los temas centrales
-que debemos prestar particular atenci&#xF3;n.</p>
-<p>A continuaci&#xF3;n te presentamos una serie de preguntas que debes ser capaz de
-responder al terminar esta unidad. Utiliza estas preguntas como gu&#xED;a para
+corazón funcional</strong>, así que conocer el paradigma, y cómo se compara a la
+programación orientada a objetos, no sólo te hará una mejor coder, si no que
+podrás entender cómo se pueden enfrentar los mismos problemas con enfoques
+distintos, e identificar y adaptarse a bases de código existentes.</p>
+<p>En este curso nos concentraremos en los paradigmas más relevantes para
+JavaScript y cómo se materializan en este contexto.</p>
+<h2 id=\\"guía-de-preguntas-y-conceptos-clave\\">Guía de preguntas y conceptos clave</h2>
+<p>Cuando empezamos a estudiar un tema nuevo, es útil tener una idea de los
+conceptos más importantes de lo que vamos a aprender y de los temas centrales
+que debemos prestar particular atención.</p>
+<p>A continuación te presentamos una serie de preguntas que debes ser capaz de
+responder al terminar esta unidad. Utiliza estas preguntas como guía para
 orientar tus esfuerzos de aprendizaje. Regresa a ellas constantemente a medida
-que avanzas para validar que est&#xE1;s avanzando en la direcci&#xF3;n correcta. Que te
-sirva como un &quot;checklist&quot; que vas marcando a medida que vas progresando.</p>
+que avanzas para validar que estás avanzando en la dirección correcta. Que te
+sirva como un \\"checklist\\" que vas marcando a medida que vas progresando.</p>
 <ul>
-<li>Qu&#xE9; son los <strong>paradigmas de programaci&#xF3;n</strong>?</li>
-<li>Qu&#xE9; es el estilo <strong>imperativo</strong></li>
-<li>Qu&#xE9; es el estilo <strong>declarativo</strong></li>
-<li>Qu&#xE9; paradigmas encajan dentro del estilo <strong>imperativo</strong> y cuales en el
+<li>Qué son los <strong>paradigmas de programación</strong>?</li>
+<li>Qué es el estilo <strong>imperativo</strong></li>
+<li>Qué es el estilo <strong>declarativo</strong></li>
+<li>Qué paradigmas encajan dentro del estilo <strong>imperativo</strong> y cuales en el
 <strong>declarativo</strong></li>
-<li>Qu&#xE9; es la <strong>programaci&#xF3;n por procedimientos</strong>?</li>
-<li>Qu&#xE9; es la <strong>programaci&#xF3;n orientada a objetos</strong>?</li>
-<li>Qu&#xE9; es la <strong>programaci&#xF3;n funcional</strong>?</li>
-<li>C&#xF3;mo se aplican los diferentes paradigmas al mundo de JavaScript?</li>
-<li>C&#xF3;mo se comparan los diferentes paradigmas (diferencias, similitudes, ...)?</li>
-<li>C&#xF3;mo programar en los diferentes estilos</li>
+<li>Qué es la <strong>programación por procedimientos</strong>?</li>
+<li>Qué es la <strong>programación orientada a objetos</strong>?</li>
+<li>Qué es la <strong>programación funcional</strong>?</li>
+<li>Cómo se aplican los diferentes paradigmas al mundo de JavaScript?</li>
+<li>Cómo se comparan los diferentes paradigmas (diferencias, similitudes, ...)?</li>
+<li>Cómo programar en los diferentes estilos</li>
 </ul>
 ",
     "duration": 5,
@@ -47,12 +47,12 @@ sirva como un &quot;checklist&quot; que vas marcando a medida que vas progresand
     "type": "read",
   },
   "01-overview": Object {
-    "body": "<p><div class=\\"iframe-container\\"><iframe frameborder=\\"0\\" src=\\"//fast.wistia.net/embed/iframe/6frz31ykmi?videoFoam=true\\" allowtransparency=\\"true\\" scrolling=\\"no\\" allowfullscreen=\\"true\\" mozallowfullscreen=\\"true\\" webkitallowfullscreen=\\"true\\" oallowfullscreen=\\"true\\" msallowfullscreen=\\"true\\" width=\\"100%\\" height=\\"100%\\"></iframe></div></p>
-<p>Los <strong>Paradigmas de Programaci&#xF3;n</strong> (<em>Programming Paradigms</em>) son formas
-diferentes de pensar en c&#xF3;mo se organiza un programa basado en una serie de
+    "body": "<p><div class=\\"iframe-container\\"><iframe width=\\"100%\\" height=\\"100%\\" src=\\"//fast.wistia.net/embed/iframe/6frz31ykmi?videoFoam=true\\" frameborder=\\"0\\" scrolling=\\"no\\" allowfullscreen=\\"true\\" mozallowfullscreen=\\"true\\" webkitallowfullscreen=\\"true\\" oallowfullscreen=\\"true\\" msallowfullscreen=\\"true\\" allowtransparency=\\"true\\"></iframe></div></p>
+<p>Los <strong>Paradigmas de Programación</strong> (<em>Programming Paradigms</em>) son formas
+diferentes de pensar en cómo se organiza un programa basado en una serie de
 principios, los cuales resultan en estilos muy distintos y lenguajes muy
 diversos.</p>
-<p>Consideremos la siguiente funci&#xF3;n:</p>
+<p>Consideremos la siguiente función:</p>
 <pre><code class=\\"language-js\\">function sum(array) {
   var total = 0;
   for (var i = 0; i &lt; array.length; i++) {
@@ -60,10 +60,10 @@ diversos.</p>
   }
   return total;
 }</code></pre>
-<p>La funci&#xF3;n <code>sum(array)</code> recibe un array de n&#xFA;meros y retorna la suma de todos
+<p>La función <code>sum(array)</code> recibe un array de números y retorna la suma de todos
 los elementos del array. Para llevar a cabo la suma, usamos la variable <code>total</code>,
 la cual vamos a ir actualizando (mutando) mientras vamos recorriendo el arreglo
-con un bucle (<code>for</code> en este caso). Estas caracter&#xED;sticas son t&#xED;picas del estilo
+con un bucle (<code>for</code> en este caso). Estas características son típicas del estilo
 imperativo.</p>
 <p>Ahora, podemos implementar exactamente la misma funcionalidad usando un enfoque
 completamente distinto.</p>
@@ -73,33 +73,33 @@ completamente distinto.</p>
   }
   return array[0] + sum(array.slice(1));
 };</code></pre>
-<p>En esta segunda implementaci&#xF3;n, la funci&#xF3;n <code>sum(array)</code> sigue teniendo la misma
+<p>En esta segunda implementación, la función <code>sum(array)</code> sigue teniendo la misma
 interfaz (recibe los mismos argumentos y retorna lo mismo), pero claramente
-podemos ver que la l&#xF3;gica se expresa de una manera muy diferente. En la versi&#xF3;n
-recursiva hemos reemplazado el bucle <code>for</code> por recursi&#xF3;n, y adem&#xE1;s podemos ver
-que no hay asignaci&#xF3;n ni mutaci&#xF3;n de variables, el &quot;c&#xF3;mputo&quot; se hace por
-aplicaci&#xF3;n de argumentos a funciones. Este tipo de caracter&#xED;sticas son propias
+podemos ver que la lógica se expresa de una manera muy diferente. En la versión
+recursiva hemos reemplazado el bucle <code>for</code> por recursión, y además podemos ver
+que no hay asignación ni mutación de variables, el \\"cómputo\\" se hace por
+aplicación de argumentos a funciones. Este tipo de características son propias
 del paradigma funcional.</p>
 <hr>
 <p>PRO TIP:</p>
-<p>Haciendo uso de ES2015 podemos refactorizar la versi&#xF3;n funcional de <code>sum</code> de
+<p>Haciendo uso de ES2015 podemos refactorizar la versión funcional de <code>sum</code> de
 esta manera:</p>
 <pre><code class=\\"language-js\\">const sum = array =&gt; !array.length ? 0 : array[0] + sum(array.slice(1));</code></pre>
 <hr>
-<p>Cuando hablamos de <strong>Paradigmas de Programaci&#xF3;n</strong> inevitablemente tenemos que
-hablar de lenguajes de programaci&#xF3;n. Algunos lenguajes, como JavaScript, son
+<p>Cuando hablamos de <strong>Paradigmas de Programación</strong> inevitablemente tenemos que
+hablar de lenguajes de programación. Algunos lenguajes, como JavaScript, son
 <em>multi-paradigma</em>, lo que quiere decir que nos permiten programar en diferentes
-paradigmas, mientras que otros se enfocan espec&#xED;ficamente en uno.</p>
-<p><strong>JavaScript</strong> es un leguage <em>h&#xED;brido</em>, por decirlo de alguna forma, y contiene
+paradigmas, mientras que otros se enfocan específicamente en uno.</p>
+<p><strong>JavaScript</strong> es un leguage <em>híbrido</em>, por decirlo de alguna forma, y contiene
 elementos propios de lenguajes funcionales (por ejemplo funciones como objetos
 de primera clase, lambdas, ...) pero no estamos limitados al paradigma
 funcional. <strong>JavaScript nos permite programar de forma <em>funcional</em>, <em>orientado a
 objetos</em>, <em>orientado a eventos</em>, <em>por procedimientos</em>, ...</strong></p>
-<p>Tambi&#xE9;n veremos que los &quot;paradigmas&quot; son &quot;estilos&quot; de programaci&#xF3;n que no son
+<p>También veremos que los \\"paradigmas\\" son \\"estilos\\" de programación que no son
 necesariamente exclusivos. De hecho, algunos son complementarios o evoluciones
-de paradigmas m&#xE1;s antiguos o con un nivel de abstracci&#xF3;n m&#xE1;s bajo. As&#xED;, la
-programaci&#xF3;n procedural y orientada a objetos, por ejemplo, ambas son
-imperativas, ya que comparten una ra&#xED;z com&#xFA;n.</p>
+de paradigmas más antiguos o con un nivel de abstracción más bajo. Así, la
+programación procedural y orientada a objetos, por ejemplo, ambas son
+imperativas, ya que comparten una raíz común.</p>
 <hr>
 <h2 id=\\"referencias\\">Referencias</h2>
 <p>Blog posts:</p>
@@ -109,20 +109,20 @@ Yevgeniy Brikman, Apr 09 2014</li>
 </ul>
 <p>Videos:</p>
 <ul>
-<li><div class=\\"iframe-container\\"><iframe id=\\"ytplayer\\" type=\\"text/html\\" width=\\"640\\" height=\\"360\\" frameborder=\\"0\\" src=\\"https://www.youtube.com/embed/sqV3pL5x8PI?autoplay=0\\"></iframe></div>,
+<li><div class=\\"iframe-container\\"><iframe width=\\"640\\" height=\\"360\\" src=\\"https://www.youtube.com/embed/sqV3pL5x8PI?autoplay=0\\" frameborder=\\"0\\" gesture=\\"media\\" allow=\\"encrypted-media\\" allowfullscreen=\\"true\\"></iframe></div>,
 <code>10:43</code>, <a href=\\"https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA\\" target=\\"_blank\\">Computerphile</a>,
 30 Aug 2013</li>
-<li><div class=\\"iframe-container\\"><iframe id=\\"ytplayer\\" type=\\"text/html\\" width=\\"640\\" height=\\"360\\" frameborder=\\"0\\" src=\\"https://www.youtube.com/embed/4A2mWqLUpzw?autoplay=0\\"></iframe></div>,
+<li><div class=\\"iframe-container\\"><iframe width=\\"640\\" height=\\"360\\" src=\\"https://www.youtube.com/embed/4A2mWqLUpzw?autoplay=0\\" frameborder=\\"0\\" gesture=\\"media\\" allow=\\"encrypted-media\\" allowfullscreen=\\"true\\"></iframe></div>,
 <code>8:27</code>, <a href=\\"https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA\\" target=\\"_blank\\">Computerphile</a>,
 Jun 28 2016</li>
-<li><a href=\\"https://www.video2brain.com/mx/tutorial/que-es-un-paradigma-de-programacion\\" target=\\"_blank\\">Qu&#xE9; es un paradigma de programaci&#xF3;n</a>,
-<code>5:15</code>, Jos&#xE9; Dimas Luj&#xE1;n Castillo, <a href=\\"https://www.video2brain.com/\\" target=\\"_blank\\">video2brain</a>,
+<li><a href=\\"https://www.video2brain.com/mx/tutorial/que-es-un-paradigma-de-programacion\\" target=\\"_blank\\">Qué es un paradigma de programación</a>,
+<code>5:15</code>, José Dimas Luján Castillo, <a href=\\"https://www.video2brain.com/\\" target=\\"_blank\\">video2brain</a>,
 8 Mar 2017</li>
 </ul>
 <p>Otros recursos:</p>
 <ul>
-<li><a href=\\"https://en.wikipedia.org/wiki/Programming_paradigm\\" target=\\"_blank\\">Definici&#xF3;n de Programming_paradigm en Wikipedia</a></li>
-<li><a href=\\"https://en.wikipedia.org/wiki/Comparison_of_programming_paradigms\\" target=\\"_blank\\">Comparativa de paradigmas de programaci&#xF3;n en Wikipedia</a></li>
+<li><a href=\\"https://en.wikipedia.org/wiki/Programming_paradigm\\" target=\\"_blank\\">Definición de Programming_paradigm en Wikipedia</a></li>
+<li><a href=\\"https://en.wikipedia.org/wiki/Comparison_of_programming_paradigms\\" target=\\"_blank\\">Comparativa de paradigmas de programación en Wikipedia</a></li>
 </ul>
 ",
     "duration": 5,
@@ -151,16 +151,16 @@ Jun 28 2016</li>
     "type": "read",
   },
   "02-history": Object {
-    "body": "<p><div class=\\"iframe-container\\"><iframe frameborder=\\"0\\" src=\\"//fast.wistia.net/embed/iframe/an9covln5w?videoFoam=true\\" allowtransparency=\\"true\\" scrolling=\\"no\\" allowfullscreen=\\"true\\" mozallowfullscreen=\\"true\\" webkitallowfullscreen=\\"true\\" oallowfullscreen=\\"true\\" msallowfullscreen=\\"true\\" width=\\"100%\\" height=\\"100%\\"></iframe></div></p>
-<p>Para tener una idea general de los paradigmas y sus peculiaridades, es &#xFA;til
+    "body": "<p><div class=\\"iframe-container\\"><iframe width=\\"100%\\" height=\\"100%\\" src=\\"//fast.wistia.net/embed/iframe/an9covln5w?videoFoam=true\\" frameborder=\\"0\\" scrolling=\\"no\\" allowfullscreen=\\"true\\" mozallowfullscreen=\\"true\\" webkitallowfullscreen=\\"true\\" oallowfullscreen=\\"true\\" msallowfullscreen=\\"true\\" allowtransparency=\\"true\\"></iframe></div></p>
+<p>Para tener una idea general de los paradigmas y sus peculiaridades, es útil
 repasar brevemente su historia.</p>
-<p>El primer paradigma en aparecer, primera mitad de los a&#xF1;os 50, es el
-<strong>imperativo</strong>, que se caracteriza por un nivel bajo de abstracci&#xF3;n. Por lo
-tanto el c&#xF3;digo est&#xE1; enfocado en las instrucciones que la computadora debe
-seguir, y no necesariamente en la sem&#xE1;ntica o l&#xF3;gica de la funcionalidad que
-estamos implementando (el c&#xF3;mo nosotros pensamos en lo que hace el programa).</p>
-<p>Veamos un ejemplo de <code>Assembly</code>, el primer lenguaje &quot;moderno&quot;, que apareci&#xF3; en
-el a&#xF1;o 1949, y que sigue vivo a d&#xED;a de hoy, eso s&#xED;, para cosas muy espec&#xED;ficas,
+<p>El primer paradigma en aparecer, primera mitad de los años 50, es el
+<strong>imperativo</strong>, que se caracteriza por un nivel bajo de abstracción. Por lo
+tanto el código está enfocado en las instrucciones que la computadora debe
+seguir, y no necesariamente en la semántica o lógica de la funcionalidad que
+estamos implementando (el cómo nosotros pensamos en lo que hace el programa).</p>
+<p>Veamos un ejemplo de <code>Assembly</code>, el primer lenguaje \\"moderno\\", que apareció en
+el año 1949, y que sigue vivo a día de hoy, eso sí, para cosas muy específicas,
 que nos son necesariamente lo que vemos los desarrolladores web, pero que sirve
 para este ejemplo ;-)</p>
 <pre><code class=\\"language-assembly_x86\\">section .text             ;section declaration
@@ -187,44 +187,44 @@ _start:
 
 section .data             ;section declaration
 
-msg db    &quot;Hello, world!&quot;,0xa    ;our dear string
+msg db    \\"Hello, world!\\",0xa    ;our dear string
 len equ   $ - msg                ;length of our dear string</code></pre>
 <p><a href=\\"http://www.tldp.org/HOWTO/Assembly-HOWTO/hello.html\\" target=\\"_blank\\">Fuente: Assembly-HOWTO</a></p>
-<p>El snippet de arriba es un &quot;hello world&quot; escrito en <code>Assembly</code> (una versi&#xF3;n
-moderna, pero muy parecido a lo que hubieras visto en los a&#xF1;os 50). Lo &#xFA;nico que
+<p>El snippet de arriba es un \\"hello world\\" escrito en <code>Assembly</code> (una versión
+moderna, pero muy parecido a lo que hubieras visto en los años 50). Lo único que
 hace este programa es imprimir el string <code>Hello, world!</code>. El equivalente a todo
-el c&#xF3;digo de arriba en JavaScript ser&#xED;a:</p>
-<pre><code class=\\"language-js\\">console.log(&apos;Hello, world!&apos;);</code></pre>
-<p>En nuestro caso, JavaScript tiene un nivel de abstracci&#xF3;n mucho m&#xE1;s alto. Con lo
+el código de arriba en JavaScript sería:</p>
+<pre><code class=\\"language-js\\">console.log('Hello, world!');</code></pre>
+<p>En nuestro caso, JavaScript tiene un nivel de abstracción mucho más alto. Con lo
 cual, no tenemos que preocuparnos de muchos detalles que JavaScript ya abstrae
 para nosotros, como manejo de memoria, instrucciones del procesador, etc. Esto
-nos permite expresar de forma m&#xE1;s &quot;humana&quot; la intenci&#xF3;n de nuestro programa, y
-con mucho menos c&#xF3;digo.</p>
-<p>Regresamos a los a&#xF1;os 50. Seg&#xFA;n la programaci&#xF3;n va evolucionando, y los
-programas creciendo, vemos c&#xF3;mo van a ir surgiendo diferentes formas de
-&quot;abstraer&quot;, &quot;organizar&quot; y &quot;reusar&quot; el c&#xF3;digo. A finales de los a&#xF1;os 50 vemos
-como aparecen <strong>Fortran II</strong> y <strong>Lisp</strong>, introduciendo la programaci&#xF3;n
+nos permite expresar de forma más \\"humana\\" la intención de nuestro programa, y
+con mucho menos código.</p>
+<p>Regresamos a los años 50. Según la programación va evolucionando, y los
+programas creciendo, vemos cómo van a ir surgiendo diferentes formas de
+\\"abstraer\\", \\"organizar\\" y \\"reusar\\" el código. A finales de los años 50 vemos
+como aparecen <strong>Fortran II</strong> y <strong>Lisp</strong>, introduciendo la programación
 <strong>procedural</strong> y <strong>funcional</strong>. Con ambos enfoques pasamos a nuevos nieveles de
-abstracci&#xF3;n y mejora en el reuso de c&#xF3;digo.</p>
-<p>En los a&#xF1;os 70 y 80 se da el boom de la programaci&#xF3;n orientada a objetos,
-primero con <strong>Smalltalk</strong> y despu&#xE9;s <strong>C++</strong>.</p>
-<p><strong>JavaScript</strong> nace en 1995, el mismo a&#xF1;o que <strong>Java</strong>, <strong>Ruby</strong> y <strong>PHP</strong>. La
-d&#xE9;cada de los 90 se caracteriza por los lenguajes multi-paradigma. En ese
+abstracción y mejora en el reuso de código.</p>
+<p>En los años 70 y 80 se da el boom de la programación orientada a objetos,
+primero con <strong>Smalltalk</strong> y después <strong>C++</strong>.</p>
+<p><strong>JavaScript</strong> nace en 1995, el mismo año que <strong>Java</strong>, <strong>Ruby</strong> y <strong>PHP</strong>. La
+década de los 90 se caracteriza por los lenguajes multi-paradigma. En ese
 contexto JavaScript destaca por su dinamismo y su naturaleza funcional. De hecho
-a nivel conceptual, JavaScript est&#xE1; fuertemente inspirado por <strong>Scheme</strong>, que es
+a nivel conceptual, JavaScript está fuertemente inspirado por <strong>Scheme</strong>, que es
 un lenguaje funcional, y los prototipos de <strong>Self</strong>, aunque por necesidades del
-mercado, la sint&#xE1;xis se parece m&#xE1;s a la familia de lenguajes de <strong>C</strong> y
-<strong>Java</strong>, que son imperativos. Por esta raz&#xF3;n, JavaScript se considera muchas
-veces <a href=\\"http://javascript.crockford.com/javascript.html\\" target=\\"_blank\\">el lenguaje m&#xE1;s
-incomprendido</a>, y quiz&#xE1;s
+mercado, la sintáxis se parece más a la familia de lenguajes de <strong>C</strong> y
+<strong>Java</strong>, que son imperativos. Por esta razón, JavaScript se considera muchas
+veces <a href=\\"http://javascript.crockford.com/javascript.html\\" target=\\"_blank\\">el lenguaje más
+incomprendido</a>, y quizás
 confuso.</p>
-<p>Como referencia, abajo podemos ver una tabla con algunos de los lenguajes m&#xE1;s
+<p>Como referencia, abajo podemos ver una tabla con algunos de los lenguajes más
 significativos a nivel de cambios de paradigma, y el conexto en el que aparece
 JavaScript.</p>
 <table>
 <thead>
 <tr>
-<th>A&#xF1;o</th>
+<th>Año</th>
 <th>Lenguaje</th>
 <th>Paradigma</th>
 </tr>
@@ -262,7 +262,7 @@ JavaScript.</p>
 <tr>
 <td>1972</td>
 <td><a href=\\"https://en.wikipedia.org/wiki/Prolog\\" target=\\"_blank\\">Prolog</a></td>
-<td>l&#xF3;gico</td>
+<td>lógico</td>
 </tr>
 <tr>
 <td>1972</td>
@@ -331,25 +331,25 @@ JavaScript.</p>
     "type": "read",
   },
   "03-declarative-vs-imperative": Object {
-    "body": "<p><div class=\\"iframe-container\\"><iframe frameborder=\\"0\\" src=\\"//fast.wistia.net/embed/iframe/ty5mr7p77t?videoFoam=true\\" allowtransparency=\\"true\\" scrolling=\\"no\\" allowfullscreen=\\"true\\" mozallowfullscreen=\\"true\\" webkitallowfullscreen=\\"true\\" oallowfullscreen=\\"true\\" msallowfullscreen=\\"true\\" width=\\"100%\\" height=\\"100%\\"></iframe></div></p>
-<p>Hemos mencionado que los primeros lenguajes de programaci&#xF3;n eran imperativos, y
-que se centraban en el &quot;c&#xF3;mo&quot; m&#xE1;s que en el &quot;qu&#xE9;&quot;. Como contrapartida, el estilo
-declarativo se caracteriza por lo contrario, enfocarse m&#xE1;s en &quot;qu&#xE9;&quot; queremos
-hacer, desde el punto de vista de un ser humano, en vez de c&#xF3;mo lo debe ejecutar
-la computadora. Por ende, cuanto m&#xE1;s declarativo, m&#xE1;s alejado del hardware.</p>
-<p>Algunos paradigmas son m&#xE1;s imperativos y otros m&#xE1;s declarativos. Por ejemplo,
-la programaci&#xF3;n orientada a procedimientos, o la programaci&#xF3;n orientada objetos,
-van a tener un caracter imperativo, mientras que la programaci&#xF3;n funcional tiene
-un caracter mucho m&#xE1;s declarativo.</p>
-<p>Im&#xE1;ginemos que tenemos la siguiente data en un array de objetos:</p>
+    "body": "<p><div class=\\"iframe-container\\"><iframe width=\\"100%\\" height=\\"100%\\" src=\\"//fast.wistia.net/embed/iframe/ty5mr7p77t?videoFoam=true\\" frameborder=\\"0\\" scrolling=\\"no\\" allowfullscreen=\\"true\\" mozallowfullscreen=\\"true\\" webkitallowfullscreen=\\"true\\" oallowfullscreen=\\"true\\" msallowfullscreen=\\"true\\" allowtransparency=\\"true\\"></iframe></div></p>
+<p>Hemos mencionado que los primeros lenguajes de programación eran imperativos, y
+que se centraban en el \\"cómo\\" más que en el \\"qué\\". Como contrapartida, el estilo
+declarativo se caracteriza por lo contrario, enfocarse más en \\"qué\\" queremos
+hacer, desde el punto de vista de un ser humano, en vez de cómo lo debe ejecutar
+la computadora. Por ende, cuanto más declarativo, más alejado del hardware.</p>
+<p>Algunos paradigmas son más imperativos y otros más declarativos. Por ejemplo,
+la programación orientada a procedimientos, o la programación orientada objetos,
+van a tener un caracter imperativo, mientras que la programación funcional tiene
+un caracter mucho más declarativo.</p>
+<p>Imáginemos que tenemos la siguiente data en un array de objetos:</p>
 <pre><code class=\\"language-js\\">var array = [
-  {id: &apos;uno&apos;, name: &apos;el primero&apos;},
-  {id: &apos;dos&apos;, name: &apos;el segundo&apos;},
-  {name: &apos;no tengo id&apos;}
+  {id: 'uno', name: 'el primero'},
+  {id: 'dos', name: 'el segundo'},
+  {name: 'no tengo id'}
 ];</code></pre>
 <p>A partir de esta data, ahora nos piden extraer los <code>id</code> de cada un de los
 objetos y amacenarlos en un nuevo arreglo (<code>ids</code>). Si nos planteamos el
-problema desde un enfoque imperativo, podr&#xED;amos implementar una soluci&#xF3;n as&#xED;:</p>
+problema desde un enfoque imperativo, podríamos implementar una solución así:</p>
 <pre><code class=\\"language-js\\">const ids = [];
 
 for (var i = 0; i &lt; array.length; i++) {
@@ -358,53 +358,53 @@ for (var i = 0; i &lt; array.length; i++) {
   }
 }
 
-console.log(ids); // [&apos;uno&apos;, &apos;dos&apos;]</code></pre>
-<p>En el c&#xF3;digo anterior, probablemente puedas identificar claramente el estilo
-imperativo. Las variables como &quot;contadores&quot; y &quot;acumuladores&quot;, son t&#xED;picos del
-estilo imperativo. En este estilo el principal mecanismo de c&#xF3;mputo se lleva a
-cabo a trav&#xE9;s de la asignaci&#xF3;n de valores en variables. Veremos as&#xED; uso de
-variables globales y mutaci&#xF3;n de los valores asignados a variables a trav&#xE9;s del
+console.log(ids); // ['uno', 'dos']</code></pre>
+<p>En el código anterior, probablemente puedas identificar claramente el estilo
+imperativo. Las variables como \\"contadores\\" y \\"acumuladores\\", son típicos del
+estilo imperativo. En este estilo el principal mecanismo de cómputo se lleva a
+cabo a través de la asignación de valores en variables. Veremos así uso de
+variables globales y mutación de los valores asignados a variables a través del
 tiempo.</p>
 <p>JavaScript nos ofrece utilidades para afrontar este tipo problemas desde el
-enfoque funcional. As&#xED;, los arrays (gracias a <code>Array.prototype</code>) tienen una
-serie de m&#xE9;todos para manipular su data a trav&#xE9;s de &quot;higher order functions&quot;,
-que en este caso son funciones que aceptan otra funci&#xF3;n como argumento, como por
-ejemplo <code>Array.prototype.filter</code> o <code>Array.prototype.map</code>. Veamos c&#xF3;mo podemos
-usar estas herramientas para implementar la misma l&#xF3;gica:</p>
+enfoque funcional. Así, los arrays (gracias a <code>Array.prototype</code>) tienen una
+serie de métodos para manipular su data a través de \\"higher order functions\\",
+que en este caso son funciones que aceptan otra función como argumento, como por
+ejemplo <code>Array.prototype.filter</code> o <code>Array.prototype.map</code>. Veamos cómo podemos
+usar estas herramientas para implementar la misma lógica:</p>
 <pre><code class=\\"language-js\\">const ids = array
-  .filter(item =&gt; typeof item.id === &apos;string&apos;)
+  .filter(item =&gt; typeof item.id === 'string')
   .map(item =&gt; item.id);
 
-console.log(ids); // [&apos;uno&apos;, &apos;dos&apos;]</code></pre>
-<p>En esta nueva versi&#xF3;n hacemos lo siguiente:</p>
+console.log(ids); // ['uno', 'dos']</code></pre>
+<p>En esta nueva versión hacemos lo siguiente:</p>
 <ol>
-<li>Usamos <code>Array#filter</code> para crear un nuevo arreglo s&#xF3;lo con aquellos elementos
-que tengan un <code>id</code> que sea un string (<code>typeof item.id === &apos;string&apos;</code>).</li>
+<li>Usamos <code>Array#filter</code> para crear un nuevo arreglo sólo con aquellos elementos
+que tengan un <code>id</code> que sea un string (<code>typeof item.id === 'string'</code>).</li>
 <li>Usamos <code>Array#map</code> para transformar cada elemento del arreglo y crear un
 nuevo arreglo con los resultados.</li>
 </ol>
-<p>De esta forma los detalles de la iteraci&#xF3;n quedan escondidos detr&#xE1;s de
-<code>Array#filter</code> y <code>Array#map</code>, haciendo nuestro c&#xF3;digo m&#xE1;s declarativo.</p>
-<p>Tambi&#xE9;n podemos ver c&#xF3;mo &quot;encadenamos&quot; (method chaining) las invocaciones de
+<p>De esta forma los detalles de la iteración quedan escondidos detrás de
+<code>Array#filter</code> y <code>Array#map</code>, haciendo nuestro código más declarativo.</p>
+<p>También podemos ver cómo \\"encadenamos\\" (method chaining) las invocaciones de
 <code>filter</code> y <code>map</code> ya que ambas retornan un array, que a su vez tiene todos los
-m&#xE9;todos de <code>Array.prototype</code>.</p>
-<p>El estilo declarativo depende de que el lenguaje (o librer&#xED;as) nos ofrezcan este
-tipo de herramientas o abstracciones con las que poder expresar nuestra l&#xF3;gica
-sin preocuparnos tanto sobre los detalles de implementaci&#xF3;n.</p>
-<p>Para terminar esta secci&#xF3;n, cabe mencionar que HTML es un lenguaje declarativo!
-Muchos se quejar&#xED;an diciendo que HTML no es un lenguaje de programaci&#xF3;n, sino un
+métodos de <code>Array.prototype</code>.</p>
+<p>El estilo declarativo depende de que el lenguaje (o librerías) nos ofrezcan este
+tipo de herramientas o abstracciones con las que poder expresar nuestra lógica
+sin preocuparnos tanto sobre los detalles de implementación.</p>
+<p>Para terminar esta sección, cabe mencionar que HTML es un lenguaje declarativo!
+Muchos se quejarían diciendo que HTML no es un lenguaje de programación, sino un
 lenguaje de marcado (<em>markup language</em>). Pero podemos considerear a HTML como un
-lenguaje declarativo muy restringido, no de uso general, donde s&#xF3;lo podemos
-crear un &#xE1;rbol de nodos a partir de una estructura de etiquetas (<em>tags</em>) con una
-sint&#xE1;xis y sem&#xE1;ntica predefinida. Es declarativo en el sentido de que no le
-estamos diciendo a la computadora c&#xF3;mo convertir nuestro c&#xF3;digo en
+lenguaje declarativo muy restringido, no de uso general, donde sólo podemos
+crear un árbol de nodos a partir de una estructura de etiquetas (<em>tags</em>) con una
+sintáxis y semántica predefinida. Es declarativo en el sentido de que no le
+estamos diciendo a la computadora cómo convertir nuestro código en
 instrucciones, sino que describimos de formal declarativa lo que queremos que
-ocurra (el compilador o int&#xE9;rprete se encarga del resto).</p>
+ocurra (el compilador o intérprete se encarga del resto).</p>
 <hr>
 <h2 id=\\"referencias\\">Referencias</h2>
 <p>Videos:</p>
 <ul>
-<li><div class=\\"iframe-container\\"><iframe id=\\"ytplayer\\" type=\\"text/html\\" width=\\"640\\" height=\\"360\\" frameborder=\\"0\\" src=\\"https://www.youtube.com/embed/4A2mWqLUpzw?autoplay=0\\"></iframe></div>,
+<li><div class=\\"iframe-container\\"><iframe width=\\"640\\" height=\\"360\\" src=\\"https://www.youtube.com/embed/4A2mWqLUpzw?autoplay=0\\" frameborder=\\"0\\" gesture=\\"media\\" allow=\\"encrypted-media\\" allowfullscreen=\\"true\\"></iframe></div>,
 <code>8:27</code>, <a href=\\"https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA\\" target=\\"_blank\\">Computerphile</a>,
 Jun 28 2016</li>
 </ul>
@@ -437,35 +437,35 @@ Jun 28 2016</li>
     "duration": 5,
     "exercises": Object {
       "01-print-primes": Object {
-        "body": "<p>La programaci&#xF3;n imperativa tiene un nivel de abstracci&#xF3;n bajo, lo que quiere
+        "body": "<p>La programación imperativa tiene un nivel de abstracción bajo, lo que quiere
 decir que se enfoca en describir, desde el punto de vista de la computadora,
-c&#xF3;mo hacer lo que queremos. Nuestro c&#xF3;digo expresa de forma expl&#xED;cita el control
+cómo hacer lo que queremos. Nuestro código expresa de forma explícita el control
 de flujo, usando bucles, declara variables para llevar la cuenta, ...</p>
 <p>En el mundo real, en un lenguaje como JavaScript, vamos a encontrar
-caracter&#xED;sticas de este paradigma, pero siempre en el contexto de otro paradigma
-con un nivel de abtracci&#xF3;n m&#xE1;s alto y un mecanismo de reuso de c&#xF3;digo (c&#xF3;mo la
-programaci&#xF3;n orientada a objetos o la prgramaci&#xF3;n funcional).</p>
+características de este paradigma, pero siempre en el contexto de otro paradigma
+con un nivel de abtracción más alto y un mecanismo de reuso de código (cómo la
+programación orientada a objetos o la prgramación funcional).</p>
 <h2 id=\\"tarea\\">Tarea</h2>
 <p>El <em>boilerplate</em> (la plantilla sobre la que hacer el ejercicio) contiene un
 programa sin terminar. Este programa debe <strong>imprimir en la consola todos los
-n&#xFA;meros primos menores que <code>20</code></strong>.</p>
-<p>El <em>boilerplate</em> impementa s&#xF3;lo parte de la l&#xF3;gica. Por el momento imprime todos
-los n&#xFA;meros enteros del <code>2</code> al <code>19</code>. Ahora tienes que a&#xF1;adir la l&#xF3;gica para
-comprobar si un n&#xFA;mero es primo o no, y as&#xED; s&#xF3;lo imprimir los primos.</p>
+números primos menores que <code>20</code></strong>.</p>
+<p>El <em>boilerplate</em> impementa sólo parte de la lógica. Por el momento imprime todos
+los números enteros del <code>2</code> al <code>19</code>. Ahora tienes que añadir la lógica para
+comprobar si un número es primo o no, y así sólo imprimir los primos.</p>
 <h2 id=\\"requisitos\\">Requisitos</h2>
 <ul>
 <li>Debes implementar un bucle <code>for</code> anidado dentro del <code>for</code> ya existente.</li>
 </ul>
 <h2 id=\\"pistas\\">Pistas</h2>
 <ul>
-<li>Si un n&#xFA;mero es divisible por cualquier entero mayor que <code>1</code> que no sea el
-n&#xFA;mero mismo, sabemos que NO es primo.</li>
-<li>Dentro del bucle <code>for</code> principal, para ver si un n&#xFA;mero es primo, vamos a
+<li>Si un número es divisible por cualquier entero mayor que <code>1</code> que no sea el
+número mismo, sabemos que NO es primo.</li>
+<li>Dentro del bucle <code>for</code> principal, para ver si un número es primo, vamos a
 tratar de demostrar que NO es primo, y si no podemos probar que no es primo,
-entonces podemos asumir que s&#xED; es primo.</li>
-<li>El operador <code>%</code> nos da el residuo de una divisi&#xF3;n.</li>
-<li>Una vez que hemos probado que un n&#xFA;mero no es primo ya no necesitamos
-continuar dividi&#xE9;ndolo.</li>
+entonces podemos asumir que sí es primo.</li>
+<li>El operador <code>%</code> nos da el residuo de una división.</li>
+<li>Una vez que hemos probado que un número no es primo ya no necesitamos
+continuar dividiéndolo.</li>
 </ul>
 <h2 id=\\"recursos\\">Recursos</h2>
 <ul>
@@ -561,23 +561,23 @@ describe('printPrimes()', () => {
     "type": "practice",
   },
   "05-procedural": Object {
-    "body": "<p><div class=\\"iframe-container\\"><iframe frameborder=\\"0\\" src=\\"//fast.wistia.net/embed/iframe/el19ibmhpj?videoFoam=true\\" allowtransparency=\\"true\\" scrolling=\\"no\\" allowfullscreen=\\"true\\" mozallowfullscreen=\\"true\\" webkitallowfullscreen=\\"true\\" oallowfullscreen=\\"true\\" msallowfullscreen=\\"true\\" width=\\"100%\\" height=\\"100%\\"></iframe></div></p>
-<p>La programaci&#xF3;n por procedimientos (<em>procedural programming</em>) pertenece a la
-rama del estilo <em>imperativo</em>. Antes mencionamos que a finales de los a&#xF1;os 50
-Fortran II introduce la programaci&#xF3;n por procedimientos, y de esa forma
-empezamos a &quot;organizar&quot;, &quot;abstraer&quot; y &quot;reusar&quot; nuestro c&#xF3;digo.</p>
+    "body": "<p><div class=\\"iframe-container\\"><iframe width=\\"100%\\" height=\\"100%\\" src=\\"//fast.wistia.net/embed/iframe/el19ibmhpj?videoFoam=true\\" frameborder=\\"0\\" scrolling=\\"no\\" allowfullscreen=\\"true\\" mozallowfullscreen=\\"true\\" webkitallowfullscreen=\\"true\\" oallowfullscreen=\\"true\\" msallowfullscreen=\\"true\\" allowtransparency=\\"true\\"></iframe></div></p>
+<p>La programación por procedimientos (<em>procedural programming</em>) pertenece a la
+rama del estilo <em>imperativo</em>. Antes mencionamos que a finales de los años 50
+Fortran II introduce la programación por procedimientos, y de esa forma
+empezamos a \\"organizar\\", \\"abstraer\\" y \\"reusar\\" nuestro código.</p>
 <p>Cuando programamos orientados a procedimientos, lo cual puede ser un enfoque
-v&#xE1;lido para ciertos programas o scripts, nos concentramos en agrupar c&#xF3;digo
+válido para ciertos programas o scripts, nos concentramos en agrupar código
 en procedimientos o funciones, e invocar estos procedimientos con diferentes
-argumentos o par&#xE1;metros. En este sentido es parecido a la programaci&#xF3;n
+argumentos o parámetros. En este sentido es parecido a la programación
 funcional, pero con la diferencia de que nos mantenemos en la rama imperativa,
-describiendo acciones como pasos secuenciales, que podr&#xED;an tener efectos
-secundarios y donde el output no est&#xE1; necesariamente deterinado por los
-argumentos de entrada. Mientras que la programaci&#xF3;n funcional es m&#xE1;s abstracta,
+describiendo acciones como pasos secuenciales, que podrían tener efectos
+secundarios y donde el output no está necesariamente deterinado por los
+argumentos de entrada. Mientras que la programación funcional es más abstracta,
 se basa en funciones puras sin efectos secundarios, evitar el estado compartido,
-y otros principios espec&#xED;ficos de la programaci&#xF3;n funcional.</p>
-<p>Refactoricemos el ejemplo anterior donde sac&#xE1;bamos la propiedad <code>id</code> de una
-lista de objetos. Empecemos por envolver el c&#xF3;digo en una funci&#xF3;n:</p>
+y otros principios específicos de la programación funcional.</p>
+<p>Refactoricemos el ejemplo anterior donde sacábamos la propiedad <code>id</code> de una
+lista de objetos. Empecemos por envolver el código en una función:</p>
 <pre><code class=\\"language-js\\">function getIds(inputArray) {
   const ids = [];
 
@@ -590,16 +590,16 @@ lista de objetos. Empecemos por envolver el c&#xF3;digo en una funci&#xF3;n:</p>
   return ids;
 }
 
-console.log(getIds(array)); // [&apos;uno&apos;, &apos;dos&apos;]</code></pre>
-<p>Este cambio parece menor, pero a&#xF1;ade una capa de abstracci&#xF3;n que nos da un
-mont&#xF3;n de flexibilidad. Ahora nuestro c&#xF3;digo est&#xE1; <em>encapsulado</em> dentro de su
-propio <em>scope</em> y podemos reusar la l&#xF3;gica para otros arrays (podemos invocar la
-funci&#xF3;n cuantas veces queramos).</p>
-<p>Pero vayamos un paso m&#xE1;s all&#xE1;. Ahora que estamos ordenando nuestro c&#xF3;digo usando
-funciones, aprovechemos a abstraer y mejorar la comprobaci&#xF3;n que hac&#xED;amos para
+console.log(getIds(array)); // ['uno', 'dos']</code></pre>
+<p>Este cambio parece menor, pero añade una capa de abstracción que nos da un
+montón de flexibilidad. Ahora nuestro código está <em>encapsulado</em> dentro de su
+propio <em>scope</em> y podemos reusar la lógica para otros arrays (podemos invocar la
+función cuantas veces queramos).</p>
+<p>Pero vayamos un paso más allá. Ahora que estamos ordenando nuestro código usando
+funciones, aprovechemos a abstraer y mejorar la comprobación que hacíamos para
 saber si un objeto tiene una propiedad <code>id</code>.</p>
 <pre><code class=\\"language-js\\">function hasId(obj) {
-  return obj &amp;&amp; typeof obj.id === &apos;string&apos;;
+  return obj &amp;&amp; typeof obj.id === 'string';
 }
 
 function getIds(inputArray) {
@@ -614,16 +614,16 @@ function getIds(inputArray) {
   return ids;
 }
 
-console.log(getIds(array)); // [&apos;uno&apos;, &apos;dos&apos;]
+console.log(getIds(array)); // ['uno', 'dos']
 console.log(hasId()); // false
-console.log(hasId({name: &apos;foo&apos;})); // false
-console.log(hasId({id: &apos;uno&apos;})); // true</code></pre>
-<p>En esta nueva versi&#xF3;n hemos partido el c&#xF3;digo en dos funciones, y al hacerlo
+console.log(hasId({name: 'foo'})); // false
+console.log(hasId({id: 'uno'})); // true</code></pre>
+<p>En esta nueva versión hemos partido el código en dos funciones, y al hacerlo
 hemos tenido que dar nombres a estas funciones. Estos nombres representan de
-alguna forma esa capa de abstracci&#xF3;n. Ahora podemos hablar de <code>hasId()</code>
-cuando queremos referirnos a ese pedacito de l&#xF3;gica. As&#xED;, poco a poco vamos
-creando una sem&#xE1;ntica que nos permite alejarnos de los detalles de
-implementaci&#xF3;n.</p>
+alguna forma esa capa de abstracción. Ahora podemos hablar de <code>hasId()</code>
+cuando queremos referirnos a ese pedacito de lógica. Así, poco a poco vamos
+creando una semántica que nos permite alejarnos de los detalles de
+implementación.</p>
 <hr>
 <h2 id=\\"referencias\\">Referencias</h2>
 <p>Otros recursos:</p>
@@ -645,40 +645,40 @@ implementaci&#xF3;n.</p>
     "type": "read",
   },
   "06-modules": Object {
-    "body": "<p><div class=\\"iframe-container\\"><iframe frameborder=\\"0\\" src=\\"//fast.wistia.net/embed/iframe/ph5zkst0fv?videoFoam=true\\" allowtransparency=\\"true\\" scrolling=\\"no\\" allowfullscreen=\\"true\\" mozallowfullscreen=\\"true\\" webkitallowfullscreen=\\"true\\" oallowfullscreen=\\"true\\" msallowfullscreen=\\"true\\" width=\\"100%\\" height=\\"100%\\"></iframe></div></p>
-<p>Una de las consecuencias de estos cambios es el concepto de &quot;modularidad&quot;. Esto
-va a permitir que empecemos a escribir programas estructurados en m&#xF3;dulos
-independientes, que son m&#xE1;s f&#xE1;ciles de entender, testear, mantener, ...</p>
-<p>En JavaScript existen varios sistemas de m&#xF3;dulos, principalmente <strong>AMD</strong>,
+    "body": "<p><div class=\\"iframe-container\\"><iframe width=\\"100%\\" height=\\"100%\\" src=\\"//fast.wistia.net/embed/iframe/ph5zkst0fv?videoFoam=true\\" frameborder=\\"0\\" scrolling=\\"no\\" allowfullscreen=\\"true\\" mozallowfullscreen=\\"true\\" webkitallowfullscreen=\\"true\\" oallowfullscreen=\\"true\\" msallowfullscreen=\\"true\\" allowtransparency=\\"true\\"></iframe></div></p>
+<p>Una de las consecuencias de estos cambios es el concepto de \\"modularidad\\". Esto
+va a permitir que empecemos a escribir programas estructurados en módulos
+independientes, que son más fáciles de entender, testear, mantener, ...</p>
+<p>En JavaScript existen varios sistemas de módulos, principalmente <strong>AMD</strong>,
 <strong>Common JS</strong> y <strong>ES2015/ES6</strong>. Para este ejemplo vamos a concentrarnos en
-<strong>Common JS</strong>, que es el que usa <strong>Node.js</strong>, y que tambi&#xE9;n podemos usar en el
-navegador gracias a los <em>bundlers</em>. En nuestro ejemplo, ahora que nuestro c&#xF3;digo
-vive dentro de una funci&#xF3;n, podr&#xED;amos <em>exportar</em> la funci&#xF3;n, lo que nos
-permitir&#xED;a usar esta funci&#xF3;n desde otros scripts u otros programas. Esto es
-esencial para casi cuaquier programa o script hoy en d&#xED;a, con consecuencias que
-damos por sentado como poder organizar nuestro c&#xF3;digo en archivos y carpetas
-diferentes o tener dependecias de m&#xF3;dulos externos.</p>
-<p>Para exportar nuestra funci&#xF3;n <code>getIds</code> usando Common JS en Node.js, podemos
-simplemente asignar nuestra funci&#xF3;n a <code>module.exports</code>.</p>
+<strong>Common JS</strong>, que es el que usa <strong>Node.js</strong>, y que también podemos usar en el
+navegador gracias a los <em>bundlers</em>. En nuestro ejemplo, ahora que nuestro código
+vive dentro de una función, podríamos <em>exportar</em> la función, lo que nos
+permitiría usar esta función desde otros scripts u otros programas. Esto es
+esencial para casi cuaquier programa o script hoy en día, con consecuencias que
+damos por sentado como poder organizar nuestro código en archivos y carpetas
+diferentes o tener dependecias de módulos externos.</p>
+<p>Para exportar nuestra función <code>getIds</code> usando Common JS en Node.js, podemos
+simplemente asignar nuestra función a <code>module.exports</code>.</p>
 <pre><code class=\\"language-js\\">// al final del script
 module.exports = getIds;</code></pre>
 <p>El objeto <code>module</code> es una variable local a cada script en Common JS. Si
-asignamos algo a <code>module.exports</code>, &#xE9;ste ser&#xE1; el valor que recibiremos cuando
-requiramos nuestro &quot;m&#xF3;dulo&quot;. Por ejemplo, imaginemos que salvamos el script en
+asignamos algo a <code>module.exports</code>, éste será el valor que recibiremos cuando
+requiramos nuestro \\"módulo\\". Por ejemplo, imaginemos que salvamos el script en
 el archivo <code>src/getIds.js</code>, y ahora lo queremos usar desde otro script afuera de
 <code>src/</code>:</p>
-<pre><code class=\\"language-js\\">const getIds = require(&apos;./src/getIds&apos;);
-// \`getIds\` tiene el valor que hemos exportado a trav&#xE9;s de \`module.exports\`
+<pre><code class=\\"language-js\\">const getIds = require('./src/getIds');
+// \`getIds\` tiene el valor que hemos exportado a través de \`module.exports\`
 // en el script \`src/getIds.js\`</code></pre>
-<p>Common JS tambi&#xE9;n nos ofrece la opci&#xF3;n de exportar los valores que queramos
-como propiedades del objeto <code>exports</code> (que es un alias de <code>module.exports</code>). As&#xED;
-en vez de exportar s&#xF3;lo un valor (la funci&#xF3;n <code>getids</code>), podemos exporar varios
+<p>Common JS también nos ofrece la opción de exportar los valores que queramos
+como propiedades del objeto <code>exports</code> (que es un alias de <code>module.exports</code>). Así
+en vez de exportar sólo un valor (la función <code>getids</code>), podemos exporar varios
 valores.</p>
 <pre><code class=\\"language-js\\">exports.getIds = getIds;
 exports.hasId = hasId;</code></pre>
-<p>Ahora cuando requerimos nuestro m&#xF3;dulo desde otro script lo que recibimos es
+<p>Ahora cuando requerimos nuestro módulo desde otro script lo que recibimos es
 un objeto (el objeto <code>exports</code>), que tiene dos propiedades, <code>getIds</code> y <code>hasId</code>.</p>
-<pre><code class=\\"language-js\\">const myModule = require(&apos;./src/myModule&apos;);
+<pre><code class=\\"language-js\\">const myModule = require('./src/myModule');
 // myModule.getIds()
 // myModule.hasId()</code></pre>
 <hr>
@@ -687,7 +687,7 @@ un objeto (el objeto <code>exports</code>), que tiene dos propiedades, <code>get
 <ul>
 <li><a href=\\"http://2ality.com/2014/09/es6-modules-final.html\\" target=\\"_blank\\">ECMAScript 6 modules: the final syntax</a>,
 Axel Rauschmayer, 07 Sep 2014</li>
-<li><a href=\\"https://medium.freecodecamp.com/javascript-modules-a-beginner-s-guide-783f7d7a5fcc\\" target=\\"_blank\\">JavaScript Modules: A Beginner&#x2019;s Guide</a>,
+<li><a href=\\"https://medium.freecodecamp.com/javascript-modules-a-beginner-s-guide-783f7d7a5fcc\\" target=\\"_blank\\">JavaScript Modules: A Beginner’s Guide</a>,
 Preethi Kasireddy (FreeCodeCamp), Jan 22 2016</li>
 </ul>
 ",
@@ -708,38 +708,38 @@ Preethi Kasireddy (FreeCodeCamp), Jan 22 2016</li>
     "duration": 10,
     "exercises": Object {
       "01-get-primes": Object {
-        "body": "<p>La programaci&#xF3;n <em>procedural</em> (por procedimientos) introduce el concepto de
-procedimientos o funciones que nos permiten agrupar instrucciones, y as&#xED; reusar
-bloques de c&#xF3;digo e invocarlos con diferentes valores.</p>
-<p>Seg&#xFA;n va creciendo un programa, vamos a tener la necesidad de organizar nuestro
-c&#xF3;digo en pedacitos comprensibles, adem&#xE1;s de abstraer repetici&#xF3;n. La
-programaci&#xF3;n por procedimientos representa un primer paso de abstracci&#xF3;n, lo que
+        "body": "<p>La programación <em>procedural</em> (por procedimientos) introduce el concepto de
+procedimientos o funciones que nos permiten agrupar instrucciones, y así reusar
+bloques de código e invocarlos con diferentes valores.</p>
+<p>Según va creciendo un programa, vamos a tener la necesidad de organizar nuestro
+código en pedacitos comprensibles, además de abstraer repetición. La
+programación por procedimientos representa un primer paso de abstracción, lo que
 nos obliga a tener que dar nombres a estos procedimientos, encapsularlos, y
 definir sus interfaces (input/output).</p>
 <h2 id=\\"tarea\\">Tarea</h2>
-<p>Refactoriza el c&#xF3;digo que vimos en el ejercicio anterior en dos funciones:</p>
+<p>Refactoriza el código que vimos en el ejercicio anterior en dos funciones:</p>
 <ul>
 <li><code>getPrimes(start, end)</code></li>
 <li><code>isPrime(num)</code></li>
 </ul>
-<p>Ya hemos envuelto el c&#xF3;digo en una funci&#xF3;n con el nombre <code>getPrimes</code>.</p>
+<p>Ya hemos envuelto el código en una función con el nombre <code>getPrimes</code>.</p>
 <h2 id=\\"requisitos\\">Requisitos</h2>
 <ul>
-<li>La funci&#xF3;n <code>getPrimes()</code> recibe dos argumentos: <code>start</code> y <code>end</code>, que nos deben
-permitir especificar el rango de n&#xFA;meros primos que nos interesa.</li>
-<li>La funci&#xF3;n <code>getPrimes()</code> debe retornar un <code>array</code> con los n&#xFA;meros primos en
+<li>La función <code>getPrimes()</code> recibe dos argumentos: <code>start</code> y <code>end</code>, que nos deben
+permitir especificar el rango de números primos que nos interesa.</li>
+<li>La función <code>getPrimes()</code> debe retornar un <code>array</code> con los números primos en
 vez de imprimirlos en la consola. Para ello usa una variable donde ir gurdando
-los n&#xFA;meros primos que vayamos encontrando y al final de la funci&#xF3;n devuelve
+los números primos que vayamos encontrando y al final de la función devuelve
 (retorna) ese array.</li>
-<li>En el bucle de <code>getPrimes()</code>, tendr&#xE1;s que sustituir el valor inicial de <code>i</code>
-por <code>start</code> y la condici&#xF3;n por <code>i &lt; end</code>.</li>
+<li>En el bucle de <code>getPrimes()</code>, tendrás que sustituir el valor inicial de <code>i</code>
+por <code>start</code> y la condición por <code>i &lt; end</code>.</li>
 <li>Dentro del bucle de <code>getPrimes()</code> ya no necesitamos la variable <code>isPrime</code>,
-ahora debes invocar a la funci&#xF3;n <code>isPrime()</code> para determinar si el n&#xFA;mero en
-cuesti&#xF3;n es primo.</li>
-<li>El bucle que en el ejercicio anterior usamos para comprobar si un n&#xFA;mero es
-primo, ahora debe quedar dentro de <code>isPrime()</code>, la cual s&#xF3;lo ha de recibir un
-argumento (el n&#xFA;mero a comprobar) y retornar un booleano (<code>true</code> o <code>false</code>).</li>
-<li>Aseg&#xFA;rate de que tu script exporta las funciones <code>getPrimes()</code> e <code>isPrime()</code>.</li>
+ahora debes invocar a la función <code>isPrime()</code> para determinar si el número en
+cuestión es primo.</li>
+<li>El bucle que en el ejercicio anterior usamos para comprobar si un número es
+primo, ahora debe quedar dentro de <code>isPrime()</code>, la cual sólo ha de recibir un
+argumento (el número a comprobar) y retornar un booleano (<code>true</code> o <code>false</code>).</li>
+<li>Asegúrate de que tu script exporta las funciones <code>getPrimes()</code> e <code>isPrime()</code>.</li>
 </ul>
 <h2 id=\\"recursos\\">Recursos</h2>
 <ul>
@@ -846,118 +846,118 @@ describe('isPrime(num)', () => {
     "type": "practice",
   },
   "08-oop": Object {
-    "body": "<p><div class=\\"iframe-container\\"><iframe frameborder=\\"0\\" src=\\"//fast.wistia.net/embed/iframe/8id6wdxrdn?videoFoam=true\\" allowtransparency=\\"true\\" scrolling=\\"no\\" allowfullscreen=\\"true\\" mozallowfullscreen=\\"true\\" webkitallowfullscreen=\\"true\\" oallowfullscreen=\\"true\\" msallowfullscreen=\\"true\\" width=\\"100%\\" height=\\"100%\\"></iframe></div></p>
-<p>La <strong>Programaci&#xF3;n Orientada a Objetos</strong> (<em>Object Oriented Programming</em> - OOP)
+    "body": "<p><div class=\\"iframe-container\\"><iframe width=\\"100%\\" height=\\"100%\\" src=\\"//fast.wistia.net/embed/iframe/8id6wdxrdn?videoFoam=true\\" frameborder=\\"0\\" scrolling=\\"no\\" allowfullscreen=\\"true\\" mozallowfullscreen=\\"true\\" webkitallowfullscreen=\\"true\\" oallowfullscreen=\\"true\\" msallowfullscreen=\\"true\\" allowtransparency=\\"true\\"></iframe></div></p>
+<p>La <strong>Programación Orientada a Objetos</strong> (<em>Object Oriented Programming</em> - OOP)
 representa un cambio de paradigma bastante grande con respecto al paradigma por
 procedimientos que acabamos de ver. Cuando programamos por procedimientos nos
-concentramos en funciones, que representan acciones, y as&#xED; nuestra sem&#xE1;ntica
-est&#xE1; orientada a acciones antes que a estructuras de datos.</p>
-<p>En la programaci&#xF3;n orientada a objetos le damos la vuelta a la tortilla, y en
-vez de pensar en acciones nos enfocamos en definir los &quot;tipos&quot; de datos primero,
-y despu&#xE9;s decidimos que interacciones van a tener. En OOP dise&#xF1;amos objetos, que
+concentramos en funciones, que representan acciones, y así nuestra semántica
+está orientada a acciones antes que a estructuras de datos.</p>
+<p>En la programación orientada a objetos le damos la vuelta a la tortilla, y en
+vez de pensar en acciones nos enfocamos en definir los \\"tipos\\" de datos primero,
+y después decidimos que interacciones van a tener. En OOP diseñamos objetos, que
 van a tener una data (un estado) y una serie de operaciones que pueden realizar.</p>
-<p>A la hora de construir aplicaciones nos vemos obligados a pensar en c&#xF3;mo
-&quot;modelar&quot; o representar en c&#xF3;digo cosas del mundo real o conceptos &#xFA;tiles para
-un ser humano (un usuario, un documento, ...) y la programaci&#xF3;n orientada a
+<p>A la hora de construir aplicaciones nos vemos obligados a pensar en cómo
+\\"modelar\\" o representar en código cosas del mundo real o conceptos útiles para
+un ser humano (un usuario, un documento, ...) y la programación orientada a
 objetos propone crear tipos de objetos para representar estas cosas.</p>
-<p>Imaginemos que tenemos que escribir una aplicaci&#xF3;n de &quot;notas&quot; donde el usuario
-puede crear diferentes tipos de &quot;notas&quot;, marcarlas como completadas, ... Si
-vamos a seguir el estilo orientado a objetos, normalmente empezar&#xED;amos por
-modelar el &quot;tipo de objeto&quot; que con el que vamos a representar una &quot;nota&quot;.
-Podr&#xED;amos empezar con algo as&#xED;:</p>
+<p>Imaginemos que tenemos que escribir una aplicación de \\"notas\\" donde el usuario
+puede crear diferentes tipos de \\"notas\\", marcarlas como completadas, ... Si
+vamos a seguir el estilo orientado a objetos, normalmente empezaríamos por
+modelar el \\"tipo de objeto\\" que con el que vamos a representar una \\"nota\\".
+Podríamos empezar con algo así:</p>
 <pre><code class=\\"language-js\\">function Note(text) {
-  this.text = text || &apos;&apos;;
+  this.text = text || '';
   this.createdAt = new Date();
   this.completed = false;
 }</code></pre>
-<p>Hemos declarado una funci&#xF3;n (<code>Note</code>) que hace uso de una <em>pseudo variable</em>
-llamada <code>this</code>. La presencia de <code>this</code>, junto con la convenci&#xF3;n de usar la
-primera letra en may&#xFA;scula, nos indican que esta funci&#xF3;n est&#xE1; escrita
-para ser invocada con el <em>keyword</em> <code>new</code>. Este tipo de funci&#xF3;n es lo que
-conocemos como un <em>constructor</em>. Los constructores son funciones cuyo prop&#xF3;sito
+<p>Hemos declarado una función (<code>Note</code>) que hace uso de una <em>pseudo variable</em>
+llamada <code>this</code>. La presencia de <code>this</code>, junto con la convención de usar la
+primera letra en mayúscula, nos indican que esta función está escrita
+para ser invocada con el <em>keyword</em> <code>new</code>. Este tipo de función es lo que
+conocemos como un <em>constructor</em>. Los constructores son funciones cuyo propósito
 es crear un objeto, inicializarlo y ofrecernos una manera de especificar el
-prototipo que tendr&#xE1;n los objetos creados con este constructor. Dicho de otra
-manera, menos correcta pero m&#xE1;s com&#xFA;n, los constructores son lo m&#xE1;s parecido a
+prototipo que tendrán los objetos creados con este constructor. Dicho de otra
+manera, menos correcta pero más común, los constructores son lo más parecido a
 clases en JavaScript (por lo menos hasta ES6).</p>
-<p>JavaScript es un lenguaje din&#xE1;micamente tipado (<em>dynamically typed</em>), pero a
-diferencia de la mayor&#xED;a de lenguajes de su generaci&#xF3;n, usa herencia prototipal
+<p>JavaScript es un lenguaje dinámicamente tipado (<em>dynamically typed</em>), pero a
+diferencia de la mayoría de lenguajes de su generación, usa herencia prototipal
 en vez de clases, lo cual suele confundir a muchos programadores con experiencia
 en otros lenguajes orientados a objetos.</p>
 <p>Cuando invocamos un constructor precedido de <code>new</code>, la pseudo-variable <code>this</code> es
 una referencia al nuevo objeto creado al invocar el constructor. Creemos un
 objeto para ver que significa todo esto:</p>
-<pre><code class=\\"language-js\\">const note = new Note(&apos;comprar arroz&apos;);
+<pre><code class=\\"language-js\\">const note = new Note('comprar arroz');
 console.log(note);</code></pre>
-<p>En la consola deber&#xED;as de ver algo as&#xED;:</p>
+<p>En la consola deberías de ver algo así:</p>
 <pre><code class=\\"language-text\\">Note {
-  text: &apos;comprar arroz&apos;,
+  text: 'comprar arroz',
   createdAt: 2017-06-14T22:39:51.987Z,
   completed: false }</code></pre>
 <p>Podemos ver que <code>note</code> es un objeto con tres propiedades (<code>text</code>, <code>createdAt</code> y
-<code>completed</code>). Estas tres propiedades est&#xE1;n declaradas directamente sobre la
+<code>completed</code>). Estas tres propiedades están declaradas directamente sobre la
 instancia.</p>
 <p>Cuando usamos constructores, es importante acordarnos de usar <code>new</code> a la hora de
-invocarlos, si no, el constructor retornar&#xE1; <code>undefined</code>.</p>
-<pre><code class=\\"language-js\\">const note = Note(&apos;comprar arroz&apos;);
+invocarlos, si no, el constructor retornará <code>undefined</code>.</p>
+<pre><code class=\\"language-js\\">const note = Note('comprar arroz');
 console.log(note); // undefined</code></pre>
-<p>Hemos dicho que una de las caracter&#xED;sticas fundamentales de OOP es que empezamos
+<p>Hemos dicho que una de las características fundamentales de OOP es que empezamos
 por definir los tipos de datos (ya sea con clases, constructores, prototipos,
 ...), lo cual nos permite inspeccionar los objetos creados para saber si son
 una instacia de un constructor (con el operador <code>instanceof</code>) o comprobar si un
-objeto est&#xE1; en la cadena de prototipos de otro objeto
+objeto está en la cadena de prototipos de otro objeto
 (<code>Object.prototype.isPrototypeOf</code>).</p>
 <pre><code class=\\"language-js\\">console.log(note instanceof Note); // true
 console.log(Note.prototype.isPrototypeOf(note)); // true</code></pre>
 <p>Ahora que ya hemos definido un constructor que inicializa una serie de
 propiedades, podemos usar el prototipo del constructor (<code>Note.prototype</code>) para
-a&#xF1;adir funcionalidad. Todo lo que le a&#xF1;adamos a <code>Note.prototype</code> ser&#xE1; parte del
-prototipo de los objetos creados por <code>new Note()</code>. A&#xF1;adamos un m&#xE9;todo al
+añadir funcionalidad. Todo lo que le añadamos a <code>Note.prototype</code> será parte del
+prototipo de los objetos creados por <code>new Note()</code>. Añadamos un método al
 prototipo de <code>Note</code>:</p>
 <pre><code class=\\"language-js\\">Note.prototype.toString = function () {
-  let str = &apos;[&apos; + (this.completed ? &apos;X&apos; : &apos; &apos;) + &apos;]&apos;;
-  str += &apos; | &apos; + this.createdAt.toDateString();
-  str += &apos; | &apos; + this.text;
+  let str = '[' + (this.completed ? 'X' : ' ') + ']';
+  str += ' | ' + this.createdAt.toDateString();
+  str += ' | ' + this.text;
   return str;
 };</code></pre>
-<p>Hemos a&#xF1;adido el m&#xE9;todo <code>Note.prototype.toString</code>, que simplemente retorna una
-representaci&#xF3;n de nuestro objeto como string. Ahora todos los objetos que
-creemos con <code>new Note()</code> deber&#xED;an de &quot;heredar&quot; un m&#xE9;todo <code>toString</code>. Si hacemos
+<p>Hemos añadido el método <code>Note.prototype.toString</code>, que simplemente retorna una
+representación de nuestro objeto como string. Ahora todos los objetos que
+creemos con <code>new Note()</code> deberían de \\"heredar\\" un método <code>toString</code>. Si hacemos
 <code>console.log(note)</code> veremos las tres propiedades que seteamos en el constructor,
-pero qu&#xE9; pas&#xF3; con el m&#xE9;todo <code>toString</code> que le hab&#xED;amos  a&#xF1;adimo al prototipo de
+pero qué pasó con el método <code>toString</code> que le habíamos  añadimo al prototipo de
 <code>Note</code>?</p>
 <p>Inspeccionemos un poco...</p>
 <pre><code class=\\"language-js\\">console.log(note.prototype); // undefined
 console.log(note.__proto__); // Note { toString: [Function] }
 console.log(note.toString); // [Function]</code></pre>
-<p>El objeto <code>note</code> s&#xED; tiene el m&#xE9;todo <code>toString</code>, pero no directamente sobre la
-instancia, si no que est&#xE1; en su prototipo. Cuando tratamos de acceder a una
+<p>El objeto <code>note</code> sí tiene el método <code>toString</code>, pero no directamente sobre la
+instancia, si no que está en su prototipo. Cuando tratamos de acceder a una
 propiedad que no existe en un objeto, JavaScript va a buscar a ver si hay una
-propiedad con ese nombre en el prototipo del objeto, si la encuentra usar&#xE1; esa,
-si no buscar&#xE1; en el prototipo del prototipo, y as&#xED; ir&#xE1; recorriendo lo que
+propiedad con ese nombre en el prototipo del objeto, si la encuentra usará esa,
+si no buscará en el prototipo del prototipo, y así irá recorriendo lo que
 conocemos como la cadena de prototipos (prototype chain).</p>
-<p>En la programaci&#xF3;n orientada a objetos el principal mecanismo de reuso de c&#xF3;digo
-es la &quot;herencia&quot;, donde un objeto &quot;hereda&quot; una serie de propiedades y m&#xE9;todos
+<p>En la programación orientada a objetos el principal mecanismo de reuso de código
+es la \\"herencia\\", donde un objeto \\"hereda\\" una serie de propiedades y métodos
 de otro objeto o clase (en herencia prototipal heredamos directamente de un
 objeto en vez de una clase).</p>
-<p>En la pr&#xF3;xima unidad de este curso exploraremos los detalles de c&#xF3;mo implementar
-jerarqu&#xED;as de herencia usando prototipos. Por el momento nos quedamos con estos
+<p>En la próxima unidad de este curso exploraremos los detalles de cómo implementar
+jerarquías de herencia usando prototipos. Por el momento nos quedamos con estos
 conceptos.</p>
-<p>Ahora que hemos visto qu&#xE9; es la programaci&#xF3;n orientada a objetos en el contexto
-de JavaScript, concluyamos con una lista de caracter&#xED;sticas que definen a OOP de
-forma m&#xE1;s general, por el propio Alan Kay, creador del t&#xE9;rmino OOP y Smalltalk:</p>
+<p>Ahora que hemos visto qué es la programación orientada a objetos en el contexto
+de JavaScript, concluyamos con una lista de características que definen a OOP de
+forma más general, por el propio Alan Kay, creador del término OOP y Smalltalk:</p>
 <blockquote>
-<p>Traducido al espa&#xF1;ol:</p>
+<p>Traducido al español:</p>
 <ul>
 <li>Todo es un objeto</li>
-<li>Los objetos se comunican enviando y recibiendo mensajes (en t&#xE9;rminos de objetos)</li>
-<li>Los objetos deben tener su propia memoria (en t&#xE9;rminos de objetos)</li>
+<li>Los objetos se comunican enviando y recibiendo mensajes (en términos de objetos)</li>
+<li>Los objetos deben tener su propia memoria (en términos de objetos)</li>
 <li>Todo objeto es una instancia de una clase (que debe ser un objeto)</li>
 <li>La clase tiene el comportamiento compartido para las instancias (como objetos
 en un programa)</li>
 <li>Para evaluar un programa, se pasa el control al primer objeto y el resto se
 trata como su mensaje.</li>
 </ul>
-<p>Original en ingl&#xE9;s:</p>
+<p>Original en inglés:</p>
 <ul>
 <li>Everything Is An Object</li>
 <li>Objects communicate by sending and receiving messages (in terms of objects).</li>
@@ -1001,22 +1001,22 @@ Faraz Kelhini, CSS Tricks, Sep 24 2015</li>
     "duration": 10,
     "exercises": Object {
       "01-notes": Object {
-        "body": "<p>En la programaci&#xF3;n orientada a objetos (OOP), nos concentramos en describir
+        "body": "<p>En la programación orientada a objetos (OOP), nos concentramos en describir
 objetos, que tienen una data (un estado) y una serie de operaciones que pueden
 realizar.</p>
-<p>Imaginemos que estamos construyendo una aplicaci&#xF3;n de &quot;notas&quot;, donde el usuario
-puede a&#xF1;adir notas con un texto. Antes de empezar a implementar tratamos de
+<p>Imaginemos que estamos construyendo una aplicación de \\"notas\\", donde el usuario
+puede añadir notas con un texto. Antes de empezar a implementar tratamos de
 imaginarnos los objetos que participan de este proceso. Lo primero que se nos
-viene a la mente es que vamos a necesitar objetos de tipo &quot;nota&quot;.</p>
+viene a la mente es que vamos a necesitar objetos de tipo \\"nota\\".</p>
 <h2 id=\\"tarea\\">Tarea</h2>
 <p>El boilerplate contiene dos constructores (<code>Note</code> y <code>Notes</code>). El primero
-(<code>Note</code>) ya est&#xE1; implemetado. Ahora nos piden implementar los m&#xE9;todos
+(<code>Note</code>) ya está implemetado. Ahora nos piden implementar los métodos
 <code>Notes.prototype.add</code> y <code>Notes.prototype.toString</code>.</p>
 <h2 id=\\"ejemplo\\">Ejemplo</h2>
-<p>Una vez implementado el ejercicio, alguien que importe tu m&#xF3;dulo deber&#xED;a de
+<p>Una vez implementado el ejercicio, alguien que importe tu módulo debería de
 poder hacer lo siguiente:</p>
-<pre><code class=\\"language-js\\">const note1 = new Note(&apos;hola&apos;);
-const note2 = new Note(&apos;mundo&apos;);
+<pre><code class=\\"language-js\\">const note1 = new Note('hola');
+const note2 = new Note('mundo');
 const notes = new Notes();
 
 notes.add(note1);
@@ -1037,13 +1037,13 @@ console.log(notes.toString());
 <ul>
 <li><code>Notes.prototype.add</code> debe botar error (throw) si el argumento (<code>note</code>) no es
 una instancia de <code>Note</code>.</li>
-<li><code>Notes.prototype.add</code> debe a&#xF1;adir nuevas notas al principio de <code>this.data</code>, no
+<li><code>Notes.prototype.add</code> debe añadir nuevas notas al principio de <code>this.data</code>, no
 al final.</li>
-<li>La implementaci&#xF3;n de <code>Notes.prototype.toString</code> debe iterar sobre las notas e
-invocar <code>toString</code> en cada nota y as&#xED; ir concatenando el resultado. El string
-que retornes debe contener una l&#xED;nea para cada nota (ver ejemplo).</li>
-<li>El m&#xE9;todo <code>Notes.prototype.toString</code> debe listar las notas ordenadas por fecha
-de creaci&#xF3;n descendente, la &#xFA;ltima a&#xF1;adida debe aparecer primero.</li>
+<li>La implementación de <code>Notes.prototype.toString</code> debe iterar sobre las notas e
+invocar <code>toString</code> en cada nota y así ir concatenando el resultado. El string
+que retornes debe contener una línea para cada nota (ver ejemplo).</li>
+<li>El método <code>Notes.prototype.toString</code> debe listar las notas ordenadas por fecha
+de creación descendente, la última añadida debe aparecer primero.</li>
 <li>No olvides exportar los constructores <code>Note</code> y <code>Notes</code>.</li>
 </ul>
 <h2 id=\\"recursos\\">Recursos</h2>
@@ -1244,38 +1244,38 @@ describe('Notes#toString', () => {
   },
   "10-fp": Object {
     "body": "<p>Finalmente llegamos al paradigma funcional (<em>Functional Programming</em>), y digo
-finalmente porque es probable que sientas curiosidad por conocer un poco m&#xE1;s
+finalmente porque es probable que sientas curiosidad por conocer un poco más
 sobre este paradigma tan incomprendido, pero tan de moda en el mundo de
 JavaScript.</p>
-<p>A diferencia del paradigma procedural y el orientado a objetos, la programaci&#xF3;n
+<p>A diferencia del paradigma procedural y el orientado a objetos, la programación
 funcional pertenece a la rama de los paradigmas <em>declarativos</em>. Esto quiere
-decir que el &quot;estilo&quot; en el que programamos va a estar mucho m&#xE1;s enfocado en qu&#xE9;
-queremos hacer y no tanto en los detalles de c&#xF3;mo la computadora lo ejecuta.</p>
-<p>Cuando hablamos del estilo imperativo dijimos que nos enfoc&#xE1;bamos en asignar
+decir que el \\"estilo\\" en el que programamos va a estar mucho más enfocado en qué
+queremos hacer y no tanto en los detalles de cómo la computadora lo ejecuta.</p>
+<p>Cuando hablamos del estilo imperativo dijimos que nos enfocábamos en asignar
 valores a variables, mutar esas variables, e iterar usando bucles. La
-programaci&#xF3;n funcional se caracteriza por exactamente lo opuesto. <strong>En FP el
-principal mecanismo de c&#xF3;mputo es la aplicaci&#xF3;n de argumentos a funciones</strong>.
-Como consecuencia, evitamos la asignaci&#xF3;n de varialbles, mutaci&#xF3;n, delegamos el
+programación funcional se caracteriza por exactamente lo opuesto. <strong>En FP el
+principal mecanismo de cómputo es la aplicación de argumentos a funciones</strong>.
+Como consecuencia, evitamos la asignación de varialbles, mutación, delegamos el
 control de flujo, ... De hecho, podemos resumir los principios de la
-programaci&#xF3;n funcional en los siguientes:</p>
+programación funcional en los siguientes:</p>
 <ul>
 <li><strong>Higher order functions</strong> (funciones como argumentos y/o valores de retorno)</li>
 <li><strong>Funciones puras</strong> (sin efectos secundarios y siempre retorna lo mismo para
 los mismos argumentos)</li>
-<li><strong>Composici&#xF3;n</strong> de funciones</li>
-<li><strong>Inmutabilidad</strong> (no &quot;mutar&quot; valores asignados)</li>
-<li><strong>Evitar el &quot;estado&quot; compartido</strong> (no usar referencias fuera del scope de la
-funci&#xF3;n)</li>
-<li>Uso de <strong>recursi&#xF3;n</strong> como alternativa a la iteraci&#xF3;n.</li>
+<li><strong>Composición</strong> de funciones</li>
+<li><strong>Inmutabilidad</strong> (no \\"mutar\\" valores asignados)</li>
+<li><strong>Evitar el \\"estado\\" compartido</strong> (no usar referencias fuera del scope de la
+función)</li>
+<li>Uso de <strong>recursión</strong> como alternativa a la iteración.</li>
 </ul>
-<p>Veamos estos conceptos en acci&#xF3;n:</p>
-<pre><code class=\\"language-js\\">// pasando una funci&#xF3;n an&#xF3;nima como un argumento
+<p>Veamos estos conceptos en acción:</p>
+<pre><code class=\\"language-js\\">// pasando una función anónima como un argumento
 setTimeout(function () {
   //...
 }, 100);
 
 
-// recibiendo una funci&#xF3;n como un argumento
+// recibiendo una función como un argumento
 function map(arr, fn) {
   const results = [];
   for (let i = 0; i &lt; arr.length; i++) {
@@ -1284,23 +1284,23 @@ function map(arr, fn) {
   return results;
 }
 
-// Ahora reemplazando iteraci&#xF3;n con recursividad
+// Ahora reemplazando iteración con recursividad
 function recursiveMap(arr, fn) {
   if (!arr.length) {
     return [];
   }
   return [fn(arr[0])].concat(recursiveMap(arr.slice(1), fn));
 }</code></pre>
-<p>La &#xFA;ltima funci&#xF3;n (<code>recursiveMap</code>) es un buen ejemplo de FP porque muestra como
-podemos recibir una funci&#xF3;n como argumento, reemplzar iteraci&#xF3;n por recursi&#xF3;n,
-evitar asignaci&#xF3;n y mutaci&#xF3;n. Adem&#xE1;s no accede a ninguna referencia fuera de su
-scope (s&#xF3;lo usa variables locales) y no tiene ning&#xFA;n efecto secundario: se
+<p>La última función (<code>recursiveMap</code>) es un buen ejemplo de FP porque muestra como
+podemos recibir una función como argumento, reemplzar iteración por recursión,
+evitar asignación y mutación. Además no accede a ninguna referencia fuera de su
+scope (sólo usa variables locales) y no tiene ningún efecto secundario: se
 limita a producir un valor de retorno a partir de su input (argumentos) sin
 afectar nada fuera de su <em>scope</em>.</p>
-<p>Para comparar con el ejemplo que hicimos de OOP, ahora vamos a crear una funci&#xF3;n
+<p>Para comparar con el ejemplo que hicimos de OOP, ahora vamos a crear una función
 que cree objetos, algo parecido a un constructor, pero muy distinto a la vez.
-Los constructores son un tipo de funci&#xF3;n especial que se invoca con <code>new</code>, usa
-<code>this</code> internamente y define un prototipo. La funci&#xF3;n que vamos a implementar
+Los constructores son un tipo de función especial que se invoca con <code>new</code>, usa
+<code>this</code> internamente y define un prototipo. La función que vamos a implementar
 ahora se va a limitar a crear un objeto y retornarlo, nada de <code>new</code>, <code>this</code> o
 <code>prototype</code>.</p>
 <pre><code class=\\"language-js\\">const createRobot = function (name) {
@@ -1309,7 +1309,7 @@ ahora se va a limitar a crear un objeto y retornarlo, nada de <code>new</code>, 
     active: false
   };
 };</code></pre>
-<p>ES2015 introduce &quot;arrow functions&quot; (funciones flecha), que es una implementaci&#xF3;n
+<p>ES2015 introduce \\"arrow functions\\" (funciones flecha), que es una implementación
 de funciones muy parecida al keyword <code>function</code>, pero que no implica <code>new</code>,
 <code>this</code> ni <code>prototype</code>.</p>
 <pre><code class=\\"language-js\\">const createRobot = (name) =&gt; {
@@ -1320,36 +1320,36 @@ de funciones muy parecida al keyword <code>function</code>, pero que no implica 
 };</code></pre>
 <hr>
 <p>PRO TIP:</p>
-<p>Con un poquito m&#xE1;s de az&#xFA;car sint&#xE1;ctica cortes&#xED;a de ES2015:</p>
+<p>Con un poquito más de azúcar sintáctica cortesía de ES2015:</p>
 <pre><code class=\\"language-js\\">const createRobot = name =&gt; ({
   name,
   active: false
 });</code></pre>
-<p>Cuando el cuerpo de la funci&#xF3;n es s&#xF3;lo una expresi&#xF3;n (un objeto literal en
-nuestro caso), las &quot;arrow functions&quot; nos permiten hacer <em>retorno impl&#xED;cito</em>, lo
-que significa que podemos obviar los <code>{}</code> que determinan el &quot;bloque&quot; de la
-funci&#xF3;n y el keyword <code>return</code>. El resultado de evaluar la expresi&#xF3;n ser&#xE1; el
-valor de retorno. En este ejemplo hemos envuelto la expresi&#xF3;n (el objeto
-literal) en par&#xE9;ntesis <code>()</code> para evitar que los <code>{}</code> se confundan con el cuerpo
-de la funci&#xF3;n. En este caso los curly braces son parte del objeto!</p>
+<p>Cuando el cuerpo de la función es sólo una expresión (un objeto literal en
+nuestro caso), las \\"arrow functions\\" nos permiten hacer <em>retorno implícito</em>, lo
+que significa que podemos obviar los <code>{}</code> que determinan el \\"bloque\\" de la
+función y el keyword <code>return</code>. El resultado de evaluar la expresión será el
+valor de retorno. En este ejemplo hemos envuelto la expresión (el objeto
+literal) en paréntesis <code>()</code> para evitar que los <code>{}</code> se confundan con el cuerpo
+de la función. En este caso los curly braces son parte del objeto!</p>
 <hr>
-<p>En FP, en vez de pensar en &quot;tipos&quot;, normalmente nos centramos en
-transformaciones. Es decir, una funci&#xF3;n recibe un input (argumentos) y de alguna
-forma los &quot;transforma&quot; en otra cosa. Por ejemplo, en la funci&#xF3;n anterior,
-podemos decir que la funci&#xF3;n <code>createRobot</code> transforma un <code>string</code> (su input) en
-un objeto (su valor de retorno). De esta forma cada funci&#xF3;n est&#xE1; completamente
-aislada del mundo exterior y se concentra en hacer s&#xF3;lo una cosa.</p>
-<p>Un buen ejemplo para visualzar el concepto de transformaci&#xF3;n es el m&#xE9;todo
+<p>En FP, en vez de pensar en \\"tipos\\", normalmente nos centramos en
+transformaciones. Es decir, una función recibe un input (argumentos) y de alguna
+forma los \\"transforma\\" en otra cosa. Por ejemplo, en la función anterior,
+podemos decir que la función <code>createRobot</code> transforma un <code>string</code> (su input) en
+un objeto (su valor de retorno). De esta forma cada función está completamente
+aislada del mundo exterior y se concentra en hacer sólo una cosa.</p>
+<p>Un buen ejemplo para visualzar el concepto de transformación es el método
 <code>Array#map</code> en JavaScript (muy parecido al map que acabamos de implementar).
-<code>Array.prototype.map</code> recibe un argumento, una funci&#xF3;n que ser&#xE1; invocada para
+<code>Array.prototype.map</code> recibe un argumento, una función que será invocada para
 cada elemento del array, y retorna un nuevo arreglo con los resultados de cada
-invocaci&#xF3;n a la funci&#xF3;n que recibe <code>Array#map</code> como argumento.</p>
-<pre><code class=\\"language-js\\">const array = [&apos;1&apos;, &apos;02&apos;, &apos;33&apos;, &apos;3.14&apos;, &apos;028&apos;];
+invocación a la función que recibe <code>Array#map</code> como argumento.</p>
+<pre><code class=\\"language-js\\">const array = ['1', '02', '33', '3.14', '028'];
 
 const double = num =&gt; num + num;
 
 console.log(array.map(double));
-// [ &apos;11&apos;, &apos;0202&apos;, &apos;3333&apos;, &apos;3.143.14&apos;, &apos;028028&apos; ]
+// [ '11', '0202', '3333', '3.143.14', '028028' ]
 
 console.log(array.map(parseFloat));
 // [ 1, 2, 33, 3.14, 28 ]
@@ -1362,19 +1362,19 @@ const arrayToDouble = array =&gt; array.map(parseFloat).map(double);
 console.log(arrayToDouble(array));
 // [ 2, 4, 66, 6.28, 56 ]</code></pre>
 <p>Como vemos en estos ejemplos, podemos encadenar invocaciones a <code>Array#map</code> para
-ir &quot;transformando&quot; los elementos de un arreglo, ya que cada invocaci&#xF3;n retorna
+ir \\"transformando\\" los elementos de un arreglo, ya que cada invocación retorna
 un array.</p>
-<h2 id=\\"qu&#xE9;-ventajas-ofrece\\">Qu&#xE9; ventajas ofrece?</h2>
+<h2 id=\\"qué-ventajas-ofrece\\">Qué ventajas ofrece?</h2>
 <ul>
-<li>C&#xF3;mo hemos visto en el ejemplo de arriba, el c&#xF3;digo funcional tiende a ser m&#xE1;s
+<li>Cómo hemos visto en el ejemplo de arriba, el código funcional tiende a ser más
 conciso y expresivo.</li>
-<li>M&#xE1;s predecible. M&#xE1;s adelante veremos que como resultado de los principios del
+<li>Más predecible. Más adelante veremos que como resultado de los principios del
 paradigma (uso de funciones puras, inmutabilidad, evitar estado compartido y
-efectos secundarios, ...) nuestro c&#xF3;digo ser&#xE1; m&#xE1;s f&#xE1;cil de predecir, aislar y
+efectos secundarios, ...) nuestro código será más fácil de predecir, aislar y
 probar.</li>
-<li>Se presta a la paralelizaci&#xF3;n y la computaci&#xF3;n distribuida.</li>
-<li>Se presta a la asincr&#xF3;nia.</li>
-<li>JavaScript, como lenguaje, tiene una naturaleza m&#xE1;s funcional que imperativa.</li>
+<li>Se presta a la paralelización y la computación distribuida.</li>
+<li>Se presta a la asincrónia.</li>
+<li>JavaScript, como lenguaje, tiene una naturaleza más funcional que imperativa.</li>
 </ul>
 <hr>
 <h2 id=\\"referencias\\">Referencias</h2>
@@ -1386,7 +1386,7 @@ Eric Elliott en Medium, Feb 20 2017</li>
 Beth Allchurch, 29 of June, 2016</li>
 <li><a href=\\"https://codewords.recurse.com/issues/one/an-introduction-to-functional-programming\\" target=\\"_blank\\">An introduction to functional programming</a>,
 Mary Rose Cook</li>
-<li><a href=\\"https://medium.com/laboratoria-how-to/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-1-e0b1d0b2142e\\" target=\\"_blank\\">Introducci&#xF3;n a programaci&#xF3;n funcional en JavaScript&#x200A;&#x2014;&#x200A;Parte 1</a>,
+<li><a href=\\"https://medium.com/laboratoria-how-to/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-1-e0b1d0b2142e\\" target=\\"_blank\\">Introducción a programación funcional en JavaScript — Parte 1</a>,
 Lupo Montero en Medium, Feb 15 2017</li>
 </ul>
 <p>Otros recursos:</p>
@@ -1405,9 +1405,9 @@ Lupo Montero en Medium, Feb 15 2017</li>
     "exercises": Object {
       "01-notes": Object {
         "body": "<h2 id=\\"tarea\\">Tarea</h2>
-<p>Implementa tres funciones con las siguientes &quot;firmas&quot;:</p>
+<p>Implementa tres funciones con las siguientes \\"firmas\\":</p>
 <h3 id=\\"createnotetext\\"><code>createNote(text)</code></h3>
-<p>Esta funci&#xF3;n debe crear un objeto literal con tres propiedades (ver retorno).</p>
+<p>Esta función debe crear un objeto literal con tres propiedades (ver retorno).</p>
 <h4 id=\\"argumentos\\">Argumentos</h4>
 <ul>
 <li><code>text</code>: un string con el texto de la nota</li>
@@ -1421,7 +1421,7 @@ Lupo Montero en Medium, Feb 15 2017</li>
 </ul>
 <h3 id=\\"createnotesarray\\"><code>createNotes(array)</code></h3>
 <p>Crea un arreglo de objetos a partir de un arreglo de strings. Cada objeto en el
-nuevo arreglo ser&#xE1; creado usando <code>createNote</code>.</p>
+nuevo arreglo será creado usando <code>createNote</code>.</p>
 <h4 id=\\"argumentos-1\\">Argumentos</h4>
 <ul>
 <li><code>array</code>: Un array de strings con los textos de las notas.</li>
@@ -1436,16 +1436,16 @@ string. Para ello debe invocar <code>noteToString</code> para cada elemento en e
 <li><code>notes</code>: Un arreglo de objetos (notas).</li>
 </ul>
 <h4 id=\\"retorno-2\\">Retorno</h4>
-<p>Un string donde tenemos una l&#xED;nea por cada nota.</p>
+<p>Un string donde tenemos una línea por cada nota.</p>
 <h2 id=\\"ejemplo\\">Ejemplo</h2>
-<pre><code class=\\"language-js\\">const notes = createNotes([&apos;hola&apos;, &apos;mundo&apos;]);
+<pre><code class=\\"language-js\\">const notes = createNotes(['hola', 'mundo']);
 
 console.log(notes);
 
-// [ { text: &apos;hola&apos;,
+// [ { text: 'hola',
 //    createdAt: 2017-06-15T17:40:56.093Z,
 //    completed: false },
-//  { text: &apos;mundo&apos;,
+//  { text: 'mundo',
 //    createdAt: 2017-06-15T17:40:56.093Z,
 //    completed: false } ]
 
@@ -1462,16 +1462,16 @@ console.log(notesToString(notes));
 // [X] | Mon Jun 12 2017 | hola</code></pre>
 <h2 id=\\"requisitos\\">Requisitos</h2>
 <ul>
-<li>Tu m&#xF3;dulo debe exportar cuatro funciones: <code>createNote</code>, <code>noteToString</code>,
+<li>Tu módulo debe exportar cuatro funciones: <code>createNote</code>, <code>noteToString</code>,
 <code>createNotes</code> y <code>notesToString</code>.</li>
-<li>Tus funciones deben de ser &quot;puras&quot; (no side effects).</li>
-<li>Evita usar asignaci&#xF3;n dentro del cuerpo de las funciones.</li>
+<li>Tus funciones deben de ser \\"puras\\" (no side effects).</li>
+<li>Evita usar asignación dentro del cuerpo de las funciones.</li>
 <li>Usa <code>Array#map</code> para implementar <code>createNotes</code> y <code>notesToString</code>.</li>
-<li>Todas las funciones deben ser &quot;arrow functions&quot;</li>
+<li>Todas las funciones deben ser \\"arrow functions\\"</li>
 </ul>
 <h2 id=\\"bonus-points\\">Bonus points</h2>
 <ul>
-<li>Evita usar el &quot;keyword&quot; <code>return</code> cuando puedas usar retorno impl&#xED;cito.</li>
+<li>Evita usar el \\"keyword\\" <code>return</code> cuando puedas usar retorno implícito.</li>
 </ul>
 <h2 id=\\"recursos\\">Recursos</h2>
 <ul>
@@ -1613,56 +1613,56 @@ describe('notesToString()', () => {
   },
   "13-closing": Object {
     "body": "<h2 id=\\"resumen\\">Resumen</h2>
-<p>Los <strong>Paradigmas de Programaci&#xF3;n</strong> (<em>Programming Paradigms</em>) son formas
-diferentes de pensar en c&#xF3;mo se organiza un programa basado en una serie de
+<p>Los <strong>Paradigmas de Programación</strong> (<em>Programming Paradigms</em>) son formas
+diferentes de pensar en cómo se organiza un programa basado en una serie de
 principios, los cuales resultan en estilos muy distintos y lenguajes muy
 diversos.</p>
-<p>Algunos paradigmas son m&#xE1;s <strong>imperativos</strong> y otros m&#xE1;s <strong>declarativos</strong>. Por
-ejemplo, la programaci&#xF3;n orientada a procedimientos, o la programaci&#xF3;n orientada
-objetos, van a tener un caracter imperativo, mientras que la programaci&#xF3;n
-funcional tiene un caracter mucho m&#xE1;s declarativo.</p>
-<p>La <strong>programaci&#xF3;n por procedimientos</strong> (<em>procedural programming</em>) pertenece a la
+<p>Algunos paradigmas son más <strong>imperativos</strong> y otros más <strong>declarativos</strong>. Por
+ejemplo, la programación orientada a procedimientos, o la programación orientada
+objetos, van a tener un caracter imperativo, mientras que la programación
+funcional tiene un caracter mucho más declarativo.</p>
+<p>La <strong>programación por procedimientos</strong> (<em>procedural programming</em>) pertenece a la
 rama del estilo <em>imperativo</em>. Cuando programamos orientados a procedimientos nos
-concentramos en agrupar c&#xF3;digo en procedimientos o funciones.</p>
-<p>En la <strong>programaci&#xF3;n orientada a objetos</strong> , vez de pensar en acciones nos
-enfocamos en definir los &quot;tipos&quot; de datos primero, y despu&#xE9;s decidimos que
-interacciones van a tener. En OOP dise&#xF1;amos objetos, que van a tener una data
+concentramos en agrupar código en procedimientos o funciones.</p>
+<p>En la <strong>programación orientada a objetos</strong> , vez de pensar en acciones nos
+enfocamos en definir los \\"tipos\\" de datos primero, y después decidimos que
+interacciones van a tener. En OOP diseñamos objetos, que van a tener una data
 (un estado) y una serie de operaciones que pueden realizar.</p>
-<p>En la <strong>programaci&#xF3;n orientada a objetos</strong> el principal mecanismo de reuso de
-c&#xF3;digo es la <strong>herencia</strong>, donde un objeto &quot;hereda&quot; una serie de propiedades y
-m&#xE9;todos de otro objeto o clase (en <em>herencia prototipal</em> heredamos directamente
+<p>En la <strong>programación orientada a objetos</strong> el principal mecanismo de reuso de
+código es la <strong>herencia</strong>, donde un objeto \\"hereda\\" una serie de propiedades y
+métodos de otro objeto o clase (en <em>herencia prototipal</em> heredamos directamente
 de un objeto en vez de una clase).</p>
-<p>La <strong>programaci&#xF3;n funcional</strong> pertenece a la rama de los paradigmas
-<em>declarativos</em>. Esto quiere decir que el &quot;estilo&quot; en el que programamos va a
-estar mucho m&#xE1;s enfocado en <em>qu&#xE9; queremos hacer</em> y no tanto en los detalles de
-<em>c&#xF3;mo la computadora lo ejecuta</em>.</p>
-<p>En FP el principal mecanismo de c&#xF3;mputo es la aplicaci&#xF3;n de argumentos a
-funciones. Como consecuencia, evitamos la asignaci&#xF3;n de varialbles, mutaci&#xF3;n y
+<p>La <strong>programación funcional</strong> pertenece a la rama de los paradigmas
+<em>declarativos</em>. Esto quiere decir que el \\"estilo\\" en el que programamos va a
+estar mucho más enfocado en <em>qué queremos hacer</em> y no tanto en los detalles de
+<em>cómo la computadora lo ejecuta</em>.</p>
+<p>En FP el principal mecanismo de cómputo es la aplicación de argumentos a
+funciones. Como consecuencia, evitamos la asignación de varialbles, mutación y
 delegamos el control de flujo.</p>
-<p>Principios de la programaci&#xF3;n funcional:</p>
+<p>Principios de la programación funcional:</p>
 <ul>
 <li><strong>Higher order functions</strong> (funciones como argumentos y/o valores de retorno)</li>
 <li><strong>Funciones puras</strong> (sin efectos secundarios y siempre retorna lo mismo para
 los mismos argumentos)</li>
-<li><strong>Composici&#xF3;n</strong> de funciones</li>
-<li><strong>Inmutabilidad</strong> (no &quot;mutar&quot; valores asignados)</li>
-<li><strong>Evitar el &quot;estado&quot; compartido</strong> (no usar referencias fuera del scope de la
-funci&#xF3;n)</li>
-<li>Uso de <strong>recursi&#xF3;n</strong> como alternativa a la iteraci&#xF3;n.</li>
+<li><strong>Composición</strong> de funciones</li>
+<li><strong>Inmutabilidad</strong> (no \\"mutar\\" valores asignados)</li>
+<li><strong>Evitar el \\"estado\\" compartido</strong> (no usar referencias fuera del scope de la
+función)</li>
+<li>Uso de <strong>recursión</strong> como alternativa a la iteración.</li>
 </ul>
 <h2 id=\\"respondamos-juntxs-las-preguntas-de-la-apertura\\">Respondamos juntxs las preguntas de la apertura</h2>
 <ul>
-<li>Qu&#xE9; son los <strong>paradigmas de programaci&#xF3;n</strong>?</li>
-<li>Qu&#xE9; es el estilo <strong>imperativo</strong></li>
-<li>Qu&#xE9; es el estilo <strong>declarativo</strong></li>
-<li>Qu&#xE9; paradigmas encajan dentro del estilo <strong>imperativo</strong> y cuales en el
+<li>Qué son los <strong>paradigmas de programación</strong>?</li>
+<li>Qué es el estilo <strong>imperativo</strong></li>
+<li>Qué es el estilo <strong>declarativo</strong></li>
+<li>Qué paradigmas encajan dentro del estilo <strong>imperativo</strong> y cuales en el
 <strong>declarativo</strong></li>
-<li>Qu&#xE9; es la <strong>programaci&#xF3;n por procedimientos</strong>?</li>
-<li>Qu&#xE9; es la <strong>programaci&#xF3;n orientada a objetos</strong>?</li>
-<li>Qu&#xE9; es la <strong>programaci&#xF3;n funcional</strong>?</li>
-<li>C&#xF3;mo se aplican los diferentes paradigmas al mundo de JavaScript?</li>
-<li>C&#xF3;mo se comparan los diferentes paradigmas (diferencias, similitudes, ...)?</li>
-<li>C&#xF3;mo programar en los diferentes estilos</li>
+<li>Qué es la <strong>programación por procedimientos</strong>?</li>
+<li>Qué es la <strong>programación orientada a objetos</strong>?</li>
+<li>Qué es la <strong>programación funcional</strong>?</li>
+<li>Cómo se aplican los diferentes paradigmas al mundo de JavaScript?</li>
+<li>Cómo se comparan los diferentes paradigmas (diferencias, similitudes, ...)?</li>
+<li>Cómo programar en los diferentes estilos</li>
 </ul>
 ",
     "duration": 5,

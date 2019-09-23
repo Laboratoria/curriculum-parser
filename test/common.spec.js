@@ -1,5 +1,5 @@
 const marked = require('marked');
-const cheerio = require('cheerio');
+const { JSDOM } = require('jsdom');
 const helpers = require('./helpers');
 const common = require('../lib/common');
 
@@ -136,37 +136,49 @@ describe('common', () => {
         duración: 'duration',
         duration: 'duration',
       });
-      const $ = cheerio.load(parsed.body);
-      const $iframeContainer = $('.iframe-container');
-      expect($iframeContainer.length).toBe(1);
-      const $iframe = $iframeContainer.children()[0];
-      expect($iframe.type).toBe('tag');
-      expect($iframe.name).toBe('iframe');
-      expect($iframe.attribs).toMatchSnapshot();
+      const { window } = new JSDOM(parsed.body);
+      const { document } = window;
+      const iframeContainer = document.querySelector('.iframe-container');
+      expect(iframeContainer instanceof window.HTMLDivElement).toBe(true);
+      expect(iframeContainer.children.length).toBe(1);
+      expect(iframeContainer.children[0] instanceof window.HTMLIFrameElement).toBe(true);
+      // expect(iframeContainer.children[0].id).toBe('ytplayer');
+      expect(iframeContainer.children[0].width).toBe('640');
+      expect(iframeContainer.children[0].height).toBe('360');
+      expect(iframeContainer.children[0].frameBorder).toBe('0');
+      expect(iframeContainer.children[0].src).toBe('https://www.youtube.com/embed/ge4h5uJN6KI?autoplay=0');
     });
 
     it('should pass through query string params when embedding youtube videos (long url)', () => {
       const data = helpers.readFixtureFile('README-with-youtube-with-params.md');
       const parsed = common.parseReadme(data, {});
-      const $ = cheerio.load(parsed.body);
-      const $iframeContainer = $('.iframe-container');
-      expect($iframeContainer.length).toBe(1);
-      const $iframe = $iframeContainer.children()[0];
-      expect($iframe.type).toBe('tag');
-      expect($iframe.name).toBe('iframe');
-      expect($iframe.attribs).toMatchSnapshot();
+      const { window } = new JSDOM(parsed.body);
+      const { document } = window;
+      const iframeContainer = document.querySelector('.iframe-container');
+      expect(iframeContainer instanceof window.HTMLDivElement).toBe(true);
+      expect(iframeContainer.children.length).toBe(1);
+      expect(iframeContainer.children[0] instanceof window.HTMLIFrameElement).toBe(true);
+      // expect(iframeContainer.children[0].id).toBe('ytplayer');
+      expect(iframeContainer.children[0].width).toBe('640');
+      expect(iframeContainer.children[0].height).toBe('360');
+      expect(iframeContainer.children[0].frameBorder).toBe('0');
+      expect(iframeContainer.children[0].src).toBe('https://www.youtube.com/embed/ft5TzxG-LAc?cc_lang_pref=es&cc_load_policy=1&autoplay=0');
     });
 
     it('should pass through query string params when embedding youtube videos (short url)', () => {
       const data = helpers.readFixtureFile('README-with-youtube-short-link-with-params.md');
       const parsed = common.parseReadme(data, {});
-      const $ = cheerio.load(parsed.body);
-      const $iframeContainer = $('.iframe-container');
-      expect($iframeContainer.length).toBe(1);
-      const $iframe = $iframeContainer.children()[0];
-      expect($iframe.type).toBe('tag');
-      expect($iframe.name).toBe('iframe');
-      expect($iframe.attribs).toMatchSnapshot();
+      const { window } = new JSDOM(parsed.body);
+      const { document } = window;
+      const iframeContainer = document.querySelector('.iframe-container');
+      expect(iframeContainer instanceof window.HTMLDivElement).toBe(true);
+      expect(iframeContainer.children.length).toBe(1);
+      expect(iframeContainer.children[0] instanceof window.HTMLIFrameElement).toBe(true);
+      // expect(iframeContainer.children[0].id).toBe('ytplayer');
+      expect(iframeContainer.children[0].width).toBe('640');
+      expect(iframeContainer.children[0].height).toBe('360');
+      expect(iframeContainer.children[0].frameBorder).toBe('0');
+      expect(iframeContainer.children[0].src).toBe('https://www.youtube.com/embed/ge4h5uJN6KI?cc_lang_pref=es&cc_load_policy=1&autoplay=0');
     });
 
     it('should parse vimeo url as embed', () => {
@@ -179,13 +191,17 @@ describe('common', () => {
         duración: 'duration',
         duration: 'duration',
       });
-      const $ = cheerio.load(parsed.body);
-      const $iframeContainer = $('.iframe-container');
-      expect($iframeContainer.length).toBe(1);
-      const $iframe = $iframeContainer.children()[0];
-      expect($iframe.type).toBe('tag');
-      expect($iframe.name).toBe('iframe');
-      expect($iframe.attribs).toMatchSnapshot();
+      const { window } = new JSDOM(parsed.body);
+      const { document } = window;
+      const iframeContainer = document.querySelector('.iframe-container');
+      expect(iframeContainer instanceof window.HTMLDivElement).toBe(true);
+      expect(iframeContainer.children.length).toBe(1);
+      expect(iframeContainer.children[0] instanceof window.HTMLIFrameElement).toBe(true);
+      expect(iframeContainer.children[0].width).toBe('640');
+      expect(iframeContainer.children[0].height).toBe('360');
+      expect(iframeContainer.children[0].frameBorder).toBe('0');
+      expect(iframeContainer.children[0].src).toBe('https://player.vimeo.com/video/94950270?title=0&byline=0&portrait=0');
+      expect(iframeContainer.children[0].scrolling).toBe('no');
     });
 
     it('should parse loom url as embed', () => {
@@ -198,13 +214,16 @@ describe('common', () => {
         duración: 'duration',
         duration: 'duration',
       });
-      const $ = cheerio.load(parsed.body);
-      const $iframeContainer = $('.iframe-container');
-      expect($iframeContainer.length).toBe(1);
-      const $iframe = $iframeContainer.children()[0];
-      expect($iframe.type).toBe('tag');
-      expect($iframe.name).toBe('iframe');
-      expect($iframe.attribs).toMatchSnapshot();
+      const { window } = new JSDOM(parsed.body);
+      const { document } = window;
+      const iframeContainer = document.querySelector('.iframe-container');
+      expect(iframeContainer instanceof window.HTMLDivElement).toBe(true);
+      expect(iframeContainer.children.length).toBe(1);
+      expect(iframeContainer.children[0] instanceof window.HTMLIFrameElement).toBe(true);
+      expect(iframeContainer.children[0].width).toBe('640');
+      expect(iframeContainer.children[0].height).toBe('360');
+      expect(iframeContainer.children[0].frameBorder).toBe('0');
+      expect(iframeContainer.children[0].src).toBe('https://www.useloom.com/embed/90102cf63263435faa7f867c1e9c2d33');
     });
 
     it('should parse typeform url as embed', () => {
@@ -217,11 +236,15 @@ describe('common', () => {
         duración: 'duration',
         duration: 'duration',
       });
-      const $ = cheerio.load(parsed.body);
-      const $iframe = $('iframe')[0];
-      expect($iframe.type).toBe('tag');
-      expect($iframe.name).toBe('iframe');
-      expect($iframe.attribs).toMatchSnapshot();
+      const { window } = new JSDOM(parsed.body);
+      const { document } = window;
+      const iframe = document.querySelector('iframe');
+      expect(iframe instanceof window.HTMLIFrameElement).toBe(true);
+      expect(iframe.frameBorder).toBe('0');
+      expect(iframe.width).toBe('100%');
+      expect(iframe.height).toBe('100%');
+      expect(iframe.style.height).toBe('100vh');
+      expect(iframe.src).toBe('https://laboratoria.typeform.com/to/J8fzhH');
     });
 
     it('should parse soundcloud url as embed', () => {
@@ -235,13 +258,17 @@ describe('common', () => {
         duration: 'duration',
         duração: 'duration',
       });
-      const $ = cheerio.load(parsed.body);
-      const $iframeContainer = $('.iframe-container');
-      expect($iframeContainer.length).toBe(1);
-      const $iframe = $iframeContainer.children()[0];
-      expect($iframe.type).toBe('tag');
-      expect($iframe.name).toBe('iframe');
-      expect($iframe.attribs).toMatchSnapshot();
+      const { window } = new JSDOM(parsed.body);
+      const { document } = window;
+      const iframeContainer = document.querySelector('.iframe-container');
+      expect(iframeContainer instanceof window.HTMLDivElement).toBe(true);
+      expect(iframeContainer.children.length).toBe(1);
+      expect(iframeContainer.children[0] instanceof window.HTMLIFrameElement).toBe(true);
+      expect(iframeContainer.children[0].width).toBe('640');
+      expect(iframeContainer.children[0].height).toBe('180');
+      expect(iframeContainer.children[0].frameBorder).toBe('0');
+      expect(iframeContainer.children[0].src).toBe('https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/332779915');
+      expect(iframeContainer.children[0].scrolling).toBe('no');
     });
 
     it('should parse slide url as embed', () => {
@@ -255,13 +282,16 @@ describe('common', () => {
         duration: 'duration',
         duração: 'duration',
       });
-      const $ = cheerio.load(parsed.body);
-      const $iframeContainer = $('.iframe-container');
-      expect($iframeContainer.length).toBe(1);
-      const $iframe = $iframeContainer.children()[0];
-      expect($iframe.type).toBe('tag');
-      expect($iframe.name).toBe('iframe');
-      expect($iframe.attribs).toMatchSnapshot();
+      const { window } = new JSDOM(parsed.body);
+      const { document } = window;
+      const iframeContainer = document.querySelector('.iframe-container');
+      expect(iframeContainer instanceof window.HTMLDivElement).toBe(true);
+      expect(iframeContainer.children.length).toBe(1);
+      expect(iframeContainer.children[0] instanceof window.HTMLIFrameElement).toBe(true);
+      expect(iframeContainer.children[0].width).toBe('640');
+      expect(iframeContainer.children[0].height).toBe('360');
+      expect(iframeContainer.children[0].frameBorder).toBe('0');
+      expect(iframeContainer.children[0].src).toBe('https://docs.google.com/presentation/d/e/2PACX-1vS_df7E0e1gALi_nUVpLN9D1eL2shAta_f8E7oI1N0nSv1u77EnIh9ZBAhaGOIN7saMcr6il3c7VjVv');
     });
   });
 });

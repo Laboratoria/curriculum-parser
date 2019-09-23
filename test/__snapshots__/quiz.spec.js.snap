@@ -4,12 +4,12 @@ exports[`quiz should parse quiz from html created from README.md 1`] = `
 Array [
   Object {
     "answers": Array [
-      "const last_name = &apos;Martinez&apos;;",
+      "const last_name = 'Martinez';",
       "const score = 1;",
-      "const cosita = &quot;El retorno del Jedi&quot;;",
+      "const cosita = \\"El retorno del Jedi\\";",
       "const undefined = true;",
       "const likesCoffee = false;",
-      "const 2ndChild = &apos;Diana&apos;;",
+      "const 2ndChild = 'Diana';",
     ],
     "description": "",
     "solution": Array [
@@ -20,15 +20,15 @@ Array [
   },
   Object {
     "answers": Array [
-      "Afectan el flujo del programa y se utilizan para hacer m&#xE1;s entendible tu c&#xF3;digo",
-      "No afectan el flujo del programa y se utilizan para hacer que el c&#xF3;digo corra
-m&#xE1;s r&#xE1;pido",
-      "No afectan el flujo del programa y se utilizan para hacer m&#xE1;s entendible tu
-c&#xF3;digo",
-      "Afectan el flujo del programa y se utilizan para hacer que el c&#xF3;digo corra
-m&#xE1;s r&#xE1;pido",
+      "Afectan el flujo del programa y se utilizan para hacer más entendible tu código",
+      "No afectan el flujo del programa y se utilizan para hacer que el código corra
+más rápido",
+      "No afectan el flujo del programa y se utilizan para hacer más entendible tu
+código",
+      "Afectan el flujo del programa y se utilizan para hacer que el código corra
+más rápido",
     ],
-    "description": "<p>Esta es una descripci&#xF3;n...</p><p>Blah blah blah</p><pre><code class=\\"language-js\\">const foo = &apos;bar&apos;;</code></pre>",
+    "description": "<p>Esta es una descripción...</p><p>Blah blah blah</p><pre><code class=\\"language-js\\">const foo = 'bar';</code></pre>",
     "solution": Array [
       2,
     ],
@@ -37,9 +37,9 @@ m&#xE1;s r&#xE1;pido",
   Object {
     "answers": Array [
       "3 &gt; 3",
-      "&apos;hola&apos; + &apos; mundo&apos;",
+      "'hola' + ' mundo'",
       "true &amp;&amp; false",
-      "&quot;10&quot; + 1",
+      "\\"10\\" + 1",
     ],
     "description": "",
     "solution": Array [
@@ -63,7 +63,7 @@ significa que hemos <em>asignado</em> el valor <code>null</code>",
   },
   Object {
     "answers": Array [
-      "Documentaci&#xF3;n de la Red de Desarrolladores de Mozilla (MDN)",
+      "Documentación de la Red de Desarrolladores de Mozilla (MDN)",
       "<a href=\\"http://www.w3schools.com\\" target=\\"_blank\\">www.w3schools.com</a>",
       "lineadecodigo.com",
       "stackoverflow.com",
@@ -77,10 +77,10 @@ significa que hemos <em>asignado</em> el valor <code>null</code>",
   },
   Object {
     "answers": Array [
-      "&quot;Hola Mundo&quot;",
-      "&quot;Hola mundo&quot;",
-      "&quot;Holamundo&quot;",
-      "&apos;HolaMundo&apos;",
+      "\\"Hola Mundo\\"",
+      "\\"Hola mundo\\"",
+      "\\"Holamundo\\"",
+      "'HolaMundo'",
     ],
     "description": "",
     "solution": Array [
@@ -140,10 +140,10 @@ significa que hemos <em>asignado</em> el valor <code>null</code>",
   },
   Object {
     "answers": Array [
-      "&quot;Me &quot;encanta&quot; JavaScript&quot;",
-      "&quot;Me \\\\encanta\\\\ JavaScript&quot;",
-      "&quot;Me encanta JavaScript&quot;",
-      "&quot;Me &quot;encanta&quot; JavaScript&quot;",
+      "\\"Me \\"encanta\\" JavaScript\\"",
+      "\\"Me \\\\encanta\\\\ JavaScript\\"",
+      "\\"Me encanta JavaScript\\"",
+      "\\"Me \\"encanta\\" JavaScript\\"",
     ],
     "description": "",
     "solution": Array [
@@ -153,10 +153,10 @@ significa que hemos <em>asignado</em> el valor <code>null</code>",
   },
   Object {
     "answers": Array [
-      "&quot;boolean&quot;",
-      "&quot;undefined&quot;",
-      "&quot;number&quot;",
-      "&quot;string&quot;",
+      "\\"boolean\\"",
+      "\\"undefined\\"",
+      "\\"number\\"",
+      "\\"string\\"",
     ],
     "description": "",
     "solution": Array [
@@ -192,9 +192,9 @@ significa que hemos <em>asignado</em> el valor <code>null</code>",
   },
   Object {
     "answers": Array [
-      "&quot;501&quot;",
+      "\\"501\\"",
       "51",
-      "&quot;50+1&quot;",
+      "\\"50+1\\"",
       "50",
     ],
     "description": "",
@@ -231,10 +231,10 @@ significa que hemos <em>asignado</em> el valor <code>null</code>",
   },
   Object {
     "answers": Array [
-      "&quot; str&quot;",
-      "&quot; string&quot;",
-      "&quot;stri&quot;",
-      "&quot; strin&quot;",
+      "\\" str\\"",
+      "\\" string\\"",
+      "\\"stri\\"",
+      "\\" strin\\"",
     ],
     "description": "",
     "solution": Array [
@@ -244,10 +244,10 @@ significa que hemos <em>asignado</em> el valor <code>null</code>",
   },
   Object {
     "answers": Array [
-      "&quot;ng string is long&quot;",
-      "&quot;long string is long&quot;",
-      "&quot;&quot;",
-      "&quot;My long string is long&quot;",
+      "\\"ng string is long\\"",
+      "\\"long string is long\\"",
+      "\\"\\"",
+      "\\"My long string is long\\"",
     ],
     "description": "",
     "solution": Array [
@@ -257,10 +257,10 @@ significa que hemos <em>asignado</em> el valor <code>null</code>",
   },
   Object {
     "answers": Array [
-      "&quot;Quiero seguir aprendiendo!!!&quot;",
-      "&quot;Quiero seguir aprendiendo!!&quot;",
-      "&quot;Quiero seguir aprendiendo!&quot;",
-      "&quot;iero seguir aprendiendo!!!&quot;",
+      "\\"Quiero seguir aprendiendo!!!\\"",
+      "\\"Quiero seguir aprendiendo!!\\"",
+      "\\"Quiero seguir aprendiendo!\\"",
+      "\\"iero seguir aprendiendo!!!\\"",
     ],
     "description": "",
     "solution": Array [
@@ -272,7 +272,7 @@ significa que hemos <em>asignado</em> el valor <code>null</code>",
     "answers": Array [
       "null",
       "undefined",
-      "&quot;&quot;",
+      "\\"\\"",
       "g",
     ],
     "description": "",
@@ -309,10 +309,10 @@ significa que hemos <em>asignado</em> el valor <code>null</code>",
   },
   Object {
     "answers": Array [
-      "&quot;AlphaBet&quot;",
-      "&quot;ALPHABET&quot;",
-      "&quot;alphabet&quot;",
-      "&quot;Alphabet&quot;",
+      "\\"AlphaBet\\"",
+      "\\"ALPHABET\\"",
+      "\\"alphabet\\"",
+      "\\"Alphabet\\"",
     ],
     "description": "",
     "solution": Array [
@@ -323,9 +323,9 @@ significa que hemos <em>asignado</em> el valor <code>null</code>",
   Object {
     "answers": Array [
       "543",
-      "&quot;543&quot;",
-      "&quot;Boolean&quot;",
-      "&quot;number&quot;",
+      "\\"543\\"",
+      "\\"Boolean\\"",
+      "\\"number\\"",
     ],
     "description": "",
     "solution": Array [
