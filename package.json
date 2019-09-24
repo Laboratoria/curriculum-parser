@@ -21,7 +21,7 @@
     "jsdom": "^15.1.1",
     "marked": "^0.7.0",
     "minimist": "^1.2.0",
-    "models": "Laboratoria/models#v1.0.0-alpha.11",
+    "models": "Laboratoria/models#v1.0.0-alpha.12",
     "mongoose": "^5.7.1",
     "semver": "^6.3.0"
   },
