@@ -65,6 +65,7 @@ describe('common', () => {
 
   describe('common.parseDuration(str)', () => {
     [
+      ['abc', null],
       ['10min', 10],
       ['10', 10],
       ['10m', 10],
@@ -85,6 +86,21 @@ describe('common', () => {
       const tokens = marked.lexer('Blah blah Blah\n\nFoo bar baz\n\n***\n');
       expect(common.tokensToHTML(tokens, tokens.links)).toMatchSnapshot();
     });
+
+    it('should trim preceding <hr>', () => {
+      const tokens = marked.lexer('***\nBlah blah Blah\n\nFoo bar baz');
+      expect(common.tokensToHTML(tokens, tokens.links)).toMatchSnapshot();
+    });
+
+    it('should trim multiple preceding <hr>', () => {
+      const tokens = marked.lexer('***\n***\nBlah blah Blah\n\nFoo bar baz');
+      expect(common.tokensToHTML(tokens, tokens.links)).toMatchSnapshot();
+    });
+
+    it('should trim multiple dangling <hr>', () => {
+      const tokens = marked.lexer('Blah blah Blah\n\nFoo bar baz\n***\n***\n');
+      expect(common.tokensToHTML(tokens, tokens.links)).toMatchSnapshot();
+    });
   });
 
 
@@ -101,15 +117,21 @@ describe('common', () => {
       expect(common.parseReadme('# foo')).toEqual({ title: 'foo', body: '' });
     });
 
+    it('should ignore unknown meta data keys', () => {
+      const data = helpers.readFixtureFile('README-unknown-meta.md');
+      expect(common.parseReadme(data, {
+        tipo: 'type',
+        formato: 'format',
+        duración: 'duration',
+      })).toMatchSnapshot();
+    });
+
     it('should parse ok when all meta data is present', () => {
       const data = helpers.readFixtureFile('README-body-starts-with-h3.md');
       expect(common.parseReadme(data, {
         tipo: 'type',
-        type: 'type',
         formato: 'format',
-        format: 'format',
         duración: 'duration',
-        duration: 'duration',
       })).toMatchSnapshot();
     });
 
@@ -117,11 +139,8 @@ describe('common', () => {
       const data = helpers.readFixtureFile('README-missing-meta-key.md');
       const parsed = common.parseReadme(data, {
         tipo: 'type',
-        type: 'type',
         formato: 'format',
-        format: 'format',
         duración: 'duration',
-        duration: 'duration',
       });
       expect(parsed).toMatchSnapshot();
     });
@@ -130,11 +149,8 @@ describe('common', () => {
       const data = helpers.readFixtureFile('README-with-youtube-short-link.md');
       const parsed = common.parseReadme(data, {
         tipo: 'type',
-        type: 'type',
         formato: 'format',
-        format: 'format',
         duración: 'duration',
-        duration: 'duration',
       });
       const { window } = new JSDOM(parsed.body);
       const { document } = window;
@@ -185,11 +201,8 @@ describe('common', () => {
       const data = helpers.readFixtureFile('README-with-vimeo-link.md');
       const parsed = common.parseReadme(data, {
         tipo: 'type',
-        type: 'type',
         formato: 'format',
-        format: 'format',
         duración: 'duration',
-        duration: 'duration',
       });
       const { window } = new JSDOM(parsed.body);
       const { document } = window;
@@ -208,11 +221,8 @@ describe('common', () => {
       const data = helpers.readFixtureFile('README-with-loom-link.md');
       const parsed = common.parseReadme(data, {
         tipo: 'type',
-        type: 'type',
         formato: 'format',
-        format: 'format',
         duración: 'duration',
-        duration: 'duration',
       });
       const { window } = new JSDOM(parsed.body);
       const { document } = window;
@@ -230,11 +240,8 @@ describe('common', () => {
       const data = helpers.readFixtureFile('README-with-typeform-link.md');
       const parsed = common.parseReadme(data, {
         tipo: 'type',
-        type: 'type',
         formato: 'format',
-        format: 'format',
         duración: 'duration',
-        duration: 'duration',
       });
       const { window } = new JSDOM(parsed.body);
       const { document } = window;
@@ -251,12 +258,8 @@ describe('common', () => {
       const data = helpers.readFixtureFile('README-with-soundcloud-podcast.md');
       const parsed = common.parseReadme(data, {
         tipo: 'type',
-        type: 'type',
         formato: 'format',
-        format: 'format',
         duración: 'duration',
-        duration: 'duration',
-        duração: 'duration',
       });
       const { window } = new JSDOM(parsed.body);
       const { document } = window;
@@ -275,12 +278,8 @@ describe('common', () => {
       const data = helpers.readFixtureFile('README-with-google-slide.md');
       const parsed = common.parseReadme(data, {
         tipo: 'type',
-        type: 'type',
         formato: 'format',
-        format: 'format',
         duración: 'duration',
-        duration: 'duration',
-        duração: 'duration',
       });
       const { window } = new JSDOM(parsed.body);
       const { document } = window;
@@ -292,6 +291,18 @@ describe('common', () => {
       expect(iframeContainer.children[0].height).toBe('360');
       expect(iframeContainer.children[0].frameBorder).toBe('0');
       expect(iframeContainer.children[0].src).toBe('https://docs.google.com/presentation/d/e/2PACX-1vS_df7E0e1gALi_nUVpLN9D1eL2shAta_f8E7oI1N0nSv1u77EnIh9ZBAhaGOIN7saMcr6il3c7VjVv');
+    });
+
+    it('should ignore relative links', () => {
+      const data = helpers.readFixtureFile('README-with-relative-link.md');
+      const parsed = common.parseReadme(data, {
+        tipo: 'type',
+        formato: 'format',
+        duración: 'duration',
+      });
+      const { window } = new JSDOM(parsed.body);
+      const a = window.document.querySelectorAll('a')[0];
+      expect(a.href).toBe('./a/b/c');
     });
   });
 });
