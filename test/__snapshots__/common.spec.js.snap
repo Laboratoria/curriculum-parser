@@ -1,5 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`common common.parseReadme(data, metaKeys) should ignore unknown meta data keys 1`] = `
+Object {
+  "body": "<h3 id=\\"resumen\\">Resumen</h3>
+<p>Llegamos al final de la unidad ;-)</p>
+<p>En la programación funcional, las programadoras tienden a evitar dos hábitos
+comunes en otros lenguajes:</p>
+<ul>
+<li><em>Mutación:</em> Cambio de los datos <em>in-situ</em> en vez de retornar un valor.</li>
+<li><em>Estado compartido:</em> Contexto extra que no se provee como argumento a la
+función, por ejemplo, variables globales.</li>
+</ul>
+<p>Al no depender del estado ni de las mutaciones, el comportamiento de cada
+función está contenido. Por lo tanto, es más sencillo realizar pruebas del
+comportamiento de dichas funciones, entre otra serie de beneficios.</p>
+<p>Una vez dicho todo esto, existen ocasiones donde el uso de funciones puras no es
+posible, especialmente en funciones que emplean <em>side-effects</em> para llevar a
+cabo su cometido, por ejemplo el uso de promesas en JavaScript. Pero este tema,
+lo veremos en una siguiente lección.</p>
+<h3 id=\\"respondamos-juntxs-las-preguntas-de-la-apertura\\">Respondamos juntxs las preguntas de la apertura</h3>
+<ul>
+<li>Cómo evitar que nuestras funciones tengan efectos colaterales?</li>
+<li>Por qué es beneficioso evitar el estado compartido?</li>
+<li>Cuáles son las ventajas que ofrecen las funciones puras, en particular a la
+hora de hacer testing?</li>
+<li>Cómo evitar la mutación de objetos y arreglos?</li>
+<li>Qué tipos de datos son mutables e inmutables en JavaScript?</li>
+<li>Cómo usar métodos de arreglos como <code>Array#concat</code>, <code>Array#slice</code>, <code>Array#map</code>,
+<code>Array#filter</code>, ... para crear arreglos nuevos en vez de mutar (modificar)
+valores existentes?</li>
+<li>Cómo usar métodos de objetos (por ejemplo <code>Object.assign()</code>) para copiar
+propiedades y así <em>clonar</em> objetos?</li>
+<li>Cómo usar el <em>spread operator</em> (<code>...</code>) para copiar objetos y arreglos?</li>
+</ul>
+<h3 id=\\"auto-evaluación\\">Auto-evaluación</h3>
+<p>Tus instructorxs te compartirán un link al cuestionario de <em>auto evaliación</em>.
+Este cuestionario no es calificado.</p>
+",
+  "duration": "15min",
+  "format": "guiado",
+  "title": "Cierre",
+  "type": "seminario",
+}
+`;
+
 exports[`common common.parseReadme(data, metaKeys) should parse ok when all meta data is present 1`] = `
 Object {
   "body": "<h3 id=\\"resumen\\">Resumen</h3>
@@ -253,6 +297,24 @@ por Mattias P Johansson</li>
 `;
 
 exports[`common common.tokensToHTML(tokens, links) should trim dangling <hr> 1`] = `
+"<p>Blah blah Blah</p>
+<p>Foo bar baz</p>
+"
+`;
+
+exports[`common common.tokensToHTML(tokens, links) should trim multiple dangling <hr> 1`] = `
+"<p>Blah blah Blah</p>
+<p>Foo bar baz</p>
+"
+`;
+
+exports[`common common.tokensToHTML(tokens, links) should trim multiple preceding <hr> 1`] = `
+"<p>Blah blah Blah</p>
+<p>Foo bar baz</p>
+"
+`;
+
+exports[`common common.tokensToHTML(tokens, links) should trim preceding <hr> 1`] = `
 "<p>Blah blah Blah</p>
 <p>Foo bar baz</p>
 "
