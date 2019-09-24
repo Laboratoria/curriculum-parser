@@ -16,7 +16,7 @@
     "changelog": "git log $(git describe --tags --abbrev=0)..HEAD --oneline --format=\"* %h %s (%an <%ae>)\""
   },
   "dependencies": {
-    "@laboratoria/rubric": "^3.0.2",
+    "@laboratoria/rubric": "^3.0.3",
     "chalk": "^2.4.2",
     "jsdom": "^15.1.1",
     "marked": "^0.7.0",
