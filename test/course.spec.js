@@ -111,4 +111,14 @@ describe('course', () => {
           .toBe('TopicUnitPart validation failed: type: Path `type` is required.');
       })
   ));
+
+  it('should ignore tables in course description (taken from course readme)', () => (
+    course(helpers.resolveFixturePath('00-course-with-part-tables'), models, {
+      repo: 'Laboratoria/bootcamp',
+      version: '2.0.0',
+      track: 'js',
+      locale: 'es-ES',
+    })
+      .then(result => expect(result.syllabus).toMatchSnapshot())
+  ));
 });
