@@ -17,18 +17,18 @@
   },
   "dependencies": {
     "@laboratoria/rubric": "^3.0.3",
-    "chalk": "^2.4.2",
-    "jsdom": "^15.2.0",
+    "chalk": "^3.0.0",
+    "jsdom": "^15.2.1",
     "marked": "^0.7.0",
     "minimist": "^1.2.0",
-    "models": "Laboratoria/models#v1.0.0-alpha.15",
-    "mongoose": "^5.7.6",
+    "models": "Laboratoria/models#v1.0.0-alpha.16",
+    "mongoose": "^5.7.11",
     "semver": "^6.3.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
     "coveralls": "^3.0.7",
-    "eslint": "^6.5.1",
+    "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
     "jest": "^24.9.0"
