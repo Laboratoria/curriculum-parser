@@ -112,21 +112,6 @@ describe('project', () => {
       });
   });
 
-  it('should reject when no skills present', () => {
-    const p = helpers.resolveFixturePath('01-a-project-with-no-skills');
-    return project(p, models, {
-      track: 'js',
-      repo: 'Laboratoria/bootcamp',
-      version: '1.0.0',
-      locale: 'es-ES',
-      rubric: '3',
-    })
-      .catch((err) => {
-        expect(err.message).toBe('No skills found');
-        expect(err.path).toBe(path.join(p, 'README.md'));
-      });
-  });
-
   it('should reject when unknown root skills category', () => {
     const p = helpers.resolveFixturePath('01-a-project-with-unknown-root-skills-cats');
     return project(p, models, {
