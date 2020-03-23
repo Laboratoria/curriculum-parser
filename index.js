@@ -3,7 +3,7 @@
 const minimist = require('minimist');
 const chalk = require('chalk');
 const mongoose = require('mongoose');
-const models = require('models')(mongoose);
+const models = require('@laboratoria/models')(mongoose);
 const { hasOwnProperty } = require('./lib/common');
 const pkg = require('./package.json');
 

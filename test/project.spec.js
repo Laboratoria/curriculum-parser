@@ -1,6 +1,6 @@
 const path = require('path');
 const mongoose = require('mongoose');
-const models = require('models')(mongoose);
+const models = require('@laboratoria/models')(mongoose);
 const rubric = require('@laboratoria/rubric');
 const helpers = require('./helpers');
 const project = require('../lib/project');
