@@ -20,7 +20,7 @@
     "chalk": "^2.4.2",
     "jsdom": "^15.2.0",
     "marked": "^0.7.0",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.2",
     "models": "Laboratoria/models#v1.0.0-alpha.15",
     "mongoose": "^5.7.6",
     "semver": "^6.3.0"
