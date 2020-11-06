@@ -104,7 +104,7 @@ describe('common', () => {
   });
 
 
-  describe.only('common.parseReadme(data, metaKeys)', () => {
+  describe('common.parseReadme(data, metaKeys)', () => {
     it('should throw when no data', () => {
       expect(() => common.parseReadme()).toThrow(/README.md está vacío/);
     });
