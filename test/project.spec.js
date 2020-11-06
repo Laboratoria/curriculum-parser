@@ -40,7 +40,7 @@ describe('project', () => {
     })
       .catch((err) => {
         expect(err.message)
-          .toBe(`Parser rubric ${rubric.version} does not satisfy range >=99.0.0 <100.0.0`);
+          .toBe(`Parser rubric ${rubric.version} does not satisfy range >=99.0.0 <100.0.0-0`);
       });
   });
 

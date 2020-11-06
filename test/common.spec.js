@@ -104,7 +104,7 @@ describe('common', () => {
   });
 
 
-  describe('common.parseReadme(data, metaKeys)', () => {
+  describe.only('common.parseReadme(data, metaKeys)', () => {
     it('should throw when no data', () => {
       expect(() => common.parseReadme()).toThrow(/README.md está vacío/);
     });
@@ -114,7 +114,7 @@ describe('common', () => {
     });
 
     it('should parse ok when only title', () => {
-      expect(common.parseReadme('# foo')).toEqual({ title: 'foo', body: '' });
+      expect(common.parseReadme('# foo')).toEqual({ title: 'foo' });
     });
 
     it('should ignore unknown meta data keys', () => {
