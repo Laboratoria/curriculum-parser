@@ -152,8 +152,7 @@ PASS  ./lowercaser.test.js
 <p>Parece que todo funciona como se espera. Continuemos.</p>
 <h2 id=\\"dada-la-misma-entrada-devuelve-siempre-la-misma-salida\\">Dada la misma entrada, devuelve siempre la misma salida</h2>
 <p>Con nuestra función <code>lowerCaser()</code>, podemos reemplazar la llamada de la función
-por el resultado, y el código tendrá el mismo significado <code>lowerCaser('LOREM
-IPSUM')</code> siempre será lo mismo que <code>lorem ipsum</code> en su programa, sin importar el
+por el resultado, y el código tendrá el mismo significado <code>lowerCaser('LOREM IPSUM')</code> siempre será lo mismo que <code>lorem ipsum</code> en su programa, sin importar el
 contexto, cuántas veces lo llame o cuándo lo llame.</p>
 <p>Pero no se puede decir lo mismo de todas las funciones. Algunas funciones se
 basan en información distinta de los argumentos que se transmiten para producir
