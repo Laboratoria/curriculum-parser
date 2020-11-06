@@ -12,7 +12,7 @@
     "pretest": "eslint .",
     "test": "jest test/*.spec.js --verbose --coverage",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "changelog": "git log $(git describe --tags --abbrev=0)..HEAD --oneline --format=\"* %h %s (%an <%ae>)\""
+    "changelog": "git log $(git describe --tags --abbrev=0)..HEAD --oneline --format=\"* %h %s\""
   },
   "dependencies": {
     "@laboratoria/models": "^1.3.0",
