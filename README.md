@@ -3,7 +3,7 @@
 Command line tool used to parse content written in markdown for our LMS at
 @Laboratoria (See [Laboratoria/bootcamp](https://github.com/Laboratoria/bootcamp)).
 
-[![Build Status](https://travis-ci.com/Laboratoria/curriculum-parser.svg?branch=master)](https://travis-ci.com/Laboratoria/curriculum-parser)
+![Node.js CI](https://github.com/Laboratoria/curriculum-parser/workflows/Node.js%20CI/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/Laboratoria/curriculum-parser/badge.svg?branch=master)](https://coveralls.io/github/Laboratoria/curriculum-parser?branch=master)
 
 ## Installation
