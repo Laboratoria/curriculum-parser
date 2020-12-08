@@ -7,9 +7,10 @@ describe('syllabus', () => {
     expect(typeof syllabus).toBe('function');
   });
 
-  it.skip('should parse syllabus from subdirectories', () => (
-    syllabus(helpers.resolveFixturePath('01-course-no-title'))
-      .then(console.log)
-      .catch(console.error)
+  it('should parse syllabus from subdirectories', () => (
+    syllabus(helpers.resolveFixturePath('paradigms'))
+      .then((result) => {
+        expect(result).toMatchSnapshot();
+      })
   ));
 });

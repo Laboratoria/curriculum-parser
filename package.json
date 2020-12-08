@@ -1,6 +1,6 @@
 {
   "name": "@laboratoria/curriculum-parser",
-  "version": "2.7.1",
+  "version": "3.0.0-alpha.1",
   "license": "MIT",
   "bin": {
     "curriculum-parser": "index.js"
@@ -10,25 +10,24 @@
   },
   "scripts": {
     "pretest": "eslint .",
-    "test": "jest test/*.spec.js --verbose --coverage",
+    "test": "jest test/*.spec.js --coverage",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "changelog": "git log $(git describe --tags --abbrev=0)..HEAD --oneline --format=\"* %h %s\""
   },
   "dependencies": {
-    "@laboratoria/models": "^1.5.1",
-    "@laboratoria/rubric": "^3.0.5",
-    "chalk": "^4.1.0",
-    "jsdom": "^16.5.0",
-    "marked": "^2.0.1",
+    "@laboratoria/models": "^1.6.1",
+    "chalk": "^4.1.1",
+    "js-yaml": "^4.1.0",
+    "jsdom": "^16.6.0",
+    "marked": "^2.0.7",
     "minimist": "^1.2.5",
-    "mongoose": "^5.11.19",
-    "semver": "^7.3.4"
+    "mongoose": "^5.12.13"
   },
   "devDependencies": {
     "coveralls": "^3.1.0",
-    "eslint": "^7.21.0",
+    "eslint": "^7.28.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1",
-    "jest": "^26.6.3"
+    "eslint-plugin-import": "^2.23.4",
+    "jest": "^27.0.4"
   }
 }

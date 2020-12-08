@@ -4,6 +4,14 @@ const exercise = require('../lib/exercise');
 
 
 describe('exercise', () => {
+  it('should reject when missing readme', () => {
+    expect.assertions(1);
+    return exercise(helpers.resolveFixturePath('00-part-missing-readme'))
+      .catch((err) => {
+        expect(err.message).toBe('Empty or missing exercise README.md');
+      });
+  });
+
   it('should parse exercise', () => (
     exercise(
       path.join(

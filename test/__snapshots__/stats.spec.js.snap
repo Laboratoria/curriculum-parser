@@ -9,3 +9,33 @@ Object {
   "unitCount": 2,
 }
 `;
+
+exports[`stats.computeCourseStats should count exercises 1`] = `
+Object {
+  "duration": 70,
+  "durationString": "1.2h",
+  "exerciseCount": 1,
+  "partCount": 4,
+  "unitCount": 2,
+}
+`;
+
+exports[`stats.computeCourseStats should not add decimals to durationString when decimal is 0 1`] = `
+Object {
+  "duration": 120,
+  "durationString": "2h",
+  "exerciseCount": 0,
+  "partCount": 3,
+  "unitCount": 2,
+}
+`;
+
+exports[`stats.computeCourseStats should not complain when unit has no parts? 1`] = `
+Object {
+  "duration": 0,
+  "durationString": "0min",
+  "exerciseCount": 0,
+  "partCount": 0,
+  "unitCount": 1,
+}
+`;

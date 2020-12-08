@@ -18,6 +18,6 @@ module.exports.options = [
   { name: 'version', required: true },
   { name: 'locale', required: true },
   { name: 'track', required: true },
-  { name: 'rubric', required: true },
+  { name: 'lo', required: false },
   { name: 'suffix', required: false },
 ];

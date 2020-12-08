@@ -20,7 +20,7 @@ You should now be able to run it with `npx`:
 npx curriculum-parser # when already installed in project
 
 # or alternatively using full package name (with org)
-# this works even if nor previously installed.
+# this works even if not previously installed.
 npx @laboratoria/curriculum-parser
 ```
 
@@ -90,7 +90,7 @@ Commands:
 
   help
   topic <dir> --repo --version --locale --track [--suffix]
-  project <dir> --repo --version --locale --track --rubric [--suffix]
+  project <dir> --repo --version --locale --track [--lo=some/dir] [--suffix]
 
 Global options:
 
@@ -132,7 +132,7 @@ curriculum-parser project projects/01-cipher \
   --version 2.5.0 \
   --locale es-ES \
   --track js \
-  --rubric 2.x \
+  --lo=./learning-objectives \
   > "build/projects/01-cipher.json"
 ```
 
@@ -144,8 +144,8 @@ curriculum-parser project projects/01-cipher \
   --version 2.5.0 \
   --locale pt-BR \
   --track js \
-  --rubric 2.x \
   --suffix pt \
+  --lo=./learning-objectives \
   > "build/projects/01-cipher-pt.json"
 ```
 
