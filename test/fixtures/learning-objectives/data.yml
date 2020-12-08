@@ -1,0 +1,154 @@
+html:
+  # - tags
+  # - attributes
+  # - block-vs-inline
+  - semantics
+
+css:
+  - selectors
+  # - box-model
+  # - values-and-units
+  # - relative-vs-absolute
+  - flexbox
+  - grid
+  - media-queries
+
+dom:
+  - selectors
+  - events
+  - manipulation
+  - routing
+  - storage
+
+js:
+  - data-types:
+    - primitive
+    - primitive-vs-non-primitive
+    # - values-and-refs
+    # - typeof
+    # - instanceof
+    - strings
+    - arrays
+    - objects
+  - variables:
+    - declaration
+    # - assignment
+    # - scope
+  - conditionals
+  - loops
+  - functions
+  - recursion
+  - testing:
+    - unit
+    # - cases
+    # - assertions
+    - mocks
+    - async
+    # - coverage
+    - e2e
+    - compatibility
+  - modules:
+    - es-modules
+    - commonjs
+  - linting
+  - semantics
+  - expression-vs-statement
+  - async:
+    - callbacks
+    - promises
+    # - async/await
+    # - streams
+
+scm:
+  - git:
+    - setup
+    - intro
+    - integration
+  - github:
+    - setup
+    - gh-pages
+    - collaboration
+    - project-management
+    - ci
+
+ux:
+  - user-understanding
+  - prototyping
+  - visual-design
+  - usability-testing
+
+firebase:
+  - auth
+  - firestore
+
+front-end-web-dev:
+  - components
+  - state
+  # - routing
+
+angular:
+  - components-and-templates
+  - structural-directives
+  - input-output
+  - services
+  - routing
+  - observables
+  - http-client
+  - styles
+
+react:
+  - jsx
+  - components
+  - events
+  - lists-and-keys
+  - conditional-rendering
+  - lifting-up-state
+  - hooks
+  - css-modules
+  - routing
+
+vue:
+  - instance
+  - data-and-methods
+  - components
+  - props
+  - directives
+  - iteration
+  - events
+  - computed-props-and-observers
+  - routing
+  - classes-and-styles
+
+http:
+  - request-response
+  - headers
+  - body
+  - verbs
+  - status-codes
+  - json
+  - cors
+
+node:
+  - npm-install
+  - package.json
+  - npm-scripts
+  - process
+  - filesystem
+
+express:
+  - routing
+  - middleware
+
+auth:
+  - jwt
+  - password-access-and-storage
+
+webops:
+  - env-vars
+  - docker-containers
+  - docker-compose
+
+db:
+  - install
+  - conection
+  - queries

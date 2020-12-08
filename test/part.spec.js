@@ -5,6 +5,22 @@ const { hasOwnProperty } = require('../lib/common');
 
 
 describe('part', () => {
+  it('should reject when part is missing readme', () => {
+    expect.assertions(1);
+    return part(helpers.resolveFixturePath('00-part-missing-readme'))
+      .catch((err) => {
+        expect(err.message).toBe('Part is missing README.md');
+      });
+  });
+
+  it('should reject when bad duration', () => {
+    expect.assertions(1);
+    return part(helpers.resolveFixturePath('00-part-with-bad-duration'))
+      .catch((err) => {
+        expect(err.message).toBe('Could not parse part duration');
+      });
+  });
+
   it('should parse empty part with meta data', () => (
     part(path.join(helpers.fixturesBasePath, '00-part'))
       .then(data => expect(data).toMatchSnapshot())
