@@ -19,7 +19,7 @@
     "@laboratoria/rubric": "^3.0.5",
     "chalk": "^4.1.0",
     "jsdom": "^16.4.0",
-    "marked": "^1.2.7",
+    "marked": "^2.0.0",
     "minimist": "^1.2.5",
     "mongoose": "^5.11.9",
     "semver": "^7.3.4"
