@@ -1,9 +1,9 @@
 {
   "name": "@laboratoria/curriculum-parser",
-  "version": "2.7.0",
+  "version": "2.7.1",
   "license": "MIT",
   "bin": {
-    "curriculum-parser": "./index.js"
+    "curriculum-parser": "index.js"
   },
   "engines": {
     "node": ">=10"
