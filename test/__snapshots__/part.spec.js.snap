@@ -179,7 +179,8 @@ código",
         "Afectan el flujo del programa y se utilizan para hacer que el código corra
 más rápido",
       ],
-      "description": "<p>Esta es una descripción...</p><p>Blah blah blah</p><pre><code class=\\"language-js\\">const foo = 'bar';</code></pre>",
+      "description": "<p>Esta es una descripción...</p><p>Blah blah blah</p><pre><code class=\\"language-js\\">const foo = 'bar';
+</code></pre>",
       "solution": Array [
         2,
       ],

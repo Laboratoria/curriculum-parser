@@ -116,14 +116,16 @@ saludo con el nombre:</p>
 
 test('Should say Hello', () =&gt; {
   expect(greet('Hello', 'Heidi')).toBe('Hello, Heidi')
-})</code></pre>
+})
+</code></pre>
 <p>Esta función requiere que el nombre y el saludo se pasen como argumentos para
 que funcione correctamente. Pero podríamos reescribir la función usando
 <em>currying</em> anidado simple, de modo que la función básica sólo requiera un
 saludo, y devuelve otra función que toma el nombre de la persona que queremos
 saludar.</p>
 <h2 id=\\"nuestro-primer-curry\\">Nuestro primer <em>curry</em></h2>
-<pre><code class=\\"language-js\\">const greetCurried = greeting =&gt; name =&gt; \`\${greeting}, \${name}\`</code></pre>
+<pre><code class=\\"language-js\\">const greetCurried = greeting =&gt; name =&gt; \`\${greeting}, \${name}\`
+</code></pre>
 <p>Este pequeño ajuste a la forma en que escribimos la función anterior nos permite
 crear una nueva función para cualquier tipo de saludo, y pasar a esa nueva
 función el nombre de la persona que queremos saludar:</p>
@@ -132,13 +134,15 @@ función el nombre de la persona que queremos saludar:</p>
 
   expect(greetHello('Heidi')).toBe('Hello, Heidi')
   expect(greetHello('Eddie')).toBe('Hello, Eddie')
-})</code></pre>
+})
+</code></pre>
 <p>También podemos llamar a la función en modo <em>curry</em> original directamente,
 simplemente pasando cada uno de los parámetros en un conjunto separado de
 paréntesis, uno después del otro:</p>
 <pre><code class=\\"language-js\\">test('Should work with all the parameters', () =&gt; {
   expect(greetCurried('Hi there')('Howard')).toBe('Hi there, Howard')
-})</code></pre>
+})
+</code></pre>
 <h2 id=\\"apliquemos-curry-a-todo\\">Apliquemos <em>curry</em> a todo</h2>
 <p>Lo bueno es que ahora que hemos aprendido a modificar nuestra función
 tradicional para usar este enfoque para manejar los argumentos, podemos hacerlo
@@ -147,7 +151,8 @@ con tantos argumentos como queramos:</p>
   separator =&gt;
     emphasis =&gt;
       name =&gt;
-        \`\${greeting}\${separator}\${name}\${emphasis}\`</code></pre>
+        \`\${greeting}\${separator}\${name}\${emphasis}\`
+</code></pre>
 <p>Tenemos la misma flexibilidad con cuatro argumentos que con dos. No importa lo
 lejos que vaya el anidamiento, podemos crear nuevas funciones personalizadas
 para saludar a tantas personas como escojamos de tantas maneras como nos
@@ -157,7 +162,8 @@ convenga:</p>
 
   expect(greetAwkwardly('Heidi')).toBe('Hello...Heidi?')
   expect(greetAwkwardly('Eddie')).toBe('Hello...Eddie?')
-})</code></pre>
+})
+</code></pre>
 <p>Además, podemos pasar tantos parámetros como quisiéramos al crear variaciones
 personalizadas de nuestra función <em>curry</em> original, creando nuevas funciones que
 son capaces de tomar el número apropiado de parámetros adicionales, cada uno se
@@ -166,13 +172,15 @@ pasa por separado en su propio conjunto de paréntesis:</p>
   const sayHello = greetDeeplyCurried('Hello')(', ')
 
   expect(sayHello('.')('Heidi')).toBe('Hello, Heidi.')
-  expect(sayHello('.')('Eddie')).toBe('Hello, Eddie.')</code></pre>
+  expect(sayHello('.')('Eddie')).toBe('Hello, Eddie.')
+</code></pre>
 <p>Y se pueden definir variaciones subordinadas:</p>
 <pre><code class=\\"language-js\\">  const askHello = sayHello('?')
 
   expect(askHello('Heidi')).toBe('Hello, Heidi?')
   expect(askHello('Eddie')).toBe('Hello, Eddie?')
-})</code></pre>
+})
+</code></pre>
 <h2 id=\\"aplicando-curry-a-funciones-tradicionales\\">Aplicando <em>curry</em> a funciones tradicionales</h2>
 <p>Puedes ver lo poderoso que es este enfoque, especialmente si necesitas crear
 muchas funciones personalizadas muy detalladas. El único problema es la
@@ -194,7 +202,8 @@ función de orden superior debe retornar otra función que espera un solo
 argumento,...</p>
 <pre><code class=\\"language-js\\">const curryIt = f =&gt; x =&gt; {
   // ...
-}</code></pre>
+}
+</code></pre>
 <p>Luego que se suministra dicho argumento se procede a verificar si el número de
 argumentos esperados (<code>Function.length</code>) por la función <em>uncurried</em> es igual o
 menor a 1, de ser así ejecuta dicha función, esta condición particular también
@@ -205,7 +214,8 @@ nos servirá como condición de parada en nuestra llamada recursiva.</p>
   } else {
     // ...
   }
-}</code></pre>
+}
+</code></pre>
 <p>En cambio, si el número de parámetros esperados es mayor a 1 debemos recurrir a
 la recursión y aplicar de nuevo nuestra función de orden superior, en este
 último caso pasaremos como argumento una nueva función equivalente, por medio
@@ -216,9 +226,11 @@ const greet = (greeting, name) =&gt; \`\${greeting}, \${name}\`
 // función equivalente a excepción del argumento inicial
 const greetWithGreeting = greet.bind(null, 'Hello') // [Function: bound greet]
 greetWithGreeting('Heidi')
-// =&gt; 'Hello, Heidi'</code></pre>
+// =&gt; 'Hello, Heidi'
+</code></pre>
 <p>Sin mayor preámbulo veamos el resultado final de nuestra función <code>curryIt</code>:</p>
-<pre><code class=\\"language-js\\">const curryIt = f =&gt; x =&gt; f.length &lt;= 1 ? f(x) : curryIt(f.bind(null, x))</code></pre>
+<pre><code class=\\"language-js\\">const curryIt = f =&gt; x =&gt; f.length &lt;= 1 ? f(x) : curryIt(f.bind(null, x))
+</code></pre>
 <p>Para usar esto, le pasamos una referencia a una función que toma cualquier
 número de argumentos, junto con tantos de los argumentos como queremos
 pre-poblar. Lo que recuperamos es una función que está a la espera de los
@@ -230,14 +242,16 @@ test('should return a curried equivalent of the provided function', () =&gt; {
   const greetHello = curryIt(greeter)('Hello')(', ')('.')
 
   expect(greetHello('Heidi')).toBe('Hello, Heidi.')
-  expect(greetHello('Eddie')).toBe('Hello, Eddie.')</code></pre>
+  expect(greetHello('Eddie')).toBe('Hello, Eddie.')
+</code></pre>
 <p>Y al igual que antes, no estamos limitados en términos del número de argumentos
 que queremos utilizar al construir funciones derivadas de nuestra función
 original que usa <em>curry</em>:</p>
 <pre><code class=\\"language-js\\">  const greetGoodbye = curryIt(greeter)('Goodbye')(', ')
 
   expect(greetGoodbye('.')('Joe')).toBe('Goodbye, Joe.')
-})</code></pre>
+})
+</code></pre>
 <h2 id=\\"siendo-serios-sobre-curry\\">Siendo serios sobre <em>curry</em></h2>
 <p>Nuestra pequeña función <code>curryIt</code> no puede manejar todos los casos de borde,
 como los parámetros faltantes u opcionales, pero hace un trabajo razonable

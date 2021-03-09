@@ -120,23 +120,28 @@ siglas en inglés).</p>
 
 test('Should take an input string and returns it lowercased', () =&gt; {
   expect(lowerCaser('LOREM IPSUM')).toBe('lorem ipsum')
-})</code></pre>
+})
+</code></pre>
 <hr>
 <p>NOTA:</p>
 <p>A lo largo del curso usaremos <a href=\\"https://facebook.github.io/jest/\\" target=\\"_blank\\">Jest</a> como <em>framework</em> para la ejecución de
 pruebas unitarias. Puedes instalar <strong>Jest</strong> por medio de <code>npm</code> al ejecutar el
 siguiente comando:</p>
-<pre><code class=\\"language-sh\\">npm install --save-dev jest</code></pre>
+<pre><code class=\\"language-sh\\">npm install --save-dev jest
+</code></pre>
 <p>O también puedes usar <code>yarn</code> al ejecutar:</p>
-<pre><code class=\\"language-sh\\">yarn add --dev jest</code></pre>
+<pre><code class=\\"language-sh\\">yarn add --dev jest
+</code></pre>
 <p>Para correr las pruebas haremos:</p>
-<pre><code class=\\"language-sh\\">yarn run jest -- fichero.test.js</code></pre>
+<pre><code class=\\"language-sh\\">yarn run jest -- fichero.test.js
+</code></pre>
 <hr>
 <p>Ahora, pasemos a implementar lo especificado en nuestros casos de pruebas:</p>
 <p><strong>lowercaser.js.</strong></p>
 <pre><code class=\\"language-js\\">const lowerCaser = input =&gt; input.toString().toLowerCase()
 
-module.exports = lowerCaser</code></pre>
+module.exports = lowerCaser
+</code></pre>
 <p>Una vez completada nuestra implementación inicial, corroboremos nuestro trabajo
 por medio de la ejecución de las pruebas:</p>
 <pre><code class=\\"language-sh\\">$ yarn run jest -- lowercaser.test.js
@@ -148,7 +153,8 @@ PASS  ./lowercaser.test.js
    Tests:       1 passed, 1 total
    Snapshots:   0 total
    Time:        0.859s, estimated 1s
-   Ran all test suites matching \\"lowercaser.test.js\\".</code></pre>
+   Ran all test suites matching \\"lowercaser.test.js\\".
+</code></pre>
 <p>Parece que todo funciona como se espera. Continuemos.</p>
 <h2 id=\\"dada-la-misma-entrada-devuelve-siempre-la-misma-salida\\">Dada la misma entrada, devuelve siempre la misma salida</h2>
 <p>Con nuestra función <code>lowerCaser()</code>, podemos reemplazar la llamada de la función
@@ -159,7 +165,8 @@ basan en información distinta de los argumentos que se transmiten para producir
 resultados. Considera este ejemplo:</p>
 <pre><code class=\\"language-js\\">Math.random() // =&gt; 0.4011148700956255
 Math.random() // =&gt; 0.8533405303023756
-Math.random() // =&gt; 0.3550692005082965</code></pre>
+Math.random() // =&gt; 0.3550692005082965
+</code></pre>
 <p>A pesar de que no pasamos ningún argumento en ninguna de las llamadas a la
 función, todos produjeron resultados diferentes, lo que significa que
 <code>Math.random()</code> <strong>no es una función pura</strong>. <code>Math.random()</code> produce un nuevo
@@ -174,7 +181,8 @@ veces tenemos que preguntarle a la computadora por la hora actual. No vamos a
 entrar en detalles de cómo funcionan las funciones de tiempo. Por ahora,
 simplemente copia este código:</p>
 <pre><code class=\\"language-js\\">const time = () =&gt; new Date().toLocaleTimeString()
-time() // =&gt; \\"5:15:45 PM\\"</code></pre>
+time() // =&gt; \\"5:15:45 PM\\"
+</code></pre>
 <p>¿Qué sucedería si reemplazo la llamada de la función <code>time()</code> con la hora
 actual? Siempre diría que es la misma hora: la hora con la cual la llamada a la
 función se reemplazó. En otras palabras, solo podría producir la salida correcta
@@ -186,18 +194,21 @@ salida. Tal vez recuerdes esta regla de la clase de álgebra: los mismos valores
 de entrada se asignarán siempre al mismo valor de salida. Sin embargo, muchos
 valores de entrada se pueden asignar al mismo valor de salida. Por ejemplo, la
 siguiente función es pura:</p>
-<pre><code class=\\"language-js\\">const highpass = (cutoff, value) =&gt; value &gt;= cutoff;</code></pre>
+<pre><code class=\\"language-js\\">const highpass = (cutoff, value) =&gt; value &gt;= cutoff;
+</code></pre>
 <p>Los mismos valores de entrada se asignarán siempre al mismo valor de salida:</p>
 <pre><code class=\\"language-js\\">highpass(5, 5) // =&gt; true
 highpass(5, 5) // =&gt; true
-highpass(5, 5) // =&gt; true</code></pre>
+highpass(5, 5) // =&gt; true
+</code></pre>
 <p>Muchos valores de entrada tal vez se pueden asignar al mismo valor de salida:</p>
 <pre><code class=\\"language-js\\">highpass(5, 123) // true
 highpass(5, 6)   // true
 highpass(5, 18)  // true
 highpass(5, 1)   // false
 highpass(5, 3)   // false
-highpass(5, 4)   // false</code></pre>
+highpass(5, 4)   // false
+</code></pre>
 <h2 id=\\"efectos-colaterales\\">Efectos colaterales</h2>
 <p>En este punto cabe aclarar que las funciones puras no producen <strong>efectos
 colaterales</strong> o <em>side-effects</em>, pues el propósito de vida de una función pura es
@@ -228,7 +239,8 @@ test('should concatenate array on the right with array on the left', () =&gt; {
   const expected = [1, [2], 3, [4], 5, [6, 7], 8]
 
   expect(concat(left, right)).toEqual(expected)
-})</code></pre>
+})
+</code></pre>
 <p>Una implementación inicial puede ser la siguiente:</p>
 <p><strong>concat.js.</strong></p>
 <pre><code class=\\"language-js\\">const concat = (left, right) =&gt; {
@@ -241,7 +253,8 @@ test('should concatenate array on the right with array on the left', () =&gt; {
   return result
 }
 
-module.exports = concat</code></pre>
+module.exports = concat
+</code></pre>
 <blockquote>
 <p><strong>Nota</strong></p>
 <p>Ten en cuenta que esta implementación es a modo de ejemplo, en realidad
@@ -257,7 +270,8 @@ podríamos usar <a href=\\"https://developer.mozilla.org/es/docs/Web/JavaScript/
    Tests:       1 passed, 1 total
    Snapshots:   0 total
    Time:        0.67s, estimated 1s
-   Ran all test suites matching \\"concat.test.js\\".</code></pre>
+   Ran all test suites matching \\"concat.test.js\\".
+</code></pre>
 <p>Todo parece indicar que nuestra función tiene un comportamiento correcto, ahora
 agreguemos un caso de prueba para comprobar que no estamos alterando el contexto
 externo:</p>
@@ -280,7 +294,8 @@ test('should not mutate external context', () =&gt; {
   concat(left, right)
 
   expect(left).toEqual(backup)
-})</code></pre>
+})
+</code></pre>
 <p>Al ejecutar las pruebas obtenemos lo siguiente:</p>
 <pre><code class=\\"language-sh\\">$ yarn run jest -- concat.test.js
  FAIL  ./concat.test.js
@@ -302,7 +317,8 @@ Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 passed, 2 total
 Snapshots:   0 total
 Time:        1.011s
-Ran all test suites matching \\"concat.test.js\\".</code></pre>
+Ran all test suites matching \\"concat.test.js\\".
+</code></pre>
 <p><strong>Ouch!</strong>, con esto se demuestra que nuestra <strong>función no es pura</strong>, pues
 estamos alterando el contexto externo, lo cual es un tipo de efecto colateral.</p>
 <p>El comportamiento anterior sucede porque los objetos o arreglos pasados a las
@@ -332,7 +348,8 @@ disgustados.</p>
   return result
 }
 
-module.exports = concat</code></pre>
+module.exports = concat
+</code></pre>
 <p>Ahora al ejecutar las pruebas obtenemos lo siguiente:</p>
 <pre><code class=\\"language-sh\\">$ yarn run jest -- concat.test.js
  PASS  ./concat.test.js
@@ -343,7 +360,8 @@ Test Suites: 1 passed, 1 total
 Tests:       2 passed, 2 total
 Snapshots:   0 total
 Time:        0.977s
-Ran all test suites matching \\"concat.test.js\\".</code></pre>
+Ran all test suites matching \\"concat.test.js\\".
+</code></pre>
 <p>¿Recuerdas que antes habíamos mencionado que podíamos haber usado
 <code>Array.prototype.concat</code> directamente?, pues veamos una simplificación del
 código:</p>
@@ -352,7 +370,8 @@ código:</p>
   return left.concat(right)
 }
 
-module.exports = concat</code></pre>
+module.exports = concat
+</code></pre>
 <p>Si ejecutas de nuevo las pruebas unitarias verás que cumplimos con todas las
 condiciones.</p>
 <hr>
@@ -364,7 +383,8 @@ de un arreglo u objeto de esta forma:</p>
 const arrayCopy = [...a]; // \`b\` es un nuevo arreglo con los elementos de \`a\`.
 
 const obj = { foo: 'bar' };
-const objCopy = {...obj};</code></pre>
+const objCopy = {...obj};
+</code></pre>
 <hr>
 <h2 id=\\"beneficios\\">Beneficios</h2>
 <p>Una vez analizadas las funciones puras, volvamos a repasar los beneficios que

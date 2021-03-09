@@ -59,7 +59,8 @@ diversos.</p>
     total += array[i];
   }
   return total;
-}</code></pre>
+}
+</code></pre>
 <p>La función <code>sum(array)</code> recibe un array de números y retorna la suma de todos
 los elementos del array. Para llevar a cabo la suma, usamos la variable <code>total</code>,
 la cual vamos a ir actualizando (mutando) mientras vamos recorriendo el arreglo
@@ -72,7 +73,8 @@ completamente distinto.</p>
     return 0;
   }
   return array[0] + sum(array.slice(1));
-};</code></pre>
+};
+</code></pre>
 <p>En esta segunda implementación, la función <code>sum(array)</code> sigue teniendo la misma
 interfaz (recibe los mismos argumentos y retorna lo mismo), pero claramente
 podemos ver que la lógica se expresa de una manera muy diferente. En la versión
@@ -84,7 +86,8 @@ del paradigma funcional.</p>
 <p>PRO TIP:</p>
 <p>Haciendo uso de ES2015 podemos refactorizar la versión funcional de <code>sum</code> de
 esta manera:</p>
-<pre><code class=\\"language-js\\">const sum = array =&gt; !array.length ? 0 : array[0] + sum(array.slice(1));</code></pre>
+<pre><code class=\\"language-js\\">const sum = array =&gt; !array.length ? 0 : array[0] + sum(array.slice(1));
+</code></pre>
 <hr>
 <p>Cuando hablamos de <strong>Paradigmas de Programación</strong> inevitablemente tenemos que
 hablar de lenguajes de programación. Algunos lenguajes, como JavaScript, son
@@ -188,13 +191,15 @@ _start:
 section .data             ;section declaration
 
 msg db    \\"Hello, world!\\",0xa    ;our dear string
-len equ   $ - msg                ;length of our dear string</code></pre>
+len equ   $ - msg                ;length of our dear string
+</code></pre>
 <p><a href=\\"http://www.tldp.org/HOWTO/Assembly-HOWTO/hello.html\\" target=\\"_blank\\">Fuente: Assembly-HOWTO</a></p>
 <p>El snippet de arriba es un \\"hello world\\" escrito en <code>Assembly</code> (una versión
 moderna, pero muy parecido a lo que hubieras visto en los años 50). Lo único que
 hace este programa es imprimir el string <code>Hello, world!</code>. El equivalente a todo
 el código de arriba en JavaScript sería:</p>
-<pre><code class=\\"language-js\\">console.log('Hello, world!');</code></pre>
+<pre><code class=\\"language-js\\">console.log('Hello, world!');
+</code></pre>
 <p>En nuestro caso, JavaScript tiene un nivel de abstracción mucho más alto. Con lo
 cual, no tenemos que preocuparnos de muchos detalles que JavaScript ya abstrae
 para nosotros, como manejo de memoria, instrucciones del procesador, etc. Esto
@@ -346,7 +351,8 @@ un caracter mucho más declarativo.</p>
   {id: 'uno', name: 'el primero'},
   {id: 'dos', name: 'el segundo'},
   {name: 'no tengo id'}
-];</code></pre>
+];
+</code></pre>
 <p>A partir de esta data, ahora nos piden extraer los <code>id</code> de cada un de los
 objetos y amacenarlos en un nuevo arreglo (<code>ids</code>). Si nos planteamos el
 problema desde un enfoque imperativo, podríamos implementar una solución así:</p>
@@ -358,7 +364,8 @@ for (var i = 0; i &lt; array.length; i++) {
   }
 }
 
-console.log(ids); // ['uno', 'dos']</code></pre>
+console.log(ids); // ['uno', 'dos']
+</code></pre>
 <p>En el código anterior, probablemente puedas identificar claramente el estilo
 imperativo. Las variables como \\"contadores\\" y \\"acumuladores\\", son típicos del
 estilo imperativo. En este estilo el principal mecanismo de cómputo se lleva a
@@ -375,7 +382,8 @@ usar estas herramientas para implementar la misma lógica:</p>
   .filter(item =&gt; typeof item.id === 'string')
   .map(item =&gt; item.id);
 
-console.log(ids); // ['uno', 'dos']</code></pre>
+console.log(ids); // ['uno', 'dos']
+</code></pre>
 <p>En esta nueva versión hacemos lo siguiente:</p>
 <ol>
 <li>Usamos <code>Array#filter</code> para crear un nuevo arreglo sólo con aquellos elementos
@@ -590,7 +598,8 @@ lista de objetos. Empecemos por envolver el código en una función:</p>
   return ids;
 }
 
-console.log(getIds(array)); // ['uno', 'dos']</code></pre>
+console.log(getIds(array)); // ['uno', 'dos']
+</code></pre>
 <p>Este cambio parece menor, pero añade una capa de abstracción que nos da un
 montón de flexibilidad. Ahora nuestro código está <em>encapsulado</em> dentro de su
 propio <em>scope</em> y podemos reusar la lógica para otros arrays (podemos invocar la
@@ -617,7 +626,8 @@ function getIds(inputArray) {
 console.log(getIds(array)); // ['uno', 'dos']
 console.log(hasId()); // false
 console.log(hasId({name: 'foo'})); // false
-console.log(hasId({id: 'uno'})); // true</code></pre>
+console.log(hasId({id: 'uno'})); // true
+</code></pre>
 <p>En esta nueva versión hemos partido el código en dos funciones, y al hacerlo
 hemos tenido que dar nombres a estas funciones. Estos nombres representan de
 alguna forma esa capa de abstracción. Ahora podemos hablar de <code>hasId()</code>
@@ -661,7 +671,8 @@ diferentes o tener dependecias de módulos externos.</p>
 <p>Para exportar nuestra función <code>getIds</code> usando Common JS en Node.js, podemos
 simplemente asignar nuestra función a <code>module.exports</code>.</p>
 <pre><code class=\\"language-js\\">// al final del script
-module.exports = getIds;</code></pre>
+module.exports = getIds;
+</code></pre>
 <p>El objeto <code>module</code> es una variable local a cada script en Common JS. Si
 asignamos algo a <code>module.exports</code>, éste será el valor que recibiremos cuando
 requiramos nuestro \\"módulo\\". Por ejemplo, imaginemos que salvamos el script en
@@ -669,18 +680,21 @@ el archivo <code>src/getIds.js</code>, y ahora lo queremos usar desde otro scrip
 <code>src/</code>:</p>
 <pre><code class=\\"language-js\\">const getIds = require('./src/getIds');
 // \`getIds\` tiene el valor que hemos exportado a través de \`module.exports\`
-// en el script \`src/getIds.js\`</code></pre>
+// en el script \`src/getIds.js\`
+</code></pre>
 <p>Common JS también nos ofrece la opción de exportar los valores que queramos
 como propiedades del objeto <code>exports</code> (que es un alias de <code>module.exports</code>). Así
 en vez de exportar sólo un valor (la función <code>getids</code>), podemos exporar varios
 valores.</p>
 <pre><code class=\\"language-js\\">exports.getIds = getIds;
-exports.hasId = hasId;</code></pre>
+exports.hasId = hasId;
+</code></pre>
 <p>Ahora cuando requerimos nuestro módulo desde otro script lo que recibimos es
 un objeto (el objeto <code>exports</code>), que tiene dos propiedades, <code>getIds</code> y <code>hasId</code>.</p>
 <pre><code class=\\"language-js\\">const myModule = require('./src/myModule');
 // myModule.getIds()
-// myModule.hasId()</code></pre>
+// myModule.hasId()
+</code></pre>
 <hr>
 <h2 id=\\"referencias\\">Referencias</h2>
 <p>Blog posts:</p>
@@ -869,7 +883,8 @@ Podríamos empezar con algo así:</p>
   this.text = text || '';
   this.createdAt = new Date();
   this.completed = false;
-}</code></pre>
+}
+</code></pre>
 <p>Hemos declarado una función (<code>Note</code>) que hace uso de una <em>pseudo variable</em>
 llamada <code>this</code>. La presencia de <code>this</code>, junto con la convención de usar la
 primera letra en mayúscula, nos indican que esta función está escrita
@@ -887,19 +902,22 @@ en otros lenguajes orientados a objetos.</p>
 una referencia al nuevo objeto creado al invocar el constructor. Creemos un
 objeto para ver que significa todo esto:</p>
 <pre><code class=\\"language-js\\">const note = new Note('comprar arroz');
-console.log(note);</code></pre>
+console.log(note);
+</code></pre>
 <p>En la consola deberías de ver algo así:</p>
 <pre><code class=\\"language-text\\">Note {
   text: 'comprar arroz',
   createdAt: 2017-06-14T22:39:51.987Z,
-  completed: false }</code></pre>
+  completed: false }
+</code></pre>
 <p>Podemos ver que <code>note</code> es un objeto con tres propiedades (<code>text</code>, <code>createdAt</code> y
 <code>completed</code>). Estas tres propiedades están declaradas directamente sobre la
 instancia.</p>
 <p>Cuando usamos constructores, es importante acordarnos de usar <code>new</code> a la hora de
 invocarlos, si no, el constructor retornará <code>undefined</code>.</p>
 <pre><code class=\\"language-js\\">const note = Note('comprar arroz');
-console.log(note); // undefined</code></pre>
+console.log(note); // undefined
+</code></pre>
 <p>Hemos dicho que una de las características fundamentales de OOP es que empezamos
 por definir los tipos de datos (ya sea con clases, constructores, prototipos,
 ...), lo cual nos permite inspeccionar los objetos creados para saber si son
@@ -907,7 +925,8 @@ una instacia de un constructor (con el operador <code>instanceof</code>) o compr
 objeto está en la cadena de prototipos de otro objeto
 (<code>Object.prototype.isPrototypeOf</code>).</p>
 <pre><code class=\\"language-js\\">console.log(note instanceof Note); // true
-console.log(Note.prototype.isPrototypeOf(note)); // true</code></pre>
+console.log(Note.prototype.isPrototypeOf(note)); // true
+</code></pre>
 <p>Ahora que ya hemos definido un constructor que inicializa una serie de
 propiedades, podemos usar el prototipo del constructor (<code>Note.prototype</code>) para
 añadir funcionalidad. Todo lo que le añadamos a <code>Note.prototype</code> será parte del
@@ -918,7 +937,8 @@ prototipo de <code>Note</code>:</p>
   str += ' | ' + this.createdAt.toDateString();
   str += ' | ' + this.text;
   return str;
-};</code></pre>
+};
+</code></pre>
 <p>Hemos añadido el método <code>Note.prototype.toString</code>, que simplemente retorna una
 representación de nuestro objeto como string. Ahora todos los objetos que
 creemos con <code>new Note()</code> deberían de \\"heredar\\" un método <code>toString</code>. Si hacemos
@@ -928,7 +948,8 @@ pero qué pasó con el método <code>toString</code> que le habíamos  añadimo 
 <p>Inspeccionemos un poco...</p>
 <pre><code class=\\"language-js\\">console.log(note.prototype); // undefined
 console.log(note.__proto__); // Note { toString: [Function] }
-console.log(note.toString); // [Function]</code></pre>
+console.log(note.toString); // [Function]
+</code></pre>
 <p>El objeto <code>note</code> sí tiene el método <code>toString</code>, pero no directamente sobre la
 instancia, si no que está en su prototipo. Cuando tratamos de acceder a una
 propiedad que no existe en un objeto, JavaScript va a buscar a ver si hay una
@@ -1032,7 +1053,8 @@ note1.completed = true;
 console.log(notes.toString());
 
 // [ ] | Mon Jun 12 2017 | mundo
-// [X] | Mon Jun 12 2017 | hola</code></pre>
+// [X] | Mon Jun 12 2017 | hola
+</code></pre>
 <h2 id=\\"requisitos\\">Requisitos</h2>
 <ul>
 <li><code>Notes.prototype.add</code> debe botar error (throw) si el argumento (<code>note</code>) no es
@@ -1290,7 +1312,8 @@ function recursiveMap(arr, fn) {
     return [];
   }
   return [fn(arr[0])].concat(recursiveMap(arr.slice(1), fn));
-}</code></pre>
+}
+</code></pre>
 <p>La última función (<code>recursiveMap</code>) es un buen ejemplo de FP porque muestra como
 podemos recibir una función como argumento, reemplzar iteración por recursión,
 evitar asignación y mutación. Además no accede a ninguna referencia fuera de su
@@ -1308,7 +1331,8 @@ ahora se va a limitar a crear un objeto y retornarlo, nada de <code>new</code>, 
     name: name,
     active: false
   };
-};</code></pre>
+};
+</code></pre>
 <p>ES2015 introduce \\"arrow functions\\" (funciones flecha), que es una implementación
 de funciones muy parecida al keyword <code>function</code>, pero que no implica <code>new</code>,
 <code>this</code> ni <code>prototype</code>.</p>
@@ -1317,14 +1341,16 @@ de funciones muy parecida al keyword <code>function</code>, pero que no implica 
     name: name,
     active: false
   };
-};</code></pre>
+};
+</code></pre>
 <hr>
 <p>PRO TIP:</p>
 <p>Con un poquito más de azúcar sintáctica cortesía de ES2015:</p>
 <pre><code class=\\"language-js\\">const createRobot = name =&gt; ({
   name,
   active: false
-});</code></pre>
+});
+</code></pre>
 <p>Cuando el cuerpo de la función es sólo una expresión (un objeto literal en
 nuestro caso), las \\"arrow functions\\" nos permiten hacer <em>retorno implícito</em>, lo
 que significa que podemos obviar los <code>{}</code> que determinan el \\"bloque\\" de la
@@ -1360,7 +1386,8 @@ console.log(array.map(parseFloat).map(double));
 const arrayToDouble = array =&gt; array.map(parseFloat).map(double);
 
 console.log(arrayToDouble(array));
-// [ 2, 4, 66, 6.28, 56 ]</code></pre>
+// [ 2, 4, 66, 6.28, 56 ]
+</code></pre>
 <p>Como vemos en estos ejemplos, podemos encadenar invocaciones a <code>Array#map</code> para
 ir \\"transformando\\" los elementos de un arreglo, ya que cada invocación retorna
 un array.</p>
@@ -1459,7 +1486,8 @@ notes[0].completed = true;
 console.log(notesToString(notes));
 
 // [ ] | Mon Jun 12 2017 | mundo
-// [X] | Mon Jun 12 2017 | hola</code></pre>
+// [X] | Mon Jun 12 2017 | hola
+</code></pre>
 <h2 id=\\"requisitos\\">Requisitos</h2>
 <ul>
 <li>Tu módulo debe exportar cuatro funciones: <code>createNote</code>, <code>noteToString</code>,
