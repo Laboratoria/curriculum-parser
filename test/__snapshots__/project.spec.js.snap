@@ -110,7 +110,7 @@ exports[`project should parse portuguese project 1`] = `
 Object {
   "learningObjectives": undefined,
   "locale": "pt-BR",
-  "parserVersion": "3.0.0-alpha.1",
+  "parserVersion": "3.0.0",
   "path": "test/fixtures/01-a-project-with-pt-translation",
   "prefix": 1,
   "repo": "Laboratoria/bootcamp",
