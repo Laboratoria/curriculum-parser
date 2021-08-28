@@ -6,7 +6,7 @@
     "curriculum-parser": "index.js"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "scripts": {
     "pretest": "eslint .",
@@ -18,10 +18,10 @@
     "@laboratoria/models": "^1.6.1",
     "chalk": "^4.1.1",
     "js-yaml": "^4.1.0",
-    "jsdom": "^16.6.0",
-    "marked": "^2.1.1",
+    "jsdom": "^17.0.0",
+    "marked": "^3.0.2",
     "minimist": "^1.2.5",
-    "mongoose": "^5.12.14"
+    "mongoose": "^5"
   },
   "devDependencies": {
     "coveralls": "^3.1.0",
