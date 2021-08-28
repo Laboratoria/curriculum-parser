@@ -81,7 +81,8 @@ describe('project', () => {
       locale: 'pt-BR',
       suffix: 'pt',
     })
-      .then(({ createdAt, ...parsed }) => {
+      .then(({ createdAt, parserVersion, ...parsed }) => {
+        expect(parserVersion).toBe(pkg.version);
         expect(parsed.slug).toBe('a-project-with-pt-translation-pt');
         expect(parsed.locale).toBe('pt-BR');
         expect(parsed).toMatchSnapshot();
