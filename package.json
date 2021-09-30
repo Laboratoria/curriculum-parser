@@ -15,11 +15,11 @@
     "changelog": "git log $(git describe --tags --abbrev=0)..HEAD --oneline --format=\"* %h %s\""
   },
   "dependencies": {
-    "@laboratoria/models": "^1.6.1",
+    "@laboratoria/models": "^1.10.0",
     "chalk": "^4.1.1",
     "js-yaml": "^4.1.0",
     "jsdom": "^17.0.0",
-    "marked": "^3.0.2",
+    "marked": "^3.0.4",
     "minimist": "^1.2.5",
     "mongoose": "^5"
   },
@@ -28,6 +28,6 @@
     "eslint": "^7.29.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.4",
-    "jest": "^27.0.4"
+    "jest": "^27.2.4"
   }
 }
