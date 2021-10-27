@@ -1,201 +1,162 @@
-# Cifrado César
+# Cifra de César
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
+* [1. Prefácio](#1-prefácio)
+* [2. Resumo do projeto](#2-resumo-do-projeto)
+* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
+* [4. Considerações gerais](#4-considerações-gerais)
+* [5. Critérios de aceitação mínimos do projeto](#5-critérios-de-aceitação-mínimos-do-projeto)
 * [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
+* [7. Considerações técnicas](#7-considerações-técnicas)
+* [8. Guias, dicas e leituras complementares](#8-guias-dicas-e-leituras-complementares)
 * [9. Checklist](#9-checklist)
 
 ***
 
-## 1. Preámbulo
+## 1. Prefácio
 
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)
-es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio
-César lo usaba para enviar órdenes secretas a sus generales en los campos de
-batalla.
+Cifrar significa codificar. A [cifra de César](https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar)
+é um dos primeiros tipos de criptografias conhecidas na história.
+O imperador romano Júlio César utilizava essa cifra para enviar
+ordens secretas aos seus generais no campo de batalha.
 
-![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
+![caeser-cipher](https://user-images.githubusercontent.com/11894994/60990999-07ffdb00-a320-11e9-87d0-b7c291bc4cd1.png)
 
-El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es
-un tipo de cifrado por sustitución, es decir que cada letra del texto original
-es reemplazada por otra que se encuentra un número fijo de posiciones
-(desplazamiento) más adelante en el mismo alfabeto.
+A cifra de César é uma das técnicas mais simples de cifrar uma mensagem. É um
+tipo de cifra por substituição, em que cada letra do texto original é
+substituida por outra que se encontra há um número fixo de posições
+(deslocamento) mais a frente do mesmo alfabeto.
 
-Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
+Por exemplo se usarmos o deslocamento (_offset_) de 3 posições:
 
-* La letra A se cifra como D.
-* La palabra CASA se cifra como FDVD.
-* Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-* Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+* Alfabeto sem cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+* Alfabeto com cifra:  D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+* A letra A será D
+* A palavra CASA será FDVD
 
-En la actualidad, todos los cifrados de sustitución simple se descifran con
-mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la
-comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas
-más complejos de codificación, como el cifrado Vigenère, e incluso tiene
-aplicación en el sistema ROT13.
+Atualmente todas as cifras de substituição alfabética simples, são decifradas
+com facilidade e não oferecem muita segurança na comunicação por si mesma,
+mas a cifra de César muitas vezes pode fazer parte de um sistema
+mais complexo de criptografia, como
+a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
-## 2. Resumen del proyecto
+## 2. Resumo do projeto
 
-¿Qué tengo que hacer exactamente? En este proyecto crearás una aplicación
-web que servirá para que el usuario pueda cifrar y descifrar un texto indicando
-un desplazamiento específico de caracteres (_offset_).
+Neste projeto você criará a primeira aplicação web do _bootcamp_. Nela o usuário
+poderá cifrar e decifrar um texto indicando a chave de deslocamento (_offset_).
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso
-(qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. Algunas ideas de
-ejemplo:
+O tema é livre. Você deve pensar em alguma situação de vida real em que seja
+necessário cifrar uma mensagem e pensar em como deve ser a experiência do
+usuário (tela, explicações, mensagens, cores, marca?, etc.). Algumas ideias de
+exemplo:
 
-* Crear claves seguras para el email.
-* Encriptar/cifrar una tarjeta de crédito.
-* Herramienta de mensajería interna de una organización de derechos humanos en
-  una zona de conflicto.
-* Mensajería secreta para parejas.
+* Criar senhas seguras para email.
+* Cifrar cartões de crédito.
+* Ferramenta de mensagens internas de uma organização
+  em uma zona de conflito.
+* Mensagens secretas para alguma pessoa.
 
-## 3. Objetivos de aprendizaje
+Neste projeto você aprenderá a construir uma aplicação web (_WebApp_) que irá
+interagir com o usuário final através do navegador utilizando HTML, CSS e
+JavaScript como ferramentas.
 
-Trabajando en parejas aprenderán a construir una aplicación web que interactuará
-con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
-como tecnologías.
+## 3. Objetivos de aprendizagem
 
-### HTML y CSS
+> ℹ️ Esta seção será automaticamente gerada no idioma pertinente, a partir dos
+> objetivos de aprendizagem declarados em [`project.yml`](./project.yml), ao
+> criar o repositório do projeto para uma coorte em particular usando
+> [`./scripts/create-cohort-project.js`](../../scripts#create-cohort-project-coaches).
+>
+> Aqui você pode ver uma [lista de todos os objetivos de aprendizagem](../../learning-objectives/data.yml)
+> cobertos em nosso currículo.
 
-* [ ] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [ ] Uso de selectores de CSS.
-* [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
+## 4. Considerações gerais
 
-### DOM
+* Este projeto deve ser resolvido individualmente.
+* O projeto será entregue subindo o seu código no GitHub (commit/push) e o
+  deploy será feito no GitHub Pages. Se não sabe o que é o GitHub, não se
+  preocupe, você aprendera durante o projeto.
+* Tempo para completar: tempo referência 2 semanas.
 
-* [ ] Uso de selectores del DOM.
-* [ ] Manejo de eventos del DOM.
-* [ ] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
-(appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
+## 5. Critérios de aceitação mínimos do projeto
 
-### JavaScript
-
-* [ ] Manipulación de strings.
-* [ ] Uso de condicionales (if-else | switch | operador ternario)
-* [ ] Uso de bucles (for | for..in | for..of | while)
-* [ ] Uso de funciones (parámetros | argumentos | valor de retorno)
-* [ ] Declaración correcta de variables (const & let)
-
-### Testing
-
-* [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
-
-### Estructura del código y guía de estilo
-
-* [ ] Organizar y dividir el código en módulos (Modularización)
-* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
-* [ ] Uso de linter (ESLINT)
-
-### Git y GitHub
-
-* [ ] Uso de comandos de git (add | commit | pull | status | push)
-* [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
-
-### UX
-
-* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-* [ ] Crear prototipos para obtener feedback e iterar.
-* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
-
-## 4. Consideraciones generales
-
-* El equipo de coaches te dará un tiempo sugerido e indicaciones sobre si trabajar
-  sola o en equipo. Recuerda que cada una aprende a diferente ritmo.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no
-  te preocupes, lo aprenderás durante este proyecto.
-
-## 5. Criterios de aceptación mínimos del proyecto
-
-Usa este alfabeto simple (solamente mayúsculas y sin ñ):
+Use o alfabeto simples (somente maiúsculas e sem ç):
 
 * A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
-### Definición del producto
+### Definição do produto
 
-En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso
-para definir el producto final a nivel de experiencia y de interfaz.
+No README.md, escreva como você definiu seu usuário e qual foi o processo para
+definir o produto final a nível de expriência e interface.
 
-* Quiénes son los principales usuarios de producto.
-* Cuáles son los objetivos de estos usuarios en relación con tu producto.
-* Cómo crees que el producto que estás creando está resolviendo sus problemas.
+* Quem são os principais usuário do produto?
+* Quais são os objetivos do usuário em relação com o produto?
+* Como você acredita que o produto está resolvendo os problemas do usuário?
 
-### Interfaz de usuario (UI)
+### Interface do usuário (UI)
 
-La interfaz debe permitir al usuario:
+A interface deve permitir ao usuário:
 
-* Elegir un desplazamiento (_offset_) indicando cuántas posiciones queremos que
-  el cifrado desplace cada caracter.
-* Insertar un mensaje (texto) que queremos cifrar.
-* Ver el resultado del mensaje cifrado.
-* Insertar un mensaje (texto) a descifrar.
-* Ver el resultado del mensaje descifrado.
+* Eleger um _offset_ indicando quantas posições de deslocamento de caracteres
+  quer que a cifra utilize.
+* Inserir uma mensagem (texto) para ser cifrada.
+* Ver o resultado da mensagem cifrada.
+* Inserir uma mensagem (texto) para ser decifrada.
+* Ver o resultado da mensagem decifrada.
 
-### Scripts / Archivos
+### Scripts / Arquivos
 
-* `README.md`: debe explicar cómo descargar, instalar y ejecutar la aplicación
-  así como una introducción a la aplicación, su funcionalidad y decisiones de
-  diseño que tomaron.
-* `src/index.html`: este es el punto de entrada a tu aplicación. Este archivo
-  debe contener tu _markup_ (HTML) e incluir el CSS y JavaScript necesario.
-* `src/cipher.js`: acá debes implementar el objeto `cipher`, el cual ya está
-  _exportado_ en el _boilerplate_. Este objeto (`cipher`) debe contener dos
-  métodos:
-  - `cipher.encode(offset, string)`: `offset` es el número de posiciones que
-    queremos mover a la derecha en el alfabeto y `string` el mensaje (texto)
-    que queremos cifrar.
-  - `cipher.decode(offset, string)`: `offset` es el número de posiciones que
-    queremos mover a la izquierda en el alfabeto y `string` el mensaje
-    (texto) que queremos descifrar.
-* `src/index.js`: acá debes escuchar eventos del DOM, invocar `cipher.encode()`
-  o `cipher.decode()` según sea necesario y actualizar el resultado en la UI.
-* `test/cipher.spec.js`: este archivo contiene algunos tests de ejemplo y acá
-  tendrás que implementar los tests para `cipher.encode()` y `cipher.decode()`.
+* `REAME.md`: deve explicar como "deployar", instalar e executar a aplicação,
+  assim como uma introdução a aplicação, suas funcionalidades e as decisões que
+  foram tomadas.
+* `src/index.html`: aqui será o ponto de entrada da sua aplicação. Este arquivo
+  deve conter a marcação HTML e chamar o CSS e JavaScript necessários.
+* `src/cipher.js`: aqui você deve implementar o objeto `cipher`, o qual já está
+  _exportado_ no _boilerplate_. Este objeto (`cipher`) deve conter dois métodos:
+  - `cipher.encode(offset, string)`: `offset` é o número de posições que
+      queremos mover para a direita no alfabeto e `string` é a mensagem (texto)
+      que queremos cifrar.
+  - `cipher.decode(offset, string)`: `offset` é o número de posições que
+      queremos mover para a esquerda no alfabeto e `string` é a mensagem (texto)
+      que queremos decifrar.
+* `src/index.js`: aqui você deve escutar os eventos de DOM, chamar
+  `cipher.encode()` e `cipher.decode()`.
+* `test/cipher.spec.js`: este arquivo contem alguns testes de exemplo e aqui
+  você deve implementar os testes para `cipher.encode()` e `cipher.decode()`.
 
-## 6. Hacker edition
+## 6. Hacker Edition
 
-Las secciones llamadas _Hacker Edition_ son **opcionales**. Si **terminaste**
-con todo lo anterior y te queda tiempo, intenta completarlas. Así podrás
-profundizar y/o ejercitar más sobre los objetivos de aprendizaje del proyecto.
+As seções chamadas _Hacker Edition_ são **opcionais**. Se você **terminou** tudo
+e ainda sobrou tempo, faça essa parte. Assim você poderá aprofundar e exercitar
+mais sobre os objetivos de aprendizagem do projeto.
 
-La descripción general de este proyecto no menciona qué pasaría con las letras
-minúsculas y otros caracteres (como espacios, puntuación, ñ, ...). El
-boilerplate incluye algunos tests (comentados en principio) que puedes usar como
-punto de partida para implementar el soporte para estos casos.
+A descrição geral deste projeto não menciona o que aconteceria com letras
+minúsculas ou outros caracteres (como espaço, pontuação, ç, ...). O
+_boilerplate_ inclui alguns testes (comentados) que vocês podem usar como ponto
+de partida para implementar o suporte para esses casos.
 
-Tampoco se menciona qué pasaría si el offset fuera negativo. Como parte del
-hacker edition te invitamos a explorar también esta caso por tu cuenta.
+Também não foi mencionado o que aconteceria com _offset_ negativo. Como parte da
+hacker edition te convidamos a explorar esse caso sozinha.
 
-## 7. Consideraciones técnicas
+## 7. Considerações técnicas
 
-La lógica del proyecto debe estar implementada completamente en JavaScript. En
-este proyecto NO está permitido usar librerías o frameworks, solo JavaScript puro
-también conocido como Vanilla JavaScript.
+A lógica do projeto deve estar implementada inteiramente em JavaScript. Nesse
+projeto **NÃO** está permitido usar bibliotecas ou frameworks, só vanilla
+JavaScript.
 
-No se debe utilizar la _pseudo-variable_ `this`.
+Os testes unitários devem cobrir no mínimo de 70% dos _statements_, _functions_
+e _lines_, e um mínimo de 50% de _branches_. O _boilerplate_ já contem o setup e
+configurações necessárias para executar os testes assim como _code coverage_
+para ver o nível de cobertura dos testes usando o comando `npm test`.
 
-Los tests unitarios deben cubrir un mínimo del 70% de _statements_, _functions_
-y _lines_, y un mínimo del 50% de _branches_. El _boilerplate_ ya contiene el
-setup y configuración necesaria para ejecutar los tests (pruebas) así como _code
-coverage_ para ver el nivel de cobertura de los tests usando el comando `npm
-test`.
+O _boilerplate_ inclui testes de exemplo, como ponto de partida.
 
-El _boilerplate_ incluye tests (pruebas) de ejemplo como punto de partida.
+Para começar esse projeto você terá que fazer um _fork_ e _clonar_ este
+repositório que contém o _boilerplate_.
 
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio que contiene el _boilerplate_.
-
-El _boilerplate_ contiene una estructura de archivos como punto de partida así
-como toda la configuración de dependencias y tests de ejemplo:
+O _boilerplate_ contém uma estrutura de arquivos como ponto de partida assim
+como toda a configuração de dependências e testes de exemplo:
 
 ```text
 ./
@@ -215,136 +176,127 @@ como toda la configuración de dependencias y tests de ejemplo:
     └── cipher.spec.js
 ```
 
-El _boilerplate_ incluye tareas que ejecutan [eslint](https://eslint.org/) y
-[htmlhint](https://github.com/yaniswang/HTMLHint) para verificar el `HTML` y
-`JavaScript` con respecto a una guías de estilos. Ambas tareas se ejecutan
-automáticamente antes de ejecutar las pruebas (tests) cuando usamos el comando
-`npm run test`. En el caso de `JavaScript` estamos usando un archivo de
-configuración de `eslint` que se llama `.eslintrc` que contiene un mínimo de
-información sobre el parser que usar (qué version de JavaScript/ECMAScript), el
-entorno (browser en este caso) y las [reglas recomendadas (`"eslint:recommended"`)](https://eslint.org/docs/rules/).
-En cuanto a reglas/guías de estilo en sí,
-usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
+O _boilerplate_ inclui tarefas que executam [eslint](https://eslint.org/) e
+[htmlhint](https://github.com/yaniswang/HTMLHint) para verificar o `HTML` e
+`JavaScript` com respeito a uma guia de estilos. Ambas tarefas são executadas
+automaticamente antes de executar os testes quando usamos o comando `npm run
+test`.
+
+No caso do `JavaScript` estamos usando o `eslint` que está configurado no
+arquivo `.eslintrc` que contem o mínimo de informação como versão do
+JavaScript/ECMAScript, o ambiente (_browser_ nesse caso) e as [regras
+recomendadas (`"eslint:recommended"`)](https://eslint.org/docs/rules/).
+
+Nas regras/guias de estilo usaremos das recomendações padrão tanto para o
+`eslint` quanto `htmlhint`.
 
 ***
 
-## 8. Pistas, tips y lecturas complementarias
+## 8. Guias, dicas e leituras complementares
 
-### Primeros pasos
+### Primeiros passos
 
-1. Antes que nada, asegúrate de tener un :pencil: editor de texto en
-   condiciones, algo como [Atom](https://atom.io/) o
-   [Code](https://code.visualstudio.com/).
-2. Para ejecutar los comandos a continuación necesitarás una :shell:
-   [UNIX Shell](../../topics/shell),
-   que es un programita que interpreta líneas de comando (command-line
-   interpreter) así como tener [git](../../topics/scm/01-git)
-   instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS,
-   ya tienes una _shell_ (terminal) instalada por defecto (y probablemente `git`
-   también). Si usas Windows puedes usar la versión completa de [Cmder](https://cmder.net/)
-   que incluye [Git bash](https://git-scm.com/download/win) y si tienes Windows
-   10 o superior puedes usar [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
-3. Una de las integrantes del equipo debe realizar un :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) del repo de tu cohort,
-   tus _coaches_ te compartirán un _link_ a un repo y te darán acceso de lectura
-   en ese repo. La otra integrante del equipo deber hacer un fork **del
-   repositorio de su compañera** y
-   [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1) un `remote`
-   hacia el mismo.
-4. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-   tu *fork* a tu computadora (copia local).
-5. 📦 Instala las dependencias del proyecto con el comando `npm install`. Esto
-   asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
-6. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
-   pruebas unitarias (unit tests) con el comando `npm test`.
-7. Para ver la interfaz de tu programa en el navegador, usa el comando
-   `npm start` para arrancar el servidor web y dirígete a
-   `http://localhost:5000` en tu navegador.
-8. A codear se ha dicho! :rocket:
+1. Antes de mais nada, se assegure de ter um bom :pencil: editor de texto, algo
+   como [Code](https://code.visualstudio.com/) ou [Atom](https://atom.io/).
+2. Para executar os comandos você precisará de um :shell: UNIX Shell, que é um
+   programa que interpreta linhas de comando (command-line interpreter) e também
+   deve ter o git instalado. Se você usa um sistema operacional "UNIX-like",
+   como GNU/Linux ou MacOS, você já tem um _shell_ (terminal) instalado (e
+   provavelmente o `git` também). Se você usa Windows você pode usar o [Git
+   bash](https://git-scm.com/download/win), embora seja recomendado que você
+   teste :penguin: GNU/Linux.
+3. Faça seu próprio :fork_and_knife:
+   [fork](https://help.github.com/articles/fork-a-repo/) do repositório. Seus
+   _mentores_ compartilharão com você um _link_ para um repositório privado e te
+   darão acesso a este repositório.
+4. :arrow_down: [Clone](https://help.github.com/articles/cloning-a-repository/)
+   o *fork* para seu computador (cópia local).
+5. 📦 Instale as dependências do projeto rodando o comando `npm install`. Mas
+   antes disso tenha certeza de ter instalado o [Node.js](https://nodejs.org/)
+   (que inclui o [npm](https://docs.npmjs.com/)).
+6. Se tudo foi bem, você deve conseguir executar os :traffic_light: testes
+   unitários com o comando `npm test`.
+7. Para ver a interface do seu programa no navegador, use o comando `npm start`
+   para iniciar o servidor web e entre na url `http://localhost:5000` no seu
+   navegador.
+8. Let's Code! :rocket:
 
-### Recursos y temas relacionados
+Este [video](https://drive.google.com/file/d/1CM6ZfpGfJMF6A8IcXoK5cFBBq-CY8oBR/view?usp=sharing)
+da Paloma também pode te ajudar nos seus primeiros passos ;)
 
-A continuación un video de Michelle que te lleva a través de la fórmula
-matemática del Cifrado César y un par de cosas más que debes saber para
-resolver este proyecto. ¡Escúchala con detenimiento y sigue sus consejos! :)
+### Recursos extras
 
-[![tips caesar cipher](https://img.youtube.com/vi/zd8eVrXhs7Y/0.jpg)](https://www.youtube.com/watch?v=zd8eVrXhs7Y)
+A seguir um vídeo do Daniel que te ajudará a entender a fórmula matemática usada
+pela Cifra de César e algumas coisas mais que deve saber para resolver o seu
+projeto. Escute com atenção e siga seus conselhos ! :)
 
-[Link](https://www.youtube.com/watch?v=zd8eVrXhs7Y)
+[![Dicas Cifra de
+César](https://img.youtube.com/vi/utiLWBXmNQU/0.jpg)](https://www.youtube.com/watch?v=utiLWBXmNQU)
 
-También una metodología para empezar a desarrollar tareas con JavaScript:
+Desenho da experiência do usuário (User Experience Design):
 
-[![Resolución de problemas con JavaScript](http://i3.ytimg.com/vi/lYfEmhLmu7A/hqdefault.jpg)](https://www.youtube.com/watch?v=lYfEmhLmu7A)
+* Ideação
+* Prototipagem
+* Teste e iteração
 
-[Link](https://www.youtube.com/watch?v=lYfEmhLmu7A)
-
-Terminal y shell de UNIX:
-
-[![Playlist de Terminal y shell de UNIX](https://img.youtube.com/vi/GB35Eyb-J4c/0.jpg)](https://www.youtube.com/playlist?list=PLiAEe0-R7u8nGH5TEHfSTeDNIvjZFe_Yd)
-
-[Link](https://www.youtube.com/playlist?list=PLiAEe0-R7u8nGH5TEHfSTeDNIvjZFe_Yd)
-
-Control de versiones y trabajo colaborativo con Git y GitHub:
-
-[![Playlist de control de versiones y trabajo colaborativo](https://img.youtube.com/vi/F1EoBbvhaqU/0.jpg)](https://www.youtube.com/playlist?list=PLiAEe0-R7u8k9o3PbT3_QdyoBW_RX8rnV)
-
-[Link](https://www.youtube.com/playlist?list=PLiAEe0-R7u8nGH5TEHfSTeDNIvjZFe_Yd)
-
-Diseño de experiencia de usuario (User Experience Design):
-
-* Ideación
-* Prototipado (sketching)
-* Testeo e Iteración
-
-Desarrollo Front-end:
+Desenvolvimento Front-end:
 
 * Valores
 * Tipos
-* Variables
-* Control de flujo
-* Tests unitarios
-* [Aprende más sobre `charCodeAt()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/charCodeAt)
-* [Aprende más sobre `String.fromCharCode()`](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/String/fromCharCode)
-* [Aprende más sobre `ASCII`](http://conceptodefinicion.de/ascii/)
-* [Documentación de NPM](https://docs.npmjs.com/)
+* Variáveis
+* Controle de fluxo
+* Testes unitários
+* [Aprenda mais sobre
+  `charCodeAt()`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt)
+* [Aprenda mais sobre
+  `String.fromCharCode()`](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/fromCharCode)
+* [Aprenda mais sobre
+  `ASCII`](https://web.fe.up.pt/~ee96100/projecto/Tabela%20ascii.htm)
+* [Documentação do NPM](https://docs.npmjs.com/)
 
-Organización del Trabajo:
+Ferramentas:
 
-* [Metodologías Ágiles](https://www.youtube.com/watch?v=v3fLx7VHxGM)
-* [Scrum en menos de 2 minutos](https://www.youtube.com/watch?v=TRcReyRYIMg)
-* [Scrum en Detalle](https://www.youtube.com/watch?v=nOlwF3HRrAY&t=297s). No
-  esperamos que hagas todo eso desde este proyecto. Iremos profundizando poco a
-  poco a lo largo del -_bootcamp_.
-* [Guía para Cifrado César](https://docs.google.com/presentation/d/e/2PACX-1vTQ7-8LZDHrT4Y6AOBN72Nkfz1eJAeseBHpcHX8BSq0aFCFoZmuMjluMeyFNgK9ISKxTz0H03yGfJiT/pub?start=false&loop=false&delayms=60000)
+* [Terminal](https://www.loom.com/share/29a6cf0f3c5245bf995738284b706468)
+* [Git config](https://www.loom.com/share/c7d445872b9f4618a24605fdcb26a48d)
+* GitHub e GitHub Pages.
+
+Organização do trabalho:
+
+* [Agilidade](https://www.youtube.com/watch?v=vozsjbh4noU)
+* [Scrum em menos de 2 minutos](https://www.youtube.com/watch?v=IKZHPjCQ2m8)
+* [Scrum em detalhes](https://www.youtube.com/watch?v=mt2hM4yrPn0). Não
+  esperamos que você faça tudo isso neste projeto. Iremos aprofundando nesses
+  conceitos ao longo do _bootcamp_.
+* [Guia em espanhol para a
+  cifra](https://docs.google.com/presentation/d/e/2PACX-1vTQ7-8LZDHrT4Y6AOBN72Nkfz1eJAeseBHpcHX8BSq0aFCFoZmuMjluMeyFNgK9ISKxTz0H03yGfJiT/pub?start=false&loop=false&delayms=60000)
 
 ## 9. Checklist
 
-Esta sección está para ayudarte a llevar un control de lo que vas completando.
+Essa seção é para te ajudar a ter um controle do que você precisa completar.
 
-### Parte Obligatoria
+### Parte Obrigatória
 
-* [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
-* [ ] `README.md` explica claramente quiénes son los usuarios y su relación con
-  el producto.
-* [ ] `README.md` explica claramente cómo el producto soluciona los
-  problemas/necesidades de los usuarios.
-* [ ] Usa VanillaJS.
-* [ ] No utiliza `this`.
-* [ ] Implementa `cipher.encode`.
-* [ ] Implementa `cipher.decode`.
-* [ ] Pasa linter con configuración provista.
-* [ ] Pasa pruebas unitarias.
-* [ ] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
-  mínimo del 50% de _branches_.
-* [ ] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
-  cifrado/descifrado.
-* [ ] Interfaz permite escribir un texto para ser cifrado.
-* [ ] Interfaz muestra el resultado del cifrado correctamente.
-* [ ] Interfaz permite escribir un texto para ser descifrado.
-* [ ] Interfaz muestra el resultado del descifrado correctamente.
+* [ ] `README.md` adicionar informação sobre o processo e decisões do desenho.
+* [ ] `README.md` explicar claramente quem são os usuários e as suas relações
+  com o produto.
+* [ ] `README.md` explicar claramente como o produto soluciona os
+  problemas/necessidades dos usuários.
+* [ ] Usar VanillaJS.
+* [ ] Implementar `cipher.encode`.
+* [ ] Implementar `cipher.decode`.
+* [ ] Passar o linter com a configuração definida.
+* [ ] Passar as provas unitárias.
+* [ ] Testes unitários cobrindo 70% dos _statements_, _functions_ e _lines_, e
+  no mínimo 50% das _branches_.
+* [ ] Interface que permita escolher o `offset` (chave de deslocamento) usava
+  para cifrar/decifrar.
+* [ ] Interface que permita escrever um texto para ser cifrado.
+* [ ] Interface que mostre o resultado da cifra corretamente.
+* [ ] Interface que permita escrever um texto para ser decifrado.
+* [ ] Interface que mostre o resultado decifrado corretamente.
 
 ### Parte Opcional: "Hacker edition"
 
-* [ ] Cifra/descifra minúsculas
-* [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [ ] Permite usar un `offset` negativo.
+* [ ] Cifrar/decifrar minúsculas.
+* [ ] Cifrar/decifrar _outros_ caractéres (espaços, pontuação, `ç`, `á`, ...).
+* [ ] Permitir usar `offset` negativo.
