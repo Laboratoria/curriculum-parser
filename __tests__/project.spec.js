@@ -2,6 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const mongoose = require('mongoose');
 const models = require('@laboratoria/models')(mongoose);
+const nock = require('nock');
+const sharp = require('sharp');
 const helpers = require('./helpers');
 const project = require('../lib/project');
 const pkg = require('../package.json');
@@ -199,6 +201,10 @@ describe('project', () => {
       fs.unlinkSync(thumbPath);
     }
 
+    const scope = nock('https://www.101computing.net')
+      .get('/wp/wp-content/uploads/Luhn-Algorithm.png')
+      .reply(200, 'xxxx');
+
     return project(p, models, {
       track: 'js',
       repo: 'Laboratoria/bootcamp',
@@ -211,6 +217,30 @@ describe('project', () => {
         expect(typeof result.thumb).toBe('string');
         expect(result.thumb).toMatch(/^data:image\/png;base64,/);
         fs.unlinkSync(thumbPath);
+        scope.done();
+        expect(sharp).toHaveBeenCalled();
+        expect(sharp().resize).toHaveBeenCalledWith(395);
+        expect(sharp().resize().toBuffer).toHaveBeenCalled();
       });
+  });
+
+  it('should try to create a thumbnail and fail when HTTP status not 200', () => {
+    const p = helpers.resolveFixturePath('01-a-project-without-thumb-again');
+    const thumbPath = path.join(p, 'thumb.png');
+
+    expect.assertions(2);
+    expect(fs.existsSync(thumbPath)).toBe(false);
+
+    nock('https://www.101computing.net')
+      .get('/wp/wp-content/uploads/Luhn-Algorithm.png')
+      .reply(404, '');
+
+    return expect(project(p, models, {
+      track: 'js',
+      repo: 'Laboratoria/bootcamp',
+      version: '1.0.0',
+      locale: 'es-ES',
+      lo: path.join(__dirname, 'fixtures', 'learning-objectives'),
+    })).rejects.toThrow('HTTP error 404');
   });
 });

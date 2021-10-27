@@ -1,9 +1,25 @@
 {
   "extends": "airbnb-base",
+  "env": {
+    "jest": true
+  },
   "rules": {
     "global-require": "off",
     "import/no-dynamic-require": "off",
-    "arrow-parens": ["error", "as-needed", { "requireForBlockBody": true }],
-    "no-multiple-empty-lines": ["error", { "max": 2, "maxBOF": 0, "maxEOF": 0 }]
+    "arrow-parens": [
+      "error",
+      "as-needed",
+      {
+        "requireForBlockBody": true
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 2,
+        "maxBOF": 0,
+        "maxEOF": 0
+      }
+    ]
   }
 }

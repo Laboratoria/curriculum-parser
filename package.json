@@ -10,7 +10,7 @@
   },
   "scripts": {
     "pretest": "eslint .",
-    "test": "jest test/*.spec.js --coverage",
+    "test": "jest __tests__/*.spec.js --coverage",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "changelog": "git log $(git describe --tags --abbrev=0)..HEAD --oneline --format=\"* %h %s\""
   },
