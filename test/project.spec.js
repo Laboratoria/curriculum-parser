@@ -1,3 +1,4 @@
+const fs = require('fs');
 const path = require('path');
 const mongoose = require('mongoose');
 const models = require('@laboratoria/models')(mongoose);
@@ -159,6 +160,57 @@ describe('project', () => {
     })
       .then((result) => {
         expect(result.learningObjectives).toMatchSnapshot();
+      });
+  });
+
+  it('should extract first paragraph of _resumen del proyecto_ as summary', () => {
+    const p = helpers.resolveFixturePath('01-a-project-with-summary');
+    return project(p, models, {
+      track: 'js',
+      repo: 'Laboratoria/bootcamp',
+      version: '1.0.0',
+      locale: 'es-ES',
+      lo: path.join(__dirname, 'fixtures', 'learning-objectives'),
+    })
+      .then((result) => {
+        expect(result.summary).toMatchSnapshot();
+      });
+  });
+
+  it('should extract first paragraph of _resumo do projeto_ as summary', () => {
+    const p = helpers.resolveFixturePath('01-a-project-with-summary');
+    return project(p, models, {
+      track: 'js',
+      repo: 'Laboratoria/bootcamp',
+      version: '1.0.0',
+      locale: 'pt-BR',
+      lo: path.join(__dirname, 'fixtures', 'learning-objectives'),
+    })
+      .then((result) => {
+        expect(result.summary).toMatchSnapshot();
+      });
+  });
+
+  it('should create a thumbnail when file not present and has cover', () => {
+    const p = helpers.resolveFixturePath('01-a-project-without-thumb');
+    const thumbPath = path.join(p, 'thumb.png');
+
+    if (fs.existsSync(thumbPath)) {
+      fs.unlinkSync(thumbPath);
+    }
+
+    return project(p, models, {
+      track: 'js',
+      repo: 'Laboratoria/bootcamp',
+      version: '1.0.0',
+      locale: 'es-ES',
+      lo: path.join(__dirname, 'fixtures', 'learning-objectives'),
+    })
+      .then((result) => {
+        expect(fs.existsSync(thumbPath)).toBe(true);
+        expect(typeof result.thumb).toBe('string');
+        expect(result.thumb).toMatch(/^data:image\/png;base64,/);
+        fs.unlinkSync(thumbPath);
       });
   });
 });
