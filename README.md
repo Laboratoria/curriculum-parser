@@ -4,7 +4,7 @@ Command line tool used to parse content written in markdown for our LMS at
 @Laboratoria (See [Laboratoria/bootcamp](https://github.com/Laboratoria/bootcamp)).
 
 ![Node.js CI](https://github.com/Laboratoria/curriculum-parser/workflows/Node.js%20CI/badge.svg)
-[![Coverage Status](https://coveralls.io/repos/github/Laboratoria/curriculum-parser/badge.svg?branch=master)](https://coveralls.io/github/Laboratoria/curriculum-parser?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/Laboratoria/curriculum-parser/badge.svg?branch=main)](https://coveralls.io/github/Laboratoria/curriculum-parser?branch=main)
 
 ## Installation
 
@@ -63,18 +63,18 @@ npm i -g @laboratoria/curriculum-parser
 ```
 
 If you chose to install using a local clone, you can update your clone to
-_upstream_ master:
+_upstream_ main:
 
 ```sh
 # go into local copy of repo
 cd curriculum-parser
 # if not yet added a reference to upstream remote we add it
 git remote add upstream git@github.com:Laboratoria/curriculum-parser.git
-# fetch changes and merge upstream/master into local master
+# fetch changes and merge upstream/main into local main
 git fetch upstream
-git merge upstream/master
+git merge upstream/main
 # you may also want to push changes to your fork
-git push origin master
+git push origin main
 ```
 
 ## Usage
