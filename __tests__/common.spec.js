@@ -1,4 +1,4 @@
-const marked = require('marked');
+const { marked } = require('marked');
 const { JSDOM } = require('jsdom');
 const helpers = require('./helpers');
 const common = require('../lib/common');
