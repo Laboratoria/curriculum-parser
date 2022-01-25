@@ -18,18 +18,18 @@
     "@laboratoria/models": "^1.10.0",
     "chalk": "^4.1.1",
     "js-yaml": "^4.1.0",
-    "jsdom": "^18.0.0",
-    "marked": "^3.0.8",
+    "jsdom": "^19.0.0",
+    "marked": "^4.0.10",
     "minimist": "^1.2.5",
     "mongoose": "^5",
-    "sharp": "^0.29.2"
+    "sharp": "^0.29.3"
   },
   "devDependencies": {
     "coveralls": "^3.1.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.25.2",
-    "jest": "^27.3.1",
-    "nock": "^13.1.4"
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "jest": "^27.4.7",
+    "nock": "^13.2.2"
   }
 }
