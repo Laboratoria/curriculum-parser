@@ -1,13 +1,7 @@
 const path = require('path');
 const course = require('../lib/course');
 
-
-module.exports = app => course(
-  path.resolve(app.args.shift()),
-  app.models,
-  app.opts,
-);
-
+module.exports = app => course(path.resolve(app.args.shift()), app.opts);
 
 module.exports.args = [
   { name: 'dir', required: true },

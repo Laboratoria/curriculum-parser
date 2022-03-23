@@ -1,13 +1,7 @@
 const path = require('path');
 const project = require('../lib/project');
 
-
-module.exports = app => project(
-  path.resolve(app.args.shift()),
-  app.models,
-  app.opts,
-);
-
+module.exports = app => project(path.resolve(app.args.shift()), app.opts);
 
 module.exports.args = [
   { name: 'dir', required: true },
