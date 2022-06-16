@@ -217,6 +217,26 @@ describe('common', () => {
       expect(iframeContainer.children[0].scrolling).toBe('no');
     });
 
+    it('should parse vimeo url with hash as embed', () => {
+      const data = helpers.readFixtureFile('README-with-vimeo-link-with-hash.md');
+      const parsed = common.parseReadme(data, {
+        tipo: 'type',
+        formato: 'format',
+        duración: 'duration',
+      });
+      const { window } = new JSDOM(parsed.body);
+      const { document } = window;
+      const iframeContainer = document.querySelector('.iframe-container');
+      expect(iframeContainer instanceof window.HTMLDivElement).toBe(true);
+      expect(iframeContainer.children.length).toBe(1);
+      expect(iframeContainer.children[0] instanceof window.HTMLIFrameElement).toBe(true);
+      expect(iframeContainer.children[0].width).toBe('640');
+      expect(iframeContainer.children[0].height).toBe('360');
+      expect(iframeContainer.children[0].frameBorder).toBe('0');
+      expect(iframeContainer.children[0].src).toBe('https://player.vimeo.com/video/94950270?h=e9afa939c2?title=0&byline=0&portrait=0');
+      expect(iframeContainer.children[0].scrolling).toBe('no');
+    });
+
     it('should parse loom url as embed', () => {
       const data = helpers.readFixtureFile('README-with-loom-link.md');
       const parsed = common.parseReadme(data, {
