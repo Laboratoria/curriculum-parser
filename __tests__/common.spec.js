@@ -213,7 +213,9 @@ describe('common', () => {
       expect(iframeContainer.children[0].width).toBe('640');
       expect(iframeContainer.children[0].height).toBe('360');
       expect(iframeContainer.children[0].frameBorder).toBe('0');
-      expect(iframeContainer.children[0].src).toBe('https://player.vimeo.com/video/94950270?title=0&byline=0&portrait=0');
+      expect(iframeContainer.children[0].src).toBe(
+        'https://player.vimeo.com/video/94950270?title=0&byline=0&portrait=0',
+      );
       expect(iframeContainer.children[0].scrolling).toBe('no');
     });
 
@@ -233,7 +235,9 @@ describe('common', () => {
       expect(iframeContainer.children[0].width).toBe('640');
       expect(iframeContainer.children[0].height).toBe('360');
       expect(iframeContainer.children[0].frameBorder).toBe('0');
-      expect(iframeContainer.children[0].src).toBe('https://player.vimeo.com/video/94950270?h=e9afa939c2?title=0&byline=0&portrait=0');
+      expect(iframeContainer.children[0].src).toBe(
+        'https://player.vimeo.com/video/94950270?title=1&byline=0&portrait=0&h=e9afa939c2',
+      );
       expect(iframeContainer.children[0].scrolling).toBe('no');
     });
 
