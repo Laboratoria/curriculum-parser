@@ -19,7 +19,7 @@ En esta unidad aprenderemos:
 Para poder entender cómo funciona un equipo de desarrollo de productos, mira el
 siguiente video:
 
-[Video : Spotify](https://vimeo.com/94950270?h=e9afa939c2)
+[Video : Spotify](https://vimeo.com/94950270?h=e9afa939c2&title=1)
 
 Luego de ver el video, intenta responder las siguientes preguntas:
 
