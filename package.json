@@ -6,7 +6,7 @@
     "curriculum-parser": "index.js"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=14"
   },
   "scripts": {
     "pretest": "eslint .",
@@ -17,17 +17,17 @@
   "dependencies": {
     "chalk": "^4.1.1",
     "js-yaml": "^4.1.0",
-    "jsdom": "^19.0.0",
-    "marked": "^4.0.12",
+    "jsdom": "^20.0.0",
+    "marked": "^4.0.17",
     "minimist": "^1.2.6",
-    "sharp": "^0.30.3"
+    "sharp": "^0.30.7"
   },
   "devDependencies": {
     "coveralls": "^3.1.0",
-    "eslint": "^8.11.0",
+    "eslint": "^8.19.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.4",
-    "jest": "^27.5.1",
-    "nock": "^13.2.4"
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^28.1.2",
+    "nock": "^13.2.8"
   }
 }
