@@ -1,20 +1,18 @@
 #! /usr/bin/env node
 
-const minimist = require('minimist');
-const chalk = require('chalk');
-const { hasOwnProperty } = require('./lib/common');
-const pkg = require('./package.json');
+import fs from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import chalk from 'chalk';
+import minimist from 'minimist';
+import * as help from './cmd/help.js';
+import * as project from './cmd/project.js';
+// import * as topic from './cmd/topic.js';
 
-
-const commands = [
-  'help',
-  'topic',
-  'project',
-].reduce((memo, key) => ({
-  ...memo,
-  [key]: require(`./cmd/${key.split(':').join('/')}`),
-}), {});
-
+const commands = {
+  help,
+  // topic,
+  project,
+};
 
 const success = (value) => {
   if (value) {
@@ -22,7 +20,6 @@ const success = (value) => {
   }
   process.exit(0);
 };
-
 
 const error = (err) => {
   if (err.path) {
@@ -42,21 +39,20 @@ const error = (err) => {
   process.exit(1);
 };
 
-
-module.exports = (args, opts) => {
+export const main = async (args, opts) => {
+  const pkg = JSON.parse(await fs.readFile('./package.json'));
   const cmdName = (opts.h || opts.help) ? 'help' : args.shift() || 'help';
 
   if (opts.V) {
-    return success(pkg.version);
+    return pkg.version;
   }
 
-  if (!hasOwnProperty(commands, cmdName)) {
-    return error('Unkown command');
+  if (typeof commands[cmdName]?.cmd !== 'function') {
+    throw new Error('Unkown command');
   }
 
   if (opts.h || opts.help || cmdName === 'help') {
-    return commands.help({ pkg, commands })
-      .then(success, error);
+    return commands.help.cmd({ pkg, commands });
   }
 
   const requiredArgs = (commands[cmdName].args || []).reduce(
@@ -65,21 +61,23 @@ module.exports = (args, opts) => {
   );
 
   if (args.length < requiredArgs) {
-    return error('Insufficient arguments');
+    throw new Error('Insufficient arguments');
   }
 
-  return commands[cmdName]({
+  return commands[cmdName].cmd({
     pkg,
     commands,
     args,
     opts,
-  })
-    .then(success)
-    .catch(error);
+  });
 };
 
-
-if (require.main === module) {
-  const { _: args, ...opts } = minimist(process.argv.slice(2));
-  module.exports(args, opts);
+if (import.meta.url.startsWith('file:')) {
+  const modulePath = fileURLToPath(import.meta.url);
+  if (process.argv[1] === modulePath) {
+    const { _: args, ...opts } = minimist(process.argv.slice(2));
+    main(args, opts)
+      .then(success)
+      .catch(error);
+  }
 }

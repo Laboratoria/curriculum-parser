@@ -1,4 +1,4 @@
-const help = ({ pkg, commands }) => `
+export const cmd = async ({ pkg, commands }) => `
 Usage: ${pkg.name} [command] [options]
 
 Commands:
@@ -6,22 +6,20 @@ Commands:
 ${Object.keys(commands)
     .map(
       cmdName => (
-        `  ${cmdName} ${
-          (commands[cmdName].args || [])
-            .map(arg => (
-              (arg.required)
-                ? `<${arg.name}>`
-                : `[${arg.name}]`
-            ))
-            .join(' ')
-        } ${
-          (commands[cmdName].options || [])
-            .map(opt => (
-              (opt.required)
-                ? `--${opt.name}`
-                : `[--${opt.name}]`
-            ))
-            .join(' ')
+        `  ${cmdName} ${(commands[cmdName].args || [])
+          .map(arg => (
+            (arg.required)
+              ? `<${arg.name}>`
+              : `[${arg.name}]`
+          ))
+          .join(' ')
+        } ${(commands[cmdName].options || [])
+          .map(opt => (
+            (opt.required)
+              ? `--${opt.name}`
+              : `[--${opt.name}]`
+          ))
+          .join(' ')
         }`
       ),
     )
@@ -32,6 +30,3 @@ Global options:
   -h, --help        Show help
   -V                Show version
 `;
-
-
-module.exports = app => Promise.resolve(help(app));

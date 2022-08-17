@@ -1,12 +1,14 @@
 {
   "name": "@laboratoria/curriculum-parser",
-  "version": "4.0.0",
+  "version": "5.0.0-alpha.0",
   "license": "MIT",
+  "type": "module",
+  "exports": "./index.js",
   "bin": {
     "curriculum-parser": "index.js"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=14.16"
   },
   "scripts": {
     "pretest": "eslint .",
@@ -15,7 +17,7 @@
     "changelog": "git log $(git describe --tags --abbrev=0)..HEAD --oneline --format=\"* %h %s\""
   },
   "dependencies": {
-    "chalk": "^4.1.1",
+    "chalk": "^5.0.1",
     "js-yaml": "^4.1.0",
     "jsdom": "^20.0.0",
     "marked": "^4.0.17",

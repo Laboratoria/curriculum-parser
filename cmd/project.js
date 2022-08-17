@@ -1,17 +1,19 @@
-const path = require('path');
-const project = require('../lib/project');
+import path from 'node:path';
+import { parseProject } from '../lib/project.js';
 
-module.exports = app => project(path.resolve(app.args.shift()), app.opts);
+export const cmd = ({ args, opts, pkg }) => parseProject(
+  path.resolve(args.shift()),
+  opts,
+  pkg,
+);
 
-module.exports.args = [
+export const args = [
   { name: 'dir', required: true },
 ];
 
-module.exports.options = [
+export const options = [
   { name: 'repo', required: true },
   { name: 'version', required: true },
-  { name: 'locale', required: true },
   { name: 'track', required: true },
   { name: 'lo', required: false },
-  { name: 'suffix', required: false },
 ];
