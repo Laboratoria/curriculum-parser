@@ -6,11 +6,11 @@ import chalk from 'chalk';
 import minimist from 'minimist';
 import * as help from './cmd/help.js';
 import * as project from './cmd/project.js';
-// import * as topic from './cmd/topic.js';
+import * as topic from './cmd/topic.js';
 
 const commands = {
   help,
-  // topic,
+  topic,
   project,
 };
 
@@ -48,7 +48,7 @@ export const main = async (args, opts) => {
   }
 
   if (typeof commands[cmdName]?.cmd !== 'function') {
-    throw new Error('Unkown command');
+    throw new Error('Unknown command');
   }
 
   if (opts.h || opts.help || cmdName === 'help') {
