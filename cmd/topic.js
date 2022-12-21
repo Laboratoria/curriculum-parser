@@ -1,13 +1,13 @@
-const path = require('path');
-const course = require('../lib/course');
+import path from 'node:path';
+import course from '../lib/course.js';
 
-module.exports = app => course(path.resolve(app.args.shift()), app.opts);
+export const cmd = app => course(path.resolve(app.args.shift()), app.opts);
 
-module.exports.args = [
+export const args = [
   { name: 'dir', required: true },
 ];
 
-module.exports.options = [
+export const options = [
   { name: 'repo', required: true },
   { name: 'version', required: true },
   { name: 'locale', required: true },
