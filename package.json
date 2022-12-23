@@ -17,19 +17,19 @@
     "changelog": "git log $(git describe --tags --abbrev=0)..HEAD --oneline --format=\"* %h %s\""
   },
   "dependencies": {
-    "chalk": "^5.0.1",
+    "chalk": "^5.2.0",
     "js-yaml": "^4.1.0",
-    "jsdom": "^20.0.0",
-    "marked": "^4.0.17",
-    "minimist": "^1.2.6",
-    "sharp": "^0.30.7"
+    "jsdom": "^20.0.3",
+    "marked": "^4.2.5",
+    "minimist": "^1.2.7",
+    "sharp": "^0.31.3"
   },
   "devDependencies": {
     "coveralls": "^3.1.0",
-    "eslint": "^8.19.0",
+    "eslint": "^8.30.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
-    "jest": "^28.1.2",
-    "nock": "^13.2.8"
+    "jest": "^29.3.1",
+    "nock": "^13.2.9"
   }
 }
