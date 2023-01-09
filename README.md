@@ -1,6 +1,6 @@
 # @laboratoria/curriculum-parser
 
-Command line tool used to parse content written in markdown for our LMS at
+Command line tool used to parse content written in markdown at
 @Laboratoria (See [Laboratoria/bootcamp](https://github.com/Laboratoria/bootcamp)).
 
 ![Node.js CI](https://github.com/Laboratoria/curriculum-parser/workflows/Node.js%20CI/badge.svg)

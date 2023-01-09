@@ -1,83 +1,79 @@
 #! /usr/bin/env node
 
 import fs from 'node:fs/promises';
-import { fileURLToPath } from 'node:url';
-import chalk from 'chalk';
-import minimist from 'minimist';
-import * as help from './cmd/help.js';
-import * as project from './cmd/project.js';
-import * as topic from './cmd/topic.js';
+import { program } from 'commander';
+import { parseProject } from './lib/project.js';
+import { parseTopic } from './lib/topic.js';
+import { parsePart } from './lib/part.js';
+import { parseChallenge } from './lib/challenge.js';
 
-const commands = {
-  help,
-  topic,
-  project,
+const pkg = JSON.parse(await fs.readFile('package.json'));
+
+const printError = (err, opts) => {
+  if (!err) {
+    return;
+  }
+
+  // Only print leaf nodes (erros may contain child errors)
+  if (!err.errors?.length) {
+    if (opts.debug) {
+      console.error(err);
+    } else {
+      console.error(err.message);
+      if (err.path) {
+        console.error(`└── ${err.path}`);
+      }
+    }
+  }
+
+  err.errors?.forEach(item => printError(item, opts));
 };
 
-const success = (value) => {
-  if (value) {
-    console.log(typeof value !== 'string' ? JSON.stringify(value, null, 2) : value);
-  }
-  process.exit(0);
-};
-
-const error = (err) => {
-  if (err.path) {
-    console.error(err.path);
-    console.error(`└── ${chalk.red(err.message)}`);
-  } else {
-    console.error(chalk.red(err.message));
-  }
-
-  if (err.name === 'ValidationError') {
-    console.error('');
-    Object.keys(err.errors).forEach((key) => {
-      console.error(`${chalk.bold.red(key)}: ${err.errors[key].message}`);
-    });
-  }
-
-  process.exit(1);
-};
-
-export const main = async (args, opts) => {
-  const pkg = JSON.parse(await fs.readFile('./package.json'));
-  const cmdName = (opts.h || opts.help) ? 'help' : args.shift() || 'help';
-
-  if (opts.V) {
-    return pkg.version;
-  }
-
-  if (typeof commands[cmdName]?.cmd !== 'function') {
-    throw new Error('Unknown command');
-  }
-
-  if (opts.h || opts.help || cmdName === 'help') {
-    return commands.help.cmd({ pkg, commands });
-  }
-
-  const requiredArgs = (commands[cmdName].args || []).reduce(
-    (memo, arg) => (arg.required ? memo + 1 : memo),
-    0,
-  );
-
-  if (args.length < requiredArgs) {
-    throw new Error('Insufficient arguments');
-  }
-
-  return commands[cmdName].cmd({
-    pkg,
-    commands,
-    args,
-    opts,
+const createHandler = fn => (dir, opts) => fn(dir, opts, pkg)
+  .then((result) => {
+    if (!result) {
+      return;
+    }
+    console.log(JSON.stringify(result, null, 2));
+  })
+  .catch((err) => {
+    printError(Object.assign(err, { path: err.path || dir }), opts);
+    process.exit(1);
   });
-};
 
-if (import.meta.url.startsWith('file:')) {
-  const modulePath = fileURLToPath(import.meta.url);
-  if (process.argv[1] === modulePath) {
-    const { _: args, ...opts } = minimist(process.argv.slice(2));
-    main(args, opts)
-      .then(success)
-      .catch(error);
-  }
-}
+program.version(pkg.version, '-V');
+
+program.command('project')
+  .description('Parse a project')
+  .argument('<dir>', 'path to project directory')
+  .option('--repo <string>', 'Repository')
+  .option('--version <string>', 'Project version')
+  .option('--lo <string>', 'Path to yml file with reference learning objectives')
+  .option('--debug', 'Show error stack traces')
+  .action(createHandler(parseProject));
+
+program.command('topic')
+  .description('Parse a topic')
+  .argument('<dir>', 'path to topic directory')
+  .option('--repo <string>', 'Repository')
+  .option('--version <string>', 'Topic version')
+  .option('--debug', 'Show error stack traces')
+  .action(createHandler(parseTopic));
+
+program.command('part')
+  .description('Parse an part')
+  .argument('<dir>', 'path to part directory')
+  .option('--repo <string>', 'Repository')
+  .option('--version <string>', 'Part version')
+  .option('--debug', 'Show error stack traces')
+  .action(createHandler(parsePart));
+
+program.command('challenge')
+  .description('Parse an challenge')
+  .argument('<dir>', 'path to challenge directory')
+  .option('--repo <string>', 'Repository')
+  .option('--version <string>', 'Challenge version')
+  .option('--debug', 'Show error stack traces')
+  .action(createHandler(parseChallenge));
+
+program.parse();

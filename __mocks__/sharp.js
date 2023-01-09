@@ -1,5 +1,7 @@
-module.exports = jest.fn().mockReturnValue({
-  resize: jest.fn().mockReturnValue({
-    toBuffer: jest.fn().mockResolvedValue('data:image/png;base64,xxxx'),
+import { vi } from 'vitest';
+
+export default vi.fn().mockReturnValue({
+  resize: vi.fn().mockReturnValue({
+    toBuffer: vi.fn().mockResolvedValue('data:image/png;base64,xxxx'),
   }),
 });
