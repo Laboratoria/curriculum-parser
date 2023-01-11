@@ -84,88 +84,56 @@ After installing _globally_ (or _linking_ with `npm link`) you should have the
 
 ```text
 
-Usage: curriculum-parser [command] [options]
+Usage: curriculum-parser [options] [command]
+
+Options:
+  -V                         output the version number
+  -h, --help                 display help for command
 
 Commands:
-
-  help
-  topic <dir> --repo --version --locale --track [--suffix]
-  project <dir> --repo --version --locale --track [--lo=some/dir] [--suffix]
-
-Global options:
-
-  -h, --help        Show help
-  -V                Show version
+  project [options] <dir>    Parse a project
+  topic [options] <dir>      Parse a topic
+  part [options] <dir>       Parse a part
+  challenge [options] <dir>  Parse a challenge
+  help [command]             display help for command
 
 ```
 
 ## Examples
 
-### Parse a topic (course) within the `Laboratoria/bootcamp` repo
+### Parse a topic within the `Laboratoria/bootcamp` repo
 
 ```sh
-curriculum-parser topic topics/javascript \
+curriculum-parser topic /topics/javascript/ \
   --repo Laboratoria/bootcamp \
-  --version 2.5.0 \
-  --locale es-ES \
-  --track js \
+  --version 5.5.0
   > "build/topics/javascript.json"
 ```
 
-### Parse a portuguese topic (course) within the `Laboratoria/bootcamp` repo
+### Parse a specific part of a topic within the `Laboratoria/bootcamp` repo
 
 ```sh
-curriculum-parser topic topics/javascript \
+curriculum-parser part /topics/intro-ux/00-que-es-uxd/00-que-es-uxd/ \
   --repo Laboratoria/bootcamp \
-  --version 2.5.0 \
-  --locale pt-BR \
-  --track js \
-  --suffix pt \
-  > "build/topics/javascript-pt.json"
+  --version 5.5.0
+  > "build/parts/que-es-uxd.json"
+```
+
+### Parse a challenge within the `Laboratoria/bootcamp` repo
+
+```sh
+curriculum-parser challenge /topics/javascript/01-basics/06-exercises/01-coin-convert/ \
+  --repo Laboratoria/bootcamp
+  --version 5.5.0
+  > "build/challenges/coin-convert.json"
 ```
 
 ### Parse a project within the `Laboratoria/bootcamp` repo
 
 ```sh
-curriculum-parser project projects/01-cipher \
-  --repo Laboratoria/bootcamp \
-  --version 2.5.0 \
-  --locale es-ES \
-  --track js \
-  --lo=./learning-objectives \
+curriculum-parser project /projects/01-cipher/ \
+  --repo Laboratoria/bootcamp
+  --version 5.5.0 \
+  --lo=./learning-objectives
   > "build/projects/01-cipher.json"
-```
-
-### Parse a portuguese project within the `Laboratoria/bootcamp` repo
-
-```sh
-curriculum-parser project projects/01-cipher \
-  --repo Laboratoria/bootcamp \
-  --version 2.5.0 \
-  --locale pt-BR \
-  --track js \
-  --suffix pt \
-  --lo=./learning-objectives \
-  > "build/projects/01-cipher-pt.json"
-```
-
-### Parse a topic (course) in the curricula-ux repo
-
-```sh
-curriculum-parser topic 00-topics/00-intro-ux \
-  --repo Laboratoria/curricula-ux \
-  --version 1.0.0 \
-  --track ux \
-  --locale es-ES
-```
-
-### Parse a topic (course) in some arbitrary directory
-
-```sh
-curriculum-parser topic . \
-  --repo some-github-user/some-github-repo \
-  --path . \
-  --version 1.0.0 \
-  --track business \
-  --locale es-ES
 ```
