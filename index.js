@@ -61,7 +61,7 @@ program.command('topic')
   .action(createHandler(parseTopic));
 
 program.command('part')
-  .description('Parse an part')
+  .description('Parse a part')
   .argument('<dir>', 'path to part directory')
   .option('--repo <string>', 'Repository')
   .option('--version <string>', 'Part version')
@@ -69,7 +69,7 @@ program.command('part')
   .action(createHandler(parsePart));
 
 program.command('challenge')
-  .description('Parse an challenge')
+  .description('Parse a challenge')
   .argument('<dir>', 'path to challenge directory')
   .option('--repo <string>', 'Repository')
   .option('--version <string>', 'Challenge version')
