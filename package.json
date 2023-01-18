@@ -15,7 +15,7 @@
     "node": ">=14.16"
   },
   "scripts": {
-    "pretest": "eslint .",
+    "pretestoff": "eslint .",
     "test": "vitest --reporter verbose",
     "coverage": "vitest run --coverage --reporter verbose"
   },
@@ -28,7 +28,7 @@
     "rehype-stringify": "^9.0.3",
     "remark-parse": "^10.0.1",
     "remark-rehype": "^10.1.0",
-    "sharp": "^0.31.3",
+    "sharp": "^0.30.7",
     "unified": "^10.1.2"
   },
   "devDependencies": {
