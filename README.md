@@ -104,7 +104,7 @@ Commands:
 ### Parse a topic within the `Laboratoria/bootcamp` repo
 
 ```sh
-curriculum-parser topic /topics/javascript/ \
+curriculum-parser topic topics/javascript/ \
   --repo Laboratoria/bootcamp \
   --version 5.5.0
   > "build/topics/javascript.json"
@@ -113,7 +113,7 @@ curriculum-parser topic /topics/javascript/ \
 ### Parse a specific part of a topic within the `Laboratoria/bootcamp` repo
 
 ```sh
-curriculum-parser part /topics/intro-ux/00-que-es-uxd/00-que-es-uxd/ \
+curriculum-parser part topics/intro-ux/00-que-es-uxd/00-que-es-uxd/ \
   --repo Laboratoria/bootcamp \
   --version 5.5.0
   > "build/parts/que-es-uxd.json"
@@ -122,7 +122,7 @@ curriculum-parser part /topics/intro-ux/00-que-es-uxd/00-que-es-uxd/ \
 ### Parse a challenge within the `Laboratoria/bootcamp` repo
 
 ```sh
-curriculum-parser challenge /topics/javascript/01-basics/06-exercises/01-coin-convert/ \
+curriculum-parser challenge topics/javascript/01-basics/06-exercises/01-coin-convert/ \
   --repo Laboratoria/bootcamp
   --version 5.5.0
   > "build/challenges/coin-convert.json"
@@ -131,7 +131,7 @@ curriculum-parser challenge /topics/javascript/01-basics/06-exercises/01-coin-co
 ### Parse a project within the `Laboratoria/bootcamp` repo
 
 ```sh
-curriculum-parser project /projects/01-cipher/ \
+curriculum-parser project projects/01-cipher/ \
   --repo Laboratoria/bootcamp
   --version 5.5.0 \
   --lo=./learning-objectives
