@@ -16,8 +16,8 @@
   },
   "scripts": {
     "pretest": "eslint .",
-    "test": "vitest --reporter verbose",
-    "coverage": "vitest run --coverage --reporter verbose"
+    "test": "vitest run --coverage --reporter verbose",
+    "watch": "vitest --reporter verbose"
   },
   "dependencies": {
     "commander": "^10.0.0",
