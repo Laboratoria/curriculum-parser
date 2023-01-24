@@ -7,5 +7,9 @@ export default defineConfig({
       ...configDefaults.exclude,
       'lib/__tests__/__fixtures__/**/*',
     ],
+    coverage: {
+      provider: 'c8',
+      reporter: ['text', 'json', 'html', 'lcov'],
+    },
   },
 });
