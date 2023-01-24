@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "@vitest/coverage-c8": "^0.28.1",
+    "eslint-plugin-import": "^2.27.5",
     "nock": "^13.3.0",
     "vitest": "^0.28.1"
   }
