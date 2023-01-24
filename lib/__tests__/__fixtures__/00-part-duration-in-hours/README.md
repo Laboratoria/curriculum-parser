@@ -1,8 +1,8 @@
 ---
 type: read
-duration: 30min
+duration: 0.5h
 ---
 
 # El título de la parte
 
-Blah blah
+Blah blah blah...

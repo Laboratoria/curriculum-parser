@@ -1,3 +1,4 @@
+/* eslint import/no-unresolved: off */
 import { configDefaults, defineConfig } from 'vitest/config';
 
 export default defineConfig({

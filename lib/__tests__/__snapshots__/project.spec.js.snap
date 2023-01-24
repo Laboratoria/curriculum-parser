@@ -1,6 +1,6 @@
 // Vitest Snapshot v1
 
-exports[`project > should expand learning objectives children when only parent is mentioned 1`] = `
+exports[`parseProject > expands learning objectives children when only parent is mentioned 1`] = `
 [
   "html/semantics",
   "css/selectors",
@@ -22,21 +22,21 @@ exports[`project > should expand learning objectives children when only parent i
 ]
 `;
 
-exports[`project > should extract first paragraph of _resumen del proyecto_ as summary 1`] = `
+exports[`parseProject > extracts first paragraph of _resumen del proyecto_ as summary 1`] = `
 "<p>En este proyecto tendrás que construir una aplicación web que le permita a un
 usuario validar el número de una tarjeta de crédito. Además, tendrás que
 implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
 los últimos cuatro.</p>"
 `;
 
-exports[`project > should extract first paragraph of _resumen del proyecto_ as summary 2`] = `
+exports[`parseProject > extracts first paragraph of _resumen del proyecto_ as summary 2`] = `
 "<p>Neste projeto, você precisará criar um aplicativo da Web que permita ao usuário
 validar o número de um cartão de crédito.  Além disso, você precisará
 implementar a funcionalidade para ocultar todos os dígitos de um cartão, exceto
 os quatro últimos.</p>"
 `;
 
-exports[`project > should parse a project with learning objectives validating against known list 1`] = `
+exports[`parseProject > parses a project with learning objectives validating against known list 1`] = `
 {
   "cover": null,
   "intl": {
@@ -70,7 +70,7 @@ exports[`project > should parse a project with learning objectives validating ag
 }
 `;
 
-exports[`project > should parse a project with learning objectives without validating against known list 1`] = `
+exports[`parseProject > parses a project with learning objectives without validating against known list 1`] = `
 {
   "cover": null,
   "intl": {
@@ -104,7 +104,7 @@ exports[`project > should parse a project with learning objectives without valid
 }
 `;
 
-exports[`project > should parse portuguese project 1`] = `
+exports[`parseProject > parses portuguese project 1`] = `
 {
   "cover": "https://user-images.githubusercontent.com/11894994/60990999-07ffdb00-a320-11e9-87d0-b7c291bc4cd1.png",
   "intl": {
