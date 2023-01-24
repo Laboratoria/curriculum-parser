@@ -1,8 +1,8 @@
 __mocks__/
-__tests__/
 .github/
 coverage/
+lib/__tests__/
 .editorconfig
 .eslintignore
 .eslintrc
-jest.config.js
+vitest.config.js
