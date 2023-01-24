@@ -26,7 +26,10 @@ const printError = (err, opts) => {
     }
   }
 
-  err.errors?.forEach(item => printError(item, opts));
+  err.errors?.forEach(item => printError(
+    Object.assign(item, { path: item.path || err.path }),
+    opts,
+  ));
 };
 
 const createHandler = fn => (dir, opts) => fn(dir, opts, pkg)
