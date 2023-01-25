@@ -1,13 +1,16 @@
 #! /usr/bin/env node
 
 import fs from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { program } from 'commander';
 import { parseProject } from './lib/project.js';
 import { parseTopic } from './lib/topic.js';
 import { parsePart } from './lib/part.js';
 import { parseChallenge } from './lib/challenge.js';
 
-const pkg = JSON.parse(await fs.readFile('package.json'));
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const pkg = JSON.parse(await fs.readFile(path.join(__dirname, 'package.json')));
 
 const printError = (err, opts) => {
   if (!err) {
