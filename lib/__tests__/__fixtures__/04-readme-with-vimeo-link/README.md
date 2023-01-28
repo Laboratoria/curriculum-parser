@@ -1,3 +1,8 @@
+---
+type: read
+duration: 0.5h
+---
+
 # El equipo de desarrollo
 
 - Tipo: `lectura`
