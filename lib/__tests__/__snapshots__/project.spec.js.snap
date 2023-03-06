@@ -1,4 +1,4 @@
-// Vitest Snapshot v1
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`parseProject > expands learning objectives children when only parent is mentioned 1`] = `
 [
