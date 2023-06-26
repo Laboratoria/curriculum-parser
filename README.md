@@ -82,8 +82,11 @@ git push origin main
 After installing _globally_ (or _linking_ with `npm link`) you should have the
 `curriculum-parser` command available in your `PATH`.
 
-```text
+```sh
+curriculum-parser --help
+```
 
+```text
 Usage: curriculum-parser [options] [command]
 
 Options:
@@ -99,14 +102,47 @@ Commands:
 
 ```
 
+You can also access _usage_ (_help_) info for individual commands like so:
+
+```sh
+curriculum-parser project --help
+```
+
+```text
+Usage: curriculum-parser project [options] <dir>
+
+Parse a project
+
+Arguments:
+  dir                 path to project directory
+
+Options:
+  --repo <string>     Repository
+  --version <string>  Project version
+  --lo <string>       Path to yml file with reference learning objectives
+  --debug             Show error stack traces
+  -h, --help          display help for command
+```
+
 ## Examples
 
 ### Parse a topic within the `Laboratoria/bootcamp` repo
+
+Parsing a _topic_ and printing the resulting JSON output to `stdout`.
 
 ```sh
 curriculum-parser topic topics/javascript/ \
   --repo Laboratoria/bootcamp \
   --version 5.5.0
+```
+
+Parsing a _topic_ and writing the parser's output (`stdout`) to a file (using
+[_output redirection in the shell_](https://www.gnu.org/software/bash/manual/html_node/Redirections.html)).
+
+```sh
+curriculum-parser topic topics/javascript/ \
+  --repo Laboratoria/bootcamp \
+  --version 5.5.0 \
   > "build/topics/javascript.json"
 ```
 
@@ -116,24 +152,21 @@ curriculum-parser topic topics/javascript/ \
 curriculum-parser part topics/intro-ux/00-que-es-uxd/00-que-es-uxd/ \
   --repo Laboratoria/bootcamp \
   --version 5.5.0
-  > "build/parts/que-es-uxd.json"
 ```
 
 ### Parse a challenge within the `Laboratoria/bootcamp` repo
 
 ```sh
 curriculum-parser challenge topics/javascript/01-basics/06-exercises/01-coin-convert/ \
-  --repo Laboratoria/bootcamp
+  --repo Laboratoria/bootcamp \
   --version 5.5.0
-  > "build/challenges/coin-convert.json"
 ```
 
 ### Parse a project within the `Laboratoria/bootcamp` repo
 
 ```sh
 curriculum-parser project projects/01-cipher/ \
-  --repo Laboratoria/bootcamp
+  --repo Laboratoria/bootcamp \
   --version 5.5.0 \
   --lo=./learning-objectives
-  > "build/projects/01-cipher.json"
 ```
