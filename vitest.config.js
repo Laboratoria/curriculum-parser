@@ -5,6 +5,7 @@ export default defineConfig({
   test: {
     exclude: [
       ...configDefaults.exclude,
+      'lib/__tests__/helpers.js',
       'lib/__tests__/__fixtures__/**/*',
     ],
     coverage: {
