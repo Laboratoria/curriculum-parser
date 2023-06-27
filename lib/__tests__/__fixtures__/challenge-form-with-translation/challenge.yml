@@ -1,0 +1,22 @@
+track: data
+env: form
+questions:
+  - id: meaning-of-life
+    type: string
+    solution: "42"
+  - id: multiple-choice
+    options:
+      - A
+      - B
+      - C
+    solution: 1
+  - id: which-are-correct
+    options:
+      - aaa
+      - bbb
+      - ccc
+    solution:
+      - 0
+      - 1
+  - id: anything-else
+    required: false
