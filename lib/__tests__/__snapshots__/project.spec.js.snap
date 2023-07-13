@@ -41,7 +41,7 @@ exports[`parseProject > parses a project with learning objectives validating aga
   "cover": null,
   "intl": {
     "es": {
-      "summary": null,
+      "summary": "<p>Blah blah blah</p>",
       "title": "A project",
     },
   },
@@ -75,7 +75,7 @@ exports[`parseProject > parses a project with learning objectives without valida
   "cover": null,
   "intl": {
     "es": {
-      "summary": null,
+      "summary": "<p>Blah blah blah</p>",
       "title": "A project",
     },
   },
