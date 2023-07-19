@@ -9,7 +9,7 @@ export default defineConfig({
       'lib/__tests__/__fixtures__/**/*',
     ],
     coverage: {
-      provider: 'c8',
+      provider: 'v8',
       reporter: ['text', 'json', 'html', 'lcov'],
     },
   },
