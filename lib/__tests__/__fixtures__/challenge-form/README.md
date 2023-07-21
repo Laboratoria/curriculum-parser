@@ -13,7 +13,9 @@ culpa qui officia deserunt mollit anim id est laborum.
 
 Texto complementarion de la pregunta.
 
-<solution>42</solution>
+#### Solución
+
+* `value`: 42
 
 ### A question with multiple choices
 
@@ -23,7 +25,22 @@ Texto complementarion de la pregunta.
 2. B
 3. C
 
-<solution>2</solution>
+#### Solución
+
+* `value`: 2
+
+### An optional question with multiple choices
+
+#### Opciones
+
+1. A
+2. B
+3. C
+
+#### Solución
+
+* `value`: 2
+* `required`: false
 
 ### Cuáles de las siguientes crees que son correctas?
 
@@ -33,8 +50,33 @@ Texto complementarion de la pregunta.
 2. bbb
 3. ccc
 
-<solution>1,2</solution>
+#### Solución
+
+* `value`: 1,2
 
 ### Anything else to say?
 
 ¿Alguna cosa más que agregar?
+
+#### Solución
+
+* `required`: false
+
+### A required question without validation
+
+#### Solución
+
+* `required`: true
+
+### A question with custom validation
+
+#### Solución
+
+* `validate`:
+  ```js
+  (value) => {
+    if (!value.startWith('https://blah.blah/')) {
+      return 'Respuesta debe comenzr con https://blah.blah/';
+    }
+  }
+  ```
