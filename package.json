@@ -28,7 +28,7 @@
     "rehype-stringify": "^9.0.3",
     "remark-parse": "^10.0.2",
     "remark-rehype": "^10.1.0",
-    "sharp": "^0.32.3",
+    "sharp": "^0.32.4",
     "unified": "^10.1.2"
   },
   "devDependencies": {
