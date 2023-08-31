@@ -1,5 +1,14 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`parseChallenge > ignores questions with no heading 1`] = `
+[
+  {
+    "body": "",
+    "title": "A question",
+  },
+]
+`;
+
 exports[`parseChallenge > parses form challenge 1`] = `
 [
   {
