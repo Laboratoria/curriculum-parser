@@ -1,0 +1,82 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`parseChallenge > parses form challenge 1`] = `
+[
+  {
+    "body": "<p>Texto complementarion de la pregunta.</p>",
+    "solution": {
+      "required": true,
+      "value": "42",
+    },
+    "title": "What is the meaning of the universe?",
+  },
+  {
+    "body": "",
+    "options": [
+      "<p>A</p>",
+      "<p>B</p>",
+      "<p>C</p>",
+    ],
+    "solution": {
+      "required": true,
+      "value": 1,
+    },
+    "title": "A question with multiple choices",
+  },
+  {
+    "body": "",
+    "options": [
+      "<p>A</p>",
+      "<p>B</p>",
+      "<p>C</p>",
+    ],
+    "solution": {
+      "required": false,
+      "value": 1,
+    },
+    "title": "An optional question with multiple choices",
+  },
+  {
+    "body": "",
+    "options": [
+      "<p>aaa</p>",
+      "<p>bbb</p>",
+      "<p>ccc</p>",
+    ],
+    "solution": {
+      "required": true,
+      "value": [
+        0,
+        1,
+      ],
+    },
+    "title": "Cuáles de las siguientes crees que son correctas?",
+  },
+  {
+    "body": "<p>¿Alguna cosa más que agregar?</p>",
+    "solution": {
+      "required": false,
+    },
+    "title": "Anything else to say?",
+  },
+  {
+    "body": "",
+    "solution": {
+      "required": true,
+    },
+    "title": "A required question without validation",
+  },
+  {
+    "body": "",
+    "solution": {
+      "required": true,
+      "validate": "(value) => {
+  if (!value.startWith('https://blah.blah/')) {
+    return 'Respuesta debe comenzr con https://blah.blah/';
+  }
+}",
+    },
+    "title": "A question with custom validation",
+  },
+]
+`;

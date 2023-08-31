@@ -1,6 +1,6 @@
 {
   "name": "@laboratoria/curriculum-parser",
-  "version": "5.0.0-alpha.5",
+  "version": "5.0.0",
   "description": "Command line tool used to parse projects, topics, exercises, etc, written in markdown @Laboratoria",
   "license": "MIT",
   "type": "module",
@@ -21,20 +21,20 @@
   },
   "dependencies": {
     "commander": "^11.0.0",
-    "eslint": "^8.43.0",
+    "eslint": "^8.45.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "js-yaml": "^4.1.0",
     "rehype-document": "^6.1.0",
     "rehype-stringify": "^9.0.3",
     "remark-parse": "^10.0.2",
     "remark-rehype": "^10.1.0",
-    "sharp": "^0.32.1",
+    "sharp": "^0.32.4",
     "unified": "^10.1.2"
   },
   "devDependencies": {
-    "@vitest/coverage-c8": "^0.32.2",
+    "@vitest/coverage-v8": "^0.33.0",
     "eslint-plugin-import": "^2.27.5",
-    "nock": "^13.3.1",
-    "vitest": "^0.32.2"
+    "nock": "^13.3.2",
+    "vitest": "^0.33.0"
   }
 }
