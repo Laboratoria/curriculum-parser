@@ -1,5 +1,6 @@
 ---
 track: ux
+tracks: ux
 ---
 
 # Prototipado
