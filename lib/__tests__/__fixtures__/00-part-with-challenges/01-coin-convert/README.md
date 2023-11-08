@@ -1,5 +1,6 @@
 ---
-tracks: web-dev
+tracks:
+  - web-dev
 env: cjs
 ---
 
