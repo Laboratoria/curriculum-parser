@@ -1,3 +1,4 @@
 track: data
-tracks: data
+tracks:
+  - data
 env: form

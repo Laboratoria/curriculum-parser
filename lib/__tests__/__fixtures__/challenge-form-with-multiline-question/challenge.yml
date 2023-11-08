@@ -1,3 +1,4 @@
 track: ux
-tracks: ux
+tracks:
+  - ux
 env: form

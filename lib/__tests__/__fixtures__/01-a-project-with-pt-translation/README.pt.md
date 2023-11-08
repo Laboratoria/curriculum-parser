@@ -1,6 +1,7 @@
 ---
 track: web-dev
-tracks: web-dev
+tracks:
+  - web-dev
 learningObjectives:
   - html/semantics
   - css/selectors
