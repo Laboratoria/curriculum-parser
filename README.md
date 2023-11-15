@@ -170,3 +170,11 @@ curriculum-parser project projects/01-cipher/ \
   --version 5.5.0 \
   --lo=./learning-objectives
 ```
+
+## Known tracks
+
+This project contains an array in [`lib/common.js`](./lib/common.js) called
+`knownTracks` which contains the list of tracks that are known by the parser.
+
+If a new track was ever going to be added to the curriculum, it would need to be
+added to this array or else it'd throw the corresponding _Invalid track_ error.
