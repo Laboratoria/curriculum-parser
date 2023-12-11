@@ -4,6 +4,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { program } from 'commander';
+import { parseLearningObjectives } from './lib/objectives.js';
 import { parseProject } from './lib/project.js';
 import { parseTopic } from './lib/topic.js';
 import { parsePart } from './lib/part.js';
@@ -81,5 +82,11 @@ program.command('challenge')
   .option('--version <string>', 'Challenge version')
   .option('--debug', 'Show error stack traces')
   .action(createHandler(parseChallenge));
+
+program.command('objectives')
+  .description('Parse learning objectives')
+  .argument('<dir>', 'path to objetives directory') // note should be a default here?
+  .option('--debug', 'Show error stack traces')
+  .action(createHandler(parseLearningObjectives));
 
 program.parse();
