@@ -98,6 +98,7 @@ Commands:
   topic [options] <dir>      Parse a topic
   part [options] <dir>       Parse a part
   challenge [options] <dir>  Parse a challenge
+  objectives [options] <dir> Parse objectives
   help [command]             display help for command
 
 ```
@@ -141,34 +142,58 @@ Parsing a _topic_ and writing the parser's output (`stdout`) to a file (using
 
 ```sh
 curriculum-parser topic topics/javascript/ \
-  --repo Laboratoria/bootcamp \
+  --repo Laboratoria/curriculum \
   --version 5.5.0 \
   > "build/topics/javascript.json"
 ```
 
-### Parse a specific part of a topic within the `Laboratoria/bootcamp` repo
+### Parse a specific part of a topic within the `Laboratoria/curriculum` repo
 
 ```sh
 curriculum-parser part topics/intro-ux/00-que-es-uxd/00-que-es-uxd/ \
-  --repo Laboratoria/bootcamp \
+  --repo Laboratoria/curriculum \
   --version 5.5.0
 ```
 
-### Parse a challenge within the `Laboratoria/bootcamp` repo
+### Parse a challenge within the `Laboratoria/curriculum` repo
 
 ```sh
 curriculum-parser challenge topics/javascript/01-basics/06-exercises/01-coin-convert/ \
-  --repo Laboratoria/bootcamp \
+  --repo Laboratoria/curriculum \
   --version 5.5.0
 ```
 
-### Parse a project within the `Laboratoria/bootcamp` repo
+### Parse a project within the `Laboratoria/curriculum` repo
 
 ```sh
 curriculum-parser project projects/01-cipher/ \
-  --repo Laboratoria/bootcamp \
+  --repo Laboratoria/curriculum \
   --version 5.5.0 \
   --lo=./learning-objectives
+```
+
+### Parse learning objectives within `Laboratoria/curriculum`
+
+```text
+Usage: curriculum-parser objectives [options] <dir>
+
+Parse learning objectives
+
+Arguments:
+  dir                 path to objectives directory
+
+Options:
+  --repo <string>     Repository
+  --version <string>  Project version
+  --strict <bool>     Throw errors for missing or untitled learning objectives
+  --debug             Show error stack traces
+  -h, --help          display help for command
+```
+
+```sh
+curriculum-parser objectives learning-objectives \
+  --repo Laboratoria/curriculum \
+  --strict false
 ```
 
 ## Known tracks
