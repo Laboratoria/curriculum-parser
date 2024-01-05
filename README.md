@@ -193,8 +193,8 @@ Options:
 ```sh
 curriculum-parser objectives learning-objectives \
   --repo Laboratoria/curriculum \
-  --strict false
-```
+  --strict false \
+  > "dist/learning-objectives.json"
 
 ## Known tracks
 
