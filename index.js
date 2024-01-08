@@ -83,9 +83,10 @@ program.command('challenge')
   .option('--debug', 'Show error stack traces')
   .action(createHandler(parseChallenge));
 
-program.command('objectives')
+program.command('learning-objectives')
   .description('Parse learning objectives')
-  .argument('<dir>', 'path to learning objetives directory') // note should be a default here?
+  .argument('<dir>', 'path to learning objetives directory') // note should there be a default here?
+  .option('--repo <string>', 'Repository')
   .option('--validate', 'validate and throw errors for objectives missing intl or without title') // question: should we have repo and version ? why?
   .option('--strict', 'with validate, only throw errors if objectives are missing in all languages')
   .option('--debug', 'Show error stack traces')

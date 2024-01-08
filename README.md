@@ -1,7 +1,7 @@
 # @laboratoria/curriculum-parser
 
 Command line tool used to parse content written in markdown at
-@Laboratoria (See [Laboratoria/bootcamp](https://github.com/Laboratoria/bootcamp)).
+@Laboratoria (See [Laboratoria/curriculum](https://github.com/Laboratoria/curriculum)).
 
 ![Node.js CI](https://github.com/Laboratoria/curriculum-parser/workflows/Node.js%20CI/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/Laboratoria/curriculum-parser/badge.svg?branch=main)](https://coveralls.io/github/Laboratoria/curriculum-parser?branch=main)
@@ -98,7 +98,7 @@ Commands:
   topic [options] <dir>      Parse a topic
   part [options] <dir>       Parse a part
   challenge [options] <dir>  Parse a challenge
-  objectives [options] <dir> Parse objectives
+  learning-objectives [options] <dir> Parse objectives
   help [command]             display help for command
 
 ```
@@ -127,13 +127,13 @@ Options:
 
 ## Examples
 
-### Parse a topic within the `Laboratoria/bootcamp` repo
+### Parse a topic within the `Laboratoria/curriculum` repo
 
 Parsing a _topic_ and printing the resulting JSON output to `stdout`.
 
 ```sh
 curriculum-parser topic topics/javascript/ \
-  --repo Laboratoria/bootcamp \
+  --repo Laboratoria/curriculum \
   --version 5.5.0
 ```
 
@@ -175,17 +175,18 @@ curriculum-parser project projects/01-cipher/ \
 ### Parse learning objectives within `Laboratoria/curriculum`
 
 ```text
-Usage: curriculum-parser objectives [options] <dir>
+Usage: curriculum-parser learning-objectives [options] <dir>
 
 Parse learning objectives
 
 Arguments:
-  dir                 path to objectives directory
+  dir                 path to learning-objectives directory
 
 Options:
   --repo <string>     Repository
-  --version <string>  Project version
-  --strict <bool>     Throw errors for missing or untitled learning objectives
+  --validate <bool>   Project version
+  --validate <bool>   Validate and throw errors for objectives missing intl or without title
+  --strict <bool>     Used with validate, only throw errors if objectives are missing in all languages
   --debug             Show error stack traces
   -h, --help          display help for command
 ```
