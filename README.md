@@ -183,10 +183,8 @@ Arguments:
   dir                 path to learning-objectives directory
 
 Options:
-  --repo <string>     Repository
-  --validate <bool>   Project version
-  --validate <bool>   Validate and throw errors for objectives missing intl or without title
-  --strict <bool>     Used with validate, only throw errors if objectives are missing in all languages
+  --validate          Validate and throw errors for objectives missing intl or without title
+  --strict            Used with validate, only throw errors if objectives are missing in all languages
   --debug             Show error stack traces
   -h, --help          display help for command
 ```
