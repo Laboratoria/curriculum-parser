@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { program } from 'commander';
-import { parseLearningObjectives } from './lib/objectives.js';
+import { parseLearningObjectives } from './lib/learning-objectives.js';
 import { parseProject } from './lib/project.js';
 import { parseTopic } from './lib/topic.js';
 import { parsePart } from './lib/part.js';
