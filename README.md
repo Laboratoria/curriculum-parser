@@ -95,10 +95,12 @@ Options:
 
 Commands:
   project [options] <dir>    Parse a project
-  topic [options] <dir>      Parse a topic
-  part [options] <dir>       Parse a part
-  challenge [options] <dir>  Parse a challenge
-  learning-objectives [options] <dir> Parse objectives
+  project [options] <dir>             Parse a project
+  topic [options] <dir>               Parse a topic
+  part [options] <dir>                Parse a part
+  challenge [options] <dir>           Parse a challenge
+  learning-objectives [options] <dir> Parse learning objectives
+  help [command]                      Display help for command
   help [command]             display help for command
 
 ```
