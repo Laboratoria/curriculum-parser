@@ -186,7 +186,8 @@ Arguments:
 
 Options:
   --validate          Validate and throw errors for objectives missing intl or without title
-  --strict            Used with validate, only throw errors if objectives are missing in all languages
+  --strict            Used with validate option to only throw error if an objective is missing in 
+                      all supported languages
   --debug             Show error stack traces
   -h, --help          display help for command
 ```
@@ -194,7 +195,8 @@ Options:
 ```sh
 curriculum-parser objectives learning-objectives \
   --repo Laboratoria/curriculum \
-  --strict false \
+  --validate \
+  --strict \
   > "dist/learning-objectives.json"
 
 ## Known tracks
