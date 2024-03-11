@@ -193,7 +193,7 @@ Options:
 ```
 
 ```sh
-curriculum-parser objectives learning-objectives \
+curriculum-parser learning-objectives learning-objectives \
   --repo Laboratoria/curriculum \
   --validate \
   --strict \
