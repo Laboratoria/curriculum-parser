@@ -186,7 +186,7 @@ Arguments:
 
 Options:
   --validate          Validate and throw errors for objectives missing intl or without title
-  --strict            Used with validate option to only throw error if an objective is missing in 
+  --strict            Used with validate option to only throw error if an objective is missing in
                       all supported languages
   --debug             Show error stack traces
   -h, --help          display help for command
