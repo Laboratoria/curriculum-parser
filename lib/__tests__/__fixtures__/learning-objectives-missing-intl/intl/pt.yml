@@ -1,0 +1,121 @@
+# missing js/data-types/primitive
+# and browser/fetch
+
+browser:
+  title: Web APIs
+
+browser/dom:
+  title: DOM (Document Object Model)
+
+browser/dom/selectors:
+  title: Uso de seletores de DOM
+  links:
+    - title: Modificando o DOM
+      url: topics/browser/dom/1-dom-methods-selection
+    - title: Introdução ao DOM - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction
+    - title: Locating DOM elements using selectors - MDN
+      url: https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors
+
+browser/dom/events:
+  title: Manipulação de eventos de DOM (listeners, propagação, delegação)
+  links:
+    - title: Introdução a eventos - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Events
+    - title: EventTarget.addEventListener() - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener
+    - title: EventTarget.removeEventListener() - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/removeEventListener
+    - title: Objeto Event
+      url: https://developer.mozilla.org/pt-BR/docs/Web/API/Event
+
+browser/dom/manipulation:
+  title: Manipulação dinâmica de DOM
+  links:
+    - title: Introdução ao DOM
+      url: https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM/Introdu%C3%A7%C3%A3o
+    - title: Node.appendChild() - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Web/API/Node/appendChild
+    - title: Document.createElement() - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createElement
+    - title: Document.createTextNode()
+      url: https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createTextNode
+    - title: Element.innerHTML - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Web/API/Element/innerHTML
+    - title: Node.textContent - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Web/API/Node/textContent
+
+browser/routing:
+  title: Routing (History API, evento hashchange, window.location)
+  links:
+    - title: Manipulando o histórico do navegador - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Web/API/History_API
+
+browser/storage:
+  title: Browser storage (localStorage, sessionStorage)
+  links:
+    - title: Window.localStorage - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Web/API/Window/Window.localStorage
+
+js:
+  title: JavaScript
+
+js/data-types:
+  title: Tipos de dados
+
+js/data-types/primitive:
+  title: Tipos de dados primitivos
+  links:
+    - title: Valores Primitivos - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Data_structures#valores_primitivos
+
+js/data-types/strings:
+  title: Strings (cadeias de caracteres)
+  links:
+    - title: Strings
+      url: topics/javascript/strings
+    - title: String — Cadeia de caracteres - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String
+
+js/data-types/arrays:
+  title: Arrays (arranjos)
+  links:
+    - title: Arranjos
+      url: topics/javascript/arrays
+    - title: Array - MDN
+      url: https://developer.mozilla.org//pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/
+    - title: Array.prototype.sort() - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+    - title: Array.prototype.forEach() - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+    - title: Array.prototype.map() - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+    - title: Array.prototype.filter() - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+    - title: Array.prototype.reduce() - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+
+js/data-types/objects:
+  title: Objetos (key, value)
+  links:
+    - title: Objetos em JavaScript
+      url: topics/javascript/objects/objects
+
+js/data-types/primitive-vs-non-primitive:
+  title: Diferenciar entre tipos de dados primitivos e não primitivos
+
+js/variables:
+  title: Variáveis (declaração, atribuição, escopo)
+  links:
+    - title: Valores, tipos de dados e operadores
+      url: topics/javascript/basics/values-variables-and-types
+    - title: Variáveis
+      url: topics/javascript/basics/variables
+
+js/conditionals:
+  title: Uso de condicionais (if-else, switch, operador ternário, lógica booleana)
+  links:
+    - title: Estruturas condicionais e repetitivas
+      url: topics/javascript/flow-control/conditionals-and-loops
+    - title: Tomando decisões no seu código — condicionais - MDN
+      url: https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/conditionals
