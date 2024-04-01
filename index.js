@@ -55,7 +55,7 @@ program.command('project')
   .option('--repo <string>', 'Repository')
   .option('--version <string>', 'Project version')
   .option('--lo <string>', 'Path to yml file with reference learning objectives')
-  .option('--variant <string>', 'Variant language')
+  .option('--variants <string>', 'Comma separated variant languages')
   .option('--debug', 'Show error stack traces')
   .action(createHandler(parseProject));
 
