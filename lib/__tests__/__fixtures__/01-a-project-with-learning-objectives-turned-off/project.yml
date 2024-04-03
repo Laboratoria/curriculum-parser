@@ -15,5 +15,4 @@ learningObjectives:
   - js/semantics
   - ux/user-understanding
   - ux/prototyping
-  - react:
-      optional: true
+  - css: false

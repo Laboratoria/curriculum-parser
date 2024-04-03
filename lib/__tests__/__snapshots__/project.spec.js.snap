@@ -173,6 +173,62 @@ exports[`parseProject > should include learning objectives from variant if a var
 
 exports[`parseProject > should include optional learning objectives if theyre present 1`] = `
 [
-  "object-oriented-programming",
+  "react/jsx",
+  "react/components",
+  "react/events",
+  "react/lists-and-keys",
+  "react/conditional-rendering",
+  "react/lifting-up-state",
+  "react/hooks",
+  "react/css-modules",
+  "react/routing",
+]
+`;
+
+exports[`parseProject > should not duplicate optional lo if its present in both normal and variant los 1`] = `
+[
+  "react/jsx",
+  "react/components",
+  "react/events",
+  "react/lists-and-keys",
+  "react/conditional-rendering",
+  "react/lifting-up-state",
+  "react/hooks",
+  "react/css-modules",
+  "react/routing",
+]
+`;
+
+exports[`parseProject > should turn off a learning objective if its value is false 1`] = `
+[
+  "html/semantics",
+  "dom/selectors",
+  "dom/events",
+  "dom/manipulation",
+  "js/data-types/primitive-vs-non-primitive",
+  "js/data-types/strings",
+  "js/variables/declaration",
+  "js/conditionals",
+  "js/functions",
+  "js/semantics",
+  "ux/user-understanding",
+  "ux/prototyping",
+]
+`;
+
+exports[`parseProject > should turn off a variant learning objective if its value is false 1`] = `
+[
+  "html/semantics",
+  "dom/selectors",
+  "dom/events",
+  "dom/manipulation",
+  "js/data-types/primitive-vs-non-primitive",
+  "js/data-types/strings",
+  "js/variables/declaration",
+  "js/conditionals",
+  "js/functions",
+  "js/semantics",
+  "ux/user-understanding",
+  "ux/prototyping",
 ]
 `;

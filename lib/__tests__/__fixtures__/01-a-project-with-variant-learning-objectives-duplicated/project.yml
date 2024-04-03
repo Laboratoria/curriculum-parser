@@ -17,3 +17,9 @@ learningObjectives:
   - ux/prototyping
   - react:
       optional: true
+variants:
+  - name: node
+    learningObjectives:
+      - node
+      - react:
+          optional: true
