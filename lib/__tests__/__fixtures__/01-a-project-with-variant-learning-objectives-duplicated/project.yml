@@ -23,3 +23,5 @@ variants:
       - node
       - react:
           optional: true
+      - angular:
+          optional: true

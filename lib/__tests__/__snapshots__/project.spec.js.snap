@@ -196,6 +196,14 @@ exports[`parseProject > should not duplicate optional lo if its present in both 
   "react/hooks",
   "react/css-modules",
   "react/routing",
+  "angular/components-and-templates",
+  "angular/structural-directives",
+  "angular/input-output",
+  "angular/services",
+  "angular/routing",
+  "angular/observables",
+  "angular/http-client",
+  "angular/styles",
 ]
 `;
 
