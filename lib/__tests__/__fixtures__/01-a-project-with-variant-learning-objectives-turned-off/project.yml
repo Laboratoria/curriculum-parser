@@ -18,4 +18,5 @@ learningObjectives:
 variants:
   - name: cli
     learningObjectives:
-      - css: false
+      - id: css
+        exclude: true

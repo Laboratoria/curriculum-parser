@@ -2,23 +2,57 @@
 
 exports[`parseProject > expands learning objectives children when only parent is mentioned 1`] = `
 [
-  "html/semantics",
-  "css/selectors",
-  "css/flexbox",
-  "css/grid",
-  "css/media-queries",
-  "js/async/callbacks",
-  "js/async/promises",
-  "js/data-types/strings",
-  "scm/git/setup",
-  "scm/git/intro",
-  "scm/git/integration",
-  "scm/github/setup",
-  "scm/github/gh-pages",
-  "scm/github/collaboration",
-  "scm/github/project-management",
-  "scm/github/ci",
-  "http/headers",
+  {
+    "id": "html/semantics",
+  },
+  {
+    "id": "css/selectors",
+  },
+  {
+    "id": "css/flexbox",
+  },
+  {
+    "id": "css/grid",
+  },
+  {
+    "id": "css/media-queries",
+  },
+  {
+    "id": "js/async/callbacks",
+  },
+  {
+    "id": "js/async/promises",
+  },
+  {
+    "id": "js/data-types/strings",
+  },
+  {
+    "id": "scm/git/setup",
+  },
+  {
+    "id": "scm/git/intro",
+  },
+  {
+    "id": "scm/git/integration",
+  },
+  {
+    "id": "scm/github/setup",
+  },
+  {
+    "id": "scm/github/gh-pages",
+  },
+  {
+    "id": "scm/github/collaboration",
+  },
+  {
+    "id": "scm/github/project-management",
+  },
+  {
+    "id": "scm/github/ci",
+  },
+  {
+    "id": "http/headers",
+  },
 ]
 `;
 
@@ -36,6 +70,130 @@ implementar a funcionalidade para ocultar todos os dígitos de um cartão, excet
 os quatro últimos.</p>"
 `;
 
+exports[`parseProject > includes "exclude" prop when learning objective has it in variant 1`] = `
+[
+  {
+    "id": "html/semantics",
+  },
+  {
+    "id": "css/selectors",
+  },
+  {
+    "id": "dom/selectors",
+  },
+  {
+    "id": "dom/events",
+  },
+  {
+    "id": "dom/manipulation",
+  },
+  {
+    "id": "js/data-types/primitive-vs-non-primitive",
+  },
+  {
+    "id": "js/data-types/strings",
+  },
+  {
+    "id": "js/variables/declaration",
+  },
+  {
+    "id": "js/conditionals",
+  },
+  {
+    "id": "js/functions",
+  },
+  {
+    "id": "js/semantics",
+  },
+  {
+    "id": "ux/user-understanding",
+  },
+  {
+    "id": "ux/prototyping",
+  },
+]
+`;
+
+exports[`parseProject > includes "optional" prop learning objectives when present in yml 1`] = `
+[
+  {
+    "id": "html/semantics",
+  },
+  {
+    "id": "css/selectors",
+  },
+  {
+    "id": "dom/selectors",
+  },
+  {
+    "id": "dom/events",
+  },
+  {
+    "id": "dom/manipulation",
+  },
+  {
+    "id": "js/data-types/primitive-vs-non-primitive",
+  },
+  {
+    "id": "js/data-types/strings",
+  },
+  {
+    "id": "js/variables/declaration",
+  },
+  {
+    "id": "js/conditionals",
+  },
+  {
+    "id": "js/functions",
+  },
+  {
+    "id": "js/semantics",
+  },
+  {
+    "id": "ux/user-understanding",
+  },
+  {
+    "id": "ux/prototyping",
+  },
+  {
+    "id": "react/jsx",
+    "optional": true,
+  },
+  {
+    "id": "react/components",
+    "optional": true,
+  },
+  {
+    "id": "react/events",
+    "optional": true,
+  },
+  {
+    "id": "react/lists-and-keys",
+    "optional": true,
+  },
+  {
+    "id": "react/conditional-rendering",
+    "optional": true,
+  },
+  {
+    "id": "react/lifting-up-state",
+    "optional": true,
+  },
+  {
+    "id": "react/hooks",
+    "optional": true,
+  },
+  {
+    "id": "react/css-modules",
+    "optional": true,
+  },
+  {
+    "id": "react/routing",
+    "optional": true,
+  },
+]
+`;
+
 exports[`parseProject > parses a project with learning objectives validating against known list 1`] = `
 {
   "cover": null,
@@ -46,19 +204,45 @@ exports[`parseProject > parses a project with learning objectives validating aga
     },
   },
   "learningObjectives": [
-    "html/semantics",
-    "css/selectors",
-    "dom/selectors",
-    "dom/events",
-    "dom/manipulation",
-    "js/data-types/primitive-vs-non-primitive",
-    "js/data-types/strings",
-    "js/variables/declaration",
-    "js/conditionals",
-    "js/functions",
-    "js/semantics",
-    "ux/user-understanding",
-    "ux/prototyping",
+    {
+      "id": "html/semantics",
+    },
+    {
+      "id": "css/selectors",
+    },
+    {
+      "id": "dom/selectors",
+    },
+    {
+      "id": "dom/events",
+    },
+    {
+      "id": "dom/manipulation",
+    },
+    {
+      "id": "js/data-types/primitive-vs-non-primitive",
+    },
+    {
+      "id": "js/data-types/strings",
+    },
+    {
+      "id": "js/variables/declaration",
+    },
+    {
+      "id": "js/conditionals",
+    },
+    {
+      "id": "js/functions",
+    },
+    {
+      "id": "js/semantics",
+    },
+    {
+      "id": "ux/user-understanding",
+    },
+    {
+      "id": "ux/prototyping",
+    },
   ],
   "path": "lib/__tests__/__fixtures__/01-a-project-with-learning-objectives",
   "prefix": 1,
@@ -83,19 +267,45 @@ exports[`parseProject > parses a project with learning objectives without valida
     },
   },
   "learningObjectives": [
-    "html/semantics",
-    "css/selectors",
-    "dom/selectors",
-    "dom/events",
-    "dom/manipulation",
-    "js/data-types/primitive-vs-non-primitive",
-    "js/data-types/strings",
-    "js/variables",
-    "js/conditionals",
-    "js/functions",
-    "js/semantics",
-    "ux/user-understanding",
-    "ux/prototyping",
+    {
+      "id": "html/semantics",
+    },
+    {
+      "id": "css/selectors",
+    },
+    {
+      "id": "dom/selectors",
+    },
+    {
+      "id": "dom/events",
+    },
+    {
+      "id": "dom/manipulation",
+    },
+    {
+      "id": "js/data-types/primitive-vs-non-primitive",
+    },
+    {
+      "id": "js/data-types/strings",
+    },
+    {
+      "id": "js/variables",
+    },
+    {
+      "id": "js/conditionals",
+    },
+    {
+      "id": "js/functions",
+    },
+    {
+      "id": "js/semantics",
+    },
+    {
+      "id": "ux/user-understanding",
+    },
+    {
+      "id": "ux/prototyping",
+    },
   ],
   "path": "lib/__tests__/__fixtures__/01-a-project-with-learning-objectives",
   "prefix": 1,
@@ -121,19 +331,45 @@ poderá cifrar e decifrar um texto indicando a chave de deslocamento (<em>offset
     },
   },
   "learningObjectives": [
-    "html/semantics",
-    "css/selectors",
-    "browser/dom/selectors",
-    "browser/dom/events",
-    "browser/dom/manipulation",
-    "js/data-types/primitive",
-    "js/data-types/strings",
-    "js/variables",
-    "js/conditionals",
-    "js/functions",
-    "js/semantics",
-    "user-centricity/centricity",
-    "product-design/interactivity",
+    {
+      "id": "html/semantics",
+    },
+    {
+      "id": "css/selectors",
+    },
+    {
+      "id": "browser/dom/selectors",
+    },
+    {
+      "id": "browser/dom/events",
+    },
+    {
+      "id": "browser/dom/manipulation",
+    },
+    {
+      "id": "js/data-types/primitive",
+    },
+    {
+      "id": "js/data-types/strings",
+    },
+    {
+      "id": "js/variables",
+    },
+    {
+      "id": "js/conditionals",
+    },
+    {
+      "id": "js/functions",
+    },
+    {
+      "id": "js/semantics",
+    },
+    {
+      "id": "user-centricity/centricity",
+    },
+    {
+      "id": "product-design/interactivity",
+    },
   ],
   "path": "lib/__tests__/__fixtures__/01-a-project-with-pt-translation",
   "prefix": 1,
@@ -146,97 +382,4 @@ poderá cifrar e decifrar um texto indicando a chave de deslocamento (<em>offset
   ],
   "version": "1.0.0",
 }
-`;
-
-exports[`parseProject > should include learning objectives from variant if a variant is passed 1`] = `
-[
-  "html/semantics",
-  "css/selectors",
-  "dom/selectors",
-  "dom/events",
-  "dom/manipulation",
-  "js/data-types/primitive-vs-non-primitive",
-  "js/data-types/strings",
-  "js/variables/declaration",
-  "js/conditionals",
-  "js/functions",
-  "js/semantics",
-  "ux/user-understanding",
-  "ux/prototyping",
-  "node/npm-install",
-  "node/package.json",
-  "node/npm-scripts",
-  "node/process",
-  "node/filesystem",
-]
-`;
-
-exports[`parseProject > should include optional learning objectives if theyre present 1`] = `
-[
-  "react/jsx",
-  "react/components",
-  "react/events",
-  "react/lists-and-keys",
-  "react/conditional-rendering",
-  "react/lifting-up-state",
-  "react/hooks",
-  "react/css-modules",
-  "react/routing",
-]
-`;
-
-exports[`parseProject > should not duplicate optional lo if its present in both normal and variant los 1`] = `
-[
-  "react/jsx",
-  "react/components",
-  "react/events",
-  "react/lists-and-keys",
-  "react/conditional-rendering",
-  "react/lifting-up-state",
-  "react/hooks",
-  "react/css-modules",
-  "react/routing",
-  "angular/components-and-templates",
-  "angular/structural-directives",
-  "angular/input-output",
-  "angular/services",
-  "angular/routing",
-  "angular/observables",
-  "angular/http-client",
-  "angular/styles",
-]
-`;
-
-exports[`parseProject > should turn off a learning objective if its value is false 1`] = `
-[
-  "html/semantics",
-  "dom/selectors",
-  "dom/events",
-  "dom/manipulation",
-  "js/data-types/primitive-vs-non-primitive",
-  "js/data-types/strings",
-  "js/variables/declaration",
-  "js/conditionals",
-  "js/functions",
-  "js/semantics",
-  "ux/user-understanding",
-  "ux/prototyping",
-]
-`;
-
-exports[`parseProject > should turn off a variant learning objective if its value is false 1`] = `
-[
-  "html/semantics",
-  "dom/selectors",
-  "dom/events",
-  "dom/manipulation",
-  "js/data-types/primitive-vs-non-primitive",
-  "js/data-types/strings",
-  "js/variables/declaration",
-  "js/conditionals",
-  "js/functions",
-  "js/semantics",
-  "ux/user-understanding",
-  "ux/prototyping",
-]
 `;

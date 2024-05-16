@@ -15,13 +15,13 @@ learningObjectives:
   - js/semantics
   - ux/user-understanding
   - ux/prototyping
-  - react:
-      optional: true
+  - id: react
+    optional: true
 variants:
   - name: node
     learningObjectives:
       - node
-      - react:
-          optional: true
-      - angular:
-          optional: true
+      - id: react
+        optional: true
+      - id: angular
+        optional: true

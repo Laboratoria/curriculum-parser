@@ -15,8 +15,5 @@ learningObjectives:
   - js/semantics
   - ux/user-understanding
   - ux/prototyping
-variants:
-  - name: foo
-    learningObjectives:
-      - id: css
-        exclude: true
+  - id: css
+    exclude: true
