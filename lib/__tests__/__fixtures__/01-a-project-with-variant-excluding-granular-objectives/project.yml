@@ -1,0 +1,13 @@
+track: web-dev
+tracks:
+  - web-dev
+learningObjectives:
+  - dom/selectors
+  - dom/events
+  - dom/manipulation
+variants:
+  - name: node
+    learningObjectives:
+      - node
+      - id: dom/manipulation
+        exclude: true

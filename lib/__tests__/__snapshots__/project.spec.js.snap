@@ -132,6 +132,44 @@ exports[`parseProject > does not duplicate optional lo if its present in both no
 ]
 `;
 
+exports[`parseProject > excludes nested objectives in variant 1`] = `
+[
+  {
+    "id": "dom/selectors",
+  },
+  {
+    "id": "dom/events",
+  },
+  {
+    "id": "dom/manipulation",
+  },
+]
+`;
+
+exports[`parseProject > excludes nested objectives in variant 2`] = `
+[
+  {
+    "id": "node/npm-install",
+  },
+  {
+    "id": "node/package.json",
+  },
+  {
+    "id": "node/npm-scripts",
+  },
+  {
+    "id": "node/process",
+  },
+  {
+    "id": "node/filesystem",
+  },
+  {
+    "exclude": true,
+    "id": "dom/manipulation",
+  },
+]
+`;
+
 exports[`parseProject > expands learning objectives children when only parent is mentioned 1`] = `
 [
   {
