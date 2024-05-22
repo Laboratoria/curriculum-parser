@@ -12,7 +12,7 @@
     "curriculum-parser": "index.js"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "scripts": {
     "pretest": "eslint .",
@@ -20,20 +20,19 @@
     "watch": "vitest --reporter verbose"
   },
   "dependencies": {
-    "commander": "^11.1.0",
+    "commander": "^12.1.0",
     "js-yaml": "^4.1.0",
-    "rehype-document": "^7.0.2",
+    "rehype-document": "^7.0.3",
     "rehype-stringify": "^10.0.0",
     "remark-parse": "^11.0.0",
-    "remark-rehype": "^11.0.0",
-    "sharp": "^0.32.6",
+    "remark-rehype": "^11.1.0",
+    "sharp": "^0.33.4",
     "unified": "^11.0.4"
   },
   "devDependencies": {
-    "@vitest/coverage-v8": "^0.34.6",
-    "eslint": "^8.54.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "nock": "^13.3.8",
-    "vitest": "^0.34.6"
+    "@vitest/coverage-v8": "^1.6.0",
+    "eslint": "^9.3.0",
+    "nock": "^13.5.4",
+    "vitest": "^1.6.0"
   }
 }
