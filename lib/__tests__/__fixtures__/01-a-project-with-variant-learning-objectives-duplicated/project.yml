@@ -20,6 +20,7 @@ learningObjectives:
 variants:
   - name: node
     learningObjectives:
+      - html/semantics
       - node
       - id: react
         optional: true
