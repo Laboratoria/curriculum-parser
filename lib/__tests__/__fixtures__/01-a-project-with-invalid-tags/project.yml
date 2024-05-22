@@ -1,0 +1,10 @@
+track: web-dev
+tracks:
+  - web-dev
+tags:
+  - featured
+  - foo
+learningObjectives:
+  - html
+  - css
+  - dom
