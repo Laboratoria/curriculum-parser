@@ -1,0 +1,12 @@
+track: web-dev
+tracks:
+  - web-dev
+tags:
+  - featured
+  - beta
+  - deprecated
+  - hidden
+learningObjectives:
+  - html
+  - css
+  - dom

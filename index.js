@@ -55,7 +55,10 @@ program.command('project')
   .argument('<dir>', 'path to project directory')
   .option('--repo <string>', 'Repository')
   .option('--version <string>', 'Project version')
-  .option('--lo <string>', 'Path to yml file with reference learning objectives')
+  .option(
+    '--lo <string>',
+    'Path to directory containing data.yml with reference learning objectives',
+  )
   .option('--debug', 'Show error stack traces')
   .action(createHandler(parseProject));
 
