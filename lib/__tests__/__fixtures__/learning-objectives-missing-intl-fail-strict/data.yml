@@ -1,0 +1,18 @@
+browser:
+  - dom:
+      - selectors
+      - events
+      - manipulation
+  - routing
+  - storage
+  - fetch
+
+js:
+  - data-types:
+      - primitive
+      - primitive-vs-non-primitive
+      - strings
+      - arrays
+      - objects
+  - variables
+  - conditionals
