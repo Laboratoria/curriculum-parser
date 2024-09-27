@@ -4,6 +4,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { program } from 'commander';
+import { parseLearningObjectives } from './lib/learning-objectives.js';
 import { parseProject } from './lib/project.js';
 import { parseTopic } from './lib/topic.js';
 import { parsePart } from './lib/part.js';
@@ -84,5 +85,13 @@ program.command('challenge')
   .option('--version <string>', 'Challenge version')
   .option('--debug', 'Show error stack traces')
   .action(createHandler(parseChallenge));
+
+program.command('learning-objectives')
+  .description('Parse learning objectives')
+  .argument('<dir>', 'path to learning objectives directory') // note should there be a default here?
+  .option('--validate', 'Validate and throw errors for objectives missing intl or without title') // question: should we have repo and version ? why?
+  .option('--strict', 'With validate, only throw errors if objectives are missing in all languages')
+  .option('--debug', 'Show error stack traces')
+  .action(createHandler(parseLearningObjectives));
 
 program.parse();

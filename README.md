@@ -1,7 +1,7 @@
 # @laboratoria/curriculum-parser
 
 Command line tool used to parse content written in markdown at
-@Laboratoria (See [Laboratoria/bootcamp](https://github.com/Laboratoria/bootcamp)).
+@Laboratoria (See [Laboratoria/curriculum](https://github.com/Laboratoria/curriculum)).
 
 ![Node.js CI](https://github.com/Laboratoria/curriculum-parser/workflows/Node.js%20CI/badge.svg)
 [![Coverage Status](https://coveralls.io/repos/github/Laboratoria/curriculum-parser/badge.svg?branch=main)](https://coveralls.io/github/Laboratoria/curriculum-parser?branch=main)
@@ -95,10 +95,11 @@ Options:
 
 Commands:
   project [options] <dir>    Parse a project
-  topic [options] <dir>      Parse a topic
-  part [options] <dir>       Parse a part
-  challenge [options] <dir>  Parse a challenge
-  help [command]             display help for command
+  topic [options] <dir>               Parse a topic
+  part [options] <dir>                Parse a part
+  challenge [options] <dir>           Parse a challenge
+  learning-objectives [options] <dir> Parse learning objectives
+  help [command]                      Display help for command
 
 ```
 
@@ -126,13 +127,13 @@ Options:
 
 ## Examples
 
-### Parse a topic within the `Laboratoria/bootcamp` repo
+### Parse a topic within the `Laboratoria/curriculum` repo
 
 Parsing a _topic_ and printing the resulting JSON output to `stdout`.
 
 ```sh
 curriculum-parser topic topics/javascript/ \
-  --repo Laboratoria/bootcamp \
+  --repo Laboratoria/curriculum \
   --version 5.5.0
 ```
 
@@ -141,35 +142,60 @@ Parsing a _topic_ and writing the parser's output (`stdout`) to a file (using
 
 ```sh
 curriculum-parser topic topics/javascript/ \
-  --repo Laboratoria/bootcamp \
+  --repo Laboratoria/curriculum \
   --version 5.5.0 \
   > "build/topics/javascript.json"
 ```
 
-### Parse a specific part of a topic within the `Laboratoria/bootcamp` repo
+### Parse a specific part of a topic within the `Laboratoria/curriculum` repo
 
 ```sh
 curriculum-parser part topics/intro-ux/00-que-es-uxd/00-que-es-uxd/ \
-  --repo Laboratoria/bootcamp \
+  --repo Laboratoria/curriculum \
   --version 5.5.0
 ```
 
-### Parse a challenge within the `Laboratoria/bootcamp` repo
+### Parse a challenge within the `Laboratoria/curriculum` repo
 
 ```sh
 curriculum-parser challenge topics/javascript/01-basics/06-exercises/01-coin-convert/ \
-  --repo Laboratoria/bootcamp \
+  --repo Laboratoria/curriculum \
   --version 5.5.0
 ```
 
-### Parse a project within the `Laboratoria/bootcamp` repo
+### Parse a project within the `Laboratoria/curriculum` repo
 
 ```sh
 curriculum-parser project projects/01-cipher/ \
-  --repo Laboratoria/bootcamp \
+  --repo Laboratoria/curriculum \
   --version 5.5.0 \
   --lo=./learning-objectives
 ```
+
+### Parse learning objectives within `Laboratoria/curriculum`
+
+```text
+Usage: curriculum-parser learning-objectives [options] <dir>
+
+Parse learning objectives
+
+Arguments:
+  dir                 path to learning-objectives directory
+
+Options:
+  --validate          Validate and throw errors for objectives missing intl or without title
+  --strict            Used with validate option to only throw error if an objective is missing in
+                      all supported languages
+  --debug             Show error stack traces
+  -h, --help          display help for command
+```
+
+```sh
+curriculum-parser learning-objectives learning-objectives \
+  --repo Laboratoria/curriculum \
+  --validate \
+  --strict \
+  > "dist/learning-objectives.json"
 
 ## Known tracks
 
