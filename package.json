@@ -1,6 +1,6 @@
 {
   "name": "@laboratoria/curriculum-parser",
-  "version": "6.0.0",
+  "version": "6.1.0-alpha.0",
   "description": "Command line tool used to parse projects, topics, exercises, etc, written in markdown @Laboratoria",
   "license": "MIT",
   "type": "module",
